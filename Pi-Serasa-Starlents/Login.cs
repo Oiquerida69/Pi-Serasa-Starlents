@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Pi_Serasa_Starlents
 {
-    public partial class Cadastro : Form
+    public partial class Login : Form
     {
-        public Cadastro()
+        public Login()
         {
             InitializeComponent();
-        }
-
-        private void Cadastro_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
