@@ -16,5 +16,12 @@ namespace Pi_Serasa_Starlents
         {
             InitializeComponent();
         }
+
+        private void TelaDoModerador_Load(object sender, EventArgs e)
+        {
+
+        }
+
+
     }
 }
