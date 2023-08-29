@@ -2,8 +2,11 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using MySql.Data.MySqlClient;
+
 
 namespace Pi_Serasa_Starlents
 {
@@ -40,7 +43,7 @@ namespace Pi_Serasa_Starlents
             }
             catch (Exception erro)
             {
-               
+
 
                 return null;
 
@@ -52,6 +55,25 @@ namespace Pi_Serasa_Starlents
             }
 
         }
+
+
+    }
+    public List<Conexao> buscaTodos()
+    {
+        string query = "SELECT * FROM conexao;";
+
+        DataTable tabela = Conexao.executaQuery(query);
+
+        List<Conexao> conexao = new List<Conexao>();
+       
+        foreach (DataRow linha in tabela.Rows)
+        {
+           Conexao conexao = CarregaDados(linha);
+            conexao.Add(conexao);
+
+        }
+        return conexao;
+
     }
 }
-}
+
