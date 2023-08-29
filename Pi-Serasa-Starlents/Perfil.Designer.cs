@@ -50,6 +50,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -64,7 +68,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(554, 66);
+            this.pictureBox1.Location = new System.Drawing.Point(553, 78);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(146, 139);
             this.pictureBox1.TabIndex = 9;
@@ -96,11 +100,11 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(591, 208);
+            this.label4.Location = new System.Drawing.Point(590, 220);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(77, 25);
+            this.label4.Size = new System.Drawing.Size(73, 20);
             this.label4.TabIndex = 10;
             this.label4.Text = "Usuário";
             // 
@@ -210,6 +214,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(15)))), ((int)(((byte)(87)))));
+            this.panel1.Controls.Add(this.panel6);
+            this.panel1.Controls.Add(this.panel5);
+            this.panel1.Controls.Add(this.panel4);
+            this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.pictureBox9);
@@ -333,11 +341,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Sitka Text", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(324, 88);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(118, 29);
+            this.label3.Size = new System.Drawing.Size(107, 23);
             this.label3.TabIndex = 26;
             this.label3.Text = "Meu Perfil";
             // 
@@ -358,6 +366,39 @@
             this.label5.Size = new System.Drawing.Size(150, 15);
             this.label5.TabIndex = 0;
             this.label5.Text = "Insira uma descrição aqui...";
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Location = new System.Drawing.Point(241, 56);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(50, 7);
+            this.panel3.TabIndex = 27;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Location = new System.Drawing.Point(324, 56);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(50, 7);
+            this.panel4.TabIndex = 28;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.Location = new System.Drawing.Point(401, 56);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(50, 7);
+            this.panel5.TabIndex = 28;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.White;
+            this.panel6.Location = new System.Drawing.Point(480, 56);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(50, 7);
+            this.panel6.TabIndex = 28;
             // 
             // Perfil
             // 
@@ -407,5 +448,9 @@
         private Panel panel2;
         private Label label5;
         private Label label3;
+        private Panel panel3;
+        private Panel panel6;
+        private Panel panel5;
+        private Panel panel4;
     }
 }

@@ -26,5 +26,10 @@ namespace Pi_Serasa_Starlents
         {
 
         }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

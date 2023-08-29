@@ -81,7 +81,7 @@
             this.wilBitTextBox2.BorderSize = 2;
             this.wilBitTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.wilBitTextBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.wilBitTextBox2.Location = new System.Drawing.Point(439, 185);
+            this.wilBitTextBox2.Location = new System.Drawing.Point(441, 185);
             this.wilBitTextBox2.Margin = new System.Windows.Forms.Padding(4);
             this.wilBitTextBox2.Multiline = false;
             this.wilBitTextBox2.Name = "wilBitTextBox2";
@@ -103,7 +103,7 @@
             this.wilBitTextBox3.BorderSize = 2;
             this.wilBitTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.wilBitTextBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.wilBitTextBox3.Location = new System.Drawing.Point(439, 254);
+            this.wilBitTextBox3.Location = new System.Drawing.Point(441, 254);
             this.wilBitTextBox3.Margin = new System.Windows.Forms.Padding(4);
             this.wilBitTextBox3.Multiline = false;
             this.wilBitTextBox3.Name = "wilBitTextBox3";
@@ -140,6 +140,8 @@
             this.wilBitGradientPanel1.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.wilBitGradientPanel1.BorderRadius = 6;
             this.wilBitGradientPanel1.BorderSize = 0;
+            this.wilBitGradientPanel1.Controls.Add(this.wilBitTextBox2);
+            this.wilBitGradientPanel1.Controls.Add(this.wilBitTextBox3);
             this.wilBitGradientPanel1.Controls.Add(this.wilBitButton1);
             this.wilBitGradientPanel1.Controls.Add(this.label4);
             this.wilBitGradientPanel1.Controls.Add(this.label3);
@@ -208,8 +210,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(732, 444);
-            this.Controls.Add(this.wilBitTextBox3);
-            this.Controls.Add(this.wilBitTextBox2);
             this.Controls.Add(this.wilBitGradientPanel1);
             this.Name = "Cadastro";
             this.Text = "Cadastro";
