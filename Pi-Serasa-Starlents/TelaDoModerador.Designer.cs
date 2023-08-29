@@ -32,12 +32,16 @@
             label1 = new Label();
             panel2 = new Panel();
             wilBitPanel1 = new WiLBiT.WiLBiTPanel();
+            label6 = new Label();
+            wilBitRoundedPictureBox1 = new WiLBiT.WiLBiTRoundedPictureBox();
             panel3 = new Panel();
             btnEnviaRelatorio = new WiLBiT.WiLBiTButton();
             btnAcessaCodigo = new WiLBiT.WiLBiTButton();
             pictureBox1 = new PictureBox();
             label2 = new Label();
             wilBitPanel8 = new WiLBiT.WiLBiTPanel();
+            wilBitPanel13 = new WiLBiT.WiLBiTPanel();
+            wilBitPanel12 = new WiLBiT.WiLBiTPanel();
             wilBitPanel9 = new WiLBiT.WiLBiTPanel();
             lblUsuario = new Label();
             label3 = new Label();
@@ -48,48 +52,14 @@
             label5 = new Label();
             wilBitPanel11 = new WiLBiT.WiLBiTPanel();
             wilBitButton1 = new WiLBiT.WiLBiTButton();
-            wilBitRoundedPictureBox1 = new WiLBiT.WiLBiTRoundedPictureBox();
-            label6 = new Label();
-            wilBitPanel2 = new WiLBiT.WiLBiTPanel();
-            label7 = new Label();
-            wilBitRoundedPictureBox2 = new WiLBiT.WiLBiTRoundedPictureBox();
-            wilBitPanel3 = new WiLBiT.WiLBiTPanel();
-            label8 = new Label();
-            wilBitRoundedPictureBox3 = new WiLBiT.WiLBiTRoundedPictureBox();
-            wilBitPanel4 = new WiLBiT.WiLBiTPanel();
-            label9 = new Label();
-            wilBitRoundedPictureBox4 = new WiLBiT.WiLBiTRoundedPictureBox();
-            wilBitPanel5 = new WiLBiT.WiLBiTPanel();
-            label10 = new Label();
-            wilBitRoundedPictureBox5 = new WiLBiT.WiLBiTRoundedPictureBox();
-            wilBitPanel6 = new WiLBiT.WiLBiTPanel();
-            label11 = new Label();
-            wilBitRoundedPictureBox6 = new WiLBiT.WiLBiTRoundedPictureBox();
-            wilBitPanel7 = new WiLBiT.WiLBiTPanel();
-            label12 = new Label();
-            wilBitRoundedPictureBox7 = new WiLBiT.WiLBiTRoundedPictureBox();
-            wilBitPanel12 = new WiLBiT.WiLBiTPanel();
-            wilBitPanel13 = new WiLBiT.WiLBiTPanel();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             wilBitPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)wilBitRoundedPictureBox1).BeginInit();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             wilBitPanel8.SuspendLayout();
             wilBitPanel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)wilBitRoundedPictureBox1).BeginInit();
-            wilBitPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)wilBitRoundedPictureBox2).BeginInit();
-            wilBitPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)wilBitRoundedPictureBox3).BeginInit();
-            wilBitPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)wilBitRoundedPictureBox4).BeginInit();
-            wilBitPanel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)wilBitRoundedPictureBox5).BeginInit();
-            wilBitPanel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)wilBitRoundedPictureBox6).BeginInit();
-            wilBitPanel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)wilBitRoundedPictureBox7).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -117,12 +87,6 @@
             // 
             panel2.AutoScroll = true;
             panel2.BackColor = Color.FromArgb(163, 142, 167);
-            panel2.Controls.Add(wilBitPanel7);
-            panel2.Controls.Add(wilBitPanel6);
-            panel2.Controls.Add(wilBitPanel5);
-            panel2.Controls.Add(wilBitPanel4);
-            panel2.Controls.Add(wilBitPanel3);
-            panel2.Controls.Add(wilBitPanel2);
             panel2.Controls.Add(wilBitPanel1);
             panel2.Location = new Point(0, 55);
             panel2.Name = "panel2";
@@ -142,6 +106,32 @@
             wilBitPanel1.Name = "wilBitPanel1";
             wilBitPanel1.Size = new Size(180, 50);
             wilBitPanel1.TabIndex = 6;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label6.ForeColor = Color.FromArgb(52, 11, 66);
+            label6.Location = new Point(55, 17);
+            label6.Name = "label6";
+            label6.Size = new Size(70, 18);
+            label6.TabIndex = 19;
+            label6.Text = "Usuário";
+            // 
+            // wilBitRoundedPictureBox1
+            // 
+            wilBitRoundedPictureBox1.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            wilBitRoundedPictureBox1.BorderColor = Color.FromArgb(64, 23, 72);
+            wilBitRoundedPictureBox1.BorderColor2 = Color.FromArgb(64, 23, 72);
+            wilBitRoundedPictureBox1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            wilBitRoundedPictureBox1.BorderSize = 2;
+            wilBitRoundedPictureBox1.GradientAngle = 50F;
+            wilBitRoundedPictureBox1.Location = new Point(7, 3);
+            wilBitRoundedPictureBox1.Name = "wilBitRoundedPictureBox1";
+            wilBitRoundedPictureBox1.Size = new Size(42, 42);
+            wilBitRoundedPictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            wilBitRoundedPictureBox1.TabIndex = 0;
+            wilBitRoundedPictureBox1.TabStop = false;
             // 
             // panel3
             // 
@@ -222,6 +212,30 @@
             wilBitPanel8.Name = "wilBitPanel8";
             wilBitPanel8.Size = new Size(226, 117);
             wilBitPanel8.TabIndex = 11;
+            // 
+            // wilBitPanel13
+            // 
+            wilBitPanel13.BackColor = Color.FromArgb(228, 193, 249);
+            wilBitPanel13.BorderColor = Color.PaleVioletRed;
+            wilBitPanel13.BorderRadius = 6;
+            wilBitPanel13.BorderSize = 0;
+            wilBitPanel13.ForeColor = Color.White;
+            wilBitPanel13.Location = new Point(18, 58);
+            wilBitPanel13.Name = "wilBitPanel13";
+            wilBitPanel13.Size = new Size(146, 40);
+            wilBitPanel13.TabIndex = 23;
+            // 
+            // wilBitPanel12
+            // 
+            wilBitPanel12.BackColor = Color.FromArgb(228, 193, 249);
+            wilBitPanel12.BorderColor = Color.PaleVioletRed;
+            wilBitPanel12.BorderRadius = 6;
+            wilBitPanel12.BorderSize = 0;
+            wilBitPanel12.ForeColor = Color.White;
+            wilBitPanel12.Location = new Point(18, 11);
+            wilBitPanel12.Name = "wilBitPanel12";
+            wilBitPanel12.Size = new Size(191, 40);
+            wilBitPanel12.TabIndex = 22;
             // 
             // wilBitPanel9
             // 
@@ -349,296 +363,6 @@
             wilBitButton1.Text = "Banir usuário";
             wilBitButton1.UseVisualStyleBackColor = false;
             // 
-            // wilBitRoundedPictureBox1
-            // 
-            wilBitRoundedPictureBox1.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            wilBitRoundedPictureBox1.BorderColor = Color.FromArgb(64, 23, 72);
-            wilBitRoundedPictureBox1.BorderColor2 = Color.FromArgb(64, 23, 72);
-            wilBitRoundedPictureBox1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            wilBitRoundedPictureBox1.BorderSize = 2;
-            wilBitRoundedPictureBox1.GradientAngle = 50F;
-            wilBitRoundedPictureBox1.Location = new Point(7, 3);
-            wilBitRoundedPictureBox1.Name = "wilBitRoundedPictureBox1";
-            wilBitRoundedPictureBox1.Size = new Size(42, 42);
-            wilBitRoundedPictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            wilBitRoundedPictureBox1.TabIndex = 0;
-            wilBitRoundedPictureBox1.TabStop = false;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.ForeColor = Color.FromArgb(52, 11, 66);
-            label6.Location = new Point(55, 17);
-            label6.Name = "label6";
-            label6.Size = new Size(70, 18);
-            label6.TabIndex = 19;
-            label6.Text = "Usuário";
-            // 
-            // wilBitPanel2
-            // 
-            wilBitPanel2.BackColor = Color.FromArgb(228, 193, 249);
-            wilBitPanel2.BorderColor = Color.PaleVioletRed;
-            wilBitPanel2.BorderRadius = 6;
-            wilBitPanel2.BorderSize = 0;
-            wilBitPanel2.Controls.Add(label7);
-            wilBitPanel2.Controls.Add(wilBitRoundedPictureBox2);
-            wilBitPanel2.ForeColor = Color.White;
-            wilBitPanel2.Location = new Point(5, 61);
-            wilBitPanel2.Name = "wilBitPanel2";
-            wilBitPanel2.Size = new Size(180, 50);
-            wilBitPanel2.TabIndex = 20;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.ForeColor = Color.FromArgb(52, 11, 66);
-            label7.Location = new Point(55, 17);
-            label7.Name = "label7";
-            label7.Size = new Size(70, 18);
-            label7.TabIndex = 19;
-            label7.Text = "Usuário";
-            // 
-            // wilBitRoundedPictureBox2
-            // 
-            wilBitRoundedPictureBox2.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            wilBitRoundedPictureBox2.BorderColor = Color.FromArgb(64, 23, 72);
-            wilBitRoundedPictureBox2.BorderColor2 = Color.FromArgb(64, 23, 72);
-            wilBitRoundedPictureBox2.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            wilBitRoundedPictureBox2.BorderSize = 2;
-            wilBitRoundedPictureBox2.GradientAngle = 50F;
-            wilBitRoundedPictureBox2.Location = new Point(7, 3);
-            wilBitRoundedPictureBox2.Name = "wilBitRoundedPictureBox2";
-            wilBitRoundedPictureBox2.Size = new Size(42, 42);
-            wilBitRoundedPictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            wilBitRoundedPictureBox2.TabIndex = 0;
-            wilBitRoundedPictureBox2.TabStop = false;
-            // 
-            // wilBitPanel3
-            // 
-            wilBitPanel3.BackColor = Color.FromArgb(228, 193, 249);
-            wilBitPanel3.BorderColor = Color.PaleVioletRed;
-            wilBitPanel3.BorderRadius = 6;
-            wilBitPanel3.BorderSize = 0;
-            wilBitPanel3.Controls.Add(label8);
-            wilBitPanel3.Controls.Add(wilBitRoundedPictureBox3);
-            wilBitPanel3.ForeColor = Color.White;
-            wilBitPanel3.Location = new Point(5, 117);
-            wilBitPanel3.Name = "wilBitPanel3";
-            wilBitPanel3.Size = new Size(180, 50);
-            wilBitPanel3.TabIndex = 21;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label8.ForeColor = Color.FromArgb(52, 11, 66);
-            label8.Location = new Point(55, 17);
-            label8.Name = "label8";
-            label8.Size = new Size(70, 18);
-            label8.TabIndex = 19;
-            label8.Text = "Usuário";
-            // 
-            // wilBitRoundedPictureBox3
-            // 
-            wilBitRoundedPictureBox3.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            wilBitRoundedPictureBox3.BorderColor = Color.FromArgb(64, 23, 72);
-            wilBitRoundedPictureBox3.BorderColor2 = Color.FromArgb(64, 23, 72);
-            wilBitRoundedPictureBox3.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            wilBitRoundedPictureBox3.BorderSize = 2;
-            wilBitRoundedPictureBox3.GradientAngle = 50F;
-            wilBitRoundedPictureBox3.Location = new Point(7, 3);
-            wilBitRoundedPictureBox3.Name = "wilBitRoundedPictureBox3";
-            wilBitRoundedPictureBox3.Size = new Size(42, 42);
-            wilBitRoundedPictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            wilBitRoundedPictureBox3.TabIndex = 0;
-            wilBitRoundedPictureBox3.TabStop = false;
-            // 
-            // wilBitPanel4
-            // 
-            wilBitPanel4.BackColor = Color.FromArgb(228, 193, 249);
-            wilBitPanel4.BorderColor = Color.PaleVioletRed;
-            wilBitPanel4.BorderRadius = 6;
-            wilBitPanel4.BorderSize = 0;
-            wilBitPanel4.Controls.Add(label9);
-            wilBitPanel4.Controls.Add(wilBitRoundedPictureBox4);
-            wilBitPanel4.ForeColor = Color.White;
-            wilBitPanel4.Location = new Point(5, 173);
-            wilBitPanel4.Name = "wilBitPanel4";
-            wilBitPanel4.Size = new Size(180, 50);
-            wilBitPanel4.TabIndex = 22;
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label9.ForeColor = Color.FromArgb(52, 11, 66);
-            label9.Location = new Point(55, 17);
-            label9.Name = "label9";
-            label9.Size = new Size(70, 18);
-            label9.TabIndex = 19;
-            label9.Text = "Usuário";
-            // 
-            // wilBitRoundedPictureBox4
-            // 
-            wilBitRoundedPictureBox4.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            wilBitRoundedPictureBox4.BorderColor = Color.FromArgb(64, 23, 72);
-            wilBitRoundedPictureBox4.BorderColor2 = Color.FromArgb(64, 23, 72);
-            wilBitRoundedPictureBox4.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            wilBitRoundedPictureBox4.BorderSize = 2;
-            wilBitRoundedPictureBox4.GradientAngle = 50F;
-            wilBitRoundedPictureBox4.Location = new Point(7, 3);
-            wilBitRoundedPictureBox4.Name = "wilBitRoundedPictureBox4";
-            wilBitRoundedPictureBox4.Size = new Size(42, 42);
-            wilBitRoundedPictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
-            wilBitRoundedPictureBox4.TabIndex = 0;
-            wilBitRoundedPictureBox4.TabStop = false;
-            // 
-            // wilBitPanel5
-            // 
-            wilBitPanel5.BackColor = Color.FromArgb(228, 193, 249);
-            wilBitPanel5.BorderColor = Color.PaleVioletRed;
-            wilBitPanel5.BorderRadius = 6;
-            wilBitPanel5.BorderSize = 0;
-            wilBitPanel5.Controls.Add(label10);
-            wilBitPanel5.Controls.Add(wilBitRoundedPictureBox5);
-            wilBitPanel5.ForeColor = Color.White;
-            wilBitPanel5.Location = new Point(5, 229);
-            wilBitPanel5.Name = "wilBitPanel5";
-            wilBitPanel5.Size = new Size(180, 50);
-            wilBitPanel5.TabIndex = 23;
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label10.ForeColor = Color.FromArgb(52, 11, 66);
-            label10.Location = new Point(55, 17);
-            label10.Name = "label10";
-            label10.Size = new Size(70, 18);
-            label10.TabIndex = 19;
-            label10.Text = "Usuário";
-            // 
-            // wilBitRoundedPictureBox5
-            // 
-            wilBitRoundedPictureBox5.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            wilBitRoundedPictureBox5.BorderColor = Color.FromArgb(64, 23, 72);
-            wilBitRoundedPictureBox5.BorderColor2 = Color.FromArgb(64, 23, 72);
-            wilBitRoundedPictureBox5.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            wilBitRoundedPictureBox5.BorderSize = 2;
-            wilBitRoundedPictureBox5.GradientAngle = 50F;
-            wilBitRoundedPictureBox5.Location = new Point(7, 3);
-            wilBitRoundedPictureBox5.Name = "wilBitRoundedPictureBox5";
-            wilBitRoundedPictureBox5.Size = new Size(42, 42);
-            wilBitRoundedPictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
-            wilBitRoundedPictureBox5.TabIndex = 0;
-            wilBitRoundedPictureBox5.TabStop = false;
-            // 
-            // wilBitPanel6
-            // 
-            wilBitPanel6.BackColor = Color.FromArgb(228, 193, 249);
-            wilBitPanel6.BorderColor = Color.PaleVioletRed;
-            wilBitPanel6.BorderRadius = 6;
-            wilBitPanel6.BorderSize = 0;
-            wilBitPanel6.Controls.Add(label11);
-            wilBitPanel6.Controls.Add(wilBitRoundedPictureBox6);
-            wilBitPanel6.ForeColor = Color.White;
-            wilBitPanel6.Location = new Point(5, 285);
-            wilBitPanel6.Name = "wilBitPanel6";
-            wilBitPanel6.Size = new Size(180, 50);
-            wilBitPanel6.TabIndex = 24;
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label11.ForeColor = Color.FromArgb(52, 11, 66);
-            label11.Location = new Point(55, 17);
-            label11.Name = "label11";
-            label11.Size = new Size(70, 18);
-            label11.TabIndex = 19;
-            label11.Text = "Usuário";
-            // 
-            // wilBitRoundedPictureBox6
-            // 
-            wilBitRoundedPictureBox6.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            wilBitRoundedPictureBox6.BorderColor = Color.FromArgb(64, 23, 72);
-            wilBitRoundedPictureBox6.BorderColor2 = Color.FromArgb(64, 23, 72);
-            wilBitRoundedPictureBox6.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            wilBitRoundedPictureBox6.BorderSize = 2;
-            wilBitRoundedPictureBox6.GradientAngle = 50F;
-            wilBitRoundedPictureBox6.Location = new Point(7, 3);
-            wilBitRoundedPictureBox6.Name = "wilBitRoundedPictureBox6";
-            wilBitRoundedPictureBox6.Size = new Size(42, 42);
-            wilBitRoundedPictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
-            wilBitRoundedPictureBox6.TabIndex = 0;
-            wilBitRoundedPictureBox6.TabStop = false;
-            // 
-            // wilBitPanel7
-            // 
-            wilBitPanel7.BackColor = Color.FromArgb(228, 193, 249);
-            wilBitPanel7.BorderColor = Color.PaleVioletRed;
-            wilBitPanel7.BorderRadius = 6;
-            wilBitPanel7.BorderSize = 0;
-            wilBitPanel7.Controls.Add(label12);
-            wilBitPanel7.Controls.Add(wilBitRoundedPictureBox7);
-            wilBitPanel7.ForeColor = Color.White;
-            wilBitPanel7.Location = new Point(5, 341);
-            wilBitPanel7.Name = "wilBitPanel7";
-            wilBitPanel7.Size = new Size(180, 50);
-            wilBitPanel7.TabIndex = 25;
-            // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label12.ForeColor = Color.FromArgb(52, 11, 66);
-            label12.Location = new Point(55, 17);
-            label12.Name = "label12";
-            label12.Size = new Size(70, 18);
-            label12.TabIndex = 19;
-            label12.Text = "Usuário";
-            // 
-            // wilBitRoundedPictureBox7
-            // 
-            wilBitRoundedPictureBox7.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            wilBitRoundedPictureBox7.BorderColor = Color.FromArgb(64, 23, 72);
-            wilBitRoundedPictureBox7.BorderColor2 = Color.FromArgb(64, 23, 72);
-            wilBitRoundedPictureBox7.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            wilBitRoundedPictureBox7.BorderSize = 2;
-            wilBitRoundedPictureBox7.GradientAngle = 50F;
-            wilBitRoundedPictureBox7.Location = new Point(7, 3);
-            wilBitRoundedPictureBox7.Name = "wilBitRoundedPictureBox7";
-            wilBitRoundedPictureBox7.Size = new Size(42, 42);
-            wilBitRoundedPictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
-            wilBitRoundedPictureBox7.TabIndex = 0;
-            wilBitRoundedPictureBox7.TabStop = false;
-            // 
-            // wilBitPanel12
-            // 
-            wilBitPanel12.BackColor = Color.FromArgb(228, 193, 249);
-            wilBitPanel12.BorderColor = Color.PaleVioletRed;
-            wilBitPanel12.BorderRadius = 6;
-            wilBitPanel12.BorderSize = 0;
-            wilBitPanel12.ForeColor = Color.White;
-            wilBitPanel12.Location = new Point(18, 11);
-            wilBitPanel12.Name = "wilBitPanel12";
-            wilBitPanel12.Size = new Size(191, 40);
-            wilBitPanel12.TabIndex = 22;
-            // 
-            // wilBitPanel13
-            // 
-            wilBitPanel13.BackColor = Color.FromArgb(228, 193, 249);
-            wilBitPanel13.BorderColor = Color.PaleVioletRed;
-            wilBitPanel13.BorderRadius = 6;
-            wilBitPanel13.BorderSize = 0;
-            wilBitPanel13.ForeColor = Color.White;
-            wilBitPanel13.Location = new Point(18, 58);
-            wilBitPanel13.Name = "wilBitPanel13";
-            wilBitPanel13.Size = new Size(146, 40);
-            wilBitPanel13.TabIndex = 23;
-            // 
             // TelaDoModerador
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -669,30 +393,12 @@
             panel2.ResumeLayout(false);
             wilBitPanel1.ResumeLayout(false);
             wilBitPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)wilBitRoundedPictureBox1).EndInit();
             panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             wilBitPanel8.ResumeLayout(false);
             wilBitPanel9.ResumeLayout(false);
             wilBitPanel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)wilBitRoundedPictureBox1).EndInit();
-            wilBitPanel2.ResumeLayout(false);
-            wilBitPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)wilBitRoundedPictureBox2).EndInit();
-            wilBitPanel3.ResumeLayout(false);
-            wilBitPanel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)wilBitRoundedPictureBox3).EndInit();
-            wilBitPanel4.ResumeLayout(false);
-            wilBitPanel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)wilBitRoundedPictureBox4).EndInit();
-            wilBitPanel5.ResumeLayout(false);
-            wilBitPanel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)wilBitRoundedPictureBox5).EndInit();
-            wilBitPanel6.ResumeLayout(false);
-            wilBitPanel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)wilBitRoundedPictureBox6).EndInit();
-            wilBitPanel7.ResumeLayout(false);
-            wilBitPanel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)wilBitRoundedPictureBox7).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -721,24 +427,6 @@
         private Label label6;
         private WiLBiT.WiLBiTRoundedPictureBox wilBitRoundedPictureBox1;
         private WiLBiT.WiLBiTButton wilBitButton1;
-        private WiLBiT.WiLBiTPanel wilBitPanel7;
-        private Label label12;
-        private WiLBiT.WiLBiTRoundedPictureBox wilBitRoundedPictureBox7;
-        private WiLBiT.WiLBiTPanel wilBitPanel6;
-        private Label label11;
-        private WiLBiT.WiLBiTRoundedPictureBox wilBitRoundedPictureBox6;
-        private WiLBiT.WiLBiTPanel wilBitPanel5;
-        private Label label10;
-        private WiLBiT.WiLBiTRoundedPictureBox wilBitRoundedPictureBox5;
-        private WiLBiT.WiLBiTPanel wilBitPanel4;
-        private Label label9;
-        private WiLBiT.WiLBiTRoundedPictureBox wilBitRoundedPictureBox4;
-        private WiLBiT.WiLBiTPanel wilBitPanel3;
-        private Label label8;
-        private WiLBiT.WiLBiTRoundedPictureBox wilBitRoundedPictureBox3;
-        private WiLBiT.WiLBiTPanel wilBitPanel2;
-        private Label label7;
-        private WiLBiT.WiLBiTRoundedPictureBox wilBitRoundedPictureBox2;
         private WiLBiT.WiLBiTPanel wilBitPanel13;
         private WiLBiT.WiLBiTPanel wilBitPanel12;
     }
