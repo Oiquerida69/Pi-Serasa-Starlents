@@ -21,5 +21,10 @@ namespace Pi_Serasa_Starlents
         {
 
         }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
