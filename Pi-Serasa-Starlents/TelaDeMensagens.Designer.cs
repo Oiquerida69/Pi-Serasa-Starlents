@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaDeMensagens));
-            panel1 = new Panel();
+            painel_Lista = new Panel();
             panelUsuarioNoChat = new WiLBiT.WiLBiTPanel();
             label6 = new Label();
             wilBitRoundedPictureBox2 = new WiLBiT.WiLBiTRoundedPictureBox();
@@ -47,7 +47,7 @@
             panel4 = new Panel();
             label2 = new Label();
             btnVoltaInicio = new PictureBox();
-            panel1.SuspendLayout();
+            painel_Lista.SuspendLayout();
             panelUsuarioNoChat.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)wilBitRoundedPictureBox2).BeginInit();
             panel2.SuspendLayout();
@@ -61,16 +61,16 @@
             ((System.ComponentModel.ISupportInitialize)btnVoltaInicio).BeginInit();
             SuspendLayout();
             // 
-            // panel1
+            // painel_Lista
             // 
-            panel1.Anchor = AnchorStyles.None;
-            panel1.AutoScroll = true;
-            panel1.BackColor = Color.FromArgb(64, 15, 87);
-            panel1.Controls.Add(panelUsuarioNoChat);
-            panel1.Location = new Point(0, 50);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(220, 375);
-            panel1.TabIndex = 0;
+            painel_Lista.Anchor = AnchorStyles.None;
+            painel_Lista.AutoScroll = true;
+            painel_Lista.BackColor = Color.FromArgb(64, 15, 87);
+            painel_Lista.Controls.Add(panelUsuarioNoChat);
+            painel_Lista.Location = new Point(0, 50);
+            painel_Lista.Name = "painel_Lista";
+            painel_Lista.Size = new Size(220, 372);
+            painel_Lista.TabIndex = 0;
             // 
             // panelUsuarioNoChat
             // 
@@ -89,11 +89,11 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label6.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label6.ForeColor = Color.FromArgb(52, 11, 66);
             label6.Location = new Point(55, 17);
             label6.Name = "label6";
-            label6.Size = new Size(70, 18);
+            label6.Size = new Size(64, 20);
             label6.TabIndex = 19;
             label6.Text = "Usuário";
             // 
@@ -210,11 +210,11 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.FromArgb(52, 11, 66);
             label1.Location = new Point(66, 18);
             label1.Name = "label1";
-            label1.Size = new Size(70, 18);
+            label1.Size = new Size(64, 20);
             label1.TabIndex = 20;
             label1.Text = "Usuário";
             // 
@@ -246,7 +246,7 @@
             // 
             // label2
             // 
-            label2.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.FromArgb(225, 209, 232);
             label2.Location = new Point(51, 5);
             label2.Name = "label2";
@@ -273,11 +273,12 @@
             Controls.Add(panel4);
             Controls.Add(panel3);
             Controls.Add(panel2);
-            Controls.Add(panel1);
-            FormBorderStyle = FormBorderStyle.None;
+            Controls.Add(painel_Lista);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "TelaDeMensagens";
             Text = "TelaDeMensagens";
-            panel1.ResumeLayout(false);
+            Load += TelaDeMensagens_Load;
+            painel_Lista.ResumeLayout(false);
             panelUsuarioNoChat.ResumeLayout(false);
             panelUsuarioNoChat.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)wilBitRoundedPictureBox2).EndInit();
@@ -297,7 +298,7 @@
 
         #endregion
 
-        private Panel panel1;
+        private Panel painel_Lista;
         private Panel panel2;
         private Panel panel3;
         private WiLBiT.WiLBiTRoundedPictureBox picFotoUsuario;
