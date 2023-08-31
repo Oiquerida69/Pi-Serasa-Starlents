@@ -17,6 +17,11 @@ namespace Pi_Serasa_Starlents
             InitializeComponent();
         }
 
+        void rendeirizaInterface()
+        {
+            
+        }
+
         private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
         {
 
@@ -28,6 +33,11 @@ namespace Pi_Serasa_Starlents
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Perfil_Load(object sender, EventArgs e)
         {
 
         }

@@ -19,11 +19,21 @@ namespace Pi_Serasa_Starlents
 
         void renderizaInterface()
         {
-            WindowState= FormWindowState.Maximized;
+            WindowState = FormWindowState.Maximized;
 
+            int menuEsquerdo_largura = 63;
+           
 
-            panelCima.Location = new Point(63, 0);
-            panelCima.Size = new Size(ClientSize.Width, 63);
+            wilBitGradientPanel1.Location = new Point (0,0);
+            wilBitGradientPanel1.Size = new Size(ClientSize.Width, ClientSize.Height);
+
+            wilBitPanel1.Location = new Point(ClientSize.Width/2 - wilBitPanel1.Size.Width/2, ClientSize.Height/2 - wilBitPanel1.Size.Height/2);
+
+            panelIcones.Location = new Point( ClientSize.Width/2 - panelIcones.Width/2);
+
+            label3.Location = new Point(ClientSize.Height/2 - label3.Width/2);
+
+            label3.Location = new Point(ClientSize.Width / 2 - label3.Size.Width / 2, ClientSize.Height / 2 - label3.Size.Height / 2 - 300);
 
         }
 
@@ -36,6 +46,26 @@ namespace Pi_Serasa_Starlents
         private void Notificacao_Load(object sender, EventArgs e)
         {
             renderizaInterface();
+        }
+
+        private void wilBitGradientPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panelIcones_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void wilBitButton3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

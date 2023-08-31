@@ -152,7 +152,7 @@
             this.GradientPanelCadastro.ForeColor = System.Drawing.Color.White;
             this.GradientPanelCadastro.Location = new System.Drawing.Point(-2, -4);
             this.GradientPanelCadastro.Name = "GradientPanelCadastro";
-            this.GradientPanelCadastro.Size = new System.Drawing.Size(735, 450);
+            this.GradientPanelCadastro.Size = new System.Drawing.Size(805, 489);
             this.GradientPanelCadastro.TabIndex = 13;
             // 
             // label4
@@ -209,7 +209,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(732, 444);
+            this.ClientSize = new System.Drawing.Size(801, 484);
             this.Controls.Add(this.GradientPanelCadastro);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Cadastro";

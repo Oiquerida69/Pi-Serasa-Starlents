@@ -44,11 +44,12 @@
             this.wilBitButton1 = new WiLBiT.WiLBiTButton();
             this.label3 = new System.Windows.Forms.Label();
             this.panelCima = new System.Windows.Forms.Panel();
+            this.panelIcones = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.wilBitGradientPanel1.SuspendLayout();
             this.wilBitPanel1.SuspendLayout();
             this.wilBitPanel5.SuspendLayout();
@@ -60,10 +61,11 @@
             this.wilBitPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelCima.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.panelIcones.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // wilBitGradientPanel1
@@ -77,10 +79,11 @@
             this.wilBitGradientPanel1.Controls.Add(this.label3);
             this.wilBitGradientPanel1.Controls.Add(this.panelCima);
             this.wilBitGradientPanel1.ForeColor = System.Drawing.Color.White;
-            this.wilBitGradientPanel1.Location = new System.Drawing.Point(-8, -4);
+            this.wilBitGradientPanel1.Location = new System.Drawing.Point(-5, -6);
             this.wilBitGradientPanel1.Name = "wilBitGradientPanel1";
-            this.wilBitGradientPanel1.Size = new System.Drawing.Size(810, 460);
+            this.wilBitGradientPanel1.Size = new System.Drawing.Size(1082, 626);
             this.wilBitGradientPanel1.TabIndex = 0;
+            this.wilBitGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.wilBitGradientPanel1_Paint);
             // 
             // wilBitPanel1
             // 
@@ -96,9 +99,9 @@
             this.wilBitPanel1.Controls.Add(this.wilBitButton2);
             this.wilBitPanel1.Controls.Add(this.wilBitButton1);
             this.wilBitPanel1.ForeColor = System.Drawing.Color.White;
-            this.wilBitPanel1.Location = new System.Drawing.Point(142, 112);
+            this.wilBitPanel1.Location = new System.Drawing.Point(136, 175);
             this.wilBitPanel1.Name = "wilBitPanel1";
-            this.wilBitPanel1.Size = new System.Drawing.Size(535, 330);
+            this.wilBitPanel1.Size = new System.Drawing.Size(824, 417);
             this.wilBitPanel1.TabIndex = 28;
             this.wilBitPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.wilBitPanel1_Paint);
             // 
@@ -110,9 +113,9 @@
             this.wilBitPanel5.BorderSize = 0;
             this.wilBitPanel5.Controls.Add(this.pictureBox5);
             this.wilBitPanel5.ForeColor = System.Drawing.Color.White;
-            this.wilBitPanel5.Location = new System.Drawing.Point(37, 278);
+            this.wilBitPanel5.Location = new System.Drawing.Point(81, 338);
             this.wilBitPanel5.Name = "wilBitPanel5";
-            this.wilBitPanel5.Size = new System.Drawing.Size(436, 40);
+            this.wilBitPanel5.Size = new System.Drawing.Size(691, 40);
             this.wilBitPanel5.TabIndex = 6;
             // 
             // pictureBox5
@@ -132,9 +135,9 @@
             this.wilBitPanel4.BorderSize = 0;
             this.wilBitPanel4.Controls.Add(this.pictureBox7);
             this.wilBitPanel4.ForeColor = System.Drawing.Color.White;
-            this.wilBitPanel4.Location = new System.Drawing.Point(37, 215);
+            this.wilBitPanel4.Location = new System.Drawing.Point(81, 267);
             this.wilBitPanel4.Name = "wilBitPanel4";
-            this.wilBitPanel4.Size = new System.Drawing.Size(436, 40);
+            this.wilBitPanel4.Size = new System.Drawing.Size(691, 40);
             this.wilBitPanel4.TabIndex = 5;
             // 
             // pictureBox7
@@ -154,9 +157,9 @@
             this.wilBitPanel3.BorderSize = 0;
             this.wilBitPanel3.Controls.Add(this.pictureBox4);
             this.wilBitPanel3.ForeColor = System.Drawing.Color.White;
-            this.wilBitPanel3.Location = new System.Drawing.Point(37, 152);
+            this.wilBitPanel3.Location = new System.Drawing.Point(81, 187);
             this.wilBitPanel3.Name = "wilBitPanel3";
-            this.wilBitPanel3.Size = new System.Drawing.Size(436, 40);
+            this.wilBitPanel3.Size = new System.Drawing.Size(691, 40);
             this.wilBitPanel3.TabIndex = 4;
             // 
             // pictureBox4
@@ -176,9 +179,9 @@
             this.wilBitPanel2.BorderSize = 0;
             this.wilBitPanel2.Controls.Add(this.pictureBox1);
             this.wilBitPanel2.ForeColor = System.Drawing.Color.White;
-            this.wilBitPanel2.Location = new System.Drawing.Point(37, 87);
+            this.wilBitPanel2.Location = new System.Drawing.Point(81, 113);
             this.wilBitPanel2.Name = "wilBitPanel2";
-            this.wilBitPanel2.Size = new System.Drawing.Size(436, 46);
+            this.wilBitPanel2.Size = new System.Drawing.Size(691, 46);
             this.wilBitPanel2.TabIndex = 3;
             // 
             // pictureBox1
@@ -200,12 +203,13 @@
             this.wilBitButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.wilBitButton3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.wilBitButton3.ForeColor = System.Drawing.Color.White;
-            this.wilBitButton3.Location = new System.Drawing.Point(367, 18);
+            this.wilBitButton3.Location = new System.Drawing.Point(622, 18);
             this.wilBitButton3.Name = "wilBitButton3";
             this.wilBitButton3.Size = new System.Drawing.Size(150, 40);
             this.wilBitButton3.TabIndex = 2;
             this.wilBitButton3.Text = "Promoções";
             this.wilBitButton3.UseVisualStyleBackColor = false;
+            this.wilBitButton3.Click += new System.EventHandler(this.wilBitButton3_Click);
             // 
             // wilBitButton2
             // 
@@ -217,7 +221,7 @@
             this.wilBitButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.wilBitButton2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.wilBitButton2.ForeColor = System.Drawing.Color.White;
-            this.wilBitButton2.Location = new System.Drawing.Point(192, 18);
+            this.wilBitButton2.Location = new System.Drawing.Point(343, 18);
             this.wilBitButton2.Name = "wilBitButton2";
             this.wilBitButton2.Size = new System.Drawing.Size(150, 40);
             this.wilBitButton2.TabIndex = 1;
@@ -234,7 +238,7 @@
             this.wilBitButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.wilBitButton1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.wilBitButton1.ForeColor = System.Drawing.Color.White;
-            this.wilBitButton1.Location = new System.Drawing.Point(24, 18);
+            this.wilBitButton1.Location = new System.Drawing.Point(81, 18);
             this.wilBitButton1.Name = "wilBitButton1";
             this.wilBitButton1.Size = new System.Drawing.Size(150, 40);
             this.wilBitButton1.TabIndex = 0;
@@ -245,78 +249,89 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(330, 86);
+            this.label3.Location = new System.Drawing.Point(457, 100);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(132, 23);
+            this.label3.Size = new System.Drawing.Size(157, 28);
             this.label3.TabIndex = 27;
             this.label3.Text = "Notificações";
             // 
             // panelCima
             // 
-            this.panelCima.Controls.Add(this.panel6);
-            this.panelCima.Controls.Add(this.pictureBox3);
-            this.panelCima.Controls.Add(this.pictureBox6);
-            this.panelCima.Controls.Add(this.pictureBox2);
-            this.panelCima.Controls.Add(this.pictureBox9);
-            this.panelCima.Location = new System.Drawing.Point(0, 3);
+            this.panelCima.Controls.Add(this.panelIcones);
+            this.panelCima.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelCima.Location = new System.Drawing.Point(0, 0);
             this.panelCima.Name = "panelCima";
-            this.panelCima.Size = new System.Drawing.Size(802, 63);
+            this.panelCima.Size = new System.Drawing.Size(1082, 63);
             this.panelCima.TabIndex = 0;
+            // 
+            // panelIcones
+            // 
+            this.panelIcones.Controls.Add(this.panel6);
+            this.panelIcones.Controls.Add(this.pictureBox6);
+            this.panelIcones.Controls.Add(this.pictureBox3);
+            this.panelIcones.Controls.Add(this.pictureBox9);
+            this.panelIcones.Controls.Add(this.pictureBox2);
+            this.panelIcones.Location = new System.Drawing.Point(391, 3);
+            this.panelIcones.Name = "panelIcones";
+            this.panelIcones.Size = new System.Drawing.Size(309, 60);
+            this.panelIcones.TabIndex = 29;
+            this.panelIcones.Paint += new System.Windows.Forms.PaintEventHandler(this.panelIcones_Paint);
             // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.White;
-            this.panel6.Location = new System.Drawing.Point(480, 56);
+            this.panel6.Location = new System.Drawing.Point(236, 53);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(50, 7);
             this.panel6.TabIndex = 29;
+            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(29, 17);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox6.TabIndex = 27;
+            this.pictureBox6.TabStop = false;
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(489, 15);
+            this.pictureBox3.Location = new System.Drawing.Point(245, 15);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(32, 32);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 30;
             this.pictureBox3.TabStop = false;
             // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(250, 15);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox6.TabIndex = 27;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(410, 15);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 29;
-            this.pictureBox2.TabStop = false;
-            // 
             // pictureBox9
             // 
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(330, 15);
+            this.pictureBox9.Location = new System.Drawing.Point(103, 17);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(32, 32);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox9.TabIndex = 28;
             this.pictureBox9.TabStop = false;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(173, 15);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 29;
+            this.pictureBox2.TabStop = false;
+            // 
             // Notificacao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1076, 618);
             this.Controls.Add(this.wilBitGradientPanel1);
             this.Name = "Notificacao";
             this.Text = "Notificacao";
@@ -333,10 +348,11 @@
             this.wilBitPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelCima.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.panelIcones.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -363,5 +379,6 @@
         private PictureBox pictureBox7;
         private PictureBox pictureBox1;
         private Panel panel6;
+        private Panel panelIcones;
     }
 }
