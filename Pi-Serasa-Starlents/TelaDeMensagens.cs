@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Org.BouncyCastle.Bcpg.OpenPgp;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,56 +15,91 @@ namespace Pi_Serasa_Starlents
     public partial class TelaDeMensagens : Form
     {
         Usuario usuario = new Usuario();
+        //List<string> usuarios = new List<string>{"wendell","Mirela","Mario"};
         List<Usuario> usuarios = new List<Usuario>();
-        
+
         public TelaDeMensagens()
         {
             InitializeComponent();
         }
-        void geraform(string nome)
+        public void geraform(string nome)
         {
-            Panel painel = new Panel();
+            
+           
+
+            Panel painel = new WiLBiT.WiLBiTPanel();
+            painel.Name = "painel";
+            painel.BackColor = Color.FromArgb(228, 193, 249);
+            painel.ForeColor = Color.White;
+            painel.Name = "painel";
+            painel.Size = new Size(174, 50);
+            painel.Location = new Point(12, painel.Height);
+
+
             Label label = new Label();
-            label.Text = $"{nome}";
+            label.Text = nome;  //label.Text = $"{usuario.buscarnome(nome)}";
             label.AutoSize = true;
             label.Size = new Size(0, 0);
             label.ForeColor = Color.White;
 
-            painel = new WiLBiT.WiLBiTPanel();
-            painel.BackColor = Color.FromArgb(228, 193, 249);
+
+
+            painel_Lista.Controls.Add(painel);
             painel.Controls.Add(label);
             painel.Controls.Add(wilBitRoundedPictureBox2);
-            painel.ForeColor = Color.White;
-            painel.Name = "painel";
-            painel.Size = new Size(174, 50);
-            void clickar(object sender, EventArgs e)
-            {
-                painel.BackColor = Color.Purple;
-
-            }
-            painel_Lista.Controls.Add(painel);
-            painel.Location = new Point(12, painel_Lista.Height);
-            if (painel_Lista.Height > 500)
+            if (painel_Lista.Height < 500)
             {
                 painel_Lista.Height += painel.Height + 10;
+
             }
+            
 
+            /*
+            Panel panel = new Panel();
+            panel.Name = "panel";
+            panel.BackColor = Color.FromArgb(228, 193, 249);
+            panel.Size = new Size(174, 50);
 
+            Label label = new Label();
+            label.Name = "label";
+            label.Text = "Wendell";
+            label.AutoSize = true;
+            label.Location = new Point(12, panel.Height);
+
+            panel.Controls.Add(label);
+            panel.Controls.Add(panel);
+
+            panel.Location = new Point(12, panel.Height);
+
+            if (panel.Height < 300)
+            {
+
+                     panel.Height += panel.Height + 10;
+            }
+            panel.Controls.Add(panel);
+            */
+       
         }
         private void TelaDeMensagens_Load(object sender, EventArgs e)
         {
-
-            Usuario u1 = new Usuario(1,"wendell","micvcb1026@gmail.com","wendell","16-9999999","oi","c/masowdm/cmoamd");
-            Usuario u2 = new Usuario(1,"wendell","micvcb1026@gmail.com","wendell","16-9999999","oi","c/masowdm/cmoamd");
-            Usuario u3 = new Usuario(1,"wendell","micvcb1026@gmail.com","wendell","16-9999999","oi","c/masowdm/cmoamd");
-            usuarios.Add(u1);
-            usuarios.Add(u2);
-            usuarios.Add(u3);
-
-            foreach (Usuario u in usuarios  )
+            /*
+            foreach (string usuario in  usuarios )
             {
+                geraform(usuario);
+            }
+            */
+            
+            foreach (Usuario u in usuarios)
+            {
+                MessageBox.Show($"{usuario.nome}");
                 geraform(u.nome);
             }
+           
+        }
+
+        private void panelUsuarioNoChat_Paint(object sender, PaintEventArgs e)
+        {
+
 
 
 
@@ -71,5 +107,5 @@ namespace Pi_Serasa_Starlents
 
         }
     }
-        
+
 }

@@ -76,7 +76,7 @@
             // 
             panelUsuarioNoChat.BackColor = Color.FromArgb(228, 193, 249);
             panelUsuarioNoChat.BorderColor = Color.PaleVioletRed;
-            panelUsuarioNoChat.BorderRadius = 6;
+            panelUsuarioNoChat.BorderRadius = 0;
             panelUsuarioNoChat.BorderSize = 0;
             panelUsuarioNoChat.Controls.Add(label6);
             panelUsuarioNoChat.Controls.Add(wilBitRoundedPictureBox2);
@@ -85,6 +85,7 @@
             panelUsuarioNoChat.Name = "panelUsuarioNoChat";
             panelUsuarioNoChat.Size = new Size(174, 50);
             panelUsuarioNoChat.TabIndex = 21;
+            panelUsuarioNoChat.Paint += panelUsuarioNoChat_Paint;
             // 
             // label6
             // 

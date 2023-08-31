@@ -29,7 +29,7 @@ namespace Pi_Serasa_Starlents
             
 
         }
-        public static Usuario carregadados(DataRow linha)
+        public Usuario carregadados(DataRow linha)
         {
             int id = int.Parse(linha["id"].ToString());
             string nome = linha["nome"].ToString();
@@ -64,7 +64,7 @@ namespace Pi_Serasa_Starlents
         }
         public Usuario buscarnome(string nome)
         {
-            string query = $"SELECT * FROM usuarios WHERE {nome}";
+            string query = $"SELECT * FROM usuarios WHERE nome = '{nome}';";
             DataTable tabela = Conexao.executaQuery(query);
             Usuario usuario = carregadados(tabela.Rows[0]);
             return usuario;
