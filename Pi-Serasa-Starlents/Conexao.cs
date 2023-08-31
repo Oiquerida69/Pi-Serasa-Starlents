@@ -58,22 +58,6 @@ namespace Pi_Serasa_Starlents
 
 
     }
-    public List<Conexao> buscaTodos()
-    {
-        string query = "SELECT * FROM conexao;";
-
-        DataTable tabela = Conexao.executaQuery(query);
-
-        List<Conexao> conexao = new List<Conexao>();
-       
-        foreach (DataRow linha in tabela.Rows)
-        {
-           Conexao conexao = CarregaDados(linha);
-            conexao.Add(conexao);
-
-        }
-        return conexao;
-
-    }
+   
 }
 
