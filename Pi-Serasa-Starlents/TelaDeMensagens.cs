@@ -24,8 +24,6 @@ namespace Pi_Serasa_Starlents
         }
         public void geraform(string nome)
         {
-            
-           
 
             Panel painel = new WiLBiT.WiLBiTPanel();
             painel.Name = "painel";
@@ -33,16 +31,15 @@ namespace Pi_Serasa_Starlents
             painel.ForeColor = Color.White;
             painel.Name = "painel";
             painel.Size = new Size(174, 50);
-            painel.Location = new Point(12, painel.Height);
-
+            painel.Location = new Point(12, painel_Lista.Height);
 
             Label label = new Label();
             label.Text = nome;  //label.Text = $"{usuario.buscarnome(nome)}";
             label.AutoSize = true;
             label.Size = new Size(0, 0);
-            label.ForeColor = Color.White;
-
-
+            label.Location = new Point(painel.Width / 2, painel.Height / 2);
+            label.ForeColor = Color.Purple;
+            
 
             painel_Lista.Controls.Add(painel);
             painel.Controls.Add(label);
@@ -52,7 +49,7 @@ namespace Pi_Serasa_Starlents
                 painel_Lista.Height += painel.Height + 10;
 
             }
-            
+
 
             /*
             Panel panel = new Panel();
@@ -78,23 +75,20 @@ namespace Pi_Serasa_Starlents
             }
             panel.Controls.Add(panel);
             */
-       
+
         }
         private void TelaDeMensagens_Load(object sender, EventArgs e)
         {
-            /*
-            foreach (string usuario in  usuarios )
-            {
-                geraform(usuario);
-            }
-            */
-            
+            panelUsuarioNoChat.Hide();
+            List<Usuario> usuarios = usuario.ListarUsuarios();
+
+
             foreach (Usuario u in usuarios)
             {
-                MessageBox.Show($"{usuario.nome}");
+
                 geraform(u.nome);
             }
-           
+
         }
 
         private void panelUsuarioNoChat_Paint(object sender, PaintEventArgs e)

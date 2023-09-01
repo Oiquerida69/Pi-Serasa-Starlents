@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+           
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaDeMensagens));
             painel_Lista = new Panel();
             panelUsuarioNoChat = new WiLBiT.WiLBiTPanel();
@@ -69,7 +70,7 @@
             painel_Lista.Controls.Add(panelUsuarioNoChat);
             painel_Lista.Location = new Point(0, 50);
             painel_Lista.Name = "painel_Lista";
-            painel_Lista.Size = new Size(220, 372);
+            painel_Lista.Size = new Size(220, 0);
             painel_Lista.TabIndex = 0;
             // 
             // panelUsuarioNoChat
@@ -275,7 +276,7 @@
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(painel_Lista);
-            FormBorderStyle = FormBorderStyle.FixedSingle;
+            FormBorderStyle = FormBorderStyle.None;
             Name = "TelaDeMensagens";
             Text = "TelaDeMensagens";
             Load += TelaDeMensagens_Load;

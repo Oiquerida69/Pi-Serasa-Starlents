@@ -52,10 +52,18 @@ namespace Pi_Serasa_Starlents
             string query = $"INSERT INTO usuarios (nome,senha,email,telefone,descricao) VALUES ('{usuario.nome},{usuario.senha},{usuario.email},{usuario.telefone},{usuario.descricao}';";
             Conexao.executaQuery(query);
         }
-        public void ListarUmUsuario(Usuario usuario)
+        public List<Usuario> ListarUsuarios()
         {
-            string query = $"SELECT nome,descricao,avatar FROM usuarios;";
-            Conexao.executaQuery(query);
+            List<Usuario> usuarios = new List<Usuario>();
+            string query = $"SELECT * FROM usuarios;";
+            DataTable tabela = Conexao.executaQuery(query);
+            foreach( DataRow linha in tabela.Rows)
+            {
+                Usuario usuario = carregadados(linha);
+                usuarios.Add(usuario);
+            }
+            return usuarios;
+            
         }
         public void ListarContatos(Usuario usuario)
         {
