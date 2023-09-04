@@ -18,11 +18,19 @@ namespace Pi_Serasa_Starlents
             InitializeComponent();
         }
 
-      
+
         private void Cadastro_Load(object sender, EventArgs e)
         {
-          
 
+
+        }
+
+        private void wilBitButton1_Click(object sender, EventArgs e)
+        {
+
+            Usuario usuario = new Usuario();
+
+            usuario.CadastrarUsuario
         }
     }
 }
