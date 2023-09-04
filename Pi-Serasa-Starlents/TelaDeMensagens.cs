@@ -39,11 +39,26 @@ namespace Pi_Serasa_Starlents
             label.Size = new Size(0, 0);
             label.Location = new Point(painel.Width / 2, painel.Height / 2);
             label.ForeColor = Color.Purple;
-            
+            label.Font = new Font("Microsoft Sans Serif", 12);
+
+            WiLBiT.WiLBiTRoundedPictureBox picFotoUsuario = new WiLBiT.WiLBiTRoundedPictureBox();
+            picFotoUsuario.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            picFotoUsuario.BorderColor = Color.FromArgb(64, 15, 87);
+            picFotoUsuario.BorderColor2 = Color.FromArgb(64, 15, 87);
+            picFotoUsuario.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            picFotoUsuario.BorderSize = 2;
+            picFotoUsuario.GradientAngle = 50F;
+            picFotoUsuario.Location = new Point(12, 5);
+            picFotoUsuario.Name = "picFotoUsuario";
+            picFotoUsuario.Size = new Size(42, 42);
+            picFotoUsuario.SizeMode = PictureBoxSizeMode.StretchImage;
+            picFotoUsuario.TabIndex = 1;
+            picFotoUsuario.TabStop = false;
+
 
             painel_Lista.Controls.Add(painel);
             painel.Controls.Add(label);
-            painel.Controls.Add(wilBitRoundedPictureBox2);
+            painel.Controls.Add(picFotoUsuario);
             if (painel_Lista.Height < 500)
             {
                 painel_Lista.Height += painel.Height + 10;

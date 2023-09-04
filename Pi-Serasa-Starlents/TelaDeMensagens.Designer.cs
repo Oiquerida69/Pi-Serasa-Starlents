@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-           
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaDeMensagens));
             painel_Lista = new Panel();
             panelUsuarioNoChat = new WiLBiT.WiLBiTPanel();
@@ -48,6 +47,7 @@
             panel4 = new Panel();
             label2 = new Label();
             btnVoltaInicio = new PictureBox();
+            panel1 = new Panel();
             painel_Lista.SuspendLayout();
             panelUsuarioNoChat.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)wilBitRoundedPictureBox2).BeginInit();
@@ -267,6 +267,14 @@
             btnVoltaInicio.TabIndex = 0;
             btnVoltaInicio.TabStop = false;
             // 
+            // panel1
+            // 
+            panel1.BackColor = Color.FromArgb(64, 15, 87);
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(219, 425);
+            panel1.TabIndex = 3;
+            // 
             // TelaDeMensagens
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -276,6 +284,7 @@
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(painel_Lista);
+            Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "TelaDeMensagens";
             Text = "TelaDeMensagens";
@@ -318,5 +327,6 @@
         private WiLBiT.WiLBiTPanel wilBitPanel3;
         private WiLBiT.WiLBiTPanel wilBitPanel2;
         private PictureBox btnDenunciaUsuario;
+        private Panel panel1;
     }
 }
