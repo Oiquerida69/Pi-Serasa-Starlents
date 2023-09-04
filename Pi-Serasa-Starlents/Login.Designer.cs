@@ -34,11 +34,11 @@
             this.wilBitButton1 = new WiLBiT.WiLBiTButton();
             this.wilBitButton2 = new WiLBiT.WiLBiTButton();
             this.wilBitGradientPanel1 = new WiLBiT.WiLBiTGradientPanel();
-            this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.wilBitGradientPanel2 = new WiLBiT.WiLBiTGradientPanel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.wilBitGradientPanel1.SuspendLayout();
             this.wilBitGradientPanel2.SuspendLayout();
@@ -46,11 +46,12 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(87, 90);
+            this.pictureBox1.Location = new System.Drawing.Point(67, 111);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(253, 277);
+            this.pictureBox1.Size = new System.Drawing.Size(356, 400);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // wilBitTextBox1
             // 
@@ -145,20 +146,8 @@
             this.wilBitGradientPanel1.ForeColor = System.Drawing.Color.White;
             this.wilBitGradientPanel1.Location = new System.Drawing.Point(-1, -4);
             this.wilBitGradientPanel1.Name = "wilBitGradientPanel1";
-            this.wilBitGradientPanel1.Size = new System.Drawing.Size(802, 455);
+            this.wilBitGradientPanel1.Size = new System.Drawing.Size(952, 599);
             this.wilBitGradientPanel1.TabIndex = 13;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(94, 229);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(143, 19);
-            this.label3.TabIndex = 16;
-            this.label3.Text = "Novo no aplicativo?";
             // 
             // label5
             // 
@@ -170,31 +159,6 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(0, 15);
             this.label5.TabIndex = 15;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(35, 101);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 19);
-            this.label2.TabIndex = 14;
-            this.label2.Text = "Senha";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(35, 24);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 19);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "E-mail";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // wilBitGradientPanel2
             // 
@@ -211,18 +175,55 @@
             this.wilBitGradientPanel2.Controls.Add(this.wilBitTextBox2);
             this.wilBitGradientPanel2.Controls.Add(this.wilBitButton1);
             this.wilBitGradientPanel2.ForeColor = System.Drawing.Color.White;
-            this.wilBitGradientPanel2.Location = new System.Drawing.Point(442, 73);
+            this.wilBitGradientPanel2.Location = new System.Drawing.Point(518, 162);
             this.wilBitGradientPanel2.Name = "wilBitGradientPanel2";
             this.wilBitGradientPanel2.Size = new System.Drawing.Size(347, 311);
             this.wilBitGradientPanel2.TabIndex = 17;
             this.wilBitGradientPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.wilBitGradientPanel2_Paint);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(35, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(51, 19);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "E-mail";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(94, 229);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(143, 19);
+            this.label3.TabIndex = 16;
+            this.label3.Text = "Novo no aplicativo?";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(35, 101);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(49, 19);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "Senha";
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(944, 591);
             this.Controls.Add(this.wilBitGradientPanel1);
             this.Name = "Login";
             this.Text = "Login";

@@ -40,29 +40,31 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.wilBitTextBox4 = new WiLBiT.WiLBiTTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panelIconesPer = new System.Windows.Forms.Panel();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.wilBitGradientPanel1 = new WiLBiT.WiLBiTGradientPanel();
+            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.wilBitTextBox5 = new WiLBiT.WiLBiTTextBox();
             this.wilBitTextBox2 = new WiLBiT.WiLBiTTextBox();
             this.wilBitTextBox1 = new WiLBiT.WiLBiTTextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.wilBitTextBox5 = new WiLBiT.WiLBiTTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.wilBitPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            this.panelIconesPer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.wilBitGradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -198,18 +200,67 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(15)))), ((int)(((byte)(87)))));
+            this.panel1.Controls.Add(this.panelIconesPer);
             this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.pictureBox9);
-            this.panel1.Controls.Add(this.pictureBox6);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(798, 63);
             this.panel1.TabIndex = 0;
+            // 
+            // panelIconesPer
+            // 
+            this.panelIconesPer.Controls.Add(this.pictureBox6);
+            this.panelIconesPer.Controls.Add(this.pictureBox9);
+            this.panelIconesPer.Controls.Add(this.pictureBox2);
+            this.panelIconesPer.Controls.Add(this.pictureBox3);
+            this.panelIconesPer.Location = new System.Drawing.Point(241, 5);
+            this.panelIconesPer.Name = "panelIconesPer";
+            this.panelIconesPer.Size = new System.Drawing.Size(298, 45);
+            this.panelIconesPer.TabIndex = 30;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(3, 10);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox6.TabIndex = 26;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
+            this.pictureBox9.Location = new System.Drawing.Point(92, 10);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 27;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(169, 10);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 28;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(248, 10);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 29;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // panel6
             // 
@@ -244,46 +295,6 @@
             this.panel3.TabIndex = 27;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(489, 15);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 29;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(410, 15);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 28;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(330, 15);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 27;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(250, 15);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox6.TabIndex = 26;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
-            // 
             // wilBitGradientPanel1
             // 
             this.wilBitGradientPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(15)))), ((int)(((byte)(87)))));
@@ -310,6 +321,18 @@
             this.wilBitGradientPanel1.Size = new System.Drawing.Size(806, 424);
             this.wilBitGradientPanel1.TabIndex = 20;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(81, 153);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(79, 21);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Interesses";
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -321,28 +344,6 @@
             this.label3.Size = new System.Drawing.Size(107, 23);
             this.label3.TabIndex = 26;
             this.label3.Text = "Meu Perfil";
-            // 
-            // wilBitTextBox5
-            // 
-            this.wilBitTextBox5.BackColor = System.Drawing.SystemColors.Window;
-            this.wilBitTextBox5.BorderColor = System.Drawing.Color.White;
-            this.wilBitTextBox5.BorderFocusColor = System.Drawing.Color.DeepSkyBlue;
-            this.wilBitTextBox5.BorderRadius = 4;
-            this.wilBitTextBox5.BorderSize = 2;
-            this.wilBitTextBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.wilBitTextBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.wilBitTextBox5.Location = new System.Drawing.Point(289, 260);
-            this.wilBitTextBox5.Margin = new System.Windows.Forms.Padding(4);
-            this.wilBitTextBox5.Multiline = false;
-            this.wilBitTextBox5.Name = "wilBitTextBox5";
-            this.wilBitTextBox5.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.wilBitTextBox5.PasswordChar = false;
-            this.wilBitTextBox5.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.wilBitTextBox5.PlaceholderText = "";
-            this.wilBitTextBox5.Size = new System.Drawing.Size(176, 29);
-            this.wilBitTextBox5.TabIndex = 25;
-            this.wilBitTextBox5.Texts = "";
-            this.wilBitTextBox5.UnderlinedStyle = false;
             // 
             // wilBitTextBox2
             // 
@@ -388,17 +389,27 @@
             this.wilBitTextBox1.Texts = "";
             this.wilBitTextBox1.UnderlinedStyle = false;
             // 
-            // label2
+            // wilBitTextBox5
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(81, 153);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 21);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Interesses";
+            this.wilBitTextBox5.BackColor = System.Drawing.SystemColors.Window;
+            this.wilBitTextBox5.BorderColor = System.Drawing.Color.White;
+            this.wilBitTextBox5.BorderFocusColor = System.Drawing.Color.DeepSkyBlue;
+            this.wilBitTextBox5.BorderRadius = 4;
+            this.wilBitTextBox5.BorderSize = 2;
+            this.wilBitTextBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.wilBitTextBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.wilBitTextBox5.Location = new System.Drawing.Point(289, 260);
+            this.wilBitTextBox5.Margin = new System.Windows.Forms.Padding(4);
+            this.wilBitTextBox5.Multiline = false;
+            this.wilBitTextBox5.Name = "wilBitTextBox5";
+            this.wilBitTextBox5.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.wilBitTextBox5.PasswordChar = false;
+            this.wilBitTextBox5.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.wilBitTextBox5.PlaceholderText = "";
+            this.wilBitTextBox5.Size = new System.Drawing.Size(176, 29);
+            this.wilBitTextBox5.TabIndex = 25;
+            this.wilBitTextBox5.Texts = "";
+            this.wilBitTextBox5.UnderlinedStyle = false;
             // 
             // Perfil
             // 
@@ -417,10 +428,11 @@
             this.wilBitPanel1.ResumeLayout(false);
             this.wilBitPanel1.PerformLayout();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            this.panelIconesPer.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.wilBitGradientPanel1.ResumeLayout(false);
             this.wilBitGradientPanel1.PerformLayout();
             this.ResumeLayout(false);
@@ -453,5 +465,6 @@
         private Label label2;
         private WiLBiT.WiLBiTTextBox wilBitTextBox2;
         private WiLBiT.WiLBiTTextBox wilBitTextBox1;
+        private Panel panelIconesPer;
     }
 }

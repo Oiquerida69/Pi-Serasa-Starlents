@@ -20,27 +20,28 @@ namespace Pi_Serasa_Starlents
 
         public void carregaForm(Form form)
         {
+            
+            
             form.TopLevel = false;
+            
             wilBitGradientPanel1.Controls.Clear();
             wilBitGradientPanel1.Controls.Add(form);
             form.Show();
-
         }
 
-        void rendeirizaInterface()
+         void rendeirizaInterface()
         {
             WindowState = FormWindowState.Maximized;
 
-            wilBitGradientPanel1.Location = new Point(0, 0);
+            wilBitGradientPanel1.Location = new Point(10, 0);
             wilBitGradientPanel1.Size = new Size(ClientSize.Width, ClientSize.Height);
 
             wilBitGradientPanel1.Location = new Point(ClientSize.Width / 2 - wilBitGradientPanel1.Size.Width / 2, ClientSize.Height / 2 - wilBitGradientPanel1.Size.Height / 2 );
 
-
             wilBitGradientPanel2.Location = new Point(ClientSize.Width / 2 - wilBitGradientPanel2.Size.Width / 2 + 700, ClientSize.Height / 2 - wilBitGradientPanel2.Size.Height / 2 );
+           
 
         }
-
 
 
         private void label1_Click(object sender, EventArgs e)
@@ -55,16 +56,17 @@ namespace Pi_Serasa_Starlents
 
         private void wilBitButton2_Click(object sender, EventArgs e)
         {
+
             carregaForm(new Cadastro());
-
-
-            foreach ()
-            {
-
-            }
+            pictureBox1.Location = new Point (700, 100 );
         }
 
         private void wilBitGradientPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }

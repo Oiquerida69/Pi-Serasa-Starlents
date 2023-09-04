@@ -19,6 +19,15 @@ namespace Pi_Serasa_Starlents
 
         void rendeirizaInterface()
         {
+            WindowState = FormWindowState.Maximized;
+
+            int menuEsquerdo_largura = 63;
+
+            wilBitGradientPanel1.Location = new Point(0, 0);
+            wilBitGradientPanel1.Size = new Size(ClientSize.Width, ClientSize.Height);
+
+            panelIconesPer.Location = new Point(ClientSize.Width / 2 - panelIconesPer.Width / 2);
+            
             
         }
 
@@ -38,6 +47,11 @@ namespace Pi_Serasa_Starlents
         }
 
         private void Perfil_Load(object sender, EventArgs e)
+        {
+            rendeirizaInterface();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
         {
 
         }
