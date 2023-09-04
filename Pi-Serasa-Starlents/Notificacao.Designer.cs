@@ -273,9 +273,9 @@
             this.panelIcones.Controls.Add(this.pictureBox3);
             this.panelIcones.Controls.Add(this.pictureBox9);
             this.panelIcones.Controls.Add(this.pictureBox2);
-            this.panelIcones.Location = new System.Drawing.Point(391, 3);
+            this.panelIcones.Location = new System.Drawing.Point(312, 3);
             this.panelIcones.Name = "panelIcones";
-            this.panelIcones.Size = new System.Drawing.Size(309, 60);
+            this.panelIcones.Size = new System.Drawing.Size(474, 60);
             this.panelIcones.TabIndex = 29;
             this.panelIcones.Paint += new System.Windows.Forms.PaintEventHandler(this.panelIcones_Paint);
             // 
@@ -300,9 +300,9 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(245, 15);
+            this.pictureBox3.Location = new System.Drawing.Point(390, 7);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox3.Size = new System.Drawing.Size(57, 42);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 30;
             this.pictureBox3.TabStop = false;
@@ -310,9 +310,9 @@
             // pictureBox9
             // 
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(103, 17);
+            this.pictureBox9.Location = new System.Drawing.Point(145, 7);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox9.Size = new System.Drawing.Size(58, 42);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox9.TabIndex = 28;
             this.pictureBox9.TabStop = false;
@@ -320,9 +320,9 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(173, 15);
+            this.pictureBox2.Location = new System.Drawing.Point(277, 7);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox2.Size = new System.Drawing.Size(57, 42);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 29;
             this.pictureBox2.TabStop = false;

@@ -30,8 +30,9 @@ namespace Pi_Serasa_Starlents
             panelIconesPer.Location = new Point(ClientSize.Width / 2 - panelIconesPer.Width / 2);
 
             label3.Location = new Point(ClientSize.Height / 2 - label3.Width / 2);
-
             label3.Location = new Point(ClientSize.Width / 2 - label3.Size.Width / 2, ClientSize.Height / 2 - label3.Size.Height / 2 - 300);
+
+            pictureBox1.Location = new Point( 800, ClientSize.Height);
 
         }
 
