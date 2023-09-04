@@ -34,6 +34,8 @@
             wilBitTextBox3 = new WiLBiT.WiLBiTTextBox();
             wilBitButton1 = new WiLBiT.WiLBiTButton();
             GradientPanelCadastro = new WiLBiT.WiLBiTGradientPanel();
+            label5 = new Label();
+            wilBitTextBox4 = new WiLBiT.WiLBiTTextBox();
             pictureBox2 = new PictureBox();
             label4 = new Label();
             label3 = new Label();
@@ -61,7 +63,7 @@
             wilBitTextBox1.BorderSize = 2;
             wilBitTextBox1.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
             wilBitTextBox1.ForeColor = Color.FromArgb(64, 64, 64);
-            wilBitTextBox1.Location = new Point(529, 150);
+            wilBitTextBox1.Location = new Point(529, 223);
             wilBitTextBox1.Margin = new Padding(4);
             wilBitTextBox1.Multiline = false;
             wilBitTextBox1.Name = "wilBitTextBox1";
@@ -83,7 +85,7 @@
             wilBitTextBox2.BorderSize = 2;
             wilBitTextBox2.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
             wilBitTextBox2.ForeColor = Color.FromArgb(64, 64, 64);
-            wilBitTextBox2.Location = new Point(529, 228);
+            wilBitTextBox2.Location = new Point(529, 295);
             wilBitTextBox2.Margin = new Padding(4);
             wilBitTextBox2.Multiline = false;
             wilBitTextBox2.Name = "wilBitTextBox2";
@@ -105,7 +107,7 @@
             wilBitTextBox3.BorderSize = 2;
             wilBitTextBox3.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
             wilBitTextBox3.ForeColor = Color.FromArgb(64, 64, 64);
-            wilBitTextBox3.Location = new Point(529, 303);
+            wilBitTextBox3.Location = new Point(529, 371);
             wilBitTextBox3.Margin = new Padding(4);
             wilBitTextBox3.Multiline = false;
             wilBitTextBox3.Name = "wilBitTextBox3";
@@ -128,7 +130,7 @@
             wilBitButton1.FlatStyle = FlatStyle.Flat;
             wilBitButton1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             wilBitButton1.ForeColor = Color.White;
-            wilBitButton1.Location = new Point(571, 360);
+            wilBitButton1.Location = new Point(572, 420);
             wilBitButton1.Name = "wilBitButton1";
             wilBitButton1.Size = new Size(150, 40);
             wilBitButton1.TabIndex = 12;
@@ -143,6 +145,8 @@
             GradientPanelCadastro.BorderColor = Color.PaleVioletRed;
             GradientPanelCadastro.BorderRadius = 6;
             GradientPanelCadastro.BorderSize = 0;
+            GradientPanelCadastro.Controls.Add(label5);
+            GradientPanelCadastro.Controls.Add(wilBitTextBox4);
             GradientPanelCadastro.Controls.Add(pictureBox2);
             GradientPanelCadastro.Controls.Add(wilBitTextBox2);
             GradientPanelCadastro.Controls.Add(wilBitTextBox3);
@@ -159,13 +163,48 @@
             GradientPanelCadastro.Size = new Size(892, 510);
             GradientPanelCadastro.TabIndex = 13;
             // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.BackColor = Color.Transparent;
+            label5.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.ForeColor = Color.White;
+            label5.Location = new Point(529, 108);
+            label5.Name = "label5";
+            label5.Size = new Size(130, 19);
+            label5.TabIndex = 19;
+            label5.Text = "Digite o seu nome";
+            // 
+            // wilBitTextBox4
+            // 
+            wilBitTextBox4.BackColor = SystemColors.Window;
+            wilBitTextBox4.BorderColor = Color.White;
+            wilBitTextBox4.BorderFocusColor = Color.DeepSkyBlue;
+            wilBitTextBox4.BorderRadius = 4;
+            wilBitTextBox4.BorderSize = 2;
+            wilBitTextBox4.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            wilBitTextBox4.ForeColor = Color.FromArgb(64, 64, 64);
+            wilBitTextBox4.Location = new Point(529, 142);
+            wilBitTextBox4.Margin = new Padding(4);
+            wilBitTextBox4.Multiline = false;
+            wilBitTextBox4.Name = "wilBitTextBox4";
+            wilBitTextBox4.Padding = new Padding(10, 7, 10, 7);
+            wilBitTextBox4.PasswordChar = false;
+            wilBitTextBox4.PlaceholderColor = Color.DarkGray;
+            wilBitTextBox4.PlaceholderText = "";
+            wilBitTextBox4.Size = new Size(208, 29);
+            wilBitTextBox4.TabIndex = 18;
+            wilBitTextBox4.Texts = "";
+            wilBitTextBox4.UnderlinedStyle = false;
+            // 
             // pictureBox2
             // 
-            pictureBox2.Location = new Point(730, 16);
+            pictureBox2.Location = new Point(729, 14);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(119, 113);
             pictureBox2.TabIndex = 17;
             pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
             // 
             // label4
             // 
@@ -185,7 +224,7 @@
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(529, 275);
+            label3.Location = new Point(529, 341);
             label3.Name = "label3";
             label3.Size = new Size(147, 19);
             label3.TabIndex = 15;
@@ -197,7 +236,7 @@
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(529, 195);
+            label2.Location = new Point(529, 272);
             label2.Name = "label2";
             label2.Size = new Size(129, 19);
             label2.TabIndex = 14;
@@ -209,7 +248,7 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(529, 115);
+            label1.Location = new Point(529, 190);
             label1.Name = "label1";
             label1.Size = new Size(122, 19);
             label1.TabIndex = 10;
@@ -246,5 +285,7 @@
         private Label label2;
         private Label label1;
         private PictureBox pictureBox2;
+        private Label label5;
+        private WiLBiT.WiLBiTTextBox wilBitTextBox4;
     }
 }
