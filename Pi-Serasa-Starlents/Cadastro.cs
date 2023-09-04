@@ -18,10 +18,25 @@ namespace Pi_Serasa_Starlents
             InitializeComponent();
         }
 
-      
+
         private void Cadastro_Load(object sender, EventArgs e)
         {
-          
+
+
+        }
+
+        private void wilBitButton1_Click(object sender, EventArgs e)
+        {
+            string nome = wilBitTextBox4.Text;
+            string emmail = wilBitTextBox1.Text;
+            string senha = wilBitTextBox2.Text;
+            string telefone = wilBitTextBox3.Text;
+
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
 
         }
     }
