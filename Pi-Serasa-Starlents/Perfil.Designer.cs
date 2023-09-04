@@ -201,10 +201,6 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(15)))), ((int)(((byte)(87)))));
             this.panel1.Controls.Add(this.panelIconesPer);
-            this.panel1.Controls.Add(this.panel6);
-            this.panel1.Controls.Add(this.panel5);
-            this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.panel3);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(798, 63);
@@ -213,12 +209,16 @@
             // panelIconesPer
             // 
             this.panelIconesPer.Controls.Add(this.pictureBox6);
+            this.panelIconesPer.Controls.Add(this.panel3);
             this.panelIconesPer.Controls.Add(this.pictureBox9);
+            this.panelIconesPer.Controls.Add(this.panel4);
             this.panelIconesPer.Controls.Add(this.pictureBox2);
+            this.panelIconesPer.Controls.Add(this.panel5);
             this.panelIconesPer.Controls.Add(this.pictureBox3);
+            this.panelIconesPer.Controls.Add(this.panel6);
             this.panelIconesPer.Location = new System.Drawing.Point(241, 5);
             this.panelIconesPer.Name = "panelIconesPer";
-            this.panelIconesPer.Size = new System.Drawing.Size(298, 45);
+            this.panelIconesPer.Size = new System.Drawing.Size(298, 58);
             this.panelIconesPer.TabIndex = 30;
             // 
             // pictureBox6
@@ -265,7 +265,7 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.White;
-            this.panel6.Location = new System.Drawing.Point(480, 56);
+            this.panel6.Location = new System.Drawing.Point(245, 51);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(50, 7);
             this.panel6.TabIndex = 28;
@@ -273,7 +273,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Location = new System.Drawing.Point(401, 56);
+            this.panel5.Location = new System.Drawing.Point(160, 51);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(50, 7);
             this.panel5.TabIndex = 28;
@@ -281,7 +281,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Location = new System.Drawing.Point(324, 56);
+            this.panel4.Location = new System.Drawing.Point(83, 51);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(50, 7);
             this.panel4.TabIndex = 28;
@@ -289,7 +289,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Location = new System.Drawing.Point(241, 56);
+            this.panel3.Location = new System.Drawing.Point(0, 51);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(50, 7);
             this.panel3.TabIndex = 27;
@@ -318,7 +318,7 @@
             this.wilBitGradientPanel1.ForeColor = System.Drawing.Color.White;
             this.wilBitGradientPanel1.Location = new System.Drawing.Point(1, -3);
             this.wilBitGradientPanel1.Name = "wilBitGradientPanel1";
-            this.wilBitGradientPanel1.Size = new System.Drawing.Size(806, 424);
+            this.wilBitGradientPanel1.Size = new System.Drawing.Size(806, 420);
             this.wilBitGradientPanel1.TabIndex = 20;
             // 
             // label2

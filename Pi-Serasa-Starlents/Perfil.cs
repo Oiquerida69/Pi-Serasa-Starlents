@@ -26,9 +26,9 @@ namespace Pi_Serasa_Starlents
             wilBitGradientPanel1.Location = new Point(0, 0);
             wilBitGradientPanel1.Size = new Size(ClientSize.Width, ClientSize.Height);
 
+            panel1.Size = new Size(ClientSize.Width,63);
             panelIconesPer.Location = new Point(ClientSize.Width / 2 - panelIconesPer.Width / 2);
-            
-            
+
         }
 
         private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
