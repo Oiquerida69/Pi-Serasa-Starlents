@@ -136,7 +136,7 @@
             wilBitButton1.TabIndex = 12;
             wilBitButton1.Text = "Criar conta";
             wilBitButton1.UseVisualStyleBackColor = false;
-            wilBitButton1.Click += wilBitButton1_Click;
+            wilBitButton1.Click += wilBitButton1_Click_1;
             // 
             // GradientPanelCadastro
             // 
