@@ -49,8 +49,8 @@
             this.wilBitGradientPanel1 = new WiLBiT.WiLBiTGradientPanel();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.wilBitTextBox2 = new WiLBiT.WiLBiTTextBox();
             this.wilBitTextBox1 = new WiLBiT.WiLBiTTextBox();
+            this.wilBitTextBox2 = new WiLBiT.WiLBiTTextBox();
             this.wilBitTextBox5 = new WiLBiT.WiLBiTTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -106,6 +106,7 @@
             this.label4.Size = new System.Drawing.Size(73, 20);
             this.label4.TabIndex = 10;
             this.label4.Text = "Usuário";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // pictureBox5
             // 
@@ -127,6 +128,7 @@
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox8.TabIndex = 22;
             this.pictureBox8.TabStop = false;
+            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
             // 
             // label1
             // 
@@ -235,6 +237,7 @@
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox9.TabIndex = 27;
             this.pictureBox9.TabStop = false;
+            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
             // 
             // panel4
             // 
@@ -253,6 +256,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 28;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox3
             // 
@@ -315,28 +319,6 @@
             this.label3.TabIndex = 26;
             this.label3.Text = "Meu Perfil";
             // 
-            // wilBitTextBox2
-            // 
-            this.wilBitTextBox2.BackColor = System.Drawing.SystemColors.Window;
-            this.wilBitTextBox2.BorderColor = System.Drawing.Color.White;
-            this.wilBitTextBox2.BorderFocusColor = System.Drawing.Color.DeepSkyBlue;
-            this.wilBitTextBox2.BorderRadius = 4;
-            this.wilBitTextBox2.BorderSize = 2;
-            this.wilBitTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.wilBitTextBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.wilBitTextBox2.Location = new System.Drawing.Point(57, 220);
-            this.wilBitTextBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.wilBitTextBox2.Multiline = false;
-            this.wilBitTextBox2.Name = "wilBitTextBox2";
-            this.wilBitTextBox2.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.wilBitTextBox2.PasswordChar = false;
-            this.wilBitTextBox2.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.wilBitTextBox2.PlaceholderText = "";
-            this.wilBitTextBox2.Size = new System.Drawing.Size(176, 29);
-            this.wilBitTextBox2.TabIndex = 21;
-            this.wilBitTextBox2.Texts = "";
-            this.wilBitTextBox2.UnderlinedStyle = false;
-            // 
             // wilBitTextBox1
             // 
             this.wilBitTextBox1.BackColor = System.Drawing.SystemColors.Window;
@@ -358,6 +340,28 @@
             this.wilBitTextBox1.TabIndex = 13;
             this.wilBitTextBox1.Texts = "";
             this.wilBitTextBox1.UnderlinedStyle = false;
+            // 
+            // wilBitTextBox2
+            // 
+            this.wilBitTextBox2.BackColor = System.Drawing.SystemColors.Window;
+            this.wilBitTextBox2.BorderColor = System.Drawing.Color.White;
+            this.wilBitTextBox2.BorderFocusColor = System.Drawing.Color.DeepSkyBlue;
+            this.wilBitTextBox2.BorderRadius = 4;
+            this.wilBitTextBox2.BorderSize = 2;
+            this.wilBitTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.wilBitTextBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.wilBitTextBox2.Location = new System.Drawing.Point(57, 220);
+            this.wilBitTextBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.wilBitTextBox2.Multiline = false;
+            this.wilBitTextBox2.Name = "wilBitTextBox2";
+            this.wilBitTextBox2.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.wilBitTextBox2.PasswordChar = false;
+            this.wilBitTextBox2.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.wilBitTextBox2.PlaceholderText = "";
+            this.wilBitTextBox2.Size = new System.Drawing.Size(176, 29);
+            this.wilBitTextBox2.TabIndex = 21;
+            this.wilBitTextBox2.Texts = "";
+            this.wilBitTextBox2.UnderlinedStyle = false;
             // 
             // wilBitTextBox5
             // 

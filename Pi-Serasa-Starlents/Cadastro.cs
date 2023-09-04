@@ -24,5 +24,10 @@ namespace Pi_Serasa_Starlents
           
 
         }
+
+        private void GradientPanelCadastro_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

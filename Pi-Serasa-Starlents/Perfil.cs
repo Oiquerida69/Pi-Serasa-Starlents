@@ -4,9 +4,11 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace Pi_Serasa_Starlents
 {
@@ -16,6 +18,17 @@ namespace Pi_Serasa_Starlents
         {
             InitializeComponent();
         }
+        
+        public void carregaform(Form form)
+        {
+            form.TopLevel = false;
+
+            wilBitGradientPanel1.Controls.Clear();
+            wilBitGradientPanel1.Controls.Add(form);
+            form.Show();
+        }
+
+
 
         void rendeirizaInterface()
         {
@@ -43,7 +56,8 @@ namespace Pi_Serasa_Starlents
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
-
+            // botao notificacao
+            carregaform(new Notificacao());
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
@@ -54,10 +68,46 @@ namespace Pi_Serasa_Starlents
         private void Perfil_Load(object sender, EventArgs e)
         {
             rendeirizaInterface();
+
+
+            List<Usuario> usuarios = new List<Usuario>();// id, descricao e talentos;
+
+            foreach (Usuario u in usuarios)
+            {
+
+               // Usuario usuario = //carregadados(linha);
+                //usuarios.Add(usuario);
+            }
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
+            // botao do perfil
+            carregaform(new Perfil());
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            // botao da tela inicial
+            carregaform(new TelaDeInicio());
+
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            // botao das mensagens
+            carregaform(new TelaDeMensagens());
+        }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            // botao do configuração
+
 
         }
     }
