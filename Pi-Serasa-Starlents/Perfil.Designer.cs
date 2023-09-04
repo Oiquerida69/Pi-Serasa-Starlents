@@ -43,12 +43,9 @@
             this.panelIconesPer = new System.Windows.Forms.Panel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.wilBitGradientPanel1 = new WiLBiT.WiLBiTGradientPanel();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -209,13 +206,10 @@
             // panelIconesPer
             // 
             this.panelIconesPer.Controls.Add(this.pictureBox6);
-            this.panelIconesPer.Controls.Add(this.panel3);
             this.panelIconesPer.Controls.Add(this.pictureBox9);
             this.panelIconesPer.Controls.Add(this.panel4);
             this.panelIconesPer.Controls.Add(this.pictureBox2);
-            this.panelIconesPer.Controls.Add(this.panel5);
             this.panelIconesPer.Controls.Add(this.pictureBox3);
-            this.panelIconesPer.Controls.Add(this.panel6);
             this.panelIconesPer.Location = new System.Drawing.Point(241, 5);
             this.panelIconesPer.Name = "panelIconesPer";
             this.panelIconesPer.Size = new System.Drawing.Size(298, 58);
@@ -241,6 +235,14 @@
             this.pictureBox9.TabIndex = 27;
             this.pictureBox9.TabStop = false;
             // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Location = new System.Drawing.Point(83, 51);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(50, 7);
+            this.panel4.TabIndex = 28;
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
@@ -261,39 +263,6 @@
             this.pictureBox3.TabIndex = 29;
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.White;
-            this.panel6.Location = new System.Drawing.Point(245, 51);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(50, 7);
-            this.panel6.TabIndex = 28;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Location = new System.Drawing.Point(160, 51);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(50, 7);
-            this.panel5.TabIndex = 28;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Location = new System.Drawing.Point(83, 51);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(50, 7);
-            this.panel4.TabIndex = 28;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Location = new System.Drawing.Point(0, 51);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(50, 7);
-            this.panel3.TabIndex = 27;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // wilBitGradientPanel1
             // 
@@ -339,7 +308,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(324, 88);
+            this.label3.Location = new System.Drawing.Point(333, 97);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(107, 23);
             this.label3.TabIndex = 26;
@@ -458,9 +427,6 @@
         private Panel panel2;
         private Label label5;
         private Label label3;
-        private Panel panel3;
-        private Panel panel6;
-        private Panel panel5;
         private Panel panel4;
         private Label label2;
         private WiLBiT.WiLBiTTextBox wilBitTextBox2;
