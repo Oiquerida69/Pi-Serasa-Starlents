@@ -210,17 +210,18 @@
             this.panelIconesPer.Controls.Add(this.panel4);
             this.panelIconesPer.Controls.Add(this.pictureBox2);
             this.panelIconesPer.Controls.Add(this.pictureBox3);
-            this.panelIconesPer.Location = new System.Drawing.Point(241, 5);
+            this.panelIconesPer.Location = new System.Drawing.Point(195, 5);
             this.panelIconesPer.Name = "panelIconesPer";
-            this.panelIconesPer.Size = new System.Drawing.Size(298, 58);
+            this.panelIconesPer.Size = new System.Drawing.Size(425, 67);
             this.panelIconesPer.TabIndex = 30;
             // 
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(3, 10);
+            this.pictureBox6.Location = new System.Drawing.Point(12, 3);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox6.Size = new System.Drawing.Size(52, 38);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 26;
             this.pictureBox6.TabStop = false;
             this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
@@ -228,9 +229,9 @@
             // pictureBox9
             // 
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(92, 10);
+            this.pictureBox9.Location = new System.Drawing.Point(113, 4);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox9.Size = new System.Drawing.Size(62, 38);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox9.TabIndex = 27;
             this.pictureBox9.TabStop = false;
@@ -238,17 +239,17 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Location = new System.Drawing.Point(83, 51);
+            this.panel4.Location = new System.Drawing.Point(103, 48);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(50, 7);
+            this.panel4.Size = new System.Drawing.Size(80, 10);
             this.panel4.TabIndex = 28;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(169, 10);
+            this.pictureBox2.Location = new System.Drawing.Point(242, 3);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox2.Size = new System.Drawing.Size(47, 45);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 28;
             this.pictureBox2.TabStop = false;
@@ -256,9 +257,9 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(248, 10);
+            this.pictureBox3.Location = new System.Drawing.Point(349, 3);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox3.Size = new System.Drawing.Size(62, 45);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 29;
             this.pictureBox3.TabStop = false;
@@ -273,8 +274,8 @@
             this.wilBitGradientPanel1.BorderSize = 0;
             this.wilBitGradientPanel1.Controls.Add(this.label2);
             this.wilBitGradientPanel1.Controls.Add(this.label3);
-            this.wilBitGradientPanel1.Controls.Add(this.wilBitTextBox2);
             this.wilBitGradientPanel1.Controls.Add(this.wilBitTextBox1);
+            this.wilBitGradientPanel1.Controls.Add(this.wilBitTextBox2);
             this.wilBitGradientPanel1.Controls.Add(this.wilBitTextBox5);
             this.wilBitGradientPanel1.Controls.Add(this.pictureBox1);
             this.wilBitGradientPanel1.Controls.Add(this.panel1);
@@ -296,7 +297,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(81, 153);
+            this.label2.Location = new System.Drawing.Point(93, 153);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(79, 21);
             this.label2.TabIndex = 2;
@@ -323,7 +324,7 @@
             this.wilBitTextBox2.BorderSize = 2;
             this.wilBitTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.wilBitTextBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.wilBitTextBox2.Location = new System.Drawing.Point(45, 220);
+            this.wilBitTextBox2.Location = new System.Drawing.Point(57, 220);
             this.wilBitTextBox2.Margin = new System.Windows.Forms.Padding(4);
             this.wilBitTextBox2.Multiline = false;
             this.wilBitTextBox2.Name = "wilBitTextBox2";
@@ -345,7 +346,7 @@
             this.wilBitTextBox1.BorderSize = 2;
             this.wilBitTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.wilBitTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.wilBitTextBox1.Location = new System.Drawing.Point(45, 183);
+            this.wilBitTextBox1.Location = new System.Drawing.Point(57, 183);
             this.wilBitTextBox1.Margin = new System.Windows.Forms.Padding(4);
             this.wilBitTextBox1.Multiline = false;
             this.wilBitTextBox1.Name = "wilBitTextBox1";

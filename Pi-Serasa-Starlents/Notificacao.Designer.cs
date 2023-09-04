@@ -282,18 +282,19 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.White;
-            this.panel6.Location = new System.Drawing.Point(236, 53);
+            this.panel6.Location = new System.Drawing.Point(12, 50);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(50, 7);
+            this.panel6.Size = new System.Drawing.Size(83, 10);
             this.panel6.TabIndex = 29;
             this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(29, 17);
+            this.pictureBox6.Location = new System.Drawing.Point(25, 7);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox6.Size = new System.Drawing.Size(50, 42);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 27;
             this.pictureBox6.TabStop = false;
             // 
