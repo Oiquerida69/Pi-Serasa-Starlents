@@ -61,7 +61,7 @@ namespace Pi_Serasa_Starlents
             {
                 Usuario usuario = carregadados(linha);
                 usuarios.Add(usuario);
-            }
+            } 
             return usuarios;
             
         }
