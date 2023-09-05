@@ -9,7 +9,7 @@ namespace Pi_Serasa_Starlents
 {
     internal class Usuario
     {
-        public int id;
+        
         public string nome;
         public string email;
         public string senha;
@@ -17,9 +17,9 @@ namespace Pi_Serasa_Starlents
         public string descricao;
         public string pictureBox;
 
-        public Usuario(int id, string nome,string email,string senha,string telefone,string descricao , string avatar)
+        public Usuario(string nome,string email,string senha,string telefone,string descricao , string avatar)
         {
-            this.id = id;
+            
             this.nome = nome;
             this.email = email;
             this.senha = senha;
@@ -39,7 +39,7 @@ namespace Pi_Serasa_Starlents
             string descricao = linha["descricao"].ToString();
             string avatar = (linha["avatar"].ToString());
 
-            Usuario usuarioTotal = new Usuario(id, nome, email, senha, telefone, descricao, avatar);
+            Usuario usuarioTotal = new Usuario(nome, email, senha, telefone, descricao, avatar);
             return usuarioTotal;
 
         }

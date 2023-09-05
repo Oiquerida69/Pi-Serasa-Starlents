@@ -13,23 +13,7 @@ namespace Pi_Serasa_Starlents
     public partial class Tela_seleção_avatar : Form
     {
         public string caminho01;
-        public string caminho02;
-        public string caminho03;
-        public string caminho04;
-        public string caminho05;
-        public string caminho06;
-        public string caminho07;
-        public string caminho08;
-        public string caminho09;
-        public string caminho10;
-        public string caminho11;
-        public string caminho12;
-        public string caminho13;
-        public string caminho14;
-        public string caminho15;
-        public string caminho16;
-        public string caminho17;
-        public string caminho18;
+        
 
         Avatar avatar = new Avatar();
         public Tela_seleção_avatar()
@@ -63,132 +47,154 @@ namespace Pi_Serasa_Starlents
             pictureBox16.ImageLocation = avatar.caminho16;
             pictureBox17.ImageLocation = avatar.caminho17;
             pictureBox18.ImageLocation = avatar.caminho18;
+            
 
 
+        }
+        public string Pegacaminho()
+        {
+            if (radioButton1.Checked) { caminho01 = avatar.caminho1; }
+            if (radioButton5.Checked) { caminho01 = avatar.caminho2; }
+            if(radioButton4.Checked) { caminho01 = avatar.caminho3; }
+            if (radioButton18.Checked) { caminho01 = avatar.caminho4; }
+            if (radioButton8.Checked) { caminho01 = avatar.caminho5; }
+            if (radioButton3.Checked) { caminho01 = avatar.caminho6; }
+            if (radioButton2.Checked) { caminho01 = avatar.caminho7; }
+            if (radioButton6.Checked) { caminho01 = avatar.caminho8; }
+            if (radioButton17.Checked) { caminho01 = avatar.caminho9; }
+            if (radioButton13.Checked) { caminho01 = avatar.caminho11; }
+            if (radioButton14.Checked) { caminho01 = avatar.caminho12; }
+            if (radioButton15.Checked) { caminho01 = avatar.caminho13; }
+            if (radioButton16.Checked) { caminho01 = avatar.caminho14; }
+            if (radioButton12.Checked) { caminho01 = avatar.caminho15; }
+            if (radioButton11.Checked) { caminho01 = avatar.caminho16; }
+            if (radioButton10.Checked) { caminho01 = avatar.caminho17; }
+            if (radioButton9.Checked) { caminho01 = avatar.caminho18; }
+            return caminho01;
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            if (radioButton1.Checked) { caminho01 = avatar.caminho1; }
+            
             Tela_seleção_avatar tela = new Tela_seleção_avatar();
             tela.Hide();
         }
 
         private void radioButton5_CheckedChanged(object sender, EventArgs e)
         {
-            if (radioButton5.Checked) { caminho02 = avatar.caminho2; }
+            
             Tela_seleção_avatar tela = new Tela_seleção_avatar();
             tela.Hide();
         }
 
         private void radioButton4_CheckedChanged(object sender, EventArgs e)
         {
-            if (radioButton4.Checked) { caminho03 = avatar.caminho3; }
+            
             Tela_seleção_avatar tela = new Tela_seleção_avatar();
             tela.Hide();
         }
 
         private void radioButton18_CheckedChanged(object sender, EventArgs e)
         {
-            if (radioButton18.Checked) { caminho04 = avatar.caminho4; }
+            
             Tela_seleção_avatar tela = new Tela_seleção_avatar();
             tela.Hide();
         }
 
         private void radioButton8_CheckedChanged(object sender, EventArgs e)
         {
-            if (radioButton8.Checked) { caminho05 = avatar.caminho5; }
+            
             Tela_seleção_avatar tela = new Tela_seleção_avatar();
             tela.Hide();
         }
 
         private void radioButton3_CheckedChanged(object sender, EventArgs e)
         {
-            if (radioButton3.Checked) { caminho06 = avatar.caminho6; }
+            
             Tela_seleção_avatar tela = new Tela_seleção_avatar();
             tela.Hide();
         }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
-            if (radioButton2.Checked) { caminho07 = avatar.caminho7; }
+           
             Tela_seleção_avatar tela = new Tela_seleção_avatar();
             tela.Hide();
         }
 
         private void radioButton6_CheckedChanged(object sender, EventArgs e)
         {
-            if (radioButton6.Checked) { caminho08 = avatar.caminho8; }
+            
             Tela_seleção_avatar tela = new Tela_seleção_avatar();
             tela.Hide();
         }
 
         private void radioButton17_CheckedChanged(object sender, EventArgs e)
         {
-            if (radioButton17.Checked) { caminho09 = avatar.caminho9; }
+            
             Tela_seleção_avatar tela = new Tela_seleção_avatar();
             tela.Hide();
         }
 
         private void radioButton7_CheckedChanged(object sender, EventArgs e)
         {
-            if (radioButton7.Checked) { caminho10 = avatar.caminho10; }
+            
             Tela_seleção_avatar tela = new Tela_seleção_avatar();
             tela.Hide();
         }
 
         private void radioButton13_CheckedChanged(object sender, EventArgs e)
         {
-            if (radioButton13.Checked) { caminho11 = avatar.caminho11; }
+            
             Tela_seleção_avatar tela = new Tela_seleção_avatar();
             tela.Hide();
         }
 
         private void radioButton14_CheckedChanged(object sender, EventArgs e)
         {
-            if (radioButton14.Checked) { caminho12 = avatar.caminho12; }
+            
             Tela_seleção_avatar tela = new Tela_seleção_avatar();
             tela.Hide();
         }
 
         private void radioButton15_CheckedChanged(object sender, EventArgs e)
         {
-            if (radioButton15.Checked) { caminho13 = avatar.caminho13; }
+            
             Tela_seleção_avatar tela = new Tela_seleção_avatar();
             tela.Hide();
         }
 
         private void radioButton16_CheckedChanged(object sender, EventArgs e)
         {
-            if (radioButton16.Checked) { caminho14 = avatar.caminho14; }
+            
             Tela_seleção_avatar tela = new Tela_seleção_avatar();
             tela.Hide();
         }
 
         private void radioButton12_CheckedChanged(object sender, EventArgs e)
         {
-            if (radioButton12.Checked) { caminho15 = avatar.caminho15; }
+            
             Tela_seleção_avatar tela = new Tela_seleção_avatar();
             tela.Hide();
         }
 
         private void radioButton11_CheckedChanged(object sender, EventArgs e)
         {
-            if (radioButton11.Checked) { caminho16 = avatar.caminho16; }
+            
             Tela_seleção_avatar tela = new Tela_seleção_avatar();
             tela.Hide();
         }
 
         private void radioButton10_CheckedChanged(object sender, EventArgs e)
         {
-            if (radioButton10.Checked) { caminho17 = avatar.caminho17; }
+            
             Tela_seleção_avatar tela = new Tela_seleção_avatar();
             tela.Hide();
         }
 
         private void radioButton9_CheckedChanged(object sender, EventArgs e)
         {
-            if (radioButton9.Checked) { caminho18 = avatar.caminho18; }
+            
             Tela_seleção_avatar tela = new Tela_seleção_avatar();
             tela.Hide();
         }

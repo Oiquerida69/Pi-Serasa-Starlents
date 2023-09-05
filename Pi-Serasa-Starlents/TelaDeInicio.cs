@@ -12,6 +12,10 @@ namespace Pi_Serasa_Starlents
 {
     public partial class TelaDeInicio : Form
     {
+        
+        
+
+       
         public TelaDeInicio()
         {
             InitializeComponent();

@@ -18,7 +18,7 @@ namespace Pi_Serasa_Starlents
             InitializeComponent();
         }
         Tela_seleção_avatar telaselecao = new Tela_seleção_avatar();
-        
+
 
         private void Cadastro_Load(object sender, EventArgs e)
         {
@@ -26,21 +26,21 @@ namespace Pi_Serasa_Starlents
 
         }
 
-<<<<<<< HEAD
+
         private void GradientPanelCadastro_Paint(object sender, PaintEventArgs e)
         {
 
         }
-=======
         private void wilBitButton1_Click(object sender, EventArgs e)
         {
-           
+
             string nome = wilBitTextBox4.Text;
             string email = wilBitTextBox1.Text;
             string senha = wilBitTextBox2.Text;
             string telefone = wilBitTextBox3.Text;
             string avatar = telaselecao.caminho01;
-            Usuario usuario = new Usuario(nome,email,senha,telefone,avatar)
+            string descricao = wilBitTextBox5.Text;
+            Usuario usuario = new Usuario(nome, email, senha, telefone, descricao, avatar);
 
         }
 
@@ -54,8 +54,6 @@ namespace Pi_Serasa_Starlents
 
 
         }
-
-       
->>>>>>> c9763f5771cf133c976cf3bb35c357d2bc9425f7
     }
 }
+       
