@@ -41,13 +41,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.wilBitPanel1 = new WiLBiT.WiLBiTPanel();
+            this.wilBitTextBox5 = new WiLBiT.WiLBiTTextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.GradientPanelCadastro.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.wilBitPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -148,7 +146,8 @@
             this.GradientPanelCadastro.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.GradientPanelCadastro.BorderRadius = 6;
             this.GradientPanelCadastro.BorderSize = 0;
-            this.GradientPanelCadastro.Controls.Add(this.wilBitPanel1);
+            this.GradientPanelCadastro.Controls.Add(this.label6);
+            this.GradientPanelCadastro.Controls.Add(this.wilBitTextBox5);
             this.GradientPanelCadastro.Controls.Add(this.label5);
             this.GradientPanelCadastro.Controls.Add(this.wilBitTextBox4);
             this.GradientPanelCadastro.Controls.Add(this.pictureBox2);
@@ -259,37 +258,39 @@
             this.label1.TabIndex = 10;
             this.label1.Text = "Digite seu e-mail";
             // 
-            // wilBitPanel1
+            // wilBitTextBox5
             // 
-            this.wilBitPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(234)))), ((int)(((byte)(242)))));
-            this.wilBitPanel1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.wilBitPanel1.BorderRadius = 6;
-            this.wilBitPanel1.BorderSize = 0;
-            this.wilBitPanel1.Controls.Add(this.label6);
-            this.wilBitPanel1.Controls.Add(this.panel2);
-            this.wilBitPanel1.ForeColor = System.Drawing.Color.White;
-            this.wilBitPanel1.Location = new System.Drawing.Point(643, 274);
-            this.wilBitPanel1.Name = "wilBitPanel1";
-            this.wilBitPanel1.Size = new System.Drawing.Size(224, 141);
-            this.wilBitPanel1.TabIndex = 25;
+            this.wilBitTextBox5.BackColor = System.Drawing.SystemColors.Window;
+            this.wilBitTextBox5.BorderColor = System.Drawing.Color.White;
+            this.wilBitTextBox5.BorderFocusColor = System.Drawing.Color.DeepSkyBlue;
+            this.wilBitTextBox5.BorderRadius = 4;
+            this.wilBitTextBox5.BorderSize = 2;
+            this.wilBitTextBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.wilBitTextBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.wilBitTextBox5.Location = new System.Drawing.Point(642, 289);
+            this.wilBitTextBox5.Margin = new System.Windows.Forms.Padding(4);
+            this.wilBitTextBox5.Multiline = true;
+            this.wilBitTextBox5.Name = "wilBitTextBox5";
+            this.wilBitTextBox5.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.wilBitTextBox5.PasswordChar = false;
+            this.wilBitTextBox5.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.wilBitTextBox5.PlaceholderText = "";
+            this.wilBitTextBox5.Size = new System.Drawing.Size(208, 186);
+            this.wilBitTextBox5.TabIndex = 28;
+            this.wilBitTextBox5.Texts = "";
+            this.wilBitTextBox5.UnderlinedStyle = false;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(234)))), ((int)(((byte)(242)))));
-            this.label6.ForeColor = System.Drawing.Color.LightGray;
-            this.label6.Location = new System.Drawing.Point(3, 10);
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(642, 266);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(150, 15);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Insira uma descrição aqui...";
-            // 
-            // panel2
-            // 
-            this.panel2.Location = new System.Drawing.Point(3, 10);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(150, 12);
-            this.panel2.TabIndex = 27;
+            this.label6.Size = new System.Drawing.Size(180, 19);
+            this.label6.TabIndex = 29;
+            this.label6.Text = "Digite uma descrição sua:";
             // 
             // Cadastro
             // 
@@ -306,8 +307,6 @@
             this.GradientPanelCadastro.ResumeLayout(false);
             this.GradientPanelCadastro.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.wilBitPanel1.ResumeLayout(false);
-            this.wilBitPanel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -327,8 +326,7 @@
         private PictureBox pictureBox2;
         private Label label5;
         private WiLBiT.WiLBiTTextBox wilBitTextBox4;
-        private WiLBiT.WiLBiTPanel wilBitPanel1;
         private Label label6;
-        private Panel panel2;
+        private WiLBiT.WiLBiTTextBox wilBitTextBox5;
     }
 }

@@ -290,9 +290,9 @@
             this.wilBitGradientPanel1.Controls.Add(this.pictureBox5);
             this.wilBitGradientPanel1.Controls.Add(this.label4);
             this.wilBitGradientPanel1.ForeColor = System.Drawing.Color.White;
-            this.wilBitGradientPanel1.Location = new System.Drawing.Point(1, -3);
+            this.wilBitGradientPanel1.Location = new System.Drawing.Point(12, 0);
             this.wilBitGradientPanel1.Name = "wilBitGradientPanel1";
-            this.wilBitGradientPanel1.Size = new System.Drawing.Size(806, 420);
+            this.wilBitGradientPanel1.Size = new System.Drawing.Size(787, 420);
             this.wilBitGradientPanel1.TabIndex = 20;
             // 
             // label2
@@ -390,7 +390,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(800, 415);
+            this.ClientSize = new System.Drawing.Size(797, 415);
             this.Controls.Add(this.wilBitTextBox3);
             this.Controls.Add(this.wilBitGradientPanel1);
             this.Name = "Perfil";
