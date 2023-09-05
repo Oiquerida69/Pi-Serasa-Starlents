@@ -34,13 +34,7 @@ namespace Pi_Serasa_Starlents
         private void wilBitButton1_Click(object sender, EventArgs e)
         {
 
-            string nome = wilBitTextBox4.Text;
-            string email = wilBitTextBox1.Text;
-            string senha = wilBitTextBox2.Text;
-            string telefone = wilBitTextBox3.Text;
-            string avatar = telaselecao.caminho01;
-            string descricao = wilBitTextBox5.Text;
-            Usuario usuario = new Usuario(nome, email, senha, telefone, descricao, avatar);
+
 
         }
 
@@ -54,6 +48,30 @@ namespace Pi_Serasa_Starlents
 
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            telaselecao.Show();
+            pictureBox1.ImageLocation = telaselecao.caminho01;
+
+        }
+
+        private void wilBitComboBox3_OnSelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void wilBitButton1_Click_2(object sender, EventArgs e)
+        {
+            string nome = wilBitTextBox4.Texts;
+            string email = wilBitTextBox1.Texts;
+            string senha = wilBitTextBox2.Texts;
+            string telefone = wilBitTextBox3.Texts;
+            string avatar = telaselecao.caminho01;
+            string descricao = wilBitTextBox5.Texts;
+            Usuario usuariototal = new Usuario(nome, email, senha, telefone, descricao, avatar);
+            Program.usuario.CadastrarUsuario(usuariototal);
+        }
     }
 }
-       
+

@@ -35,6 +35,15 @@
             wilBitTextBox3 = new WiLBiT.WiLBiTTextBox();
             wilBitButton1 = new WiLBiT.WiLBiTButton();
             GradientPanelCadastro = new WiLBiT.WiLBiTGradientPanel();
+            pictureBox2 = new PictureBox();
+            label9 = new Label();
+            wilBitComboBox5 = new WiLBiT.WiLBiTComboBox();
+            wilBitComboBox4 = new WiLBiT.WiLBiTComboBox();
+            label8 = new Label();
+            label7 = new Label();
+            wilBitComboBox3 = new WiLBiT.WiLBiTComboBox();
+            wilBitComboBox2 = new WiLBiT.WiLBiTComboBox();
+            wilBitComboBox1 = new WiLBiT.WiLBiTComboBox();
             label6 = new Label();
             wilBitTextBox5 = new WiLBiT.WiLBiTTextBox();
             label5 = new Label();
@@ -43,15 +52,6 @@
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
-            wilBitComboBox1 = new WiLBiT.WiLBiTComboBox();
-            wilBitComboBox2 = new WiLBiT.WiLBiTComboBox();
-            wilBitComboBox3 = new WiLBiT.WiLBiTComboBox();
-            label7 = new Label();
-            label8 = new Label();
-            wilBitComboBox4 = new WiLBiT.WiLBiTComboBox();
-            wilBitComboBox5 = new WiLBiT.WiLBiTComboBox();
-            label9 = new Label();
-            pictureBox2 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             GradientPanelCadastro.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -62,12 +62,13 @@
             pictureBox1.BackColor = Color.White;
             pictureBox1.Cursor = Cursors.Hand;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(596, 301);
+            pictureBox1.Location = new Point(623, 301);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(210, 138);
-            pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
+            pictureBox1.Size = new Size(151, 138);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // wilBitTextBox1
             // 
@@ -105,7 +106,7 @@
             wilBitTextBox2.Multiline = false;
             wilBitTextBox2.Name = "wilBitTextBox2";
             wilBitTextBox2.Padding = new Padding(10, 7, 10, 7);
-            wilBitTextBox2.PasswordChar = false;
+            wilBitTextBox2.PasswordChar = true;
             wilBitTextBox2.PlaceholderColor = Color.DarkGray;
             wilBitTextBox2.PlaceholderText = "";
             wilBitTextBox2.Size = new Size(210, 29);
@@ -151,6 +152,7 @@
             wilBitButton1.TabIndex = 12;
             wilBitButton1.Text = "Criar conta";
             wilBitButton1.UseVisualStyleBackColor = false;
+            wilBitButton1.Click += wilBitButton1_Click_2;
             // 
             // GradientPanelCadastro
             // 
@@ -187,6 +189,146 @@
             GradientPanelCadastro.Size = new Size(899, 510);
             GradientPanelCadastro.TabIndex = 13;
             GradientPanelCadastro.Paint += GradientPanelCadastro_Paint;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Location = new Point(39, 134);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(236, 221);
+            pictureBox2.TabIndex = 38;
+            pictureBox2.TabStop = false;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.BackColor = Color.Transparent;
+            label9.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            label9.ForeColor = Color.White;
+            label9.Location = new Point(605, 279);
+            label9.Name = "label9";
+            label9.Size = new Size(184, 19);
+            label9.TabIndex = 37;
+            label9.Text = "Escolha um ícone de perfil";
+            // 
+            // wilBitComboBox5
+            // 
+            wilBitComboBox5.BackColor = Color.WhiteSmoke;
+            wilBitComboBox5.BorderColor = Color.FromArgb(119, 0, 176);
+            wilBitComboBox5.BorderSize = 1;
+            wilBitComboBox5.DropDownStyle = ComboBoxStyle.DropDown;
+            wilBitComboBox5.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            wilBitComboBox5.ForeColor = Color.DimGray;
+            wilBitComboBox5.IconColor = Color.FromArgb(119, 0, 176);
+            wilBitComboBox5.ListBackColor = Color.FromArgb(230, 228, 245);
+            wilBitComboBox5.ListTextColor = Color.Purple;
+            wilBitComboBox5.Location = new Point(596, 232);
+            wilBitComboBox5.MinimumSize = new Size(200, 30);
+            wilBitComboBox5.Name = "wilBitComboBox5";
+            wilBitComboBox5.Padding = new Padding(1);
+            wilBitComboBox5.Size = new Size(210, 30);
+            wilBitComboBox5.TabIndex = 36;
+            wilBitComboBox5.Texts = "";
+            // 
+            // wilBitComboBox4
+            // 
+            wilBitComboBox4.BackColor = Color.WhiteSmoke;
+            wilBitComboBox4.BorderColor = Color.FromArgb(119, 0, 176);
+            wilBitComboBox4.BorderSize = 1;
+            wilBitComboBox4.DropDownStyle = ComboBoxStyle.DropDown;
+            wilBitComboBox4.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            wilBitComboBox4.ForeColor = Color.DimGray;
+            wilBitComboBox4.IconColor = Color.FromArgb(119, 0, 176);
+            wilBitComboBox4.ListBackColor = Color.FromArgb(230, 228, 245);
+            wilBitComboBox4.ListTextColor = Color.Purple;
+            wilBitComboBox4.Location = new Point(596, 196);
+            wilBitComboBox4.MinimumSize = new Size(200, 30);
+            wilBitComboBox4.Name = "wilBitComboBox4";
+            wilBitComboBox4.Padding = new Padding(1);
+            wilBitComboBox4.Size = new Size(210, 30);
+            wilBitComboBox4.TabIndex = 35;
+            wilBitComboBox4.Texts = "";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.BackColor = Color.Transparent;
+            label8.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            label8.ForeColor = Color.White;
+            label8.Location = new Point(596, 174);
+            label8.Name = "label8";
+            label8.Size = new Size(178, 19);
+            label8.TabIndex = 34;
+            label8.Text = "Selecione seus interesses:";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.BackColor = Color.Transparent;
+            label7.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.ForeColor = Color.White;
+            label7.Location = new Point(596, 39);
+            label7.Name = "label7";
+            label7.Size = new Size(205, 19);
+            label7.TabIndex = 33;
+            label7.Text = "Selecione quais seus talentos:";
+            // 
+            // wilBitComboBox3
+            // 
+            wilBitComboBox3.BackColor = Color.WhiteSmoke;
+            wilBitComboBox3.BorderColor = Color.FromArgb(119, 0, 176);
+            wilBitComboBox3.BorderSize = 1;
+            wilBitComboBox3.DropDownStyle = ComboBoxStyle.DropDown;
+            wilBitComboBox3.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            wilBitComboBox3.ForeColor = Color.DimGray;
+            wilBitComboBox3.IconColor = Color.FromArgb(119, 0, 176);
+            wilBitComboBox3.ListBackColor = Color.FromArgb(230, 228, 245);
+            wilBitComboBox3.ListTextColor = Color.Purple;
+            wilBitComboBox3.Location = new Point(596, 62);
+            wilBitComboBox3.MinimumSize = new Size(200, 30);
+            wilBitComboBox3.Name = "wilBitComboBox3";
+            wilBitComboBox3.Padding = new Padding(1);
+            wilBitComboBox3.Size = new Size(210, 30);
+            wilBitComboBox3.TabIndex = 32;
+            wilBitComboBox3.Texts = "";
+            wilBitComboBox3.OnSelectedIndexChanged += wilBitComboBox3_OnSelectedIndexChanged;
+            // 
+            // wilBitComboBox2
+            // 
+            wilBitComboBox2.BackColor = Color.WhiteSmoke;
+            wilBitComboBox2.BorderColor = Color.FromArgb(119, 0, 176);
+            wilBitComboBox2.BorderSize = 1;
+            wilBitComboBox2.DropDownStyle = ComboBoxStyle.DropDown;
+            wilBitComboBox2.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            wilBitComboBox2.ForeColor = Color.DimGray;
+            wilBitComboBox2.IconColor = Color.FromArgb(119, 0, 176);
+            wilBitComboBox2.ListBackColor = Color.FromArgb(230, 228, 245);
+            wilBitComboBox2.ListTextColor = Color.DimGray;
+            wilBitComboBox2.Location = new Point(596, 98);
+            wilBitComboBox2.MinimumSize = new Size(200, 30);
+            wilBitComboBox2.Name = "wilBitComboBox2";
+            wilBitComboBox2.Padding = new Padding(1);
+            wilBitComboBox2.Size = new Size(210, 30);
+            wilBitComboBox2.TabIndex = 31;
+            wilBitComboBox2.Texts = "";
+            // 
+            // wilBitComboBox1
+            // 
+            wilBitComboBox1.BackColor = Color.WhiteSmoke;
+            wilBitComboBox1.BorderColor = Color.FromArgb(119, 0, 176);
+            wilBitComboBox1.BorderSize = 1;
+            wilBitComboBox1.DropDownStyle = ComboBoxStyle.DropDown;
+            wilBitComboBox1.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            wilBitComboBox1.ForeColor = Color.DimGray;
+            wilBitComboBox1.IconColor = Color.FromArgb(119, 0, 176);
+            wilBitComboBox1.ListBackColor = Color.FromArgb(230, 228, 245);
+            wilBitComboBox1.ListTextColor = Color.DimGray;
+            wilBitComboBox1.Location = new Point(596, 134);
+            wilBitComboBox1.MinimumSize = new Size(200, 30);
+            wilBitComboBox1.Name = "wilBitComboBox1";
+            wilBitComboBox1.Padding = new Padding(1);
+            wilBitComboBox1.Size = new Size(210, 30);
+            wilBitComboBox1.TabIndex = 30;
+            wilBitComboBox1.Texts = "";
             // 
             // label6
             // 
@@ -304,153 +446,14 @@
             label1.TabIndex = 10;
             label1.Text = "Digite seu e-mail";
             // 
-            // wilBitComboBox1
-            // 
-            wilBitComboBox1.BackColor = Color.WhiteSmoke;
-            wilBitComboBox1.BorderColor = Color.FromArgb(119, 0, 176);
-            wilBitComboBox1.BorderSize = 1;
-            wilBitComboBox1.DropDownStyle = ComboBoxStyle.DropDown;
-            wilBitComboBox1.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            wilBitComboBox1.ForeColor = Color.DimGray;
-            wilBitComboBox1.IconColor = Color.FromArgb(119, 0, 176);
-            wilBitComboBox1.ListBackColor = Color.FromArgb(230, 228, 245);
-            wilBitComboBox1.ListTextColor = Color.DimGray;
-            wilBitComboBox1.Location = new Point(596, 134);
-            wilBitComboBox1.MinimumSize = new Size(200, 30);
-            wilBitComboBox1.Name = "wilBitComboBox1";
-            wilBitComboBox1.Padding = new Padding(1);
-            wilBitComboBox1.Size = new Size(210, 30);
-            wilBitComboBox1.TabIndex = 30;
-            wilBitComboBox1.Texts = "";
-            // 
-            // wilBitComboBox2
-            // 
-            wilBitComboBox2.BackColor = Color.WhiteSmoke;
-            wilBitComboBox2.BorderColor = Color.FromArgb(119, 0, 176);
-            wilBitComboBox2.BorderSize = 1;
-            wilBitComboBox2.DropDownStyle = ComboBoxStyle.DropDown;
-            wilBitComboBox2.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            wilBitComboBox2.ForeColor = Color.DimGray;
-            wilBitComboBox2.IconColor = Color.FromArgb(119, 0, 176);
-            wilBitComboBox2.ListBackColor = Color.FromArgb(230, 228, 245);
-            wilBitComboBox2.ListTextColor = Color.DimGray;
-            wilBitComboBox2.Location = new Point(596, 98);
-            wilBitComboBox2.MinimumSize = new Size(200, 30);
-            wilBitComboBox2.Name = "wilBitComboBox2";
-            wilBitComboBox2.Padding = new Padding(1);
-            wilBitComboBox2.Size = new Size(210, 30);
-            wilBitComboBox2.TabIndex = 31;
-            wilBitComboBox2.Texts = "";
-            // 
-            // wilBitComboBox3
-            // 
-            wilBitComboBox3.BackColor = Color.WhiteSmoke;
-            wilBitComboBox3.BorderColor = Color.FromArgb(119, 0, 176);
-            wilBitComboBox3.BorderSize = 1;
-            wilBitComboBox3.DropDownStyle = ComboBoxStyle.DropDown;
-            wilBitComboBox3.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            wilBitComboBox3.ForeColor = Color.DimGray;
-            wilBitComboBox3.IconColor = Color.FromArgb(119, 0, 176);
-            wilBitComboBox3.ListBackColor = Color.FromArgb(230, 228, 245);
-            wilBitComboBox3.ListTextColor = Color.Purple;
-            wilBitComboBox3.Location = new Point(596, 62);
-            wilBitComboBox3.MinimumSize = new Size(200, 30);
-            wilBitComboBox3.Name = "wilBitComboBox3";
-            wilBitComboBox3.Padding = new Padding(1);
-            wilBitComboBox3.Size = new Size(210, 30);
-            wilBitComboBox3.TabIndex = 32;
-            wilBitComboBox3.Texts = "";
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.BackColor = Color.Transparent;
-            label7.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            label7.ForeColor = Color.White;
-            label7.Location = new Point(596, 39);
-            label7.Name = "label7";
-            label7.Size = new Size(205, 19);
-            label7.TabIndex = 33;
-            label7.Text = "Selecione quais seus talentos:";
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.BackColor = Color.Transparent;
-            label8.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            label8.ForeColor = Color.White;
-            label8.Location = new Point(596, 174);
-            label8.Name = "label8";
-            label8.Size = new Size(178, 19);
-            label8.TabIndex = 34;
-            label8.Text = "Selecione seus interesses:";
-            // 
-            // wilBitComboBox4
-            // 
-            wilBitComboBox4.BackColor = Color.WhiteSmoke;
-            wilBitComboBox4.BorderColor = Color.FromArgb(119, 0, 176);
-            wilBitComboBox4.BorderSize = 1;
-            wilBitComboBox4.DropDownStyle = ComboBoxStyle.DropDown;
-            wilBitComboBox4.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            wilBitComboBox4.ForeColor = Color.DimGray;
-            wilBitComboBox4.IconColor = Color.FromArgb(119, 0, 176);
-            wilBitComboBox4.ListBackColor = Color.FromArgb(230, 228, 245);
-            wilBitComboBox4.ListTextColor = Color.Purple;
-            wilBitComboBox4.Location = new Point(596, 196);
-            wilBitComboBox4.MinimumSize = new Size(200, 30);
-            wilBitComboBox4.Name = "wilBitComboBox4";
-            wilBitComboBox4.Padding = new Padding(1);
-            wilBitComboBox4.Size = new Size(210, 30);
-            wilBitComboBox4.TabIndex = 35;
-            wilBitComboBox4.Texts = "";
-            // 
-            // wilBitComboBox5
-            // 
-            wilBitComboBox5.BackColor = Color.WhiteSmoke;
-            wilBitComboBox5.BorderColor = Color.FromArgb(119, 0, 176);
-            wilBitComboBox5.BorderSize = 1;
-            wilBitComboBox5.DropDownStyle = ComboBoxStyle.DropDown;
-            wilBitComboBox5.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            wilBitComboBox5.ForeColor = Color.DimGray;
-            wilBitComboBox5.IconColor = Color.FromArgb(119, 0, 176);
-            wilBitComboBox5.ListBackColor = Color.FromArgb(230, 228, 245);
-            wilBitComboBox5.ListTextColor = Color.Purple;
-            wilBitComboBox5.Location = new Point(596, 232);
-            wilBitComboBox5.MinimumSize = new Size(200, 30);
-            wilBitComboBox5.Name = "wilBitComboBox5";
-            wilBitComboBox5.Padding = new Padding(1);
-            wilBitComboBox5.Size = new Size(210, 30);
-            wilBitComboBox5.TabIndex = 36;
-            wilBitComboBox5.Texts = "";
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.BackColor = Color.Transparent;
-            label9.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            label9.ForeColor = Color.White;
-            label9.Location = new Point(605, 279);
-            label9.Name = "label9";
-            label9.Size = new Size(184, 19);
-            label9.TabIndex = 37;
-            label9.Text = "Escolha um ícone de perfil";
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Location = new Point(39, 134);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(236, 221);
-            pictureBox2.TabIndex = 38;
-            pictureBox2.TabStop = false;
-            // 
             // Cadastro
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(888, 503);
+            ClientSize = new Size(1366, 745);
             Controls.Add(GradientPanelCadastro);
-            FormBorderStyle = FormBorderStyle.None;
+            FormBorderStyle = FormBorderStyle.Fixed3D;
             Name = "Cadastro";
             Text = "Cadastro";
             Load += Cadastro_Load;

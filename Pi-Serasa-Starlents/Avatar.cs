@@ -8,6 +8,7 @@ namespace Pi_Serasa_Starlents
 {
     internal class Avatar
     {
+        /*
         public string caminho1 = "C:/Users/DELL/source/repos/Pi-Serasa-Starlents/Pi-Serasa-Starlents/Imagens/FemaleIcon01.jpg";
         public string caminho2 = "C:/Users/DELL/source/repos/Pi-Serasa-Starlents/Pi-Serasa-Starlents/Imagens/FemaleIcon02.jpg";
         public string caminho3 = "C:/Users/DELL/source/repos/Pi-Serasa-Starlents/Pi-Serasa-Starlents/Imagens/FemaleIcon03.jpg";
@@ -26,7 +27,8 @@ namespace Pi_Serasa_Starlents
         public string caminho16 = "C:/Users/DELL/source/repos/Pi-Serasa-Starlents/Pi-Serasa-Starlents/Imagens/MaleIcon08.jpg";
         public string caminho17= "C:/Users/DELL/source/repos/Pi-Serasa-Starlents/Pi-Serasa-Starlents/Imagens/MaleIcon09.jpg";
         public string caminho18 = "C:/Users/DELL/source/repos/Pi-Serasa-Starlents/Pi-Serasa-Starlents/Imagens/MaleIcon10.jpg";
-
+        */
+        List<Usuario> u = Program.usuario.ListarUsuarios();
 
         public Avatar()
         {
@@ -34,24 +36,7 @@ namespace Pi_Serasa_Starlents
         }
         public Avatar(string caminho)
         {
-            this.caminho1 = caminho;
-            this.caminho2 = caminho;
-            this.caminho3 = caminho;
-            this.caminho4 = caminho;
-            this.caminho5 = caminho;
-            this.caminho6 = caminho;
-            this.caminho7 = caminho;
-            this.caminho8 = caminho;
-            this.caminho9 = caminho;
-            this.caminho10 = caminho;
-            this.caminho11 = caminho;
-            this.caminho12 = caminho;
-            this.caminho13 = caminho;
-            this.caminho14 = caminho;
-            this.caminho15 = caminho;
-            this.caminho16 = caminho;
-            this.caminho17 = caminho;
-            this.caminho18 = caminho;
+
         }
 
 

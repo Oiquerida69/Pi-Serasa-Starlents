@@ -12,8 +12,8 @@ namespace Pi_Serasa_Starlents
 {
     public partial class Tela_seleção_avatar : Form
     {
-        public string caminho01;
-        
+        public string caminho01 = "C:/Users/DELL/source/repos/Pi-Serasa-Starlents/Pi-Serasa-Starlents/Imagens/FemaleIcon01.jpg";
+
 
         Avatar avatar = new Avatar();
         public Tela_seleção_avatar()
@@ -28,8 +28,8 @@ namespace Pi_Serasa_Starlents
 
         private void Tela_seleção_avatar_Load(object sender, EventArgs e)
         {
-
-            pictureBox1.ImageLocation = avatar.caminho1;
+            /*
+            pictureBox1.ImageLocation = avatar.caminho01;
             pictureBox2.ImageLocation = avatar.caminho2;
             pictureBox3.ImageLocation = avatar.caminho3;
             pictureBox4.ImageLocation = avatar.caminho4;
@@ -47,15 +47,18 @@ namespace Pi_Serasa_Starlents
             pictureBox16.ImageLocation = avatar.caminho16;
             pictureBox17.ImageLocation = avatar.caminho17;
             pictureBox18.ImageLocation = avatar.caminho18;
-            
+            */
+            Pegacaminho();
+
 
 
         }
         public string Pegacaminho()
         {
+            /*
             if (radioButton1.Checked) { caminho01 = avatar.caminho1; }
             if (radioButton5.Checked) { caminho01 = avatar.caminho2; }
-            if(radioButton4.Checked) { caminho01 = avatar.caminho3; }
+            if (radioButton4.Checked) { caminho01 = avatar.caminho3; }
             if (radioButton18.Checked) { caminho01 = avatar.caminho4; }
             if (radioButton8.Checked) { caminho01 = avatar.caminho5; }
             if (radioButton3.Checked) { caminho01 = avatar.caminho6; }
@@ -70,133 +73,148 @@ namespace Pi_Serasa_Starlents
             if (radioButton11.Checked) { caminho01 = avatar.caminho16; }
             if (radioButton10.Checked) { caminho01 = avatar.caminho17; }
             if (radioButton9.Checked) { caminho01 = avatar.caminho18; }
+            */
             return caminho01;
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            
+
             Tela_seleção_avatar tela = new Tela_seleção_avatar();
             tela.Hide();
         }
 
         private void radioButton5_CheckedChanged(object sender, EventArgs e)
         {
-            
+
             Tela_seleção_avatar tela = new Tela_seleção_avatar();
             tela.Hide();
         }
 
         private void radioButton4_CheckedChanged(object sender, EventArgs e)
         {
-            
+
             Tela_seleção_avatar tela = new Tela_seleção_avatar();
             tela.Hide();
         }
 
         private void radioButton18_CheckedChanged(object sender, EventArgs e)
         {
-            
+
             Tela_seleção_avatar tela = new Tela_seleção_avatar();
             tela.Hide();
         }
 
         private void radioButton8_CheckedChanged(object sender, EventArgs e)
         {
-            
+
             Tela_seleção_avatar tela = new Tela_seleção_avatar();
             tela.Hide();
         }
 
         private void radioButton3_CheckedChanged(object sender, EventArgs e)
         {
-            
+
             Tela_seleção_avatar tela = new Tela_seleção_avatar();
             tela.Hide();
         }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
-           
+
             Tela_seleção_avatar tela = new Tela_seleção_avatar();
             tela.Hide();
         }
 
         private void radioButton6_CheckedChanged(object sender, EventArgs e)
         {
-            
+
             Tela_seleção_avatar tela = new Tela_seleção_avatar();
             tela.Hide();
         }
 
         private void radioButton17_CheckedChanged(object sender, EventArgs e)
         {
-            
+
             Tela_seleção_avatar tela = new Tela_seleção_avatar();
             tela.Hide();
         }
 
         private void radioButton7_CheckedChanged(object sender, EventArgs e)
         {
-            
+
             Tela_seleção_avatar tela = new Tela_seleção_avatar();
             tela.Hide();
         }
 
         private void radioButton13_CheckedChanged(object sender, EventArgs e)
         {
-            
+
             Tela_seleção_avatar tela = new Tela_seleção_avatar();
             tela.Hide();
         }
 
         private void radioButton14_CheckedChanged(object sender, EventArgs e)
         {
-            
+
             Tela_seleção_avatar tela = new Tela_seleção_avatar();
             tela.Hide();
         }
 
         private void radioButton15_CheckedChanged(object sender, EventArgs e)
         {
-            
+
             Tela_seleção_avatar tela = new Tela_seleção_avatar();
             tela.Hide();
         }
 
         private void radioButton16_CheckedChanged(object sender, EventArgs e)
         {
-            
+
             Tela_seleção_avatar tela = new Tela_seleção_avatar();
             tela.Hide();
         }
 
         private void radioButton12_CheckedChanged(object sender, EventArgs e)
         {
-            
+
             Tela_seleção_avatar tela = new Tela_seleção_avatar();
             tela.Hide();
         }
 
         private void radioButton11_CheckedChanged(object sender, EventArgs e)
         {
-            
+
             Tela_seleção_avatar tela = new Tela_seleção_avatar();
             tela.Hide();
         }
 
         private void radioButton10_CheckedChanged(object sender, EventArgs e)
         {
-            
+
             Tela_seleção_avatar tela = new Tela_seleção_avatar();
             tela.Hide();
         }
 
         private void radioButton9_CheckedChanged(object sender, EventArgs e)
         {
-            
+
             Tela_seleção_avatar tela = new Tela_seleção_avatar();
             tela.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (caminho01 != null)
+            {
+                caminho01 = Pegacaminho();
+
+            }
+            else
+            {
+                MessageBox.Show("Você não selecionou um Avatar");
+            }
+
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -7,15 +8,17 @@ using System.Threading.Tasks;
 
 namespace Pi_Serasa_Starlents
 {
+    
     internal class Usuario
     {
+        Conexao conexao;
         
         public string nome;
         public string email;
         public string senha;
         public string telefone;
         public string descricao;
-        public string pictureBox;
+        public string avatar;
 
         public Usuario(string nome,string email,string senha,string telefone,string descricao , string avatar)
         {
@@ -25,7 +28,7 @@ namespace Pi_Serasa_Starlents
             this.senha = senha;
             this.telefone = telefone;
             this.descricao = descricao;
-            this.pictureBox = avatar;
+            this.avatar = avatar;
             
 
         }
@@ -47,9 +50,9 @@ namespace Pi_Serasa_Starlents
         {
 
         }
-        public void CadastrarUsuario(Usuario usuario)
+        public void CadastrarUsuario(Usuario u)
         {
-            string query = $"INSERT INTO usuarios (nome,senha,email,telefone,descricao) VALUES ('{usuario.nome},{usuario.senha},{usuario.email},{usuario.telefone},{usuario.descricao}';";
+            string query = $"INSERT INTO usuarios (nome,senha,email,telefone,descricao,avatar) VALUES ('{u.nome}','{u.senha}','{u.email}','{u.telefone}','{u.descricao}','{u.avatar}');";
             Conexao.executaQuery(query);
         }
         public List<Usuario> ListarUsuarios()
@@ -65,7 +68,19 @@ namespace Pi_Serasa_Starlents
             return usuarios;
             
         }
-        public void ListarContatos(Usuario usuario)
+        public List<Usuario> ListarAvatar()
+        {
+            List<Usuario> usuarios = new List<Usuario>();
+            string query = $"SELECT * FROM avatar;";
+            DataTable tabela = Conexao.executaQuery(query);
+            foreach (DataRow linha in tabela.Rows)
+            {
+                Usuario usuario = carregadados(linha);
+                usuarios.Add(usuario);
+            }
+            return usuarios;
+        }
+        public void ListarContatos()
         {
             string query = $"SELECT nome,avatar FROM usuarios;";
             Conexao.executaQuery(query);
