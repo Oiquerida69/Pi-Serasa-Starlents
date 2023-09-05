@@ -30,8 +30,8 @@
         {
             label1 = new Label();
             label2 = new Label();
-            textBox1 = new TextBox();
-            wilBitButton1 = new WiLBiT.WiLBiTButton();
+            txtMotivoDenuncia = new TextBox();
+            btnDenunciar = new WiLBiT.WiLBiTButton();
             SuspendLayout();
             // 
             // label1
@@ -56,32 +56,32 @@
             label2.TabIndex = 2;
             label2.Text = "Insira o motivo da denúncia:";
             // 
-            // textBox1
+            // txtMotivoDenuncia
             // 
-            textBox1.Location = new Point(41, 102);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(366, 134);
-            textBox1.TabIndex = 3;
+            txtMotivoDenuncia.Location = new Point(41, 102);
+            txtMotivoDenuncia.Multiline = true;
+            txtMotivoDenuncia.Name = "txtMotivoDenuncia";
+            txtMotivoDenuncia.Size = new Size(366, 134);
+            txtMotivoDenuncia.TabIndex = 3;
             // 
-            // wilBitButton1
+            // btnDenunciar
             // 
-            wilBitButton1.BackColor = Color.FromArgb(119, 1, 175);
-            wilBitButton1.BackgroundImageLayout = ImageLayout.None;
-            wilBitButton1.BorderColor = Color.FromArgb(72, 116, 245);
-            wilBitButton1.BorderRadius = 6;
-            wilBitButton1.BorderSize = 0;
-            wilBitButton1.Cursor = Cursors.Hand;
-            wilBitButton1.FlatAppearance.BorderSize = 0;
-            wilBitButton1.FlatStyle = FlatStyle.Flat;
-            wilBitButton1.Font = new Font("Arial Rounded MT Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            wilBitButton1.ForeColor = Color.White;
-            wilBitButton1.Location = new Point(41, 242);
-            wilBitButton1.Name = "wilBitButton1";
-            wilBitButton1.Size = new Size(366, 40);
-            wilBitButton1.TabIndex = 4;
-            wilBitButton1.Text = "Denunciar";
-            wilBitButton1.UseVisualStyleBackColor = false;
+            btnDenunciar.BackColor = Color.FromArgb(119, 1, 175);
+            btnDenunciar.BackgroundImageLayout = ImageLayout.None;
+            btnDenunciar.BorderColor = Color.FromArgb(72, 116, 245);
+            btnDenunciar.BorderRadius = 6;
+            btnDenunciar.BorderSize = 0;
+            btnDenunciar.Cursor = Cursors.Hand;
+            btnDenunciar.FlatAppearance.BorderSize = 0;
+            btnDenunciar.FlatStyle = FlatStyle.Flat;
+            btnDenunciar.Font = new Font("Arial Rounded MT Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            btnDenunciar.ForeColor = Color.White;
+            btnDenunciar.Location = new Point(41, 242);
+            btnDenunciar.Name = "btnDenunciar";
+            btnDenunciar.Size = new Size(366, 40);
+            btnDenunciar.TabIndex = 4;
+            btnDenunciar.Text = "Denunciar";
+            btnDenunciar.UseVisualStyleBackColor = false;
             // 
             // TelaDeDenuncia
             // 
@@ -89,8 +89,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(224, 210, 225);
             ClientSize = new Size(458, 304);
-            Controls.Add(wilBitButton1);
-            Controls.Add(textBox1);
+            Controls.Add(btnDenunciar);
+            Controls.Add(txtMotivoDenuncia);
             Controls.Add(label2);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.Fixed3D;
@@ -104,7 +104,7 @@
 
         private Label label1;
         private Label label2;
-        private TextBox textBox1;
-        private WiLBiT.WiLBiTButton wilBitButton1;
+        private TextBox txtMotivoDenuncia;
+        private WiLBiT.WiLBiTButton btnDenunciar;
     }
 }
