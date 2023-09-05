@@ -30,7 +30,7 @@
         {
             panel1 = new Panel();
             label1 = new Label();
-            panel2 = new Panel();
+            panelListaDenuncias = new Panel();
             panelPerfilDenunciado = new WiLBiT.WiLBiTPanel();
             lblNomeMiniatura = new Label();
             picFotoMiniatura = new WiLBiT.WiLBiTRoundedPictureBox();
@@ -56,7 +56,7 @@
             btnBanirUsuario = new WiLBiT.WiLBiTButton();
             txtJustificativaBanimento = new WiLBiT.WiLBiTTextBox();
             panel1.SuspendLayout();
-            panel2.SuspendLayout();
+            panelListaDenuncias.SuspendLayout();
             panelPerfilDenunciado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)picFotoMiniatura).BeginInit();
             panel3.SuspendLayout();
@@ -89,15 +89,15 @@
             label1.TabIndex = 2;
             label1.Text = "DENÚNCIAS";
             // 
-            // panel2
+            // panelListaDenuncias
             // 
-            panel2.AutoScroll = true;
-            panel2.BackColor = Color.FromArgb(163, 142, 167);
-            panel2.Controls.Add(panelPerfilDenunciado);
-            panel2.Location = new Point(0, 55);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(210, 389);
-            panel2.TabIndex = 1;
+            panelListaDenuncias.AutoScroll = true;
+            panelListaDenuncias.BackColor = Color.FromArgb(163, 142, 167);
+            panelListaDenuncias.Controls.Add(panelPerfilDenunciado);
+            panelListaDenuncias.Location = new Point(0, 55);
+            panelListaDenuncias.Name = "panelListaDenuncias";
+            panelListaDenuncias.Size = new Size(210, 389);
+            panelListaDenuncias.TabIndex = 1;
             // 
             // panelPerfilDenunciado
             // 
@@ -113,6 +113,7 @@
             panelPerfilDenunciado.Name = "panelPerfilDenunciado";
             panelPerfilDenunciado.Size = new Size(180, 50);
             panelPerfilDenunciado.TabIndex = 6;
+            panelPerfilDenunciado.Paint += panelPerfilDenunciado_Paint;
             // 
             // lblNomeMiniatura
             // 
@@ -437,7 +438,7 @@
             Controls.Add(wilBitPanel8);
             Controls.Add(picFotoUsuario);
             Controls.Add(panel3);
-            Controls.Add(panel2);
+            Controls.Add(panelListaDenuncias);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.SizableToolWindow;
             Name = "TelaDoModerador";
@@ -445,7 +446,7 @@
             Load += TelaDoModerador_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            panel2.ResumeLayout(false);
+            panelListaDenuncias.ResumeLayout(false);
             panelPerfilDenunciado.ResumeLayout(false);
             panelPerfilDenunciado.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)picFotoMiniatura).EndInit();
@@ -467,7 +468,7 @@
         #endregion
 
         private Panel panel1;
-        private Panel panel2;
+        private Panel panelListaDenuncias;
         private Panel panel3;
         private PictureBox picFotoUsuario;
         private Label label1;
