@@ -18,7 +18,7 @@ namespace Pi_Serasa_Starlents
         {
             InitializeComponent();
         }
-        
+
         public void carregaform(Form form)
         {
             form.TopLevel = false;
@@ -39,14 +39,14 @@ namespace Pi_Serasa_Starlents
             wilBitGradientPanel1.Location = new Point(0, 0);
             wilBitGradientPanel1.Size = new Size(ClientSize.Width, ClientSize.Height);
 
-            panel1.Size = new Size(ClientSize.Width,63);
+            panel1.Size = new Size(ClientSize.Width, 63);
             panelIconesPer.Location = new Point(ClientSize.Width / 2 - panelIconesPer.Width / 2);
 
             label3.Location = new Point(ClientSize.Height / 2 - label3.Width / 2);
             label3.Location = new Point(ClientSize.Width / 2 - label3.Size.Width / 2, ClientSize.Height / 2 - label3.Size.Height / 2 - 300);
 
-            
-            pictureBox1.Location = new Point(ClientSize.Width / 2, 0 );
+
+            pictureBox1.Location = new Point(ClientSize.Width / 2, 0);
         }
 
         private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
@@ -75,7 +75,7 @@ namespace Pi_Serasa_Starlents
             foreach (Usuario u in usuarios)
             {
 
-               // Usuario usuario = //carregadados(linha);
+                // Usuario usuario = //carregadados(linha);
                 //usuarios.Add(usuario);
             }
         }
@@ -88,7 +88,7 @@ namespace Pi_Serasa_Starlents
 
         private void label4_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)

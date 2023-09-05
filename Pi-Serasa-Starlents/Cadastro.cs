@@ -18,7 +18,7 @@ namespace Pi_Serasa_Starlents
             InitializeComponent();
         }
         Tela_seleção_avatar telaselecao = new Tela_seleção_avatar();
-        
+
 
         private void Cadastro_Load(object sender, EventArgs e)
         {
