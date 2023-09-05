@@ -28,10 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-           
-            SuspendLayout();
-           
-            this.SuspendLayout();
+          
             // 
             // Form1
             // 

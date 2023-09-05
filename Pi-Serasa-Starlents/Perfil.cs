@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,7 +19,7 @@ namespace Pi_Serasa_Starlents
         {
             InitializeComponent();
         }
-
+        
         public void carregaform(Form form)
         {
             form.TopLevel = false;
@@ -35,18 +36,24 @@ namespace Pi_Serasa_Starlents
             WindowState = FormWindowState.Maximized;
 
             int menuEsquerdo_largura = 63;
+            int descricao_altura = 10;
 
             wilBitGradientPanel1.Location = new Point(0, 0);
             wilBitGradientPanel1.Size = new Size(ClientSize.Width, ClientSize.Height);
 
-            panel1.Size = new Size(ClientSize.Width, 63);
+            panel1.Size = new Size(ClientSize.Width,63);
             panelIconesPer.Location = new Point(ClientSize.Width / 2 - panelIconesPer.Width / 2);
 
-            label3.Location = new Point(ClientSize.Height / 2 - label3.Width / 2);
-            label3.Location = new Point(ClientSize.Width / 2 - label3.Size.Width / 2, ClientSize.Height / 2 - label3.Size.Height / 2 - 300);
+            //label3.Location = new Point(ClientSize.Height / 2 - label3.Width / 2);
+          //  label3.Location = new Point(ClientSize.Width / 2 - label3.Size.Width / 2, ClientSize.Height / 2 - label3.Size.Height / 2 - 300);
+
+           //label1.Location = new Point(ClientSize.Height / 2 - label3.Width / 2);
+           //label1.Location = new Point(ClientSize.Width / 2 - label3.Size.Width / 2, ClientSize.Height / 2 - label3.Size.Height / 2 - 100);
+           
+           // panelDescri.Location = new Point(ClientSize.Height - 100);
+           // panelDescri.Location = new Point(ClientSize.Width / 2 - panelDescri.Size.Width / 2 -50 , ClientSize.Height / 2 - panelDescri.Size.Height / 2 - 30);
 
 
-            pictureBox1.Location = new Point(ClientSize.Width / 2, 0);
         }
 
         private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
@@ -69,14 +76,15 @@ namespace Pi_Serasa_Starlents
         {
             rendeirizaInterface();
 
+            Usuario usuario = new Usuario();
 
-            List<Usuario> usuarios = new List<Usuario>();// id, descricao e talentos;
+
+          List < Usuario > usuarios = usuario.ListarUsuarios();
 
             foreach (Usuario u in usuarios)
             {
-
-                // Usuario usuario = //carregadados(linha);
-                //usuarios.Add(usuario);
+                label4.Text = (u.nome).ToString();
+                wilBitTextBox6.Text = (u.descricao).ToString();
             }
         }
 
@@ -88,7 +96,7 @@ namespace Pi_Serasa_Starlents
 
         private void label4_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -108,6 +116,11 @@ namespace Pi_Serasa_Starlents
         {
             // botao do configuração
 
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
 
         }
     }

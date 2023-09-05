@@ -31,12 +31,6 @@ namespace Pi_Serasa_Starlents
         {
 
         }
-        private void wilBitButton1_Click(object sender, EventArgs e)
-        {
-
-
-
-        }
 
         private void wilBitButton1_Click_1(object sender, EventArgs e)
         {
@@ -48,6 +42,7 @@ namespace Pi_Serasa_Starlents
 
 
         }
+
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -72,6 +67,7 @@ namespace Pi_Serasa_Starlents
             Usuario usuariototal = new Usuario(nome, email, senha, telefone, descricao, avatar);
             Program.usuario.CadastrarUsuario(usuariototal);
         }
+
     }
 }
 
