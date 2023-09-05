@@ -82,7 +82,7 @@
             wilBitTextBox3.BorderSize = 2;
             wilBitTextBox3.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
             wilBitTextBox3.ForeColor = Color.FromArgb(64, 64, 64);
-            wilBitTextBox3.Location = new Point(290, 180);
+            wilBitTextBox3.Location = new Point(289, 178);
             wilBitTextBox3.Margin = new Padding(4);
             wilBitTextBox3.Multiline = false;
             wilBitTextBox3.Name = "wilBitTextBox3";
@@ -99,11 +99,11 @@
             // 
             label4.AutoSize = true;
             label4.BackColor = Color.Transparent;
-            label4.Font = new Font("Microsoft Sans Serif", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.Font = new Font("Arial Rounded MT Bold", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
             label4.ForeColor = Color.White;
             label4.Location = new Point(590, 220);
             label4.Name = "label4";
-            label4.Size = new Size(67, 20);
+            label4.Size = new Size(73, 20);
             label4.TabIndex = 10;
             label4.Text = "Usuário";
             label4.Click += label4_Click;
@@ -276,6 +276,7 @@
             wilBitGradientPanel1.BorderColor = Color.Transparent;
             wilBitGradientPanel1.BorderRadius = 6;
             wilBitGradientPanel1.BorderSize = 0;
+            wilBitGradientPanel1.Controls.Add(wilBitTextBox3);
             wilBitGradientPanel1.Controls.Add(label2);
             wilBitGradientPanel1.Controls.Add(label3);
             wilBitGradientPanel1.Controls.Add(wilBitTextBox1);
@@ -290,9 +291,9 @@
             wilBitGradientPanel1.Controls.Add(pictureBox5);
             wilBitGradientPanel1.Controls.Add(label4);
             wilBitGradientPanel1.ForeColor = Color.White;
-            wilBitGradientPanel1.Location = new Point(-2, 0);
+            wilBitGradientPanel1.Location = new Point(12, 0);
             wilBitGradientPanel1.Name = "wilBitGradientPanel1";
-            wilBitGradientPanel1.Size = new Size(801, 420);
+            wilBitGradientPanel1.Size = new Size(787, 420);
             wilBitGradientPanel1.TabIndex = 20;
             // 
             // label2
@@ -301,7 +302,7 @@
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(93, 153);
+            label2.Location = new Point(102, 153);
             label2.Name = "label2";
             label2.Size = new Size(79, 21);
             label2.TabIndex = 2;
@@ -311,11 +312,11 @@
             // 
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
-            label3.Font = new Font("Microsoft Sans Serif", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.Font = new Font("Arial Rounded MT Bold", 15F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = Color.White;
             label3.Location = new Point(333, 97);
             label3.Name = "label3";
-            label3.Size = new Size(99, 25);
+            label3.Size = new Size(107, 23);
             label3.TabIndex = 26;
             label3.Text = "Meu Perfil";
             // 
@@ -391,9 +392,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(797, 415);
-            Controls.Add(wilBitTextBox3);
             Controls.Add(wilBitGradientPanel1);
-            FormBorderStyle = FormBorderStyle.None;
             Name = "Perfil";
             Text = "Perfil";
             Load += Perfil_Load;
