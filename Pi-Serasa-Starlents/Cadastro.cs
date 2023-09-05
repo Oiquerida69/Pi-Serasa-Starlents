@@ -26,12 +26,12 @@ namespace Pi_Serasa_Starlents
 
         }
 
-<<<<<<< HEAD
+
         private void GradientPanelCadastro_Paint(object sender, PaintEventArgs e)
         {
 
         }
-=======
+/*
         private void wilBitButton1_Click(object sender, EventArgs e)
         {
            
@@ -43,7 +43,7 @@ namespace Pi_Serasa_Starlents
             Usuario usuario = new Usuario(nome,email,senha,telefone,avatar)
 
         }
-
+*/
         private void wilBitButton1_Click_1(object sender, EventArgs e)
         {
 
@@ -56,6 +56,6 @@ namespace Pi_Serasa_Starlents
         }
 
        
->>>>>>> c9763f5771cf133c976cf3bb35c357d2bc9425f7
+//>>>>>>> c9763f5771cf133c976cf3bb35c357d2bc9425f7
     }
 }
