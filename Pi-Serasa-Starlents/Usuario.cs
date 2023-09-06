@@ -92,6 +92,13 @@ namespace Pi_Serasa_Starlents
             Usuario usuario = carregadados(tabela.Rows[0]);
             return usuario;
         }
+        /*public Usuario login (string email , string senha)
+        {
+            string query = $" SELECT * FROM usuarios WHERE email = '{email}' AND senha = '{senha}';";
+            Usuario u;
+           // return u;
+        }*/
+
     }
 }
 

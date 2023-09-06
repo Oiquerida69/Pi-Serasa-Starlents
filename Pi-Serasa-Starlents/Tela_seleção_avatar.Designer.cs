@@ -90,7 +90,7 @@
             // radioButton1
             // 
             radioButton1.AutoSize = true;
-            radioButton1.Location = new Point(37, 77);
+            radioButton1.Location = new Point(37, 96);
             radioButton1.Name = "radioButton1";
             radioButton1.Size = new Size(38, 19);
             radioButton1.TabIndex = 0;
@@ -126,7 +126,7 @@
             // radioButton4
             // 
             radioButton4.AutoSize = true;
-            radioButton4.Location = new Point(225, 78);
+            radioButton4.Location = new Point(225, 97);
             radioButton4.Name = "radioButton4";
             radioButton4.Size = new Size(38, 19);
             radioButton4.TabIndex = 3;
@@ -138,7 +138,7 @@
             // radioButton5
             // 
             radioButton5.AutoSize = true;
-            radioButton5.Location = new Point(138, 77);
+            radioButton5.Location = new Point(138, 96);
             radioButton5.Name = "radioButton5";
             radioButton5.Size = new Size(38, 19);
             radioButton5.TabIndex = 4;
@@ -174,7 +174,7 @@
             // radioButton8
             // 
             radioButton8.AutoSize = true;
-            radioButton8.Location = new Point(394, 77);
+            radioButton8.Location = new Point(394, 96);
             radioButton8.Name = "radioButton8";
             radioButton8.Size = new Size(38, 19);
             radioButton8.TabIndex = 7;
@@ -294,7 +294,7 @@
             // radioButton18
             // 
             radioButton18.AutoSize = true;
-            radioButton18.Location = new Point(315, 77);
+            radioButton18.Location = new Point(315, 96);
             radioButton18.Name = "radioButton18";
             radioButton18.Size = new Size(38, 19);
             radioButton18.TabIndex = 17;
@@ -482,48 +482,53 @@
             // 
             // pictureBox5
             // 
-            pictureBox5.Location = new Point(394, 20);
+            pictureBox5.Location = new Point(394, 39);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(51, 51);
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox5.TabIndex = 22;
             pictureBox5.TabStop = false;
+            pictureBox5.Click += pictureBox5_Click;
             // 
             // pictureBox4
             // 
-            pictureBox4.Location = new Point(315, 20);
+            pictureBox4.Location = new Point(315, 39);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(51, 51);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox4.TabIndex = 21;
             pictureBox4.TabStop = false;
+            pictureBox4.Click += pictureBox4_Click;
             // 
             // pictureBox3
             // 
-            pictureBox3.Location = new Point(225, 20);
+            pictureBox3.Location = new Point(225, 39);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(51, 51);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 20;
             pictureBox3.TabStop = false;
+            pictureBox3.Click += pictureBox3_Click;
             // 
             // pictureBox2
             // 
-            pictureBox2.Location = new Point(138, 20);
+            pictureBox2.Location = new Point(138, 39);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(51, 51);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 19;
             pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(37, 20);
+            pictureBox1.Location = new Point(37, 39);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(51, 51);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 18;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // Tela_seleção_avatar
             // 

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,7 +9,8 @@ namespace Pi_Serasa_Starlents
 {
     internal class Avatar
     {
-        /*
+
+
         public string caminho1 = "C:/Users/DELL/source/repos/Pi-Serasa-Starlents/Pi-Serasa-Starlents/Imagens/FemaleIcon01.jpg";
         public string caminho2 = "C:/Users/DELL/source/repos/Pi-Serasa-Starlents/Pi-Serasa-Starlents/Imagens/FemaleIcon02.jpg";
         public string caminho3 = "C:/Users/DELL/source/repos/Pi-Serasa-Starlents/Pi-Serasa-Starlents/Imagens/FemaleIcon03.jpg";
@@ -25,21 +27,17 @@ namespace Pi_Serasa_Starlents
         public string caminho14 = "C:/Users/DELL/source/repos/Pi-Serasa-Starlents/Pi-Serasa-Starlents/Imagens/MaleIcon06.jpg";
         public string caminho15 = "C:/Users/DELL/source/repos/Pi-Serasa-Starlents/Pi-Serasa-Starlents/Imagens/MaleIcon07.jpg";
         public string caminho16 = "C:/Users/DELL/source/repos/Pi-Serasa-Starlents/Pi-Serasa-Starlents/Imagens/MaleIcon08.jpg";
-        public string caminho17= "C:/Users/DELL/source/repos/Pi-Serasa-Starlents/Pi-Serasa-Starlents/Imagens/MaleIcon09.jpg";
+        public string caminho17 = "C:/Users/DELL/source/repos/Pi-Serasa-Starlents/Pi-Serasa-Starlents/Imagens/MaleIcon09.jpg";
         public string caminho18 = "C:/Users/DELL/source/repos/Pi-Serasa-Starlents/Pi-Serasa-Starlents/Imagens/MaleIcon10.jpg";
-        */
-        List<Usuario> u = Program.usuario.ListarUsuarios();
+
+
+
 
         public Avatar()
         {
 
         }
-        public Avatar(string caminho)
-        {
-
-        }
-
-
+        
     }
     
 }
