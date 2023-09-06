@@ -111,7 +111,7 @@
             panelPerfilDenunciado.Controls.Add(picFotoMiniatura);
             panelPerfilDenunciado.Cursor = Cursors.Hand;
             panelPerfilDenunciado.ForeColor = Color.White;
-            panelPerfilDenunciado.Location = new Point(3, 61);
+            panelPerfilDenunciado.Location = new Point(3, 57);
             panelPerfilDenunciado.Name = "panelPerfilDenunciado";
             panelPerfilDenunciado.Size = new Size(180, 50);
             panelPerfilDenunciado.TabIndex = 6;

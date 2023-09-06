@@ -18,12 +18,14 @@ namespace Pi_Serasa_Starlents
     public partial class TelaDoModerador : Form
     {
         Usuario usuario = new Usuario();
-        List<string> usuarios = new List<string> { "Batata chips", "Geladinho", "Bolacha" };
+        //List<string> usuarios = new List<string>{"wendell","Mirela","Mario"};
+        List<Usuario> usuarios = new List<Usuario>();
 
 
 
         public void geraForm(string usuario)
         {
+            /*
 
             Panel painel = new WiLBiT.WiLBiTPanel();
             painel.Name = "painel";
@@ -31,10 +33,10 @@ namespace Pi_Serasa_Starlents
             painel.ForeColor = Color.White;
             painel.Name = "painel";
             painel.Size = new Size(174, 50);
-            painel.Location = new Point(12, panelListaDenuncias.Height);
+            painel.Location = new Point(12, painel_Lista.Height);
 
             Label label = new Label();
-            label.Text = usuario;  //label.Text = $"{usuario.buscarnome(nome)}";
+            label.Text = nome;  //label.Text = $"{usuario.buscarnome(nome)}";
             label.AutoSize = true;
             label.Size = new Size(0, 0);
             label.Location = new Point(painel.Width / 2, painel.Height / 2);
@@ -56,38 +58,18 @@ namespace Pi_Serasa_Starlents
             picFotoUsuario.TabStop = false;
 
 
-            panelListaDenuncias.Controls.Add(painel);
-
+            painel_Lista.Controls.Add(painel);
             painel.Controls.Add(label);
             painel.Controls.Add(picFotoUsuario);
-
-            if (panelListaDenuncias.Height < 500)
+            if (painel_Lista.Height < 500)
             {
-                panelListaDenuncias.Height += painel.Height + 10;
+                painel_Lista.Height += painel.Height + 10;
 
             }
 
-
-            Panel panel = new Panel();
-            panel.Name = "panel";
-            panel.BackColor = Color.FromArgb(228, 193, 249);
-            panel.Size = new Size(174, 50);
-            Label label0 = new Label();
-            label.Name = "label";
-            label.Text = "Wendell";
-            label.AutoSize = true;
-            label.Location = new Point(12, panel.Height);
-            panel.Controls.Add(label);
-            panelListaDenuncias.Controls.Add(panel);
-            panel.Location = new Point(12, panel.Height);
-            if (panel.Height < 300)
-            {
-                panel.Height += panel.Height + 10;
-            }
+            */
 
         }
-
-
         public TelaDoModerador()
         {
             InitializeComponent();
@@ -98,13 +80,13 @@ namespace Pi_Serasa_Starlents
         private void TelaDoModerador_Load(object sender, EventArgs e)
         {
 
-
+            /*
             foreach (string usuario in usuarios)
             {
                 geraForm(usuario);
             }
 
-
+            */
         }
 
 
