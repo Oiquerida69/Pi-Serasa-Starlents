@@ -92,129 +92,128 @@ namespace Pi_Serasa_Starlents
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-
+            Cadastro.pictureBox1.ImageLocation = avatar.caminho1;
             Tela_seleção_avatar tela = new Tela_seleção_avatar(avatar.caminho1);
-            tela.Hide();
+            caminho01 = avatar.caminho1;
         }
 
         private void radioButton5_CheckedChanged(object sender, EventArgs e)
         {
             Cadastro.pictureBox1.ImageLocation = avatar.caminho2;
             Tela_seleção_avatar tela = new Tela_seleção_avatar(avatar.caminho2);
-            tela.Hide();
-            this.Close();
+            caminho01 = avatar.caminho2;
         }
 
         private void radioButton4_CheckedChanged(object sender, EventArgs e)
         {
-
+            Cadastro.pictureBox1.ImageLocation = avatar.caminho3;
             Tela_seleção_avatar tela = new Tela_seleção_avatar(avatar.caminho3);
-            tela.Hide();
+            caminho01 = avatar.caminho3;
         }
 
         private void radioButton18_CheckedChanged(object sender, EventArgs e)
         {
-
+            Cadastro.pictureBox1.ImageLocation = avatar.caminho4;
             Tela_seleção_avatar tela = new Tela_seleção_avatar(avatar.caminho4);
-            tela.Hide();
+            caminho01 = avatar.caminho4;
         }
 
         private void radioButton8_CheckedChanged(object sender, EventArgs e)
         {
-
+            Cadastro.pictureBox1.ImageLocation = avatar.caminho5;
             Tela_seleção_avatar tela = new Tela_seleção_avatar(avatar.caminho5);
-            tela.Hide();
+            caminho01 = avatar.caminho5;
         }
 
         private void radioButton3_CheckedChanged(object sender, EventArgs e)
         {
-
+            Cadastro.pictureBox1.ImageLocation = avatar.caminho6;
             Tela_seleção_avatar tela = new Tela_seleção_avatar(avatar.caminho6);
-            tela.Hide();
+            caminho01 = avatar.caminho6;
         }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
-
+            Cadastro.pictureBox1.ImageLocation = avatar.caminho7;
             Tela_seleção_avatar tela = new Tela_seleção_avatar(avatar.caminho7);
-            tela.Hide();
+            caminho01 = avatar.caminho7;
         }
 
         private void radioButton6_CheckedChanged(object sender, EventArgs e)
         {
-
+            Cadastro.pictureBox1.ImageLocation = avatar.caminho8;
             Tela_seleção_avatar tela = new Tela_seleção_avatar(avatar.caminho8);
-            tela.Hide();
+            caminho01 = avatar.caminho8;
         }
 
         private void radioButton17_CheckedChanged(object sender, EventArgs e)
         {
-
+            Cadastro.pictureBox1.ImageLocation = avatar.caminho9;
             Tela_seleção_avatar tela = new Tela_seleção_avatar(avatar.caminho9);
-            tela.Hide();
+            caminho01 = avatar.caminho9;
         }
 
         private void radioButton7_CheckedChanged(object sender, EventArgs e)
         {
-
+            Cadastro.pictureBox1.ImageLocation = avatar.caminho10;
             Tela_seleção_avatar tela = new Tela_seleção_avatar(avatar.caminho10);
-            tela.Hide();
+            caminho01 = avatar.caminho10;
         }
 
         private void radioButton13_CheckedChanged(object sender, EventArgs e)
         {
-
+            Cadastro.pictureBox1.ImageLocation = avatar.caminho11;
             Tela_seleção_avatar tela = new Tela_seleção_avatar(avatar.caminho11);
-            tela.Hide();
+            caminho01 = avatar.caminho11;
         }
 
         private void radioButton14_CheckedChanged(object sender, EventArgs e)
         {
-
+            Cadastro.pictureBox1.ImageLocation = avatar.caminho12;
             Tela_seleção_avatar tela = new Tela_seleção_avatar(avatar.caminho12);
-            tela.Hide();
+            caminho01 = avatar.caminho12;
         }
 
         private void radioButton15_CheckedChanged(object sender, EventArgs e)
         {
-
+            Cadastro.pictureBox1.ImageLocation = avatar.caminho13;
             Tela_seleção_avatar tela = new Tela_seleção_avatar(avatar.caminho13);
-            tela.Hide();
+            caminho01 = avatar.caminho13;
         }
 
         private void radioButton16_CheckedChanged(object sender, EventArgs e)
         {
-
+            Cadastro.pictureBox1.ImageLocation = avatar.caminho14;
             Tela_seleção_avatar tela = new Tela_seleção_avatar(avatar.caminho14);
-            tela.Hide();
+            caminho01 = avatar.caminho14;
         }
 
         private void radioButton12_CheckedChanged(object sender, EventArgs e)
         {
-
+            Cadastro.pictureBox1.ImageLocation = avatar.caminho15;
             Tela_seleção_avatar tela = new Tela_seleção_avatar(avatar.caminho15);
-            tela.Hide();
+            caminho01 = avatar.caminho15;
         }
 
         private void radioButton11_CheckedChanged(object sender, EventArgs e)
         {
-
+            Cadastro.pictureBox1.ImageLocation = avatar.caminho16;
             Tela_seleção_avatar tela = new Tela_seleção_avatar(avatar.caminho16);
-            tela.Hide();
+            caminho01 = avatar.caminho16;
         }
 
         private void radioButton10_CheckedChanged(object sender, EventArgs e)
         {
-
+            Cadastro.pictureBox1.ImageLocation = avatar.caminho17;
             Tela_seleção_avatar tela = new Tela_seleção_avatar(avatar.caminho17);
-            tela.Hide();
+            caminho01 = avatar.caminho17;
         }
 
         private void radioButton9_CheckedChanged(object sender, EventArgs e)
         {
-
+            Cadastro.pictureBox1.ImageLocation = avatar.caminho18;
             Tela_seleção_avatar tela = new Tela_seleção_avatar(avatar.caminho18);
-            tela.Hide();
+            caminho01 = avatar.caminho18;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -227,7 +226,7 @@ namespace Pi_Serasa_Starlents
             }
             else
             {
-                
+                this.Close(); 
                
                 
             }

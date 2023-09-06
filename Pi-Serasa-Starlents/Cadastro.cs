@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -19,11 +20,12 @@ namespace Pi_Serasa_Starlents
             InitializeComponent();
         }
         Tela_seleção_avatar tela_Seleção_Avatar = new Tela_seleção_avatar();
-
+        TelaDeInicio inicio = new TelaDeInicio();
+        
 
         private void Cadastro_Load(object sender, EventArgs e)
         {
-            GradientPanelCadastro.Size = new Size(ClientSize.Width,ClientSize.Height );
+            GradientPanelCadastro.Size = new Size(ClientSize.Width, ClientSize.Height);
 
         }
 
@@ -49,12 +51,22 @@ namespace Pi_Serasa_Starlents
         {
             Tela_seleção_avatar tela_Seleção_Avatar = new Tela_seleção_avatar();
             tela_Seleção_Avatar.Show();
-            pictureBox1.ImageLocation = tela_Seleção_Avatar.caminho01;
-            
-            
+
+
+
 
         }
-
+        public void geraform(Form form)
+        {
+            form.TopLevel = false;
+            GradientPanelCadastro.Controls.Clear();
+            GradientPanelCadastro.Controls.Add(form);
+            form.Location = new Point(form.Width / 2 - form.Height / 2);
+            form.AutoSize = true;
+            form.Size = new Size(ClientSize.Width , ClientSize.Height);
+            form.Show();
+        }
+        
         private void wilBitComboBox3_OnSelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -62,16 +74,19 @@ namespace Pi_Serasa_Starlents
 
         private void wilBitButton1_Click_2(object sender, EventArgs e)
         {
-            
 
+            string caminho = tela_Seleção_Avatar.caminho01;
             string nome = wilBitTextBox4.Texts;
             string email = wilBitTextBox1.Texts;
             string senha = wilBitTextBox2.Texts;
             string telefone = wilBitTextBox3.Texts;
-            string avatar = tela_Seleção_Avatar.caminho01;
+            string avatar = caminho;
             string descricao = wilBitTextBox5.Texts;
             Usuario usuariototal = new Usuario(nome, email, senha, telefone, descricao, avatar);
             Program.usuario.CadastrarUsuario(usuariototal);
+            MessageBox.Show("Cadastro Feito com Sucesso");
+            geraform(inicio);
+            
         }
 
     }
