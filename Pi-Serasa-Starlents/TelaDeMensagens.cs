@@ -94,7 +94,7 @@ namespace Pi_Serasa_Starlents
         }
         private void TelaDeMensagens_Load(object sender, EventArgs e)
         {
-            
+
 
         }
 
@@ -124,6 +124,11 @@ namespace Pi_Serasa_Starlents
 
                 geraform(u.nome);
             }
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 
