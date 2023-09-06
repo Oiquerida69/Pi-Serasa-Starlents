@@ -94,15 +94,7 @@ namespace Pi_Serasa_Starlents
         }
         private void TelaDeMensagens_Load(object sender, EventArgs e)
         {
-            panelUsuarioNoChat.Hide();
-            List<Usuario> usuarios = usuario.ListarUsuarios();
-
-
-            foreach (Usuario u in usuarios)
-            {
-
-                geraform(u.nome);
-            }
+            
 
         }
 
@@ -119,6 +111,19 @@ namespace Pi_Serasa_Starlents
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void TelaDeMensagens_Load_1(object sender, EventArgs e)
+        {
+            panelUsuarioNoChat.Hide();
+            List<Usuario> usuarios = usuario.ListarUsuarios();
+
+
+            foreach (Usuario u in usuarios)
+            {
+
+                geraform(u.nome);
+            }
         }
     }
 
