@@ -34,13 +34,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.wilBitRoundedPictureBox2 = new WiLBiT.WiLBiTRoundedPictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.wilBitPanel3 = new WiLBiT.WiLBiTPanel();
-            this.wilBitPanel2 = new WiLBiT.WiLBiTPanel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.btnEnviaMensagem = new System.Windows.Forms.PictureBox();
-            this.btnEmoji = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.btnDenunciaUsuario = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.picFotoUsuario = new WiLBiT.WiLBiTRoundedPictureBox();
@@ -48,18 +41,16 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnVoltaInicio = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.wilBitPanel2 = new WiLBiT.WiLBiTPanel();
             this.painel_Lista.SuspendLayout();
             this.panelUsuarioNoChat.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.wilBitRoundedPictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
-            this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnEnviaMensagem)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnEmoji)).BeginInit();
-            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnDenunciaUsuario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picFotoUsuario)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnVoltaInicio)).BeginInit();
+            this.wilBitPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // painel_Lista
@@ -116,92 +107,16 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(209)))), ((int)(((byte)(232)))));
-            this.panel2.Controls.Add(this.wilBitPanel3);
             this.panel2.Controls.Add(this.wilBitPanel2);
-            this.panel2.Controls.Add(this.panel5);
-            this.panel2.Location = new System.Drawing.Point(220, 50);
+            this.panel2.Location = new System.Drawing.Point(220, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(560, 375);
+            this.panel2.Size = new System.Drawing.Size(560, 395);
             this.panel2.TabIndex = 1;
-            // 
-            // wilBitPanel3
-            // 
-            this.wilBitPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(71)))), ((int)(((byte)(163)))));
-            this.wilBitPanel3.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.wilBitPanel3.BorderRadius = 6;
-            this.wilBitPanel3.BorderSize = 0;
-            this.wilBitPanel3.ForeColor = System.Drawing.Color.White;
-            this.wilBitPanel3.Location = new System.Drawing.Point(319, 73);
-            this.wilBitPanel3.Name = "wilBitPanel3";
-            this.wilBitPanel3.Size = new System.Drawing.Size(226, 50);
-            this.wilBitPanel3.TabIndex = 23;
-            // 
-            // wilBitPanel2
-            // 
-            this.wilBitPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(186)))), ((int)(((byte)(234)))));
-            this.wilBitPanel2.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.wilBitPanel2.BorderRadius = 6;
-            this.wilBitPanel2.BorderSize = 0;
-            this.wilBitPanel2.ForeColor = System.Drawing.Color.White;
-            this.wilBitPanel2.Location = new System.Drawing.Point(18, 20);
-            this.wilBitPanel2.Name = "wilBitPanel2";
-            this.wilBitPanel2.Size = new System.Drawing.Size(226, 50);
-            this.wilBitPanel2.TabIndex = 22;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(220)))), ((int)(((byte)(246)))));
-            this.panel5.Controls.Add(this.btnEnviaMensagem);
-            this.panel5.Controls.Add(this.btnEmoji);
-            this.panel5.Controls.Add(this.textBox1);
-            this.panel5.Location = new System.Drawing.Point(0, 314);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(560, 61);
-            this.panel5.TabIndex = 21;
-            // 
-            // btnEnviaMensagem
-            // 
-            this.btnEnviaMensagem.Image = ((System.Drawing.Image)(resources.GetObject("btnEnviaMensagem.Image")));
-            this.btnEnviaMensagem.Location = new System.Drawing.Point(512, 10);
-            this.btnEnviaMensagem.Name = "btnEnviaMensagem";
-            this.btnEnviaMensagem.Size = new System.Drawing.Size(33, 38);
-            this.btnEnviaMensagem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.btnEnviaMensagem.TabIndex = 22;
-            this.btnEnviaMensagem.TabStop = false;
-            // 
-            // btnEmoji
-            // 
-            this.btnEmoji.Image = ((System.Drawing.Image)(resources.GetObject("btnEmoji.Image")));
-            this.btnEmoji.Location = new System.Drawing.Point(18, 10);
-            this.btnEmoji.Name = "btnEmoji";
-            this.btnEmoji.Size = new System.Drawing.Size(33, 38);
-            this.btnEmoji.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.btnEmoji.TabIndex = 21;
-            this.btnEmoji.TabStop = false;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(57, 10);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(449, 38);
-            this.textBox1.TabIndex = 0;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(220)))), ((int)(((byte)(246)))));
-            this.panel3.Controls.Add(this.btnDenunciaUsuario);
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Controls.Add(this.picFotoUsuario);
-            this.panel3.Location = new System.Drawing.Point(220, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(560, 50);
-            this.panel3.TabIndex = 2;
             // 
             // btnDenunciaUsuario
             // 
             this.btnDenunciaUsuario.Image = ((System.Drawing.Image)(resources.GetObject("btnDenunciaUsuario.Image")));
-            this.btnDenunciaUsuario.Location = new System.Drawing.Point(512, 6);
+            this.btnDenunciaUsuario.Location = new System.Drawing.Point(491, 14);
             this.btnDenunciaUsuario.Name = "btnDenunciaUsuario";
             this.btnDenunciaUsuario.Size = new System.Drawing.Size(33, 38);
             this.btnDenunciaUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -213,7 +128,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(11)))), ((int)(((byte)(66)))));
-            this.label1.Location = new System.Drawing.Point(66, 18);
+            this.label1.Location = new System.Drawing.Point(86, 45);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(64, 20);
             this.label1.TabIndex = 20;
@@ -227,7 +142,7 @@
             this.picFotoUsuario.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
             this.picFotoUsuario.BorderSize = 2;
             this.picFotoUsuario.GradientAngle = 50F;
-            this.picFotoUsuario.Location = new System.Drawing.Point(18, 5);
+            this.picFotoUsuario.Location = new System.Drawing.Point(23, 34);
             this.picFotoUsuario.Name = "picFotoUsuario";
             this.picFotoUsuario.Size = new System.Drawing.Size(42, 42);
             this.picFotoUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -275,34 +190,45 @@
             this.panel1.TabIndex = 3;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // wilBitPanel2
+            // 
+            this.wilBitPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(186)))), ((int)(((byte)(234)))));
+            this.wilBitPanel2.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.wilBitPanel2.BorderRadius = 6;
+            this.wilBitPanel2.BorderSize = 0;
+            this.wilBitPanel2.Controls.Add(this.btnDenunciaUsuario);
+            this.wilBitPanel2.Controls.Add(this.label1);
+            this.wilBitPanel2.Controls.Add(this.picFotoUsuario);
+            this.wilBitPanel2.ForeColor = System.Drawing.Color.White;
+            this.wilBitPanel2.Location = new System.Drawing.Point(18, 20);
+            this.wilBitPanel2.Name = "wilBitPanel2";
+            this.wilBitPanel2.Size = new System.Drawing.Size(527, 392);
+            this.wilBitPanel2.TabIndex = 22;
+            // 
             // TelaDeMensagens
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(779, 424);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.painel_Lista);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "TelaDeMensagens";
             this.Text = "TelaDeMensagens";
+            this.Load += new System.EventHandler(this.TelaDeMensagens_Load_1);
             this.painel_Lista.ResumeLayout(false);
             this.panelUsuarioNoChat.ResumeLayout(false);
             this.panelUsuarioNoChat.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.wilBitRoundedPictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnEnviaMensagem)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnEmoji)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnDenunciaUsuario)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picFotoUsuario)).EndInit();
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnVoltaInicio)).EndInit();
+            this.wilBitPanel2.ResumeLayout(false);
+            this.wilBitPanel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -311,22 +237,16 @@
 
         private Panel painel_Lista;
         private Panel panel2;
-        private Panel panel3;
         private WiLBiT.WiLBiTRoundedPictureBox picFotoUsuario;
         private PictureBox btnVoltaInicio;
         private Label label1;
         private Panel panel4;
         private Label label2;
-        private Panel panel5;
         private WiLBiT.WiLBiTPanel panelUsuarioNoChat;
         private Label label6;
         private WiLBiT.WiLBiTRoundedPictureBox wilBitRoundedPictureBox2;
-        private TextBox textBox1;
-        private PictureBox btnEmoji;
-        private PictureBox btnEnviaMensagem;
-        private WiLBiT.WiLBiTPanel wilBitPanel3;
-        private WiLBiT.WiLBiTPanel wilBitPanel2;
         private PictureBox btnDenunciaUsuario;
         private Panel panel1;
+        private WiLBiT.WiLBiTPanel wilBitPanel2;
     }
 }
