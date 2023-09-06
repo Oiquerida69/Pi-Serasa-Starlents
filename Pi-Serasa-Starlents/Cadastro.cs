@@ -13,16 +13,17 @@ namespace Pi_Serasa_Starlents
 {
     public partial class Cadastro : Form
     {
+        string caminhoprincipal;
         public Cadastro()
         {
             InitializeComponent();
         }
-        Tela_seleção_avatar telaselecao = new Tela_seleção_avatar();
+        Tela_seleção_avatar tela_Seleção_Avatar = new Tela_seleção_avatar();
 
 
         private void Cadastro_Load(object sender, EventArgs e)
         {
-
+            GradientPanelCadastro.Size = new Size(ClientSize.Width,ClientSize.Height );
 
         }
 
@@ -46,8 +47,11 @@ namespace Pi_Serasa_Starlents
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            telaselecao.Show();
-            pictureBox1.ImageLocation = telaselecao.caminho01;
+            Tela_seleção_avatar tela_Seleção_Avatar = new Tela_seleção_avatar();
+            tela_Seleção_Avatar.Show();
+            pictureBox1.ImageLocation = tela_Seleção_Avatar.caminho01;
+            
+            
 
         }
 
@@ -58,11 +62,13 @@ namespace Pi_Serasa_Starlents
 
         private void wilBitButton1_Click_2(object sender, EventArgs e)
         {
+            
+
             string nome = wilBitTextBox4.Texts;
             string email = wilBitTextBox1.Texts;
             string senha = wilBitTextBox2.Texts;
             string telefone = wilBitTextBox3.Texts;
-            string avatar = telaselecao.caminho01;
+            string avatar = tela_Seleção_Avatar.caminho01;
             string descricao = wilBitTextBox5.Texts;
             Usuario usuariototal = new Usuario(nome, email, senha, telefone, descricao, avatar);
             Program.usuario.CadastrarUsuario(usuariototal);

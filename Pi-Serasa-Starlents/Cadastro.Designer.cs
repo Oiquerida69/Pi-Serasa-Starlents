@@ -156,6 +156,7 @@
             // 
             // GradientPanelCadastro
             // 
+            GradientPanelCadastro.AutoSize = true;
             GradientPanelCadastro.BackColor = Color.FromArgb(64, 15, 87);
             GradientPanelCadastro.BackColor2 = Color.FromArgb(153, 47, 240);
             GradientPanelCadastro.BorderColor = Color.PaleVioletRed;
@@ -462,11 +463,12 @@
             GradientPanelCadastro.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        private PictureBox pictureBox1;
+        public static PictureBox pictureBox1;
         private WiLBiT.WiLBiTTextBox wilBitTextBox1;
         private WiLBiT.WiLBiTTextBox wilBitTextBox2;
         private WiLBiT.WiLBiTTextBox wilBitTextBox3;
