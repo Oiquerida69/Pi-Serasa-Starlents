@@ -80,7 +80,7 @@ namespace Pi_Serasa_Starlents
             string email = wilBitTextBox1.Texts;
             string senha = wilBitTextBox2.Texts;
             string telefone = wilBitTextBox3.Texts;
-            string avatar = caminho;
+            string avatar = pictureBox1.ImageLocation;
             string descricao = wilBitTextBox5.Texts;
             Usuario usuariototal = new Usuario(nome, email, senha, telefone, descricao, avatar);
             Program.usuario.CadastrarUsuario(usuariototal);
