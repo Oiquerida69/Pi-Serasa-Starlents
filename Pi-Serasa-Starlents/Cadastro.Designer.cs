@@ -454,7 +454,7 @@
             BackColor = Color.White;
             ClientSize = new Size(1366, 745);
             Controls.Add(GradientPanelCadastro);
-            FormBorderStyle = FormBorderStyle.Fixed3D;
+            FormBorderStyle = FormBorderStyle.None;
             Name = "Cadastro";
             Text = "Cadastro";
             Load += Cadastro_Load;
@@ -467,8 +467,6 @@
         }
 
         #endregion
-
-        public static PictureBox pictureBox1;
         private WiLBiT.WiLBiTTextBox wilBitTextBox1;
         private WiLBiT.WiLBiTTextBox wilBitTextBox2;
         private WiLBiT.WiLBiTTextBox wilBitTextBox3;
@@ -491,5 +489,6 @@
         private Label label7;
         private Label label9;
         private PictureBox pictureBox2;
+        public PictureBox pictureBox1;
     }
 }

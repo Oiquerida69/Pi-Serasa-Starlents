@@ -15,8 +15,8 @@ namespace Pi_Serasa_Starlents
     public partial class Tela_seleção_avatar : Form
     {
         public string caminho01 = "";
-        
-        
+
+        static Cadastro CADAs = new Cadastro();
         Avatar avatar = new Avatar();
         public Tela_seleção_avatar(string caminho_avatar)
         {
@@ -92,126 +92,126 @@ namespace Pi_Serasa_Starlents
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            Cadastro.pictureBox1.ImageLocation = avatar.caminho1;
-            Tela_seleção_avatar tela = new Tela_seleção_avatar();
+            CADAs.pictureBox1.ImageLocation = avatar.caminho1;
+            Tela_seleção_avatar tela = new Tela_seleção_avatar(avatar.caminho1);
             caminho01 = avatar.caminho1;
         }
 
         private void radioButton5_CheckedChanged(object sender, EventArgs e)
         {
-            Cadastro.pictureBox1.ImageLocation = avatar.caminho2;
+            CADAs.pictureBox1.ImageLocation = avatar.caminho2;
             Tela_seleção_avatar tela = new Tela_seleção_avatar();
             caminho01 = avatar.caminho2;
         }
 
         private void radioButton4_CheckedChanged(object sender, EventArgs e)
         {
-            Cadastro.pictureBox1.ImageLocation = avatar.caminho3;
+            CADAs.pictureBox1.ImageLocation = avatar.caminho3;
             Tela_seleção_avatar tela = new Tela_seleção_avatar();
             caminho01 = avatar.caminho3;
         }
 
         private void radioButton18_CheckedChanged(object sender, EventArgs e)
         {
-            Cadastro.pictureBox1.ImageLocation = avatar.caminho4;
+            CADAs.pictureBox1.ImageLocation = avatar.caminho4;
             Tela_seleção_avatar tela = new Tela_seleção_avatar();
             caminho01 = avatar.caminho4;
         }
 
         private void radioButton8_CheckedChanged(object sender, EventArgs e)
         {
-            Cadastro.pictureBox1.ImageLocation = avatar.caminho5;
+            CADAs.pictureBox1.ImageLocation = avatar.caminho5;
             Tela_seleção_avatar tela = new Tela_seleção_avatar();
             caminho01 = avatar.caminho5;
         }
 
         private void radioButton3_CheckedChanged(object sender, EventArgs e)
         {
-            Cadastro.pictureBox1.ImageLocation = avatar.caminho6;
+            CADAs.pictureBox1.ImageLocation = avatar.caminho6;
             Tela_seleção_avatar tela = new Tela_seleção_avatar();
             caminho01 = avatar.caminho6;
         }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
-            Cadastro.pictureBox1.ImageLocation = avatar.caminho7;
+            CADAs.pictureBox1.ImageLocation = avatar.caminho7;
             Tela_seleção_avatar tela = new Tela_seleção_avatar();
             caminho01 = avatar.caminho7;
         }
 
         private void radioButton6_CheckedChanged(object sender, EventArgs e)
         {
-            Cadastro.pictureBox1.ImageLocation = avatar.caminho8;
+            CADAs.pictureBox1.ImageLocation = avatar.caminho8;
             Tela_seleção_avatar tela = new Tela_seleção_avatar();
             caminho01 = avatar.caminho8;
         }
 
         private void radioButton17_CheckedChanged(object sender, EventArgs e)
         {
-            Cadastro.pictureBox1.ImageLocation = avatar.caminho9;
+            CADAs.pictureBox1.ImageLocation = avatar.caminho9;
             Tela_seleção_avatar tela = new Tela_seleção_avatar();
             caminho01 = avatar.caminho9;
         }
 
         private void radioButton7_CheckedChanged(object sender, EventArgs e)
         {
-            Cadastro.pictureBox1.ImageLocation = avatar.caminho10;
+            CADAs.pictureBox1.ImageLocation = avatar.caminho10;
             Tela_seleção_avatar tela = new Tela_seleção_avatar();
             caminho01 = avatar.caminho10;
         }
 
         private void radioButton13_CheckedChanged(object sender, EventArgs e)
         {
-            Cadastro.pictureBox1.ImageLocation = avatar.caminho11;
+            CADAs.pictureBox1.ImageLocation = avatar.caminho11;
             Tela_seleção_avatar tela = new Tela_seleção_avatar();
             caminho01 = avatar.caminho11;
         }
 
         private void radioButton14_CheckedChanged(object sender, EventArgs e)
         {
-            Cadastro.pictureBox1.ImageLocation = avatar.caminho12;
+            CADAs.pictureBox1.ImageLocation = avatar.caminho12;
             Tela_seleção_avatar tela = new Tela_seleção_avatar();
             caminho01 = avatar.caminho12;
         }
 
         private void radioButton15_CheckedChanged(object sender, EventArgs e)
         {
-            Cadastro.pictureBox1.ImageLocation = avatar.caminho13;
+            CADAs.pictureBox1.ImageLocation = avatar.caminho13;
             Tela_seleção_avatar tela = new Tela_seleção_avatar();
             caminho01 = avatar.caminho13;
         }
 
         private void radioButton16_CheckedChanged(object sender, EventArgs e)
         {
-            Cadastro.pictureBox1.ImageLocation = avatar.caminho14;
+            CADAs.pictureBox1.ImageLocation = avatar.caminho14;
             Tela_seleção_avatar tela = new Tela_seleção_avatar();
             caminho01 = avatar.caminho14;
         }
 
         private void radioButton12_CheckedChanged(object sender, EventArgs e)
         {
-            Cadastro.pictureBox1.ImageLocation = avatar.caminho15;
+            CADAs.pictureBox1.ImageLocation = avatar.caminho15;
             Tela_seleção_avatar tela = new Tela_seleção_avatar();
             caminho01 = avatar.caminho15;
         }
 
         private void radioButton11_CheckedChanged(object sender, EventArgs e)
         {
-            Cadastro.pictureBox1.ImageLocation = avatar.caminho16;
+            CADAs.pictureBox1.ImageLocation = avatar.caminho16;
             Tela_seleção_avatar tela = new Tela_seleção_avatar();
             caminho01 = avatar.caminho16;
         }
 
         private void radioButton10_CheckedChanged(object sender, EventArgs e)
         {
-            Cadastro.pictureBox1.ImageLocation = avatar.caminho17;
+            CADAs.pictureBox1.ImageLocation = avatar.caminho17;
             Tela_seleção_avatar tela = new Tela_seleção_avatar();
             caminho01 = avatar.caminho17;
         }
 
         private void radioButton9_CheckedChanged(object sender, EventArgs e)
         {
-            Cadastro.pictureBox1.ImageLocation = avatar.caminho18;
+            CADAs.pictureBox1.ImageLocation = avatar.caminho18;
             Tela_seleção_avatar tela = new Tela_seleção_avatar();
             caminho01 = avatar.caminho18;
         }

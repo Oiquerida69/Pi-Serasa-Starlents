@@ -12,5 +12,13 @@ namespace Pi_Serasa_Starlents
             TelaDeMensagens tela = new TelaDeMensagens();
             tela.Show();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.TopLevel = false;
+            panel1.Controls.Add(login);
+            login.Show();
+        }
     }
 }
