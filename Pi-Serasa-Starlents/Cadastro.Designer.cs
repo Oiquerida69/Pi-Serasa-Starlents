@@ -489,6 +489,6 @@
         private Label label7;
         private Label label9;
         private PictureBox pictureBox2;
-        public PictureBox pictureBox1;
+        public static PictureBox pictureBox1;
     }
 }

@@ -226,6 +226,7 @@
             BackColor = Color.White;
             ClientSize = new Size(944, 591);
             Controls.Add(wilBitGradientPanel1);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "Login";
             Text = "Login";
             Load += Login_Load;

@@ -26,7 +26,7 @@ namespace Pi_Serasa_Starlents
 
             wilBitGradientPanel1.Controls.Clear();
             wilBitGradientPanel1.Controls.Add(form);
-            wilBitGradientPanel1.Site = new Size(ClientSize.Width, ClientSize.Height);
+            form.Size = new Size(ClientSize.Width, ClientSize.Height);
             form.Show();
         }
 
@@ -80,7 +80,7 @@ namespace Pi_Serasa_Starlents
             Usuario u = new Usuario();
             u = u.login(email, senha);
 
-            if(u.id == null)
+            if (u.id == null)
             {
                 MessageBox.Show("email ou senha incorretos");
                 return;
