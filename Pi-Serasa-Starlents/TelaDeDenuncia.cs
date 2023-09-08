@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Pi_Serasa_Starlents
 {
-    public partial class TelaDeDenuncia : Form
+    public partial class telaDenuncia : Form
     {
-        public TelaDeDenuncia()
+        public telaDenuncia()
         {
             InitializeComponent();
         }

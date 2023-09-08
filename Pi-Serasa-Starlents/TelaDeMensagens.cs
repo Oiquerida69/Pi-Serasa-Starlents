@@ -9,6 +9,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WiLBiT;
 
 namespace Pi_Serasa_Starlents
 {
@@ -17,6 +18,7 @@ namespace Pi_Serasa_Starlents
         Usuario usuario = new Usuario();
         //List<string> usuarios = new List<string>{"wendell","Mirela","Mario"};
         List<Usuario> usuarios = new List<Usuario>();
+        List<TelaDeMensagens> mensagens = new List<TelaDeMensagens>();
 
         public TelaDeMensagens()
         {
@@ -92,6 +94,15 @@ namespace Pi_Serasa_Starlents
             */
 
         }
+
+        public void carregaForm(Form form)
+        {
+
+            form.TopLevel = false;
+
+
+
+        }
         private void TelaDeMensagens_Load(object sender, EventArgs e)
         {
             panelUsuarioNoChat.Hide();
@@ -109,16 +120,49 @@ namespace Pi_Serasa_Starlents
         private void panelUsuarioNoChat_Paint(object sender, PaintEventArgs e)
         {
 
-
-
-
-
-
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnEnviaMensagem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDenunciaUsuario_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void wilBitPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void TelaDeMensagens_Load_1(object sender, EventArgs e)
+        {
+            panelUsuarioNoChat.Hide();
+            List<Usuario> usuarios = usuario.ListarUsuarios();
+
+
+            foreach (Usuario u in usuarios)
+            {
+
+                geraform(u.nome);
+            }
         }
     }
 

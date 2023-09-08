@@ -13,7 +13,7 @@ namespace Pi_Serasa_Starlents
     internal class Conexao
     {
         const string host = "localhost";
-        const string banco = "ProjetoIntegrador";
+        const string banco = "projeto_senac";
         const string usuario = "root";
         const string senha = "";
         //const string host = "10.60.45.48";
