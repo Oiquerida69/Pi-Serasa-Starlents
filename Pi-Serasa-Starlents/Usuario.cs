@@ -97,7 +97,7 @@ namespace Pi_Serasa_Starlents
         {
             string query = $" SELECT * FROM usuarios WHERE email = '{email}' AND senha = '{senha}';";
             DataTable resutlados = Conexao.executaQuery(query);
-            if (resutlados.Rows.Count == 0)
+            if (resutlados == null)
                 return null;
 
             Usuario u = carregadados(resutlados.Rows[0]);

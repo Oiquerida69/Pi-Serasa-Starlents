@@ -19,7 +19,7 @@ namespace Pi_Serasa_Starlents
         {
             InitializeComponent();
         }
-        
+
         public void carregaform(Form form)
         {
             form.TopLevel = false;
@@ -41,17 +41,17 @@ namespace Pi_Serasa_Starlents
             wilBitGradientPanel1.Location = new Point(0, 0);
             wilBitGradientPanel1.Size = new Size(ClientSize.Width, ClientSize.Height);
 
-            panel1.Size = new Size(ClientSize.Width,63);
+            panel1.Size = new Size(ClientSize.Width, 63);
             panelIconesPer.Location = new Point(ClientSize.Width / 2 - panelIconesPer.Width / 2);
 
             //label3.Location = new Point(ClientSize.Height / 2 - label3.Width / 2);
-          //  label3.Location = new Point(ClientSize.Width / 2 - label3.Size.Width / 2, ClientSize.Height / 2 - label3.Size.Height / 2 - 300);
+            //  label3.Location = new Point(ClientSize.Width / 2 - label3.Size.Width / 2, ClientSize.Height / 2 - label3.Size.Height / 2 - 300);
 
-           //label1.Location = new Point(ClientSize.Height / 2 - label3.Width / 2);
-           //label1.Location = new Point(ClientSize.Width / 2 - label3.Size.Width / 2, ClientSize.Height / 2 - label3.Size.Height / 2 - 100);
-           
-           // panelDescri.Location = new Point(ClientSize.Height - 100);
-           // panelDescri.Location = new Point(ClientSize.Width / 2 - panelDescri.Size.Width / 2 -50 , ClientSize.Height / 2 - panelDescri.Size.Height / 2 - 30);
+            //label1.Location = new Point(ClientSize.Height / 2 - label3.Width / 2);
+            //label1.Location = new Point(ClientSize.Width / 2 - label3.Size.Width / 2, ClientSize.Height / 2 - label3.Size.Height / 2 - 100);
+
+            // panelDescri.Location = new Point(ClientSize.Height - 100);
+            // panelDescri.Location = new Point(ClientSize.Width / 2 - panelDescri.Size.Width / 2 -50 , ClientSize.Height / 2 - panelDescri.Size.Height / 2 - 30);
 
 
         }
@@ -79,12 +79,13 @@ namespace Pi_Serasa_Starlents
             Usuario usuario = new Usuario();
 
 
-          List < Usuario > usuarios = usuario.ListarUsuarios();
+            List<Usuario> usuarios = usuario.ListarUsuarios();
 
             foreach (Usuario u in usuarios)
             {
                 label4.Text = (u.nome).ToString();
                 wilBitTextBox6.Text = (u.descricao).ToString();
+                pictureBox1.ImageLocation = (u.avatar).ToString();
             }
         }
 
@@ -96,7 +97,7 @@ namespace Pi_Serasa_Starlents
 
         private void label4_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
