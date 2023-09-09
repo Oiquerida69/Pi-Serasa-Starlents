@@ -21,10 +21,10 @@ namespace Pi_Serasa_Starlents
         }
         Tela_seleção_avatar tela_Seleção_Avatar = new Tela_seleção_avatar();
         TelaDeInicio inicio = new TelaDeInicio();
-        
-        
 
-        
+
+
+
 
         private void Cadastro_Load(object sender, EventArgs e)
         {
@@ -72,7 +72,7 @@ namespace Pi_Serasa_Starlents
 
         private void wilBitComboBox3_OnSelectedIndexChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void wilBitButton1_Click_2(object sender, EventArgs e)
@@ -85,7 +85,7 @@ namespace Pi_Serasa_Starlents
             string telefone = wilBitTextBox3.Texts;
             string avatar = pictureBox1.ImageLocation;
             string descricao = wilBitTextBox5.Texts;
-            Usuario usuariototal = new Usuario(id,nome, email, senha, telefone, descricao, avatar);
+            Usuario usuariototal = new Usuario(id, nome, email, senha, telefone, descricao, avatar);
             Program.usuario.CadastrarUsuario(usuariototal);
             MessageBox.Show("Cadastro Feito com Sucesso");
             geraform(inicio);

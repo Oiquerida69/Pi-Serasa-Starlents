@@ -20,13 +20,13 @@ namespace Pi_Serasa_Starlents
         Usuario usuario = new Usuario();
         //List<string> usuarios = new List<string>{"wendell","Mirela","Mario"};
         List<Usuario> usuarios = new List<Usuario>();
- 
+
         string nome;
 
 
         public void geraForm(string usuario)
         {
-            
+
 
             Panel painel = new WiLBiT.WiLBiTPanel();
             painel.Name = "painel";
@@ -67,7 +67,7 @@ namespace Pi_Serasa_Starlents
 
             }
 
-            
+
 
         }
         public TelaDoModerador()
@@ -88,7 +88,7 @@ namespace Pi_Serasa_Starlents
                 geraForm(usuario);
             }
 
-            
+
         }
 
 
@@ -111,6 +111,18 @@ namespace Pi_Serasa_Starlents
 
         private void wilBitPanel10_Paint(object sender, PaintEventArgs e)
         {
+
+        }
+
+        private void btnSuspendeDenuncia_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("A denúncia foi suspensa.");
+            lblUsuario.Text = "Usuario";
+            lblidUsuario.Text = "0";
+            lblDetalhesDenuncia.Text = "Detalhes da denúncia";
+            lblBiografiaMix.Text = "Biografia de Mix";
+            lblBiografiaUsuario.Text = "Biografia do usuário";
+            txtJustificativaBanimento.Texts = "";
 
         }
     }

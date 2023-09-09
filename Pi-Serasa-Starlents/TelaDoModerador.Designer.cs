@@ -53,9 +53,9 @@
             label2 = new Label();
             label7 = new Label();
             wilBitPanel4 = new WiLBiT.WiLBiTPanel();
-            label8 = new Label();
+            lblBiografiaMix = new Label();
             wilBitPanel1 = new WiLBiT.WiLBiTPanel();
-            label6 = new Label();
+            lblBiografiaUsuario = new Label();
             panel1.SuspendLayout();
             panelListaDenuncias.SuspendLayout();
             panelPerfilDenunciado.SuspendLayout();
@@ -253,6 +253,7 @@
             // wilBitPanel10
             // 
             wilBitPanel10.Anchor = AnchorStyles.None;
+            wilBitPanel10.AutoScroll = true;
             wilBitPanel10.BackColor = Color.FromArgb(240, 208, 255);
             wilBitPanel10.BorderColor = Color.PaleVioletRed;
             wilBitPanel10.BorderRadius = 6;
@@ -304,6 +305,7 @@
             btnSuspendeDenuncia.TabIndex = 0;
             btnSuspendeDenuncia.Text = "Suspender a denúncia";
             btnSuspendeDenuncia.UseVisualStyleBackColor = false;
+            btnSuspendeDenuncia.Click += btnSuspendeDenuncia_Click;
             // 
             // lblidUsuario
             // 
@@ -390,57 +392,59 @@
             label7.Name = "label7";
             label7.Size = new Size(186, 18);
             label7.TabIndex = 20;
-            label7.Text = "Biografia de match";
+            label7.Text = "Biografia de Mix";
             // 
             // wilBitPanel4
             // 
             wilBitPanel4.Anchor = AnchorStyles.None;
+            wilBitPanel4.AutoScroll = true;
             wilBitPanel4.BackColor = Color.FromArgb(240, 208, 255);
             wilBitPanel4.BorderColor = Color.PaleVioletRed;
             wilBitPanel4.BorderRadius = 6;
             wilBitPanel4.BorderSize = 0;
-            wilBitPanel4.Controls.Add(label8);
+            wilBitPanel4.Controls.Add(lblBiografiaMix);
             wilBitPanel4.ForeColor = Color.White;
             wilBitPanel4.Location = new Point(221, 302);
             wilBitPanel4.Name = "wilBitPanel4";
             wilBitPanel4.Size = new Size(210, 90);
             wilBitPanel4.TabIndex = 14;
             // 
-            // label8
+            // lblBiografiaMix
             // 
-            label8.AutoSize = true;
-            label8.ForeColor = Color.FromArgb(85, 47, 87);
-            label8.Location = new Point(9, 6);
-            label8.MaximumSize = new Size(210, 90);
-            label8.Name = "label8";
-            label8.Size = new Size(120, 15);
-            label8.TabIndex = 0;
-            label8.Text = "Detalhes da denúncia";
+            lblBiografiaMix.AutoSize = true;
+            lblBiografiaMix.ForeColor = Color.FromArgb(85, 47, 87);
+            lblBiografiaMix.Location = new Point(9, 6);
+            lblBiografiaMix.MaximumSize = new Size(210, 90);
+            lblBiografiaMix.Name = "lblBiografiaMix";
+            lblBiografiaMix.Size = new Size(166, 15);
+            lblBiografiaMix.TabIndex = 0;
+            lblBiografiaMix.Text = "Biografia de match do usuario";
             // 
             // wilBitPanel1
             // 
             wilBitPanel1.Anchor = AnchorStyles.None;
+            wilBitPanel1.AutoScroll = true;
             wilBitPanel1.BackColor = Color.FromArgb(240, 208, 255);
             wilBitPanel1.BorderColor = Color.PaleVioletRed;
             wilBitPanel1.BorderRadius = 6;
             wilBitPanel1.BorderSize = 0;
-            wilBitPanel1.Controls.Add(label6);
+            wilBitPanel1.Controls.Add(lblBiografiaUsuario);
             wilBitPanel1.ForeColor = Color.White;
             wilBitPanel1.Location = new Point(221, 425);
             wilBitPanel1.Name = "wilBitPanel1";
             wilBitPanel1.Size = new Size(210, 90);
             wilBitPanel1.TabIndex = 15;
             // 
-            // label6
+            // lblBiografiaUsuario
             // 
-            label6.AutoSize = true;
-            label6.ForeColor = Color.FromArgb(85, 47, 87);
-            label6.Location = new Point(9, 6);
-            label6.MaximumSize = new Size(120, 15);
-            label6.Name = "label6";
-            label6.Size = new Size(120, 15);
-            label6.TabIndex = 0;
-            label6.Text = "Detalhes da denúncia";
+            lblBiografiaUsuario.AutoSize = true;
+            lblBiografiaUsuario.ForeColor = Color.FromArgb(85, 47, 87);
+            lblBiografiaUsuario.Location = new Point(9, 6);
+            lblBiografiaUsuario.MaximumSize = new Size(210, 90);
+            lblBiografiaUsuario.Name = "lblBiografiaUsuario";
+            lblBiografiaUsuario.Size = new Size(113, 15);
+            lblBiografiaUsuario.TabIndex = 0;
+            lblBiografiaUsuario.Text = "Biografia do usuario";
             // 
             // TelaDoModerador
             // 
@@ -514,8 +518,8 @@
         private Label label2;
         private Label label7;
         private WiLBiT.WiLBiTPanel wilBitPanel4;
-        private Label label8;
+        private Label lblBiografiaMix;
         private WiLBiT.WiLBiTPanel wilBitPanel1;
-        private Label label6;
+        private Label lblBiografiaUsuario;
     }
 }

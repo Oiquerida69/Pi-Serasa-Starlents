@@ -21,14 +21,8 @@ namespace Pi_Serasa_Starlents
             InitializeComponent();
         }
 
-        public void carregaform(Form form)
-        {
-            form.TopLevel = false;
+        
 
-            wilBitGradientPanel1.Controls.Clear();
-            wilBitGradientPanel1.Controls.Add(form);
-            form.Show();
-        }
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             Perfil perfil = new Perfil();

@@ -83,7 +83,7 @@ namespace Pi_Serasa_Starlents
 
             foreach (Usuario u in usuarios)
             {
-                label4.Text = (u.nome).ToString();
+                lblNome.Text = (u.nome).ToString();
                 wilBitTextBox6.Text = (u.descricao).ToString();
                 pictureBox1.ImageLocation = (u.avatar).ToString();
             }
@@ -121,6 +121,11 @@ namespace Pi_Serasa_Starlents
         }
 
         private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
 
         }
