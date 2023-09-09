@@ -211,7 +211,7 @@ namespace Pi_Serasa_Starlents
         {
 
 
-            WindowState = FormWindowState.Maximized;
+            
 
             renderizaInterface();
 
