@@ -95,16 +95,28 @@ namespace Pi_Serasa_Starlents
 
         }
 
+        public void renderizaInterface()
+        {
+
+            panel1.Visible = false;
+            painel_Lista.Visible = false;
+            panel2.Visible = false;
+            wilBitPanel2.Visible = false;
+            panel4.Visible = false;
+
+
+        }
+
         public void carregaForm(Form form)
         {
 
+            WindowState = FormWindowState.Maximized;
             form.TopLevel = false;
-
-
 
         }
         private void TelaDeMensagens_Load(object sender, EventArgs e)
         {
+            WindowState = FormWindowState.Maximized;
             panelUsuarioNoChat.Hide();
             List<Usuario> usuarios = usuario.ListarUsuarios();
 
@@ -139,6 +151,31 @@ namespace Pi_Serasa_Starlents
 
         private void btnDenunciaUsuario_Click(object sender, EventArgs e)
         {
+            renderizaInterface();
+
+            if (panel1.Visible)
+            {
+                panel1.Visible = false;
+            }
+            else if (panel2.Visible)
+            {
+                panel2.Visible = false;
+            }
+            else if (wilBitPanel2.Visible)
+            {
+                wilBitPanel2.Visible = false;
+            }
+            else if (panel4.Visible)
+            {
+                panel4.Visible = false;
+            }
+            else if (painel_Lista.Visible)
+            {
+                painel_Lista.Visible = false;
+            }
+
+            telaDenuncia telaDenuncia = new telaDenuncia();
+            telaDenuncia.Show();
 
         }
 
@@ -154,6 +191,7 @@ namespace Pi_Serasa_Starlents
 
         private void TelaDeMensagens_Load_1(object sender, EventArgs e)
         {
+
             panelUsuarioNoChat.Hide();
             List<Usuario> usuarios = usuario.ListarUsuarios();
 
@@ -163,6 +201,39 @@ namespace Pi_Serasa_Starlents
 
                 geraform(u.nome);
             }
+        }
+
+        private void btnVoltaInicio_Click(object sender, EventArgs e)
+        {
+
+
+            renderizaInterface();
+
+            renderizaInterface();
+
+            if (panel1.Visible)
+            {
+                panel1.Visible = false;
+            }
+            else if (panel2.Visible)
+            {
+                panel2.Visible = false;
+            }
+            else if (wilBitPanel2.Visible)
+            {
+                wilBitPanel2.Visible = false;
+            }
+            else if (panel4.Visible)
+            {
+                panel4.Visible = false;
+            }
+            else if (painel_Lista.Visible)
+            {
+                painel_Lista.Visible = false;
+            }
+
+            TelaDeInicio telaDeInicio = new TelaDeInicio();
+            telaDeInicio.Show();
         }
     }
 

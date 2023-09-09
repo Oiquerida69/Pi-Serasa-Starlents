@@ -59,7 +59,7 @@
             painel_Lista.AutoScroll = true;
             painel_Lista.BackColor = Color.FromArgb(64, 15, 87);
             painel_Lista.Controls.Add(panelUsuarioNoChat);
-            painel_Lista.Location = new Point(0, 50);
+            painel_Lista.Location = new Point(0, 41);
             painel_Lista.Name = "painel_Lista";
             painel_Lista.Size = new Size(220, 0);
             painel_Lista.TabIndex = 0;
@@ -108,9 +108,9 @@
             // 
             panel2.BackColor = Color.FromArgb(225, 209, 232);
             panel2.Controls.Add(wilBitPanel2);
-            panel2.Location = new Point(220, 0);
+            panel2.Location = new Point(226, 1);
             panel2.Name = "panel2";
-            panel2.Size = new Size(560, 387);
+            panel2.Size = new Size(553, 405);
             panel2.TabIndex = 1;
             panel2.Paint += panel2_Paint;
             // 
@@ -124,9 +124,9 @@
             wilBitPanel2.Controls.Add(btnDenunciaUsuario);
             wilBitPanel2.Controls.Add(picFotoUsuario);
             wilBitPanel2.ForeColor = Color.White;
-            wilBitPanel2.Location = new Point(18, 20);
+            wilBitPanel2.Location = new Point(26, 26);
             wilBitPanel2.Name = "wilBitPanel2";
-            wilBitPanel2.Size = new Size(520, 367);
+            wilBitPanel2.Size = new Size(503, 367);
             wilBitPanel2.TabIndex = 22;
             wilBitPanel2.Paint += wilBitPanel2_Paint;
             // 
@@ -144,7 +144,7 @@
             // btnDenunciaUsuario
             // 
             btnDenunciaUsuario.Image = (Image)resources.GetObject("btnDenunciaUsuario.Image");
-            btnDenunciaUsuario.Location = new Point(477, 14);
+            btnDenunciaUsuario.Location = new Point(450, 14);
             btnDenunciaUsuario.Name = "btnDenunciaUsuario";
             btnDenunciaUsuario.Size = new Size(33, 38);
             btnDenunciaUsuario.SizeMode = PictureBoxSizeMode.CenterImage;
@@ -173,9 +173,9 @@
             panel4.BackColor = Color.FromArgb(118, 55, 148);
             panel4.Controls.Add(label2);
             panel4.Controls.Add(btnVoltaInicio);
-            panel4.Location = new Point(0, 0);
+            panel4.Location = new Point(0, -1);
             panel4.Name = "panel4";
-            panel4.Size = new Size(220, 50);
+            panel4.Size = new Size(228, 53);
             panel4.TabIndex = 1;
             // 
             // label2
@@ -198,13 +198,14 @@
             btnVoltaInicio.SizeMode = PictureBoxSizeMode.Zoom;
             btnVoltaInicio.TabIndex = 0;
             btnVoltaInicio.TabStop = false;
+            btnVoltaInicio.Click += btnVoltaInicio_Click;
             // 
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(64, 15, 87);
-            panel1.Location = new Point(0, 0);
+            panel1.Location = new Point(0, 49);
             panel1.Name = "panel1";
-            panel1.Size = new Size(219, 425);
+            panel1.Size = new Size(228, 357);
             panel1.TabIndex = 3;
             panel1.Paint += panel1_Paint;
             // 
@@ -212,7 +213,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(779, 424);
+            ClientSize = new Size(779, 406);
             Controls.Add(panel4);
             Controls.Add(panel2);
             Controls.Add(painel_Lista);

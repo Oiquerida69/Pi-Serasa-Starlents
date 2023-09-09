@@ -93,7 +93,7 @@
             Controls.Add(txtMotivoDenuncia);
             Controls.Add(label2);
             Controls.Add(label1);
-            FormBorderStyle = FormBorderStyle.Fixed3D;
+            FormBorderStyle = FormBorderStyle.None;
             Name = "telaDenuncia";
             Text = "TelaDeDenuncia";
             ResumeLayout(false);
