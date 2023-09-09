@@ -151,6 +151,7 @@ namespace Pi_Serasa_Starlents
 
         private void btnDenunciaUsuario_Click(object sender, EventArgs e)
         {
+            WindowState = FormWindowState.Maximized;
             renderizaInterface();
 
             if (panel1.Visible)
@@ -175,6 +176,9 @@ namespace Pi_Serasa_Starlents
             }
 
             telaDenuncia telaDenuncia = new telaDenuncia();
+            telaDenuncia.Location = new Point(0, 0);
+            telaDenuncia.Size = new Size(ClientSize.Width, ClientSize.Height);
+            telaDenuncia.Location = new Point(ClientSize.Width / 2 - telaDenuncia.Width / 2);
             telaDenuncia.Show();
 
         }
@@ -207,7 +211,7 @@ namespace Pi_Serasa_Starlents
         {
 
 
-            renderizaInterface();
+            WindowState = FormWindowState.Maximized;
 
             renderizaInterface();
 
@@ -233,6 +237,10 @@ namespace Pi_Serasa_Starlents
             }
 
             TelaDeInicio telaDeInicio = new TelaDeInicio();
+            telaDeInicio.Location = new Point(0, 0);
+            telaDeInicio.Size = new Size(ClientSize.Width, ClientSize.Height);
+            telaDeInicio.Location = new Point(ClientSize.Width / 2 - telaDeInicio.Width / 2);
+            
             telaDeInicio.Show();
         }
     }
