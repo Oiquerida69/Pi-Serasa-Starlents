@@ -22,6 +22,7 @@ namespace Pi_Serasa_Starlents
         Tela_seleção_avatar tela_Seleção_Avatar = new Tela_seleção_avatar();
         TelaDeInicio inicio = new TelaDeInicio();
         Interesses i = new Interesses();
+        Login login = new Login();
         
         
 
@@ -97,7 +98,7 @@ namespace Pi_Serasa_Starlents
             Usuario usuariototal = new Usuario(0,i.id,nome, email, senha, telefone, descricao, avatar);
             Program.usuario.CadastrarUsuario(usuariototal);
             MessageBox.Show("Cadastro Feito com Sucesso");
-            geraform(inicio);
+            geraform(login);
 
         }
 
