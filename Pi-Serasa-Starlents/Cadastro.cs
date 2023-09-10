@@ -23,10 +23,10 @@ namespace Pi_Serasa_Starlents
         TelaDeInicio inicio = new TelaDeInicio();
         Interesses i = new Interesses();
         Login login = new Login();
-        
-        
 
-        
+
+
+
 
         private void Cadastro_Load(object sender, EventArgs e)
         {
@@ -82,7 +82,7 @@ namespace Pi_Serasa_Starlents
 
         private void wilBitComboBox3_OnSelectedIndexChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void wilBitButton1_Click_2(object sender, EventArgs e)
@@ -95,7 +95,9 @@ namespace Pi_Serasa_Starlents
             string telefone = wilBitTextBox3.Texts;
             string avatar = pictureBox1.ImageLocation;
             string descricao = wilBitTextBox5.Texts;
+
             Usuario usuariototal = new Usuario(0,i.id,nome, email, senha, telefone, descricao, avatar);
+
             Program.usuario.CadastrarUsuario(usuariototal);
             MessageBox.Show("Cadastro Feito com Sucesso");
             geraform(login);

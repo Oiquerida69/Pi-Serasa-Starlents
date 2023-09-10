@@ -18,25 +18,22 @@ namespace Pi_Serasa_Starlents
     public partial class TelaDoModerador : Form
     {
         Usuario usuario = new Usuario();
-        //List<string> usuarios = new List<string>{"wendell","Mirela","Mario"};
         List<Usuario> usuarios = new List<Usuario>();
 
 
-
-        public void geraForm(string usuario)
+        public void geraForm()
         {
-            /*
+
 
             Panel painel = new WiLBiT.WiLBiTPanel();
             painel.Name = "painel";
             painel.BackColor = Color.FromArgb(228, 193, 249);
             painel.ForeColor = Color.White;
-            painel.Name = "painel";
-            painel.Size = new Size(174, 50);
-            painel.Location = new Point(12, painel_Lista.Height);
+            painel.Size = new Size(180, 50);
+            painel.Location = new Point(12, panelListaDenuncias.Height);
 
             Label label = new Label();
-            label.Text = nome;  //label.Text = $"{usuario.buscarnome(nome)}";
+            label.Text = usuario.nome;
             label.AutoSize = true;
             label.Size = new Size(0, 0);
             label.Location = new Point(painel.Width / 2, painel.Height / 2);
@@ -58,16 +55,16 @@ namespace Pi_Serasa_Starlents
             picFotoUsuario.TabStop = false;
 
 
-            painel_Lista.Controls.Add(painel);
+            panelListaDenuncias.Controls.Add(painel);
             painel.Controls.Add(label);
             painel.Controls.Add(picFotoUsuario);
-            if (painel_Lista.Height < 500)
+            if (panelListaDenuncias.Height < 10)
             {
-                painel_Lista.Height += painel.Height + 10;
+                panelListaDenuncias.Height += painel.Height + 10;
 
             }
 
-            */
+
 
         }
         public TelaDoModerador()
@@ -76,17 +73,25 @@ namespace Pi_Serasa_Starlents
 
         }
 
+        public void atualizaInterface()
+        {
+
+        }
 
         private void TelaDoModerador_Load(object sender, EventArgs e)
         {
+            lblNomeMiniatura = new Label();
+            picFotoMiniatura = new WiLBiT.WiLBiTRoundedPictureBox();
 
-            /*
-            foreach (string usuario in usuarios)
-            {
-                geraForm(usuario);
-            }
+            picFotoUsuario = picFotoMiniatura;
+            lblUsuario = lblNomeMiniatura;
 
-            */
+            lblBiografiaUsuario = new Label();
+            lblBiografiaMix = new Label();
+
+            lblDetalhesDenuncia = new Label();
+            lblidUsuario = new Label();
+
         }
 
 
@@ -108,6 +113,28 @@ namespace Pi_Serasa_Starlents
         }
 
         private void wilBitPanel10_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnSuspendeDenuncia_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("A denúncia foi suspensa.");
+            lblUsuario.Text = "Usuario";
+            lblidUsuario.Text = "0";
+            lblDetalhesDenuncia.Text = "Detalhes da denúncia";
+            lblBiografiaMix.Text = "Biografia de Mix";
+            lblBiografiaUsuario.Text = "Biografia do usuário";
+            txtJustificativaBanimento.Texts = "";
+
+        }
+
+        private void picFotoUsuario_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblUsuario_Click(object sender, EventArgs e)
         {
 
         }

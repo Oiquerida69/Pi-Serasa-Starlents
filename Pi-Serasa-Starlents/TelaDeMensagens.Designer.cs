@@ -42,6 +42,7 @@
             label2 = new Label();
             btnVoltaInicio = new PictureBox();
             panel1 = new Panel();
+            lblDescricaoDeMatch = new Label();
             painel_Lista.SuspendLayout();
             panelUsuarioNoChat.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)wilBitRoundedPictureBox2).BeginInit();
@@ -110,7 +111,7 @@
             panel2.Controls.Add(wilBitPanel2);
             panel2.Location = new Point(220, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(560, 395);
+            panel2.Size = new Size(560, 425);
             panel2.TabIndex = 1;
             panel2.Paint += panel2_Paint;
             // 
@@ -120,33 +121,34 @@
             wilBitPanel2.BorderColor = Color.PaleVioletRed;
             wilBitPanel2.BorderRadius = 6;
             wilBitPanel2.BorderSize = 0;
+            wilBitPanel2.Controls.Add(lblDescricaoDeMatch);
             wilBitPanel2.Controls.Add(btnDenunciaUsuario);
             wilBitPanel2.Controls.Add(label1);
             wilBitPanel2.Controls.Add(picFotoUsuario);
             wilBitPanel2.ForeColor = Color.White;
-            wilBitPanel2.Location = new Point(18, 20);
+            wilBitPanel2.Location = new Point(18, 12);
             wilBitPanel2.Name = "wilBitPanel2";
-            wilBitPanel2.Size = new Size(527, 392);
+            wilBitPanel2.Size = new Size(530, 400);
             wilBitPanel2.TabIndex = 22;
             // 
             // btnDenunciaUsuario
             // 
             btnDenunciaUsuario.Image = (Image)resources.GetObject("btnDenunciaUsuario.Image");
-            btnDenunciaUsuario.Location = new Point(491, 14);
+            btnDenunciaUsuario.Location = new Point(495, 3);
             btnDenunciaUsuario.Name = "btnDenunciaUsuario";
-            btnDenunciaUsuario.Size = new Size(33, 38);
-            btnDenunciaUsuario.SizeMode = PictureBoxSizeMode.CenterImage;
+            btnDenunciaUsuario.Size = new Size(31, 26);
+            btnDenunciaUsuario.SizeMode = PictureBoxSizeMode.Zoom;
             btnDenunciaUsuario.TabIndex = 23;
             btnDenunciaUsuario.TabStop = false;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.FromArgb(52, 11, 66);
-            label1.Location = new Point(86, 45);
+            label1.Location = new Point(108, 38);
             label1.Name = "label1";
-            label1.Size = new Size(64, 20);
+            label1.Size = new Size(128, 37);
             label1.TabIndex = 20;
             label1.Text = "Usuário";
             // 
@@ -158,9 +160,9 @@
             picFotoUsuario.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
             picFotoUsuario.BorderSize = 2;
             picFotoUsuario.GradientAngle = 50F;
-            picFotoUsuario.Location = new Point(23, 34);
+            picFotoUsuario.Location = new Point(19, 14);
             picFotoUsuario.Name = "picFotoUsuario";
-            picFotoUsuario.Size = new Size(42, 42);
+            picFotoUsuario.Size = new Size(83, 83);
             picFotoUsuario.SizeMode = PictureBoxSizeMode.StretchImage;
             picFotoUsuario.TabIndex = 1;
             picFotoUsuario.TabStop = false;
@@ -206,6 +208,17 @@
             panel1.TabIndex = 3;
             panel1.Paint += panel1_Paint;
             // 
+            // lblDescricaoDeMatch
+            // 
+            lblDescricaoDeMatch.AutoSize = true;
+            lblDescricaoDeMatch.ForeColor = Color.FromArgb(44, 18, 52);
+            lblDescricaoDeMatch.Location = new Point(29, 112);
+            lblDescricaoDeMatch.MaximumSize = new Size(530, 400);
+            lblDescricaoDeMatch.Name = "lblDescricaoDeMatch";
+            lblDescricaoDeMatch.Size = new Size(170, 15);
+            lblDescricaoDeMatch.TabIndex = 24;
+            lblDescricaoDeMatch.Text = "Descrição de match do usuário";
+            // 
             // TelaDeMensagens
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -249,5 +262,6 @@
         private PictureBox btnDenunciaUsuario;
         private Panel panel1;
         private WiLBiT.WiLBiTPanel wilBitPanel2;
+        private Label lblDescricaoDeMatch;
     }
 }

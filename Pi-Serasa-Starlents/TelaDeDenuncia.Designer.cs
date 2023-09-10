@@ -68,7 +68,7 @@
             // 
             btnDenunciar.BackColor = Color.FromArgb(119, 1, 175);
             btnDenunciar.BackgroundImageLayout = ImageLayout.None;
-            btnDenunciar.BorderColor = Color.FromArgb(72, 116, 245);
+            btnDenunciar.BorderColor = Color.FromArgb(192, 0, 192);
             btnDenunciar.BorderRadius = 6;
             btnDenunciar.BorderSize = 0;
             btnDenunciar.Cursor = Cursors.Hand;
