@@ -14,6 +14,7 @@ namespace Pi_Serasa_Starlents
         Conexao conexao;
 
         public int id;
+        public int id_usuario;
         public string nome;
         public string email;
         public string senha;
@@ -21,9 +22,10 @@ namespace Pi_Serasa_Starlents
         public string descricao;
         public string avatar;
 
-        public Usuario(int id,string nome,string email,string senha,string telefone,string descricao , string avatar)
+        public Usuario(int id,int id_usuario,string nome,string email,string senha,string telefone,string descricao , string avatar)
         {
             this.id = id;
+            this.id_usuario = id_usuario;
             this.nome = nome;
             this.email = email;
             this.senha = senha;
@@ -36,6 +38,7 @@ namespace Pi_Serasa_Starlents
         public Usuario carregadados(DataRow linha)
         {
             int id = int.Parse(linha["id"].ToString());
+            int id_usuario = int.Parse(linha["id_usuario"].ToString());
             string nome = linha["nome"].ToString();
             string email = linha["email"].ToString();
             string senha = linha["senha"].ToString();
@@ -43,7 +46,7 @@ namespace Pi_Serasa_Starlents
             string descricao = linha["descricao"].ToString();
             string avatar = (linha["avatar"].ToString());
 
-            Usuario usuarioTotal = new Usuario(id, nome, email, senha, telefone, descricao, avatar);
+            Usuario usuarioTotal = new Usuario(id,id_usuario, nome, email, senha, telefone, descricao, avatar);
             return usuarioTotal;
 
         }
@@ -97,7 +100,7 @@ namespace Pi_Serasa_Starlents
         {
             string query = $" SELECT * FROM usuarios WHERE email = '{email}' AND senha = '{senha}';";
             DataTable resutlados = Conexao.executaQuery(query);
-            if (resutlados == null)
+            if (resutlados.Rows.Count == null)
                 return null;
 
             Usuario u = carregadados(resutlados.Rows[0]);

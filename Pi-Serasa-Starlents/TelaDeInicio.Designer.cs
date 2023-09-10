@@ -69,6 +69,7 @@
             // 
             // wilBitGradientPanel1
             // 
+            wilBitGradientPanel1.AutoSize = true;
             wilBitGradientPanel1.BackColor = Color.FromArgb(129, 1, 214);
             wilBitGradientPanel1.BackColor2 = Color.FromArgb(219, 191, 223);
             wilBitGradientPanel1.BorderColor = Color.PaleVioletRed;
@@ -87,7 +88,7 @@
             wilBitGradientPanel1.ForeColor = Color.White;
             wilBitGradientPanel1.Location = new Point(-8, -4);
             wilBitGradientPanel1.Name = "wilBitGradientPanel1";
-            wilBitGradientPanel1.Size = new Size(811, 460);
+            wilBitGradientPanel1.Size = new Size(818, 460);
             wilBitGradientPanel1.TabIndex = 0;
             // 
             // btnCurtida
@@ -362,6 +363,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

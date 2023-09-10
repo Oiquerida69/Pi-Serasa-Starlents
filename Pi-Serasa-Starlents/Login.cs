@@ -80,11 +80,12 @@ namespace Pi_Serasa_Starlents
             Usuario u = new Usuario();
             u = u.login(email, senha);
 
-            if (u.id == null)
+            if (u == null)
             {
                 MessageBox.Show("email ou senha incorretos");
                 return;
             }
+            Program.usuario = u;
             TelaDeInicio telaDeInicio = new TelaDeInicio();
             telaDeInicio.TopLevel = false;
             Form1.panel1.Controls.Clear();

@@ -9,17 +9,16 @@ namespace Pi_Serasa_Starlents
 {
     internal class Interesses
     {
-        int id;
-        int id_usuario;
-        string interesse;
+        public int id;
+        public string interesse;
+        public string aprender;
 
 
-
-        public Interesses( int id , int id_usuario, string interesse)
+        public Interesses( int id , string interesse, string aprender)
         {
             this.id = id;
-            this.id_usuario = id_usuario;
             this.interesse = interesse;
+            this.aprender = aprender;
         }
 
         public Interesses()
@@ -49,14 +48,24 @@ namespace Pi_Serasa_Starlents
             public Interesses carregadados(DataRow linha)
             {
                 int id = int.Parse(linha["id"].ToString());
-                int id_usuario = int.Parse(linha["id_usuario"].ToString());
                 string interesse = linha["interesse"].ToString();
+                string aprender = linha["aprender"].ToString();
 
-                Interesses interesses1 = new Interesses(id, id_usuario, interesse);
+                Interesses interesses1 = new Interesses(id, interesse,aprender);
                 return interesses1;
 
             }
+        public void Listartodos()
+        {
+         
 
+
+            
+            
+
+             
+            
+        }
         
     }
     

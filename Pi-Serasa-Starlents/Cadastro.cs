@@ -14,13 +14,14 @@ namespace Pi_Serasa_Starlents
 {
     public partial class Cadastro : Form
     {
-        string caminhoprincipal;
+        
         public Cadastro()
         {
             InitializeComponent();
         }
         Tela_seleção_avatar tela_Seleção_Avatar = new Tela_seleção_avatar();
         TelaDeInicio inicio = new TelaDeInicio();
+        Interesses i = new Interesses();
         
         
 
@@ -29,7 +30,15 @@ namespace Pi_Serasa_Starlents
         private void Cadastro_Load(object sender, EventArgs e)
         {
             GradientPanelCadastro.Size = new Size(ClientSize.Width, ClientSize.Height);
-
+            List<Interesses> All = i.buscaTodos();
+            foreach(Interesses i in All)
+            {
+                wilBitComboBox1.Items.Add(i.interesse.ToString());
+                wilBitComboBox2.Items.Add(i.interesse.ToString());
+                wilBitComboBox3.Items.Add(i.interesse.ToString());
+                wilBitComboBox4.Items.Add(i.aprender.ToString());
+                wilBitComboBox5.Items.Add(i.aprender.ToString());
+            }
         }
 
 
@@ -77,7 +86,7 @@ namespace Pi_Serasa_Starlents
 
         private void wilBitButton1_Click_2(object sender, EventArgs e)
         {
-            int id = 0;
+            
             string caminho = tela_Seleção_Avatar.caminho01;
             string nome = wilBitTextBox4.Texts;
             string email = wilBitTextBox1.Texts;
@@ -85,7 +94,7 @@ namespace Pi_Serasa_Starlents
             string telefone = wilBitTextBox3.Texts;
             string avatar = pictureBox1.ImageLocation;
             string descricao = wilBitTextBox5.Texts;
-            Usuario usuariototal = new Usuario(id,nome, email, senha, telefone, descricao, avatar);
+            Usuario usuariototal = new Usuario(0,i.id,nome, email, senha, telefone, descricao, avatar);
             Program.usuario.CadastrarUsuario(usuariototal);
             MessageBox.Show("Cadastro Feito com Sucesso");
             geraform(inicio);

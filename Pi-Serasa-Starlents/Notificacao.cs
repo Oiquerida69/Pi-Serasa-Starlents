@@ -22,16 +22,16 @@ namespace Pi_Serasa_Starlents
             WindowState = FormWindowState.Maximized;
 
             int menuEsquerdo_largura = 63;
-           
 
-            wilBitGradientPanel1.Location = new Point (0,0);
+
+            wilBitGradientPanel1.Location = new Point(0, 0);
             wilBitGradientPanel1.Size = new Size(ClientSize.Width, ClientSize.Height);
 
-            wilBitPanel1.Location = new Point(ClientSize.Width/2 - wilBitPanel1.Size.Width/2, ClientSize.Height/2 - wilBitPanel1.Size.Height/2);
+            wilBitPanel1.Location = new Point(ClientSize.Width / 2 - wilBitPanel1.Size.Width / 2, ClientSize.Height / 2 - wilBitPanel1.Size.Height / 2);
 
-            panelIcones.Location = new Point( ClientSize.Width/2 - panelIcones.Width/2);
+            panelIcones.Location = new Point(ClientSize.Width / 2 - panelIcones.Width / 2);
 
-            label3.Location = new Point(ClientSize.Height/2 - label3.Width/2);
+            label3.Location = new Point(ClientSize.Height / 2 - label3.Width / 2);
 
             label3.Location = new Point(ClientSize.Width / 2 - label3.Size.Width / 2, ClientSize.Height / 2 - label3.Size.Height / 2 - 300);
 

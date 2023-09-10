@@ -81,7 +81,7 @@
             // label1
             // 
             label1.Anchor = AnchorStyles.None;
-            label1.Font = new Font("Arial Rounded MT Bold", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.FromArgb(231, 189, 255);
             label1.Location = new Point(35, 13);
             label1.Name = "label1";
@@ -120,7 +120,7 @@
             // lblNomeMiniatura
             // 
             lblNomeMiniatura.Anchor = AnchorStyles.None;
-            lblNomeMiniatura.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblNomeMiniatura.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblNomeMiniatura.ForeColor = Color.FromArgb(52, 11, 66);
             lblNomeMiniatura.Location = new Point(55, 17);
             lblNomeMiniatura.Name = "lblNomeMiniatura";
@@ -176,7 +176,7 @@
             linkLabel2.Anchor = AnchorStyles.None;
             linkLabel2.BackColor = Color.FromArgb(216, 196, 215);
             linkLabel2.Cursor = Cursors.Hand;
-            linkLabel2.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            linkLabel2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             linkLabel2.LinkColor = Color.FromArgb(52, 11, 66);
             linkLabel2.Location = new Point(9, 11);
             linkLabel2.Name = "linkLabel2";
@@ -206,7 +206,7 @@
             linkLabel1.Anchor = AnchorStyles.None;
             linkLabel1.BackColor = Color.FromArgb(216, 196, 215);
             linkLabel1.Cursor = Cursors.Hand;
-            linkLabel1.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            linkLabel1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             linkLabel1.LinkColor = Color.FromArgb(52, 11, 66);
             linkLabel1.Location = new Point(8, 12);
             linkLabel1.Name = "linkLabel1";
@@ -231,7 +231,7 @@
             // lblUsuario
             // 
             lblUsuario.Anchor = AnchorStyles.None;
-            lblUsuario.Font = new Font("Arial Rounded MT Bold", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            lblUsuario.Font = new Font("Microsoft Sans Serif", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             lblUsuario.ForeColor = Color.FromArgb(52, 11, 66);
             lblUsuario.Location = new Point(266, 231);
             lblUsuario.Name = "lblUsuario";
@@ -242,7 +242,7 @@
             // label3
             // 
             label3.Anchor = AnchorStyles.None;
-            label3.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = Color.FromArgb(52, 11, 66);
             label3.Location = new Point(523, 67);
             label3.Name = "label3";
@@ -278,7 +278,7 @@
             // label4
             // 
             label4.Anchor = AnchorStyles.None;
-            label4.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label4.ForeColor = Color.FromArgb(52, 11, 66);
             label4.Location = new Point(479, 227);
             label4.Name = "label4";
@@ -296,7 +296,7 @@
             btnSuspendeDenuncia.Cursor = Cursors.Hand;
             btnSuspendeDenuncia.FlatAppearance.BorderSize = 0;
             btnSuspendeDenuncia.FlatStyle = FlatStyle.Flat;
-            btnSuspendeDenuncia.Font = new Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btnSuspendeDenuncia.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             btnSuspendeDenuncia.ForeColor = Color.White;
             btnSuspendeDenuncia.Location = new Point(636, 227);
             btnSuspendeDenuncia.Name = "btnSuspendeDenuncia";
@@ -308,7 +308,7 @@
             // lblidUsuario
             // 
             lblidUsuario.Anchor = AnchorStyles.None;
-            lblidUsuario.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblidUsuario.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblidUsuario.ForeColor = Color.FromArgb(52, 11, 66);
             lblidUsuario.Location = new Point(523, 245);
             lblidUsuario.Name = "lblidUsuario";
@@ -319,7 +319,7 @@
             // label5
             // 
             label5.Anchor = AnchorStyles.None;
-            label5.Font = new Font("Arial Rounded MT Bold", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             label5.ForeColor = Color.FromArgb(52, 11, 66);
             label5.Location = new Point(479, 285);
             label5.Name = "label5";
@@ -337,7 +337,7 @@
             btnBanirUsuario.Cursor = Cursors.Hand;
             btnBanirUsuario.FlatAppearance.BorderSize = 0;
             btnBanirUsuario.FlatStyle = FlatStyle.Flat;
-            btnBanirUsuario.Font = new Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btnBanirUsuario.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             btnBanirUsuario.ForeColor = Color.White;
             btnBanirUsuario.Location = new Point(468, 489);
             btnBanirUsuario.Name = "btnBanirUsuario";
@@ -373,7 +373,7 @@
             // label2
             // 
             label2.Anchor = AnchorStyles.None;
-            label2.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.FromArgb(52, 11, 66);
             label2.Location = new Point(231, 404);
             label2.Name = "label2";
@@ -384,7 +384,7 @@
             // label7
             // 
             label7.Anchor = AnchorStyles.None;
-            label7.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label7.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label7.ForeColor = Color.FromArgb(52, 11, 66);
             label7.Location = new Point(231, 281);
             label7.Name = "label7";
@@ -446,6 +446,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoSize = true;
             BackColor = Color.FromArgb(213, 192, 220);
             ClientSize = new Size(803, 531);
             Controls.Add(wilBitPanel1);

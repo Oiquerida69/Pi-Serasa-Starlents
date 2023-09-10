@@ -19,6 +19,7 @@ namespace Pi_Serasa_Starlents
             login.TopLevel = false;
             panel1.Controls.Add(login);
             login.Show();
+
         }
     }
 }
