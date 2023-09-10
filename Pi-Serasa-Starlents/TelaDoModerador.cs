@@ -18,13 +18,10 @@ namespace Pi_Serasa_Starlents
     public partial class TelaDoModerador : Form
     {
         Usuario usuario = new Usuario();
-        //List<string> usuarios = new List<string>{"wendell","Mirela","Mario"};
         List<Usuario> usuarios = new List<Usuario>();
 
-        string nome;
 
-
-        public void geraForm(string usuario)
+        public void geraForm()
         {
 
 
@@ -32,11 +29,11 @@ namespace Pi_Serasa_Starlents
             painel.Name = "painel";
             painel.BackColor = Color.FromArgb(228, 193, 249);
             painel.ForeColor = Color.White;
-            painel.Size = new Size(174, 50);
+            painel.Size = new Size(180, 50);
             painel.Location = new Point(12, panelListaDenuncias.Height);
 
             Label label = new Label();
-            label.Text = nome;
+            label.Text = usuario.nome;
             label.AutoSize = true;
             label.Size = new Size(0, 0);
             label.Location = new Point(painel.Width / 2, painel.Height / 2);
@@ -61,7 +58,7 @@ namespace Pi_Serasa_Starlents
             panelListaDenuncias.Controls.Add(painel);
             painel.Controls.Add(label);
             painel.Controls.Add(picFotoUsuario);
-            if (panelListaDenuncias.Height < 500)
+            if (panelListaDenuncias.Height < 10)
             {
                 panelListaDenuncias.Height += painel.Height + 10;
 
@@ -76,18 +73,24 @@ namespace Pi_Serasa_Starlents
 
         }
 
+        public void atualizaInterface()
+        {
+
+        }
 
         private void TelaDoModerador_Load(object sender, EventArgs e)
         {
+            lblNomeMiniatura = new Label();
+            picFotoMiniatura = new WiLBiT.WiLBiTRoundedPictureBox();
 
+            picFotoUsuario = picFotoMiniatura;
+            lblUsuario = lblNomeMiniatura;
 
-            System.Collections.IList list = usuarios;
-            for (int i = 0; i < list.Count; i++)
-            {
-                string usuario = (string)list[i];
-                geraForm(usuario);
-            }
+            lblBiografiaUsuario = new Label();
+            lblBiografiaMix = new Label();
 
+            lblDetalhesDenuncia = new Label();
+            lblidUsuario = new Label();
 
         }
 
@@ -123,6 +126,16 @@ namespace Pi_Serasa_Starlents
             lblBiografiaMix.Text = "Biografia de Mix";
             lblBiografiaUsuario.Text = "Biografia do usuário";
             txtJustificativaBanimento.Texts = "";
+
+        }
+
+        private void picFotoUsuario_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblUsuario_Click(object sender, EventArgs e)
+        {
 
         }
     }
