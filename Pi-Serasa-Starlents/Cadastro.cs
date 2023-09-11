@@ -64,6 +64,7 @@ namespace Pi_Serasa_Starlents
         {
             Tela_seleção_avatar tela_Seleção_Avatar = new Tela_seleção_avatar();
             tela_Seleção_Avatar.Show();
+            pictureBox1.ImageLocation = tela_Seleção_Avatar.caminho01;
 
 
 
@@ -87,21 +88,50 @@ namespace Pi_Serasa_Starlents
 
         private void wilBitButton1_Click_2(object sender, EventArgs e)
         {
-            
-            string caminho = tela_Seleção_Avatar.caminho01;
-            string nome = wilBitTextBox4.Texts;
-            string email = wilBitTextBox1.Texts;
-            string senha = wilBitTextBox2.Texts;
-            string telefone = wilBitTextBox3.Texts;
-            string avatar = pictureBox1.ImageLocation;
-            string descricao = wilBitTextBox5.Texts;
+            if(wilBitTextBox1.Texts == null)
+            {
+                MessageBox.Show("Você não digitou um email");
+                return;
+            }
+            if(wilBitTextBox2.Texts == null)
+            {
+                MessageBox.Show("Você não digitou uma senha");
+                return;
+            }
+            if(wilBitTextBox3.Texts == null)
+            {
+                MessageBox.Show("Você não digitou um telefone");
+                return;
+            }
+            if(wilBitTextBox4.Texts == null)
+            {
+                MessageBox.Show("Você não digitou seu nome");
+            }
+            if(wilBitTextBox5.Texts == null)
+            {
+                MessageBox.Show("Sua descrição esta vazia");
+            }
+            if (wilBitTextBox6.Texts == null)
+            {
+                MessageBox.Show("Sua mensagem padrão esta vazia");
+            }
+            else
+            {
+                string caminho = tela_Seleção_Avatar.caminho01;
+                string nome = wilBitTextBox4.Texts;
+                string email = wilBitTextBox1.Texts;
+                string senha = wilBitTextBox2.Texts;
+                string telefone = wilBitTextBox3.Texts;
+                string avatar = pictureBox1.ImageLocation;
+                string descricao = wilBitTextBox5.Texts;
+                string mensagemU = wilBitTextBox6.Texts;
 
-            Usuario usuariototal = new Usuario(0,i.id,nome, email, senha, telefone, descricao, avatar);
+                Usuario usuariototal = new Usuario(0, i.id, nome, email, senha, telefone, descricao, avatar, mensagemU);
 
-            Program.usuario.CadastrarUsuario(usuariototal);
-            MessageBox.Show("Cadastro Feito com Sucesso");
-            geraform(login);
-
+                Program.usuario.CadastrarUsuario(usuariototal);
+                MessageBox.Show("Cadastro Feito com Sucesso");
+                geraform(login);
+            }
         }
 
     }

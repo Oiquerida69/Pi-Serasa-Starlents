@@ -3,6 +3,7 @@ namespace Pi_Serasa_Starlents
     internal static class Program
     {
         public static Usuario usuario = new Usuario();
+        public static Cadastro CADAs = new Cadastro();
         /// <summary>
         ///  The main entry point for the application.
         /// </summary>
