@@ -87,7 +87,7 @@ namespace Pi_Serasa_Starlents
             lblUsuario = lblNomeMiniatura;
 
             //lblBiografiaUsuario = new Label();
-           // lblBiografiaMix = new Label();
+            //lblBiografiaMix = new Label();
 
             lblDetalhesDenuncia = new Label();
             lblidUsuario = new Label();

@@ -73,7 +73,6 @@
             this.lblNome.Size = new System.Drawing.Size(128, 37);
             this.lblNome.TabIndex = 10;
             this.lblNome.Text = "Usuário";
-            this.lblNome.Click += new System.EventHandler(this.lblNome_Click);
             // 
             // pictureBox5
             // 
@@ -138,6 +137,7 @@
             this.wilBitGradientPanel1.Name = "wilBitGradientPanel1";
             this.wilBitGradientPanel1.Size = new System.Drawing.Size(946, 562);
             this.wilBitGradientPanel1.TabIndex = 20;
+            this.wilBitGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.wilBitGradientPanel1_Paint);
             // 
             // linkLabel1
             // 
@@ -320,7 +320,6 @@
             this.wilBitTextBox6.TabIndex = 28;
             this.wilBitTextBox6.Texts = "";
             this.wilBitTextBox6.UnderlinedStyle = false;
-            this.wilBitTextBox6._TextChanged += new System.EventHandler(this.wilBitTextBox6__TextChanged);
             // 
             // label5
             // 
@@ -381,7 +380,9 @@
         #endregion
         private PictureBox pictureBox1;
         private WiLBiT.WiLBiTGradientPanel wilBitGradientPanel1;
+        private PictureBox pictureBox3;
         private PictureBox pictureBox2;
+        private PictureBox pictureBox9;
         private PictureBox pictureBox6;
         private Label label1;
         private PictureBox pictureBox8;

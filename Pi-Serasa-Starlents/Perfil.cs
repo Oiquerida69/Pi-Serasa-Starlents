@@ -110,5 +110,10 @@ namespace Pi_Serasa_Starlents
 
             // descricao
         }
+
+        private void wilBitGradientPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
