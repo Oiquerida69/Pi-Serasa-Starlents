@@ -55,16 +55,41 @@ namespace Pi_Serasa_Starlents
                 return interesses1;
 
             }
-        public void Listartodos()
+        public Interesses carregaAprender(DataRow linha)
         {
-         
+            int id = int.Parse(linha["id"].ToString());
+            string aprender = linha["aprender"].ToString();
+
+            Interesses interesses1 = new Interesses(id,"", aprender);
+            return interesses1;
+
+        }
+        public List<Interesses> listaraprendizado()
+        {
+
+            string query = "SELECT id,aprender FROM interesses;";
+
+            DataTable resultados = Conexao.executaQuery(query);
+            if (resultados == null)
+                return null;
+            List<Interesses> interesses = new List<Interesses>();
+            foreach (DataRow row in resultados.Rows)
+            {
+                Interesses interesses1 = carregaAprender(row);
+                interesses.Add(interesses1);
 
 
-            
-            
 
-             
-            
+
+            }
+            return interesses;
+
+
+
+
+
+
+
         }
         
     }

@@ -21,8 +21,9 @@ namespace Pi_Serasa_Starlents
         public string telefone;
         public string descricao;
         public string avatar;
+        public string mensagemUsuario;
 
-        public Usuario(int id,int id_usuario,string nome,string email,string senha,string telefone,string descricao , string avatar)
+        public Usuario(int id,int id_usuario,string nome,string email,string senha,string telefone,string descricao , string avatar, string mensagemU)
         {
             this.id = id;
             this.id_usuario = id_usuario;
@@ -32,7 +33,7 @@ namespace Pi_Serasa_Starlents
             this.telefone = telefone;
             this.descricao = descricao;
             this.avatar = avatar;
-            
+            this.mensagemUsuario = mensagemU;
 
         }
         public Usuario carregadados(DataRow linha)
@@ -44,8 +45,9 @@ namespace Pi_Serasa_Starlents
             string telefone = linha["telefone"].ToString();
             string descricao = linha["descricao"].ToString();
             string avatar = (linha["avatar"].ToString());
+            string mensagemU = linha["mensagem"].ToString();
 
-            Usuario usuarioTotal = new Usuario(id,id_usuario, nome, email, senha, telefone, descricao, avatar);
+            Usuario usuarioTotal = new Usuario(id,id_usuario, nome, email, senha, telefone, descricao, avatar, mensagemU);
             return usuarioTotal;
 
         }
@@ -55,7 +57,7 @@ namespace Pi_Serasa_Starlents
         }
         public void CadastrarUsuario(Usuario u)
         {
-            string query = $"INSERT INTO usuarios (nome,senha,email,telefone,descricao,avatar) VALUES ('{u.nome}','{u.senha}','{u.email}','{u.telefone}','{u.descricao}','{u.avatar}');";
+            string query = $"INSERT INTO usuarios (id_interesse,nome,senha,email,telefone,descricao,avatar,mensagem) VALUES ('{u.nome}','{u.senha}','{u.email}','{u.telefone}','{u.descricao}','{u.avatar}','{u.mensagemUsuario}');";
             Conexao.executaQuery(query);
         }
         public List<Usuario> ListarUsuarios()
