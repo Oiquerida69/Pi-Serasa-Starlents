@@ -130,6 +130,11 @@ namespace Pi_Serasa_Starlents
         {
 
         }
+
+        private void wilBitPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 
 }

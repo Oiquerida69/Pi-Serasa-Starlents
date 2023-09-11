@@ -14,8 +14,8 @@ namespace Pi_Serasa_Starlents
     {
         const string host = "localhost";
         const string banco = "projetointegrador";
-        const string usuario = "root";
-        const string senha = "";
+        const string usuario = "senac";
+        const string senha = "senac";
         //const string host = "10.60.45.48";
         //const string banco = "projetointegrador";
         //const string usuario = "senac";

@@ -86,8 +86,7 @@ namespace Pi_Serasa_Starlents
             picFotoUsuario = picFotoMiniatura;
             lblUsuario = lblNomeMiniatura;
 
-            lblBiografiaUsuario = new Label();
-            lblBiografiaMix = new Label();
+       
 
             lblDetalhesDenuncia = new Label();
             lblidUsuario = new Label();
@@ -123,8 +122,7 @@ namespace Pi_Serasa_Starlents
             lblUsuario.Text = "Usuario";
             lblidUsuario.Text = "0";
             lblDetalhesDenuncia.Text = "Detalhes da denúncia";
-            lblBiografiaMix.Text = "Biografia de Mix";
-            lblBiografiaUsuario.Text = "Biografia do usuário";
+           
             txtJustificativaBanimento.Texts = "";
 
         }
