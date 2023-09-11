@@ -38,7 +38,6 @@ namespace Pi_Serasa_Starlents
         public Usuario carregadados(DataRow linha)
         {
             int id = int.Parse(linha["id"].ToString());
-            int id_usuario = int.Parse(linha["id_usuario"].ToString());
             string nome = linha["nome"].ToString();
             string email = linha["email"].ToString();
             string senha = linha["senha"].ToString();
