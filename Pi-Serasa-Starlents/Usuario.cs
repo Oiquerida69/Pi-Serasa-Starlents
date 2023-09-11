@@ -76,7 +76,7 @@ namespace Pi_Serasa_Starlents
         public List<Usuario>buscaTodosPorIdUsuario(int id_usuario)
         {
             List<Usuario> usuarios = new List<Usuario>();
-            string query = $"SELECT * FROM usuarios WHERE id_usuario={id_usuario};";
+            string query = $"SELECT * FROM usuarios WHERE id_usuario = {id_usuario};";
             DataTable tabela = Conexao.executaQuery(query);
             foreach (DataRow linha in tabela.Rows)
             {
