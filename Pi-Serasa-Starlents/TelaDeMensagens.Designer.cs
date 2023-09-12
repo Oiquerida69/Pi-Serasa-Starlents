@@ -37,7 +37,7 @@
             this.wilBitPanel2 = new WiLBiT.WiLBiTPanel();
             this.lblDescricaoDeMatch = new System.Windows.Forms.Label();
             this.btnDenunciaUsuario = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblNome = new System.Windows.Forms.Label();
             this.picFotoUsuario = new WiLBiT.WiLBiTRoundedPictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
@@ -52,6 +52,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picFotoUsuario)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnVoltaInicio)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // painel_Lista
@@ -60,7 +61,7 @@
             this.painel_Lista.AutoScroll = true;
             this.painel_Lista.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(15)))), ((int)(((byte)(87)))));
             this.painel_Lista.Controls.Add(this.panelUsuarioNoChat);
-            this.painel_Lista.Location = new System.Drawing.Point(0, 50);
+            this.painel_Lista.Location = new System.Drawing.Point(0, 60);
             this.painel_Lista.Name = "painel_Lista";
             this.painel_Lista.Size = new System.Drawing.Size(220, 0);
             this.painel_Lista.TabIndex = 0;
@@ -111,7 +112,7 @@
             this.panel2.Controls.Add(this.wilBitPanel2);
             this.panel2.Location = new System.Drawing.Point(220, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(560, 425);
+            this.panel2.Size = new System.Drawing.Size(560, 463);
             this.panel2.TabIndex = 1;
             // 
             // wilBitPanel2
@@ -122,12 +123,12 @@
             this.wilBitPanel2.BorderSize = 0;
             this.wilBitPanel2.Controls.Add(this.lblDescricaoDeMatch);
             this.wilBitPanel2.Controls.Add(this.btnDenunciaUsuario);
-            this.wilBitPanel2.Controls.Add(this.label1);
+            this.wilBitPanel2.Controls.Add(this.lblNome);
             this.wilBitPanel2.Controls.Add(this.picFotoUsuario);
             this.wilBitPanel2.ForeColor = System.Drawing.Color.White;
             this.wilBitPanel2.Location = new System.Drawing.Point(18, 12);
             this.wilBitPanel2.Name = "wilBitPanel2";
-            this.wilBitPanel2.Size = new System.Drawing.Size(530, 400);
+            this.wilBitPanel2.Size = new System.Drawing.Size(530, 421);
             this.wilBitPanel2.TabIndex = 22;
             this.wilBitPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.wilBitPanel2_Paint);
             // 
@@ -151,17 +152,18 @@
             this.btnDenunciaUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnDenunciaUsuario.TabIndex = 23;
             this.btnDenunciaUsuario.TabStop = false;
+            this.btnDenunciaUsuario.Click += new System.EventHandler(this.btnDenunciaUsuario_Click_1);
             // 
-            // label1
+            // lblNome
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(11)))), ((int)(((byte)(66)))));
-            this.label1.Location = new System.Drawing.Point(108, 38);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(128, 37);
-            this.label1.TabIndex = 20;
-            this.label1.Text = "Usuário";
+            this.lblNome.AutoSize = true;
+            this.lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblNome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(11)))), ((int)(((byte)(66)))));
+            this.lblNome.Location = new System.Drawing.Point(108, 38);
+            this.lblNome.Name = "lblNome";
+            this.lblNome.Size = new System.Drawing.Size(128, 37);
+            this.lblNome.TabIndex = 20;
+            this.lblNome.Text = "Usuário";
             // 
             // picFotoUsuario
             // 
@@ -184,7 +186,7 @@
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(55)))), ((int)(((byte)(148)))));
             this.panel4.Controls.Add(this.label2);
             this.panel4.Controls.Add(this.btnVoltaInicio);
-            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Location = new System.Drawing.Point(1, 7);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(220, 50);
             this.panel4.TabIndex = 1;
@@ -209,13 +211,15 @@
             this.btnVoltaInicio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnVoltaInicio.TabIndex = 0;
             this.btnVoltaInicio.TabStop = false;
+            this.btnVoltaInicio.Click += new System.EventHandler(this.btnVoltaInicio_Click_1);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(15)))), ((int)(((byte)(87)))));
+            this.panel1.Controls.Add(this.panel4);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(219, 425);
+            this.panel1.Size = new System.Drawing.Size(220, 460);
             this.panel1.TabIndex = 3;
             // 
             // TelaDeMensagens
@@ -223,14 +227,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(779, 424);
-            this.Controls.Add(this.panel4);
+            this.ClientSize = new System.Drawing.Size(779, 445);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.painel_Lista);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "TelaDeMensagens";
             this.Text = "TelaDeMensagens";
+            this.Load += new System.EventHandler(this.TelaDeMensagens_Load_3);
             this.painel_Lista.ResumeLayout(false);
             this.panelUsuarioNoChat.ResumeLayout(false);
             this.panelUsuarioNoChat.PerformLayout();
@@ -242,6 +246,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picFotoUsuario)).EndInit();
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnVoltaInicio)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -252,7 +257,7 @@
         private Panel panel2;
         private WiLBiT.WiLBiTRoundedPictureBox picFotoUsuario;
         private PictureBox btnVoltaInicio;
-        private Label label1;
+        private Label lblNome;
         private Panel panel4;
         private Label label2;
         private WiLBiT.WiLBiTPanel panelUsuarioNoChat;
