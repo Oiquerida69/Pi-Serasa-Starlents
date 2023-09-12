@@ -133,9 +133,9 @@
             this.wilBitGradientPanel1.Controls.Add(this.pictureBox5);
             this.wilBitGradientPanel1.Controls.Add(this.lblNome);
             this.wilBitGradientPanel1.ForeColor = System.Drawing.Color.White;
-            this.wilBitGradientPanel1.Location = new System.Drawing.Point(-2, -6);
+            this.wilBitGradientPanel1.Location = new System.Drawing.Point(-2, -5);
             this.wilBitGradientPanel1.Name = "wilBitGradientPanel1";
-            this.wilBitGradientPanel1.Size = new System.Drawing.Size(946, 562);
+            this.wilBitGradientPanel1.Size = new System.Drawing.Size(929, 561);
             this.wilBitGradientPanel1.TabIndex = 20;
             this.wilBitGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.wilBitGradientPanel1_Paint);
             // 

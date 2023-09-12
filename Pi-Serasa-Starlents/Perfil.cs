@@ -31,6 +31,7 @@ namespace Pi_Serasa_Starlents
             wilBitGradientPanel1.Controls.Clear();
             wilBitGradientPanel1.Controls.Add(form);
             form.Show();
+
         }
         void rendeirizaInterface()
         {
@@ -62,24 +63,10 @@ namespace Pi_Serasa_Starlents
             rendeirizaInterface();
 
             lblNome.Text = Program.usuario.nome;
-
-            Usuario usuario = new Usuario();
-            List<Usuario> usuarios = usuario.ListarUsuarios();
-
-            foreach (Usuario u in usuarios)
-            {
-                lblNome.Text = (u.nome).ToString();
-                wilBitTextBox6.Text = (u.descricao).ToString();
-                pictureBox1.ImageLocation = (u.avatar).ToString();
-            }
-
-            usuarios = usuario.buscaTodosPorIdUsuario(Program.usuario.id);
-            foreach (Usuario u in usuarios)
-            {
-                lblNome.Text = (u.nome).ToString();
-                wilBitTextBox6.Text = (u.descricao).ToString();
-                pictureBox1.ImageLocation = (u.avatar).ToString();
-            }
+            wilBitTextBox6.Text = Program.usuario.descricao;
+            //wilBitComboBox4.Text= Program.usuario
+           // wilBitComboBox5.Text = Program.usuario
+            wilBitTextBox1.Text = Program.usuario.mensagemUsuario;
         }
         private void label4_Click(object sender, EventArgs e)
         {
@@ -103,6 +90,7 @@ namespace Pi_Serasa_Starlents
 
         private void lblNome_Click(object sender, EventArgs e)
         {
+            
         }
 
         private void wilBitTextBox6__TextChanged(object sender, EventArgs e)
