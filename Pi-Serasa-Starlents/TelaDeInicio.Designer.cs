@@ -69,6 +69,7 @@
             // 
             // wilBitGradientPanel1
             // 
+            wilBitGradientPanel1.AutoSize = true;
             wilBitGradientPanel1.BackColor = Color.FromArgb(129, 1, 214);
             wilBitGradientPanel1.BackColor2 = Color.FromArgb(219, 191, 223);
             wilBitGradientPanel1.BorderColor = Color.PaleVioletRed;
@@ -87,7 +88,7 @@
             wilBitGradientPanel1.ForeColor = Color.White;
             wilBitGradientPanel1.Location = new Point(-8, -4);
             wilBitGradientPanel1.Name = "wilBitGradientPanel1";
-            wilBitGradientPanel1.Size = new Size(813, 460);
+            wilBitGradientPanel1.Size = new Size(818, 460);
             wilBitGradientPanel1.TabIndex = 0;
             // 
             // btnCurtida
@@ -275,6 +276,7 @@
             pictureBox4.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox4.TabIndex = 2;
             pictureBox4.TabStop = false;
+            pictureBox4.Click += pictureBox4_Click;
             // 
             // pictureBox1
             // 
@@ -319,6 +321,7 @@
             pictureBox3.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox3.TabIndex = 2;
             pictureBox3.TabStop = false;
+            pictureBox3.Click += pictureBox3_Click;
             // 
             // pictureBox2
             // 
@@ -329,6 +332,7 @@
             pictureBox2.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
             // 
             // TelaDeInicio
             // 
@@ -339,6 +343,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "TelaDeInicio";
             Text = "TelaDeInicio";
+            Load += TelaDeInicio_Load;
             wilBitGradientPanel1.ResumeLayout(false);
             wilBitGradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)btnCurtida).EndInit();
@@ -358,6 +363,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

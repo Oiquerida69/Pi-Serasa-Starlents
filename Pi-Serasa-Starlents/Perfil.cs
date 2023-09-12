@@ -9,6 +9,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WiLBiT;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace Pi_Serasa_Starlents
@@ -20,6 +21,12 @@ namespace Pi_Serasa_Starlents
             InitializeComponent();
         }
 
+<<<<<<< HEAD
+=======
+        Interesses i = new Interesses();
+       
+
+>>>>>>> db506cc00ceba627fc0706cef3a0797c4da1c76e
         public void carregaform(Form form)
         {
             form.TopLevel = false;
@@ -27,10 +34,8 @@ namespace Pi_Serasa_Starlents
             wilBitGradientPanel1.Controls.Clear();
             wilBitGradientPanel1.Controls.Add(form);
             form.Show();
+
         }
-
-
-
         void rendeirizaInterface()
         {
             WindowState = FormWindowState.Maximized;
@@ -40,6 +45,7 @@ namespace Pi_Serasa_Starlents
 
             wilBitGradientPanel1.Location = new Point(0, 0);
             wilBitGradientPanel1.Size = new Size(ClientSize.Width, ClientSize.Height);
+<<<<<<< HEAD
 
             panel1.Size = new Size(ClientSize.Width, 63);
             panelIconesPer.Location = new Point(ClientSize.Width / 2 - panelIconesPer.Width / 2);
@@ -54,6 +60,8 @@ namespace Pi_Serasa_Starlents
             // panelDescri.Location = new Point(ClientSize.Width / 2 - panelDescri.Size.Width / 2 -50 , ClientSize.Height / 2 - panelDescri.Size.Height / 2 - 30);
 
 
+=======
+>>>>>>> db506cc00ceba627fc0706cef3a0797c4da1c76e
         }
 
         private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
@@ -63,14 +71,13 @@ namespace Pi_Serasa_Starlents
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
-            // botao notificacao
-            carregaform(new Notificacao());
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
 
         }
+<<<<<<< HEAD
 
         private void Perfil_Load(object sender, EventArgs e)
         {
@@ -97,31 +104,48 @@ namespace Pi_Serasa_Starlents
         private void label4_Click(object sender, EventArgs e)
         {
 
+=======
+        private void label4_Click(object sender, EventArgs e)
+        {
+>>>>>>> db506cc00ceba627fc0706cef3a0797c4da1c76e
         }
-
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            // botao da tela inicial
-            carregaform(new TelaDeInicio());
-
         }
-
-        private void pictureBox9_Click(object sender, EventArgs e)
-        {
-            // botao das mensagens
-            carregaform(new TelaDeMensagens());
-        }
-
         private void pictureBox8_Click(object sender, EventArgs e)
         {
-            // botao do configuração
-
-
         }
 
         private void label5_Click(object sender, EventArgs e)
         {
+            // label descricao
+        }
 
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            //premium
+        }
+
+        private void lblNome_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void wilBitTextBox6__TextChanged(object sender, EventArgs e)
+        {
+
+            // descricao
+        }
+
+        private void wilBitGradientPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Perfil_Load_1(object sender, EventArgs e)
+        {
+            lblNome.Text = Program.usuario.nome;
+            wilBitTextBox6.Text = Program.usuario.descricao;
         }
 
         private void wilBitGradientPanel1_Paint(object sender, PaintEventArgs e)
