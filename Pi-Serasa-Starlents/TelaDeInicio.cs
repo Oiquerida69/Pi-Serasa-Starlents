@@ -21,7 +21,7 @@ namespace Pi_Serasa_Starlents
             InitializeComponent();
         }
 
-        
+
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
@@ -50,6 +50,7 @@ namespace Pi_Serasa_Starlents
         private void TelaDeInicio_Load(object sender, EventArgs e)
         {
             Usuario usuario = new Usuario();
+            List<Usuario> usuarios = usuario.buscaPerfil(Program.usuario.interesse);
 
 
         }

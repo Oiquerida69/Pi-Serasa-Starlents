@@ -14,14 +14,14 @@ namespace Pi_Serasa_Starlents
 {
     public partial class Cadastro : Form
     {
-        
+
         public Cadastro()
         {
             InitializeComponent();
         }
-        Tela_seleção_avatar tela_Seleção_Avatar = new Tela_seleção_avatar();
         TelaDeInicio inicio = new TelaDeInicio();
         Interesses i = new Interesses();
+        Avatar avatar = new Avatar();
         Login login = new Login();
 
 
@@ -32,7 +32,7 @@ namespace Pi_Serasa_Starlents
         {
             GradientPanelCadastro.Size = new Size(ClientSize.Width, ClientSize.Height);
             List<Interesses> All = i.buscaTodos();
-            foreach(Interesses i in All)
+            foreach (Interesses i in All)
             {
                 wilBitComboBox1.Items.Add(i.interesse.ToString());
                 wilBitComboBox2.Items.Add(i.interesse.ToString());
@@ -62,19 +62,21 @@ namespace Pi_Serasa_Starlents
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            Tela_seleção_avatar tela_Seleção_Avatar = new Tela_seleção_avatar();
-            tela_Seleção_Avatar.Show();
-            pictureBox1.ImageLocation = tela_Seleção_Avatar.caminho01;
+
+
 
 
 
 
         }
+
+
+
+
+
         public void geraform(Form form)
         {
             form.TopLevel = false;
-            GradientPanelCadastro.Controls.Clear();
-            GradientPanelCadastro.Controls.Add(form);
             form.Location = new Point(form.Width / 2 - form.Height / 2);
             form.AutoSize = true;
             form.Size = new Size(ClientSize.Width, ClientSize.Height);
@@ -88,26 +90,26 @@ namespace Pi_Serasa_Starlents
 
         private void wilBitButton1_Click_2(object sender, EventArgs e)
         {
-            if(wilBitTextBox1.Texts == null)
+            if (wilBitTextBox1.Texts == null)
             {
                 MessageBox.Show("Você não digitou um email");
                 return;
             }
-            if(wilBitTextBox2.Texts == null)
+            if (wilBitTextBox2.Texts == null)
             {
                 MessageBox.Show("Você não digitou uma senha");
                 return;
             }
-            if(wilBitTextBox3.Texts == null)
+            if (wilBitTextBox3.Texts == null)
             {
                 MessageBox.Show("Você não digitou um telefone");
                 return;
             }
-            if(wilBitTextBox4.Texts == null)
+            if (wilBitTextBox4.Texts == null)
             {
                 MessageBox.Show("Você não digitou seu nome");
             }
-            if(wilBitTextBox5.Texts == null)
+            if (wilBitTextBox5.Texts == null)
             {
                 MessageBox.Show("Sua descrição esta vazia");
             }
@@ -117,23 +119,44 @@ namespace Pi_Serasa_Starlents
             }
             else
             {
-                string caminho = tela_Seleção_Avatar.caminho01;
+
                 string nome = wilBitTextBox4.Texts;
                 string email = wilBitTextBox1.Texts;
                 string senha = wilBitTextBox2.Texts;
+                string interesse = wilBitComboBox1.Texts;
+                string interesse2 = wilBitComboBox2.Texts;
+                string interesee3 = wilBitComboBox3.Texts;
                 string telefone = wilBitTextBox3.Texts;
                 string avatar = pictureBox1.ImageLocation;
                 string descricao = wilBitTextBox5.Texts;
                 string mensagemU = wilBitTextBox6.Texts;
 
-                Usuario usuariototal = new Usuario(0, i.id, nome, email, senha, telefone, descricao, avatar, mensagemU);
-
+                Usuario usuariototal = new Usuario(0,interesse,interesse2,interesee3, nome, email, senha, telefone, descricao, avatar, mensagemU);
                 Program.usuario.CadastrarUsuario(usuariototal);
                 MessageBox.Show("Cadastro Feito com Sucesso");
                 geraform(login);
             }
         }
+        public void gerapicturebox(string caminho)
+        {
+            PictureBox pic = new PictureBox();
+            pic.Size = new Size(150, 140);
+            pic.Location = new Point(623, 301);
+            pic.ImageLocation = caminho;
+        }
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Hide();
+            List<string> avatars = new List<string> { avatar.caminho1, avatar.caminho2, avatar.caminho3, avatar.caminho4, avatar.caminho5, avatar.caminho6, avatar.caminho7, avatar.caminho8, avatar.caminho9, avatar.caminho10, avatar.caminho11, avatar.caminho12, avatar.caminho13, avatar.caminho14, avatar.caminho15, avatar.caminho16, avatar.caminho17, avatar.caminho18 };
+            for (int i = 0; i < avatars.Count; i++)
+            {
+                gerapicturebox(avatars[i]);
 
+
+            }
+        }
     }
 }
+
+
 

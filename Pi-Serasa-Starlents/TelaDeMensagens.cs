@@ -135,6 +135,13 @@ namespace Pi_Serasa_Starlents
         {
 
         }
+
+        private void btnVoltaInicio_Click(object sender, EventArgs e)
+        {
+            TelaDeInicio tela = new TelaDeInicio();
+            Form1.panel1.Controls.Clear();
+            Form1.panel1.Controls.Add(tela);
+        }
     }
 
 }

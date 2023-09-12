@@ -35,6 +35,9 @@
             wilBitTextBox3 = new WiLBiT.WiLBiTTextBox();
             wilBitButton1 = new WiLBiT.WiLBiTButton();
             GradientPanelCadastro = new WiLBiT.WiLBiTGradientPanel();
+            pictureBox3 = new PictureBox();
+            wilBitTextBox6 = new WiLBiT.WiLBiTTextBox();
+            label10 = new Label();
             pictureBox2 = new PictureBox();
             wilBitRoundedPictureBox1 = new WiLBiT.WiLBiTRoundedPictureBox();
             label9 = new Label();
@@ -53,10 +56,9 @@
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
-            label10 = new Label();
-            wilBitTextBox6 = new WiLBiT.WiLBiTTextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             GradientPanelCadastro.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)wilBitRoundedPictureBox1).BeginInit();
             SuspendLayout();
@@ -168,6 +170,7 @@
             GradientPanelCadastro.BorderColor = Color.PaleVioletRed;
             GradientPanelCadastro.BorderRadius = 6;
             GradientPanelCadastro.BorderSize = 0;
+            GradientPanelCadastro.Controls.Add(pictureBox3);
             GradientPanelCadastro.Controls.Add(wilBitTextBox6);
             GradientPanelCadastro.Controls.Add(label10);
             GradientPanelCadastro.Controls.Add(pictureBox2);
@@ -199,6 +202,52 @@
             GradientPanelCadastro.Size = new Size(899, 510);
             GradientPanelCadastro.TabIndex = 13;
             GradientPanelCadastro.Paint += GradientPanelCadastro_Paint;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.BackColor = Color.Transparent;
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(779, 352);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(49, 50);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 42;
+            pictureBox3.TabStop = false;
+            pictureBox3.Click += pictureBox3_Click;
+            // 
+            // wilBitTextBox6
+            // 
+            wilBitTextBox6.BackColor = SystemColors.Window;
+            wilBitTextBox6.BorderColor = Color.White;
+            wilBitTextBox6.BorderFocusColor = Color.DeepSkyBlue;
+            wilBitTextBox6.BorderRadius = 4;
+            wilBitTextBox6.BorderSize = 2;
+            wilBitTextBox6.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            wilBitTextBox6.ForeColor = Color.FromArgb(64, 64, 64);
+            wilBitTextBox6.Location = new Point(317, 392);
+            wilBitTextBox6.Margin = new Padding(4);
+            wilBitTextBox6.Multiline = true;
+            wilBitTextBox6.Name = "wilBitTextBox6";
+            wilBitTextBox6.Padding = new Padding(10, 7, 10, 7);
+            wilBitTextBox6.PasswordChar = false;
+            wilBitTextBox6.PlaceholderColor = Color.DarkGray;
+            wilBitTextBox6.PlaceholderText = "";
+            wilBitTextBox6.Size = new Size(210, 80);
+            wilBitTextBox6.TabIndex = 41;
+            wilBitTextBox6.Texts = "";
+            wilBitTextBox6.UnderlinedStyle = false;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.BackColor = Color.Transparent;
+            label10.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            label10.ForeColor = Color.White;
+            label10.Location = new Point(317, 369);
+            label10.Name = "label10";
+            label10.Size = new Size(229, 19);
+            label10.TabIndex = 40;
+            label10.Text = "O que você deseja compartilhar?";
             // 
             // pictureBox2
             // 
@@ -480,54 +529,22 @@
             label1.TabIndex = 10;
             label1.Text = "Digite seu e-mail";
             // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.BackColor = Color.Transparent;
-            label10.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            label10.ForeColor = Color.White;
-            label10.Location = new Point(317, 369);
-            label10.Name = "label10";
-            label10.Size = new Size(229, 19);
-            label10.TabIndex = 40;
-            label10.Text = "O que você deseja compartilhar?";
-            // 
-            // wilBitTextBox6
-            // 
-            wilBitTextBox6.BackColor = SystemColors.Window;
-            wilBitTextBox6.BorderColor = Color.White;
-            wilBitTextBox6.BorderFocusColor = Color.DeepSkyBlue;
-            wilBitTextBox6.BorderRadius = 4;
-            wilBitTextBox6.BorderSize = 2;
-            wilBitTextBox6.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
-            wilBitTextBox6.ForeColor = Color.FromArgb(64, 64, 64);
-            wilBitTextBox6.Location = new Point(317, 392);
-            wilBitTextBox6.Margin = new Padding(4);
-            wilBitTextBox6.Multiline = true;
-            wilBitTextBox6.Name = "wilBitTextBox6";
-            wilBitTextBox6.Padding = new Padding(10, 7, 10, 7);
-            wilBitTextBox6.PasswordChar = false;
-            wilBitTextBox6.PlaceholderColor = Color.DarkGray;
-            wilBitTextBox6.PlaceholderText = "";
-            wilBitTextBox6.Size = new Size(210, 80);
-            wilBitTextBox6.TabIndex = 41;
-            wilBitTextBox6.Texts = "";
-            wilBitTextBox6.UnderlinedStyle = false;
-            // 
             // Cadastro
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoSize = true;
             BackColor = Color.White;
             ClientSize = new Size(879, 500);
             Controls.Add(GradientPanelCadastro);
-            FormBorderStyle = FormBorderStyle.FixedSingle;
+            FormBorderStyle = FormBorderStyle.None;
             Name = "Cadastro";
             Text = "Cadastro";
             Load += Cadastro_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             GradientPanelCadastro.ResumeLayout(false);
             GradientPanelCadastro.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)wilBitRoundedPictureBox1).EndInit();
             ResumeLayout(false);
@@ -561,5 +578,6 @@
         private PictureBox pictureBox2;
         private Label label10;
         private WiLBiT.WiLBiTTextBox wilBitTextBox6;
+        private PictureBox pictureBox3;
     }
 }

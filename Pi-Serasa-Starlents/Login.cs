@@ -23,9 +23,8 @@ namespace Pi_Serasa_Starlents
 
 
             form.TopLevel = false;
-
-            wilBitGradientPanel1.Controls.Clear();
-            wilBitGradientPanel1.Controls.Add(form);
+            Form1.panel1.Controls.Clear();
+            Form1.panel1.Controls.Add(form);
             form.Size = new Size(ClientSize.Width, ClientSize.Height);
             form.Show();
         }
@@ -60,6 +59,7 @@ namespace Pi_Serasa_Starlents
 
             carregaForm(new Cadastro());
             pictureBox1.Location = new Point(700, 100);
+
         }
 
         private void wilBitGradientPanel2_Paint(object sender, PaintEventArgs e)
