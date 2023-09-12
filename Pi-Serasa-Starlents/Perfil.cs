@@ -57,17 +57,6 @@ namespace Pi_Serasa_Starlents
         {
 
         }
-
-        private void Perfil_Load(object sender, EventArgs e)
-        {
-            rendeirizaInterface();
-
-            lblNome.Text = Program.usuario.nome;
-            wilBitTextBox6.Text = Program.usuario.descricao;
-            //wilBitComboBox4.Text= Program.usuario
-           // wilBitComboBox5.Text = Program.usuario
-            wilBitTextBox1.Text = Program.usuario.mensagemUsuario;
-        }
         private void label4_Click(object sender, EventArgs e)
         {
         }
@@ -102,6 +91,12 @@ namespace Pi_Serasa_Starlents
         private void wilBitGradientPanel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void Perfil_Load_1(object sender, EventArgs e)
+        {
+            lblNome.Text = Program.usuario.nome;
+            wilBitTextBox6.Text = Program.usuario.descricao;
         }
     }
 }
