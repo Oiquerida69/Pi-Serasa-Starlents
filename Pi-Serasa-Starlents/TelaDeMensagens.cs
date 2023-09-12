@@ -24,17 +24,25 @@ namespace Pi_Serasa_Starlents
         {
             InitializeComponent();
         }
-        public void geraform(string nome)
+        public void geraform(string nome, string avatar, string mensagemUsuario)
         {
+
 
             Panel painel = new WiLBiT.WiLBiTPanel();
             painel.Name = "painel";
             painel.BackColor = Color.FromArgb(228, 193, 249);
             painel.ForeColor = Color.White;
-            painel.Name = "painel";
             painel.Size = new Size(174, 50);
             painel.Location = new Point(12, painel_Lista.Height);
+            painel.Click += clique;
 
+            void clique(object sender, EventArgs e)
+            {
+                lblNome.Text = nome;
+
+
+                lblNome.ForeColor = Color.Black;
+            }
             Label label = new Label();
             label.Text = nome;  //label.Text = $"{usuario.buscarnome(nome)}";
             label.AutoSize = true;
@@ -42,6 +50,7 @@ namespace Pi_Serasa_Starlents
             label.Location = new Point(painel.Width / 2, painel.Height / 2);
             label.ForeColor = Color.Purple;
             label.Font = new Font("Microsoft Sans Serif", 12);
+            label.Click += clique;
 
             WiLBiT.WiLBiTRoundedPictureBox picFotoUsuario = new WiLBiT.WiLBiTRoundedPictureBox();
             picFotoUsuario.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
@@ -56,6 +65,7 @@ namespace Pi_Serasa_Starlents
             picFotoUsuario.SizeMode = PictureBoxSizeMode.StretchImage;
             picFotoUsuario.TabIndex = 1;
             picFotoUsuario.TabStop = false;
+            picFotoUsuario.Click += clique;
 
 
             painel_Lista.Controls.Add(painel);
@@ -92,10 +102,15 @@ namespace Pi_Serasa_Starlents
             }
             panel.Controls.Add(panel);
             */
-            atualizaInterface(usuario.nome, usuario.avatar, usuario.descricao);
             
         }
 
+        private void panel1_click(object sender, PaintEventArgs e)
+        {
+            atualizaInterface(usuario.nome, usuario.avatar, usuario.descricao);
+           
+
+        }
         public void atualizaInterface (string nome, string avatar, string mensagem_usuario )
         {
             WiLBiTPanel panel= new WiLBiTPanel();
@@ -128,7 +143,7 @@ namespace Pi_Serasa_Starlents
         }
         public void carregaForm(Form form)
         {
-            WindowState = FormWindowState.Maximized;
+           
             form.TopLevel = false;
         }
 
@@ -164,45 +179,47 @@ namespace Pi_Serasa_Starlents
 
         private void btnDenunciaUsuario_Click(object sender, EventArgs e)
         {
-            WindowState = FormWindowState.Maximized;
-           
-
-            if ( panel1.Visible )
-            {
-                panel1.Visible = false;
-            }
-
-            if (panel2.Visible)
-            {
-                panel2.Visible = false;
-            }
-
-            if (wilBitPanel2.Visible)
-            {
-                wilBitPanel2.Visible = false;
-
-            }
-
-            if (panel4.Visible)
-            {
-                panel4.Visible = false;
-            }
-
-            if (painel_Lista.Visible)
-            {
-                painel_Lista.Visible = false;
-            }
-
-            TelaDeDenuncia telaDeDenuncia = new TelaDeDenuncia();
-            panel2.Location = new Point(0,0);
-            telaDeDenuncia.Size = new Size(ClientSize.Width, ClientSize.Height);
-            telaDeDenuncia.Show();
+            
         }
 
         private void btnVoltaInicio_Click(object sender, EventArgs e)
         {
-            WindowState = FormWindowState.Maximized;
+
+        }
+
+        private void TelaDeMensagens_Load_2(object sender, EventArgs e)
+        {
+         
+
             
+
+        }
+
+        private void wilBitPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void TelaDeMensagens_Load_3(object sender, EventArgs e)
+        {
+            panelUsuarioNoChat.Hide();
+            List<Usuario> usuarios = usuario.ListarUsuarios();
+
+
+            foreach (Usuario u in usuarios)
+            {
+
+                
+
+                geraform(u.nome, u.avatar, u.mensagemUsuario);
+            }
+        }
+
+        private void btnVoltaInicio_Click_1(object sender, EventArgs e)
+        {
+
+            WindowState = FormWindowState.Maximized;
+
 
             if (panel1.Visible)
             {
@@ -231,30 +248,46 @@ namespace Pi_Serasa_Starlents
             }
 
             TelaDeInicio telaDeInicio = new TelaDeInicio();
-            panel2.Location= new Point(0,0);
+            panel2.Location = new Point(0, 0);
             telaDeInicio.Size = new Size(ClientSize.Width, ClientSize.Height);
             telaDeInicio.Show();
         }
 
-        private void TelaDeMensagens_Load_2(object sender, EventArgs e)
+        private void btnDenunciaUsuario_Click_1(object sender, EventArgs e)
         {
-            panelUsuarioNoChat.Hide();
-            List<Usuario> usuarios = usuario.ListarUsuarios();
+            WindowState = FormWindowState.Maximized;
 
 
-            foreach (Usuario u in usuarios)
+            if (panel1.Visible)
             {
-
-                geraform(u.nome);
+                panel1.Visible = false;
             }
 
-            
+            if (panel2.Visible)
+            {
+                panel2.Visible = false;
+            }
 
-        }
+            if (wilBitPanel2.Visible)
+            {
+                wilBitPanel2.Visible = false;
 
-        private void wilBitPanel2_Paint(object sender, PaintEventArgs e)
-        {
+            }
 
+            if (panel4.Visible)
+            {
+                panel4.Visible = false;
+            }
+
+            if (painel_Lista.Visible)
+            {
+                painel_Lista.Visible = false;
+            }
+
+            TelaDeDenuncia telaDeDenuncia = new TelaDeDenuncia();
+            panel2.Location = new Point(0, 0);
+            telaDeDenuncia.Size = new Size(ClientSize.Width, ClientSize.Height);
+            telaDeDenuncia.Show();
         }
     }
 
