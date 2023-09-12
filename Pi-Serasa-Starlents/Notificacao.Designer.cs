@@ -31,6 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Notificacao));
             this.wilBitGradientPanel1 = new WiLBiT.WiLBiTGradientPanel();
             this.wilBitPanel1 = new WiLBiT.WiLBiTPanel();
+            this.wilBitButton3 = new WiLBiT.WiLBiTButton();
+            this.wilBitButton2 = new WiLBiT.WiLBiTButton();
+            this.wilBitButton1 = new WiLBiT.WiLBiTButton();
+            this.wilBitPanel6 = new WiLBiT.WiLBiTPanel();
             this.wilBitPanel5 = new WiLBiT.WiLBiTPanel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.wilBitPanel4 = new WiLBiT.WiLBiTPanel();
@@ -38,10 +42,8 @@
             this.wilBitPanel3 = new WiLBiT.WiLBiTPanel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.wilBitPanel2 = new WiLBiT.WiLBiTPanel();
+            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.wilBitButton3 = new WiLBiT.WiLBiTButton();
-            this.wilBitButton2 = new WiLBiT.WiLBiTButton();
-            this.wilBitButton1 = new WiLBiT.WiLBiTButton();
             this.label3 = new System.Windows.Forms.Label();
             this.panelCima = new System.Windows.Forms.Panel();
             this.panelIcones = new System.Windows.Forms.Panel();
@@ -50,10 +52,9 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.wilBitPanel6 = new WiLBiT.WiLBiTPanel();
-            this.label1 = new System.Windows.Forms.Label();
             this.wilBitGradientPanel1.SuspendLayout();
             this.wilBitPanel1.SuspendLayout();
+            this.wilBitPanel6.SuspendLayout();
             this.wilBitPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.wilBitPanel4.SuspendLayout();
@@ -68,11 +69,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.wilBitPanel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // wilBitGradientPanel1
             // 
+            this.wilBitGradientPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.wilBitGradientPanel1.AutoSize = true;
             this.wilBitGradientPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(15)))), ((int)(((byte)(87)))));
             this.wilBitGradientPanel1.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(47)))), ((int)(((byte)(240)))));
@@ -95,15 +98,86 @@
             this.wilBitPanel1.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.wilBitPanel1.BorderRadius = 6;
             this.wilBitPanel1.BorderSize = 0;
-            this.wilBitPanel1.Controls.Add(this.wilBitPanel6);
             this.wilBitPanel1.Controls.Add(this.wilBitButton3);
             this.wilBitPanel1.Controls.Add(this.wilBitButton2);
             this.wilBitPanel1.Controls.Add(this.wilBitButton1);
+            this.wilBitPanel1.Controls.Add(this.wilBitPanel6);
             this.wilBitPanel1.ForeColor = System.Drawing.Color.White;
             this.wilBitPanel1.Location = new System.Drawing.Point(136, 175);
             this.wilBitPanel1.Name = "wilBitPanel1";
             this.wilBitPanel1.Size = new System.Drawing.Size(824, 417);
             this.wilBitPanel1.TabIndex = 28;
+            // 
+            // wilBitButton3
+            // 
+            this.wilBitButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(15)))), ((int)(((byte)(87)))));
+            this.wilBitButton3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(116)))), ((int)(((byte)(245)))));
+            this.wilBitButton3.BorderRadius = 6;
+            this.wilBitButton3.BorderSize = 0;
+            this.wilBitButton3.FlatAppearance.BorderSize = 0;
+            this.wilBitButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.wilBitButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.wilBitButton3.ForeColor = System.Drawing.Color.White;
+            this.wilBitButton3.Location = new System.Drawing.Point(622, 18);
+            this.wilBitButton3.Name = "wilBitButton3";
+            this.wilBitButton3.Size = new System.Drawing.Size(150, 40);
+            this.wilBitButton3.TabIndex = 2;
+            this.wilBitButton3.Text = "Promoções";
+            this.wilBitButton3.UseVisualStyleBackColor = false;
+            this.wilBitButton3.Click += new System.EventHandler(this.wilBitButton3_Click_1);
+            // 
+            // wilBitButton2
+            // 
+            this.wilBitButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(15)))), ((int)(((byte)(87)))));
+            this.wilBitButton2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(116)))), ((int)(((byte)(245)))));
+            this.wilBitButton2.BorderRadius = 6;
+            this.wilBitButton2.BorderSize = 0;
+            this.wilBitButton2.FlatAppearance.BorderSize = 0;
+            this.wilBitButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.wilBitButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.wilBitButton2.ForeColor = System.Drawing.Color.White;
+            this.wilBitButton2.Location = new System.Drawing.Point(343, 18);
+            this.wilBitButton2.Name = "wilBitButton2";
+            this.wilBitButton2.Size = new System.Drawing.Size(150, 40);
+            this.wilBitButton2.TabIndex = 1;
+            this.wilBitButton2.Text = "Todas";
+            this.wilBitButton2.UseVisualStyleBackColor = false;
+            this.wilBitButton2.Click += new System.EventHandler(this.wilBitButton2_Click);
+            // 
+            // wilBitButton1
+            // 
+            this.wilBitButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(15)))), ((int)(((byte)(87)))));
+            this.wilBitButton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(116)))), ((int)(((byte)(245)))));
+            this.wilBitButton1.BorderRadius = 6;
+            this.wilBitButton1.BorderSize = 0;
+            this.wilBitButton1.FlatAppearance.BorderSize = 0;
+            this.wilBitButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.wilBitButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.wilBitButton1.ForeColor = System.Drawing.Color.White;
+            this.wilBitButton1.Location = new System.Drawing.Point(81, 18);
+            this.wilBitButton1.Name = "wilBitButton1";
+            this.wilBitButton1.Size = new System.Drawing.Size(150, 40);
+            this.wilBitButton1.TabIndex = 0;
+            this.wilBitButton1.Text = "Novos matchs";
+            this.wilBitButton1.UseVisualStyleBackColor = false;
+            this.wilBitButton1.Click += new System.EventHandler(this.wilBitButton1_Click);
+            // 
+            // wilBitPanel6
+            // 
+            this.wilBitPanel6.AutoScroll = true;
+            this.wilBitPanel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(218)))), ((int)(((byte)(235)))));
+            this.wilBitPanel6.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.wilBitPanel6.BorderRadius = 0;
+            this.wilBitPanel6.BorderSize = 0;
+            this.wilBitPanel6.Controls.Add(this.wilBitPanel5);
+            this.wilBitPanel6.Controls.Add(this.wilBitPanel4);
+            this.wilBitPanel6.Controls.Add(this.wilBitPanel3);
+            this.wilBitPanel6.Controls.Add(this.wilBitPanel2);
+            this.wilBitPanel6.ForeColor = System.Drawing.Color.White;
+            this.wilBitPanel6.Location = new System.Drawing.Point(51, 88);
+            this.wilBitPanel6.Name = "wilBitPanel6";
+            this.wilBitPanel6.Size = new System.Drawing.Size(736, 0);
+            this.wilBitPanel6.TabIndex = 7;
             // 
             // wilBitPanel5
             // 
@@ -185,6 +259,15 @@
             this.wilBitPanel2.Size = new System.Drawing.Size(691, 46);
             this.wilBitPanel2.TabIndex = 3;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(55, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(38, 15);
+            this.label1.TabIndex = 31;
+            this.label1.Text = "label1";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
@@ -193,58 +276,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(34, 37);
             this.pictureBox1.TabIndex = 30;
             this.pictureBox1.TabStop = false;
-            // 
-            // wilBitButton3
-            // 
-            this.wilBitButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(15)))), ((int)(((byte)(87)))));
-            this.wilBitButton3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(116)))), ((int)(((byte)(245)))));
-            this.wilBitButton3.BorderRadius = 6;
-            this.wilBitButton3.BorderSize = 0;
-            this.wilBitButton3.FlatAppearance.BorderSize = 0;
-            this.wilBitButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.wilBitButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.wilBitButton3.ForeColor = System.Drawing.Color.White;
-            this.wilBitButton3.Location = new System.Drawing.Point(622, 18);
-            this.wilBitButton3.Name = "wilBitButton3";
-            this.wilBitButton3.Size = new System.Drawing.Size(150, 40);
-            this.wilBitButton3.TabIndex = 2;
-            this.wilBitButton3.Text = "Promoções";
-            this.wilBitButton3.UseVisualStyleBackColor = false;
-            // 
-            // wilBitButton2
-            // 
-            this.wilBitButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(15)))), ((int)(((byte)(87)))));
-            this.wilBitButton2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(116)))), ((int)(((byte)(245)))));
-            this.wilBitButton2.BorderRadius = 6;
-            this.wilBitButton2.BorderSize = 0;
-            this.wilBitButton2.FlatAppearance.BorderSize = 0;
-            this.wilBitButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.wilBitButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.wilBitButton2.ForeColor = System.Drawing.Color.White;
-            this.wilBitButton2.Location = new System.Drawing.Point(343, 18);
-            this.wilBitButton2.Name = "wilBitButton2";
-            this.wilBitButton2.Size = new System.Drawing.Size(150, 40);
-            this.wilBitButton2.TabIndex = 1;
-            this.wilBitButton2.Text = "Todas";
-            this.wilBitButton2.UseVisualStyleBackColor = false;
-            // 
-            // wilBitButton1
-            // 
-            this.wilBitButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(15)))), ((int)(((byte)(87)))));
-            this.wilBitButton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(116)))), ((int)(((byte)(245)))));
-            this.wilBitButton1.BorderRadius = 6;
-            this.wilBitButton1.BorderSize = 0;
-            this.wilBitButton1.FlatAppearance.BorderSize = 0;
-            this.wilBitButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.wilBitButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.wilBitButton1.ForeColor = System.Drawing.Color.White;
-            this.wilBitButton1.Location = new System.Drawing.Point(81, 18);
-            this.wilBitButton1.Name = "wilBitButton1";
-            this.wilBitButton1.Size = new System.Drawing.Size(150, 40);
-            this.wilBitButton1.TabIndex = 0;
-            this.wilBitButton1.Text = "Novos matchs";
-            this.wilBitButton1.UseVisualStyleBackColor = false;
-            this.wilBitButton1.Click += new System.EventHandler(this.wilBitButton1_Click);
             // 
             // label3
             // 
@@ -306,6 +337,7 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 30;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // pictureBox9
             // 
@@ -316,6 +348,7 @@
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox9.TabIndex = 28;
             this.pictureBox9.TabStop = false;
+            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
             // 
             // pictureBox2
             // 
@@ -326,31 +359,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 29;
             this.pictureBox2.TabStop = false;
-            // 
-            // wilBitPanel6
-            // 
-            this.wilBitPanel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(218)))), ((int)(((byte)(235)))));
-            this.wilBitPanel6.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.wilBitPanel6.BorderRadius = 6;
-            this.wilBitPanel6.BorderSize = 0;
-            this.wilBitPanel6.Controls.Add(this.wilBitPanel5);
-            this.wilBitPanel6.Controls.Add(this.wilBitPanel4);
-            this.wilBitPanel6.Controls.Add(this.wilBitPanel3);
-            this.wilBitPanel6.Controls.Add(this.wilBitPanel2);
-            this.wilBitPanel6.ForeColor = System.Drawing.Color.White;
-            this.wilBitPanel6.Location = new System.Drawing.Point(51, 88);
-            this.wilBitPanel6.Name = "wilBitPanel6";
-            this.wilBitPanel6.Size = new System.Drawing.Size(747, 315);
-            this.wilBitPanel6.TabIndex = 7;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(55, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 15);
-            this.label1.TabIndex = 31;
-            this.label1.Text = "label1";
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // Notificacao
             // 
@@ -363,6 +372,7 @@
             this.wilBitGradientPanel1.ResumeLayout(false);
             this.wilBitGradientPanel1.PerformLayout();
             this.wilBitPanel1.ResumeLayout(false);
+            this.wilBitPanel6.ResumeLayout(false);
             this.wilBitPanel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.wilBitPanel4.ResumeLayout(false);
@@ -378,7 +388,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.wilBitPanel6.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
