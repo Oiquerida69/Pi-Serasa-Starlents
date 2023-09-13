@@ -136,18 +136,6 @@ namespace Pi_Serasa_Starlents
                 MessageBox.Show("Cadastro Feito com Sucesso");
                 geraform(login);
 
-
-                Usuario u = new Usuario();
-
-                Program.usuario = u;
-
-                //TelaDeInicio telaDeInicio = new TelaDeInicio();
-                Perfil perfil = new Perfil();
-                perfil.TopLevel = false;
-                Form1.panel1.Controls.Clear();
-                Form1.panel1.Controls.Add(perfil);
-                perfil.Show();
-
             }
         }
         public void gerapicturebox(string caminho)
