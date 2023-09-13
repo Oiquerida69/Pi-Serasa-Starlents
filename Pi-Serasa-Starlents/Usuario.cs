@@ -64,7 +64,7 @@ namespace Pi_Serasa_Starlents
         }
         public void CadastrarUsuario(Usuario u)
         {
-            string query = $"INSERT INTO usuarios (,nome,senha,email,telefone,descricao,avatar,mensagem,interesse1,interesse2,interesse3) VALUES ('{u.nome}','{u.senha}','{u.email}','{u.telefone}','{u.descricao}','{u.avatar}','{u.mensagemUsuario}','{u.interesse01}','{u.interesse02}','{u.interesse03}');";
+            string query = $"INSERT INTO usuarios (nome,senha,email,telefone,descricao,avatar,mensagem,interesse1,interesse2,interesse3) VALUES ('{u.nome}','{u.senha}','{u.email}','{u.telefone}','{u.descricao}','{u.avatar}','{u.mensagemUsuario}','{u.interesse01}','{u.interesse02}','{u.interesse03}');";
             Conexao.executaQuery(query);
         }
         public List<Usuario> ListarUsuarios()
