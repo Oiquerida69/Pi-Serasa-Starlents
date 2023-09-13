@@ -80,6 +80,20 @@ namespace Pi_Serasa_Starlents
             return usuarios;
             
         }
+
+        public List<Usuario>buscaTodosPorIdUsuario(int id_usuario)
+        {
+            List<Usuario> usuarios = new List<Usuario>();
+            string query = $"SELECT * FROM usuarios WHERE id_usuario = {id_usuario};";
+            DataTable tabela = Conexao.executaQuery(query);
+            foreach (DataRow linha in tabela.Rows)
+            {
+                Usuario usuario = carregadados(linha);
+                usuarios.Add(usuario);
+            }
+            return usuarios;
+
+        }
         public List<Usuario> ListarAvatar()
         {
             List<Usuario> usuarios = new List<Usuario>();

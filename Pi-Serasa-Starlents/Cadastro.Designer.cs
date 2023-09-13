@@ -65,102 +65,100 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.BackColor = Color.White;
-            pictureBox1.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox1.Cursor = Cursors.Hand;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(623, 301);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(150, 140);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(623, 301);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(150, 140);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // wilBitTextBox1
             // 
-            wilBitTextBox1.BackColor = SystemColors.Window;
-            wilBitTextBox1.BorderColor = Color.White;
-            wilBitTextBox1.BorderFocusColor = Color.White;
-            wilBitTextBox1.BorderRadius = 4;
-            wilBitTextBox1.BorderSize = 2;
-            wilBitTextBox1.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
-            wilBitTextBox1.ForeColor = Color.FromArgb(64, 64, 64);
-            wilBitTextBox1.Location = new Point(316, 121);
-            wilBitTextBox1.Margin = new Padding(4);
-            wilBitTextBox1.Multiline = false;
-            wilBitTextBox1.Name = "wilBitTextBox1";
-            wilBitTextBox1.Padding = new Padding(10, 7, 10, 7);
-            wilBitTextBox1.PasswordChar = false;
-            wilBitTextBox1.PlaceholderColor = Color.DarkGray;
-            wilBitTextBox1.PlaceholderText = "";
-            wilBitTextBox1.Size = new Size(210, 29);
-            wilBitTextBox1.TabIndex = 9;
-            wilBitTextBox1.Texts = "";
-            wilBitTextBox1.UnderlinedStyle = false;
+            this.wilBitTextBox1.BackColor = System.Drawing.SystemColors.Window;
+            this.wilBitTextBox1.BorderColor = System.Drawing.Color.White;
+            this.wilBitTextBox1.BorderFocusColor = System.Drawing.Color.White;
+            this.wilBitTextBox1.BorderRadius = 4;
+            this.wilBitTextBox1.BorderSize = 2;
+            this.wilBitTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.wilBitTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.wilBitTextBox1.Location = new System.Drawing.Point(316, 121);
+            this.wilBitTextBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.wilBitTextBox1.Multiline = false;
+            this.wilBitTextBox1.Name = "wilBitTextBox1";
+            this.wilBitTextBox1.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.wilBitTextBox1.PasswordChar = false;
+            this.wilBitTextBox1.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.wilBitTextBox1.PlaceholderText = "";
+            this.wilBitTextBox1.Size = new System.Drawing.Size(210, 29);
+            this.wilBitTextBox1.TabIndex = 9;
+            this.wilBitTextBox1.Texts = "";
+            this.wilBitTextBox1.UnderlinedStyle = false;
             // 
             // wilBitTextBox2
             // 
-            wilBitTextBox2.BackColor = SystemColors.Window;
-            wilBitTextBox2.BorderColor = Color.White;
-            wilBitTextBox2.BorderFocusColor = Color.DeepSkyBlue;
-            wilBitTextBox2.BorderRadius = 4;
-            wilBitTextBox2.BorderSize = 2;
-            wilBitTextBox2.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
-            wilBitTextBox2.ForeColor = Color.FromArgb(64, 64, 64);
-            wilBitTextBox2.Location = new Point(317, 174);
-            wilBitTextBox2.Margin = new Padding(4);
-            wilBitTextBox2.Multiline = false;
-            wilBitTextBox2.Name = "wilBitTextBox2";
-            wilBitTextBox2.Padding = new Padding(10, 7, 10, 7);
-            wilBitTextBox2.PasswordChar = true;
-            wilBitTextBox2.PlaceholderColor = Color.DarkGray;
-            wilBitTextBox2.PlaceholderText = "";
-            wilBitTextBox2.Size = new Size(210, 29);
-            wilBitTextBox2.TabIndex = 10;
-            wilBitTextBox2.Texts = "";
-            wilBitTextBox2.UnderlinedStyle = false;
+            this.wilBitTextBox2.BackColor = System.Drawing.SystemColors.Window;
+            this.wilBitTextBox2.BorderColor = System.Drawing.Color.White;
+            this.wilBitTextBox2.BorderFocusColor = System.Drawing.Color.DeepSkyBlue;
+            this.wilBitTextBox2.BorderRadius = 4;
+            this.wilBitTextBox2.BorderSize = 2;
+            this.wilBitTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.wilBitTextBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.wilBitTextBox2.Location = new System.Drawing.Point(317, 174);
+            this.wilBitTextBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.wilBitTextBox2.Multiline = false;
+            this.wilBitTextBox2.Name = "wilBitTextBox2";
+            this.wilBitTextBox2.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.wilBitTextBox2.PasswordChar = true;
+            this.wilBitTextBox2.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.wilBitTextBox2.PlaceholderText = "";
+            this.wilBitTextBox2.Size = new System.Drawing.Size(210, 29);
+            this.wilBitTextBox2.TabIndex = 10;
+            this.wilBitTextBox2.Texts = "";
+            this.wilBitTextBox2.UnderlinedStyle = false;
             // 
             // wilBitTextBox3
             // 
-            wilBitTextBox3.BackColor = SystemColors.Window;
-            wilBitTextBox3.BorderColor = Color.White;
-            wilBitTextBox3.BorderFocusColor = Color.DeepSkyBlue;
-            wilBitTextBox3.BorderRadius = 4;
-            wilBitTextBox3.BorderSize = 2;
-            wilBitTextBox3.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
-            wilBitTextBox3.ForeColor = Color.FromArgb(64, 64, 64);
-            wilBitTextBox3.Location = new Point(317, 230);
-            wilBitTextBox3.Margin = new Padding(4);
-            wilBitTextBox3.Multiline = false;
-            wilBitTextBox3.Name = "wilBitTextBox3";
-            wilBitTextBox3.Padding = new Padding(10, 7, 10, 7);
-            wilBitTextBox3.PasswordChar = false;
-            wilBitTextBox3.PlaceholderColor = Color.DarkGray;
-            wilBitTextBox3.PlaceholderText = "";
-            wilBitTextBox3.Size = new Size(210, 29);
-            wilBitTextBox3.TabIndex = 11;
-            wilBitTextBox3.Texts = "";
-            wilBitTextBox3.UnderlinedStyle = false;
+            this.wilBitTextBox3.BackColor = System.Drawing.SystemColors.Window;
+            this.wilBitTextBox3.BorderColor = System.Drawing.Color.White;
+            this.wilBitTextBox3.BorderFocusColor = System.Drawing.Color.DeepSkyBlue;
+            this.wilBitTextBox3.BorderRadius = 4;
+            this.wilBitTextBox3.BorderSize = 2;
+            this.wilBitTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.wilBitTextBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.wilBitTextBox3.Location = new System.Drawing.Point(317, 230);
+            this.wilBitTextBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.wilBitTextBox3.Multiline = false;
+            this.wilBitTextBox3.Name = "wilBitTextBox3";
+            this.wilBitTextBox3.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.wilBitTextBox3.PasswordChar = false;
+            this.wilBitTextBox3.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.wilBitTextBox3.PlaceholderText = "";
+            this.wilBitTextBox3.Size = new System.Drawing.Size(210, 29);
+            this.wilBitTextBox3.TabIndex = 11;
+            this.wilBitTextBox3.Texts = "";
+            this.wilBitTextBox3.UnderlinedStyle = false;
             // 
             // wilBitButton1
             // 
-            wilBitButton1.BackColor = Color.Thistle;
-            wilBitButton1.BorderColor = Color.FromArgb(119, 0, 176);
-            wilBitButton1.BorderRadius = 6;
-            wilBitButton1.BorderSize = 0;
-            wilBitButton1.Cursor = Cursors.Hand;
-            wilBitButton1.FlatAppearance.BorderSize = 0;
-            wilBitButton1.FlatStyle = FlatStyle.Flat;
-            wilBitButton1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            wilBitButton1.ForeColor = Color.Black;
-            wilBitButton1.Location = new Point(596, 445);
-            wilBitButton1.Name = "wilBitButton1";
-            wilBitButton1.Size = new Size(210, 40);
-            wilBitButton1.TabIndex = 12;
-            wilBitButton1.Text = "Criar conta";
-            wilBitButton1.UseVisualStyleBackColor = false;
-            wilBitButton1.Click += wilBitButton1_Click_2;
+            this.wilBitButton1.BackColor = System.Drawing.Color.Thistle;
+            this.wilBitButton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(0)))), ((int)(((byte)(176)))));
+            this.wilBitButton1.BorderRadius = 6;
+            this.wilBitButton1.BorderSize = 0;
+            this.wilBitButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.wilBitButton1.FlatAppearance.BorderSize = 0;
+            this.wilBitButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.wilBitButton1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.wilBitButton1.ForeColor = System.Drawing.Color.Black;
+            this.wilBitButton1.Location = new System.Drawing.Point(596, 445);
+            this.wilBitButton1.Name = "wilBitButton1";
+            this.wilBitButton1.Size = new System.Drawing.Size(210, 40);
+            this.wilBitButton1.TabIndex = 12;
+            this.wilBitButton1.Text = "Criar conta";
+            this.wilBitButton1.UseVisualStyleBackColor = false;
             // 
             // GradientPanelCadastro
             // 
