@@ -148,6 +148,18 @@ namespace Pi_Serasa_Starlents
             
         }
         
+        public void alterarTalentos(int u,string interesse, string interesse2, string interesse3)
+        {
+
+            string query = $"UPDATE usuarios SET interesse1 = '{interesse}', interesse2='{interesse2}', interesse3='{interesse3}' WHERE id = {u};";
+            Conexao.executaQuery(query);
+        }
+        public void alteraInteresse (int u , string aprender , string aprender2)
+        {
+            string query = $"UPDATE usuarios SET aprender = '{aprender}' , aprender2 = '{aprender2}' WHERE = id = {u};";
+            Conexao.executaQuery(query);
+        }
+
     }
 }
 
