@@ -35,23 +35,15 @@
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.wilBitGradientPanel1 = new WiLBiT.WiLBiTGradientPanel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.wilBitPanel2 = new WiLBiT.WiLBiTPanel();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.wilBitPanel1 = new WiLBiT.WiLBiTPanel();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.button2 = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.wilBitButton1 = new WiLBiT.WiLBiTButton();
             this.wilBitTextBox1 = new WiLBiT.WiLBiTTextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.wilBitComboBox5 = new WiLBiT.WiLBiTComboBox();
+            this.wilBitComboBox4 = new WiLBiT.WiLBiTComboBox();
+            this.wilBitComboBox3 = new WiLBiT.WiLBiTComboBox();
+            this.wilBitComboBox2 = new WiLBiT.WiLBiTComboBox();
+            this.wilBitComboBox1 = new WiLBiT.WiLBiTComboBox();
             this.wilBitTextBox6 = new WiLBiT.WiLBiTTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -60,10 +52,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.wilBitGradientPanel1.SuspendLayout();
-            this.wilBitPanel2.SuspendLayout();
-            this.wilBitPanel1.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -71,7 +59,6 @@
             this.pictureBox1.Location = new System.Drawing.Point(47, 89);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(192, 191);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             // 
@@ -114,7 +101,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(741, 62);
+            this.label1.Location = new System.Drawing.Point(741, 89);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(97, 24);
             this.label1.TabIndex = 23;
@@ -127,17 +114,15 @@
             this.wilBitGradientPanel1.BorderColor = System.Drawing.Color.Transparent;
             this.wilBitGradientPanel1.BorderRadius = 6;
             this.wilBitGradientPanel1.BorderSize = 0;
-            this.wilBitGradientPanel1.Controls.Add(this.button4);
-            this.wilBitGradientPanel1.Controls.Add(this.button3);
-            this.wilBitGradientPanel1.Controls.Add(this.wilBitPanel2);
-            this.wilBitGradientPanel1.Controls.Add(this.wilBitPanel1);
-            this.wilBitGradientPanel1.Controls.Add(this.button1);
-            this.wilBitGradientPanel1.Controls.Add(this.panel1);
-            this.wilBitGradientPanel1.Controls.Add(this.button2);
             this.wilBitGradientPanel1.Controls.Add(this.linkLabel1);
             this.wilBitGradientPanel1.Controls.Add(this.wilBitButton1);
             this.wilBitGradientPanel1.Controls.Add(this.wilBitTextBox1);
             this.wilBitGradientPanel1.Controls.Add(this.label4);
+            this.wilBitGradientPanel1.Controls.Add(this.wilBitComboBox5);
+            this.wilBitGradientPanel1.Controls.Add(this.wilBitComboBox4);
+            this.wilBitGradientPanel1.Controls.Add(this.wilBitComboBox3);
+            this.wilBitGradientPanel1.Controls.Add(this.wilBitComboBox2);
+            this.wilBitGradientPanel1.Controls.Add(this.wilBitComboBox1);
             this.wilBitGradientPanel1.Controls.Add(this.wilBitTextBox6);
             this.wilBitGradientPanel1.Controls.Add(this.label5);
             this.wilBitGradientPanel1.Controls.Add(this.label2);
@@ -148,146 +133,11 @@
             this.wilBitGradientPanel1.Controls.Add(this.pictureBox5);
             this.wilBitGradientPanel1.Controls.Add(this.lblNome);
             this.wilBitGradientPanel1.ForeColor = System.Drawing.Color.White;
-            this.wilBitGradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.wilBitGradientPanel1.Location = new System.Drawing.Point(-2, -6);
             this.wilBitGradientPanel1.Name = "wilBitGradientPanel1";
             this.wilBitGradientPanel1.Size = new System.Drawing.Size(927, 562);
             this.wilBitGradientPanel1.TabIndex = 20;
             this.wilBitGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.wilBitGradientPanel1_Paint);
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(688, 349);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 49;
-            this.button4.Text = "Alterar";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(688, 206);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 48;
-            this.button3.Text = "Alterar";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // wilBitPanel2
-            // 
-            this.wilBitPanel2.BackColor = System.Drawing.Color.Transparent;
-            this.wilBitPanel2.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.wilBitPanel2.BorderRadius = 6;
-            this.wilBitPanel2.BorderSize = 0;
-            this.wilBitPanel2.Controls.Add(this.comboBox4);
-            this.wilBitPanel2.Controls.Add(this.comboBox5);
-            this.wilBitPanel2.ForeColor = System.Drawing.Color.White;
-            this.wilBitPanel2.Location = new System.Drawing.Point(676, 259);
-            this.wilBitPanel2.Name = "wilBitPanel2";
-            this.wilBitPanel2.Size = new System.Drawing.Size(221, 86);
-            this.wilBitPanel2.TabIndex = 47;
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(220)))), ((int)(((byte)(250)))));
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(19, 17);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(199, 23);
-            this.comboBox4.TabIndex = 44;
-            this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.comboBox4_SelectedIndexChanged);
-            // 
-            // comboBox5
-            // 
-            this.comboBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(220)))), ((int)(((byte)(250)))));
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(19, 46);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(199, 23);
-            this.comboBox5.TabIndex = 45;
-            this.comboBox5.SelectedIndexChanged += new System.EventHandler(this.comboBox5_SelectedIndexChanged);
-            // 
-            // wilBitPanel1
-            // 
-            this.wilBitPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.wilBitPanel1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.wilBitPanel1.BorderRadius = 6;
-            this.wilBitPanel1.BorderSize = 0;
-            this.wilBitPanel1.Controls.Add(this.comboBox3);
-            this.wilBitPanel1.Controls.Add(this.comboBox2);
-            this.wilBitPanel1.Controls.Add(this.comboBox1);
-            this.wilBitPanel1.ForeColor = System.Drawing.Color.White;
-            this.wilBitPanel1.Location = new System.Drawing.Point(676, 89);
-            this.wilBitPanel1.Name = "wilBitPanel1";
-            this.wilBitPanel1.Size = new System.Drawing.Size(225, 114);
-            this.wilBitPanel1.TabIndex = 46;
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(24, 74);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(189, 23);
-            this.comboBox3.TabIndex = 2;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(22, 45);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(191, 23);
-            this.comboBox2.TabIndex = 1;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(24, 16);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(189, 23);
-            this.comboBox1.TabIndex = 0;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(812, 206);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 38;
-            this.button1.Text = "Confirmar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Visible = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(220)))), ((int)(((byte)(250)))));
-            this.panel1.Controls.Add(this.pictureBox4);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(927, 53);
-            this.panel1.TabIndex = 40;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(461, 10);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(40, 40);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 0;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(812, 349);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 39;
-            this.button2.Text = "Confirmar";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Visible = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // linkLabel1
             // 
@@ -296,7 +146,7 @@
             this.linkLabel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(66)))), ((int)(((byte)(225)))));
             this.linkLabel1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.linkLabel1.LinkColor = System.Drawing.Color.White;
-            this.linkLabel1.Location = new System.Drawing.Point(698, 403);
+            this.linkLabel1.Location = new System.Drawing.Point(699, 389);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(178, 44);
             this.linkLabel1.TabIndex = 37;
@@ -314,7 +164,7 @@
             this.wilBitButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.wilBitButton1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.wilBitButton1.ForeColor = System.Drawing.Color.White;
-            this.wilBitButton1.Location = new System.Drawing.Point(688, 378);
+            this.wilBitButton1.Location = new System.Drawing.Point(688, 364);
             this.wilBitButton1.Name = "wilBitButton1";
             this.wilBitButton1.Size = new System.Drawing.Size(199, 95);
             this.wilBitButton1.TabIndex = 36;
@@ -353,6 +203,101 @@
             this.label4.Size = new System.Drawing.Size(153, 21);
             this.label4.TabIndex = 34;
             this.label4.Text = "Desejo compartilhar:";
+            // 
+            // wilBitComboBox5
+            // 
+            this.wilBitComboBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(220)))), ((int)(((byte)(250)))));
+            this.wilBitComboBox5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(26)))), ((int)(((byte)(181)))));
+            this.wilBitComboBox5.BorderSize = 1;
+            this.wilBitComboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.wilBitComboBox5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.wilBitComboBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(30)))), ((int)(((byte)(104)))));
+            this.wilBitComboBox5.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(26)))), ((int)(((byte)(181)))));
+            this.wilBitComboBox5.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
+            this.wilBitComboBox5.ListTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(30)))), ((int)(((byte)(104)))));
+            this.wilBitComboBox5.Location = new System.Drawing.Point(687, 328);
+            this.wilBitComboBox5.MinimumSize = new System.Drawing.Size(200, 30);
+            this.wilBitComboBox5.Name = "wilBitComboBox5";
+            this.wilBitComboBox5.Padding = new System.Windows.Forms.Padding(1);
+            this.wilBitComboBox5.Size = new System.Drawing.Size(200, 30);
+            this.wilBitComboBox5.TabIndex = 33;
+            this.wilBitComboBox5.Texts = "";
+            // 
+            // wilBitComboBox4
+            // 
+            this.wilBitComboBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(220)))), ((int)(((byte)(250)))));
+            this.wilBitComboBox4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(26)))), ((int)(((byte)(181)))));
+            this.wilBitComboBox4.BorderSize = 1;
+            this.wilBitComboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.wilBitComboBox4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.wilBitComboBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(30)))), ((int)(((byte)(104)))));
+            this.wilBitComboBox4.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(26)))), ((int)(((byte)(181)))));
+            this.wilBitComboBox4.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(220)))), ((int)(((byte)(250)))));
+            this.wilBitComboBox4.ListTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(30)))), ((int)(((byte)(104)))));
+            this.wilBitComboBox4.Location = new System.Drawing.Point(687, 290);
+            this.wilBitComboBox4.MinimumSize = new System.Drawing.Size(200, 30);
+            this.wilBitComboBox4.Name = "wilBitComboBox4";
+            this.wilBitComboBox4.Padding = new System.Windows.Forms.Padding(1);
+            this.wilBitComboBox4.Size = new System.Drawing.Size(200, 30);
+            this.wilBitComboBox4.TabIndex = 32;
+            this.wilBitComboBox4.Texts = "";
+            // 
+            // wilBitComboBox3
+            // 
+            this.wilBitComboBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(220)))), ((int)(((byte)(250)))));
+            this.wilBitComboBox3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(26)))), ((int)(((byte)(181)))));
+            this.wilBitComboBox3.BorderSize = 1;
+            this.wilBitComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.wilBitComboBox3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.wilBitComboBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(30)))), ((int)(((byte)(104)))));
+            this.wilBitComboBox3.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(26)))), ((int)(((byte)(181)))));
+            this.wilBitComboBox3.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(220)))), ((int)(((byte)(250)))));
+            this.wilBitComboBox3.ListTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(30)))), ((int)(((byte)(104)))));
+            this.wilBitComboBox3.Location = new System.Drawing.Point(687, 188);
+            this.wilBitComboBox3.MinimumSize = new System.Drawing.Size(200, 30);
+            this.wilBitComboBox3.Name = "wilBitComboBox3";
+            this.wilBitComboBox3.Padding = new System.Windows.Forms.Padding(1);
+            this.wilBitComboBox3.Size = new System.Drawing.Size(200, 30);
+            this.wilBitComboBox3.TabIndex = 31;
+            this.wilBitComboBox3.Texts = "";
+            // 
+            // wilBitComboBox2
+            // 
+            this.wilBitComboBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(220)))), ((int)(((byte)(250)))));
+            this.wilBitComboBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(26)))), ((int)(((byte)(181)))));
+            this.wilBitComboBox2.BorderSize = 1;
+            this.wilBitComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.wilBitComboBox2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.wilBitComboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(30)))), ((int)(((byte)(104)))));
+            this.wilBitComboBox2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(26)))), ((int)(((byte)(181)))));
+            this.wilBitComboBox2.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(220)))), ((int)(((byte)(250)))));
+            this.wilBitComboBox2.ListTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(30)))), ((int)(((byte)(104)))));
+            this.wilBitComboBox2.Location = new System.Drawing.Point(687, 152);
+            this.wilBitComboBox2.MinimumSize = new System.Drawing.Size(200, 30);
+            this.wilBitComboBox2.Name = "wilBitComboBox2";
+            this.wilBitComboBox2.Padding = new System.Windows.Forms.Padding(1);
+            this.wilBitComboBox2.Size = new System.Drawing.Size(200, 30);
+            this.wilBitComboBox2.TabIndex = 30;
+            this.wilBitComboBox2.Texts = "";
+            // 
+            // wilBitComboBox1
+            // 
+            this.wilBitComboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(220)))), ((int)(((byte)(250)))));
+            this.wilBitComboBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(26)))), ((int)(((byte)(181)))));
+            this.wilBitComboBox1.BorderSize = 1;
+            this.wilBitComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.wilBitComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.wilBitComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(30)))), ((int)(((byte)(104)))));
+            this.wilBitComboBox1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(26)))), ((int)(((byte)(181)))));
+            this.wilBitComboBox1.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(220)))), ((int)(((byte)(250)))));
+            this.wilBitComboBox1.ListTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(30)))), ((int)(((byte)(104)))));
+            this.wilBitComboBox1.Location = new System.Drawing.Point(687, 116);
+            this.wilBitComboBox1.MinimumSize = new System.Drawing.Size(200, 30);
+            this.wilBitComboBox1.Name = "wilBitComboBox1";
+            this.wilBitComboBox1.Padding = new System.Windows.Forms.Padding(1);
+            this.wilBitComboBox1.Size = new System.Drawing.Size(200, 30);
+            this.wilBitComboBox1.TabIndex = 29;
+            this.wilBitComboBox1.Texts = "";
             // 
             // wilBitTextBox6
             // 
@@ -394,7 +339,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(723, 232);
+            this.label2.Location = new System.Drawing.Point(723, 244);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(115, 24);
             this.label2.TabIndex = 2;
@@ -429,10 +374,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.wilBitGradientPanel1.ResumeLayout(false);
             this.wilBitGradientPanel1.PerformLayout();
-            this.wilBitPanel2.ResumeLayout(false);
-            this.wilBitPanel1.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -455,20 +396,12 @@
         private WiLBiT.WiLBiTTextBox wilBitTextBox6;
         private WiLBiT.WiLBiTTextBox wilBitTextBox1;
         private Label label4;
+        private WiLBiT.WiLBiTComboBox wilBitComboBox5;
+        private WiLBiT.WiLBiTComboBox wilBitComboBox4;
+        private WiLBiT.WiLBiTComboBox wilBitComboBox3;
+        private WiLBiT.WiLBiTComboBox wilBitComboBox2;
+        private WiLBiT.WiLBiTComboBox wilBitComboBox1;
         private WiLBiT.WiLBiTButton wilBitButton1;
         private LinkLabel linkLabel1;
-        private Button button2;
-        private Button button1;
-        private Panel panel1;
-        private ComboBox comboBox5;
-        private ComboBox comboBox4;
-        private PictureBox pictureBox4;
-        private WiLBiT.WiLBiTPanel wilBitPanel1;
-        private ComboBox comboBox3;
-        private ComboBox comboBox2;
-        private ComboBox comboBox1;
-        private WiLBiT.WiLBiTPanel wilBitPanel2;
-        private Button button4;
-        private Button button3;
     }
 }

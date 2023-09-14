@@ -133,13 +133,31 @@ namespace Pi_Serasa_Starlents
             Usuario u = carregadados(resutlados.Rows[0]);
             return u;
         }
-        
-        public List<Usuario> buscaPerfil( string interesse ,string interesse2 ,string interesse3)
+
+        public List<Usuario> buscaPerfil(int id_usuario, string interesse ,string interesse2 ,string interesse3)
         {
             List<Usuario> us = new List<Usuario>();
-            string query = $"SELECT * FROM usuarios WHERE interesse1 IN ('{interesse}','{interesse2}','{interesse3}');";
+            //string query = $"SELECT * FROM usuarios WHERE interesse1 IN ('{interesse}','{interesse2}','{interesse3}') OR interesse2 IN ('{interesse}','{interesse2}','{interesse3}') OR interesse3 IN ('{interesse}','{interesse2}','{interesse3}');";
+            string query = $"SELECT * FROM usuarios WHERE interesse1 IN ('{interesse}','{interesse2}','{interesse3}') OR interesse2 IN ('{interesse}','{interesse2}','{interesse3}') OR interesse3 IN ('{interesse}','{interesse2}','{interesse3}');";
             DataTable table = Conexao.executaQuery(query);
-            foreach(DataRow linha in table.Rows)
+            if(table.Rows.Count == 0)
+            {
+                return null;
+            }
+
+            string ids = "";
+            foreach( DataRow l in table.Rows)
+            {
+                ids += l["id"] + ",";
+            }
+            ids = ids.Substring(0, ids.Length-1);
+            MessageBox.Show(ids);
+
+            query = $"SELECT usuarios.* FROM usuarios, mix WHERE mix.id_usuario_1 = {id_usuario} AND mix.id_usuario_2 NOT IN ({ids});";
+            table = Conexao.executaQuery(query);
+
+
+            foreach (DataRow linha in table.Rows)
             {
                 Usuario u = carregadados(linha);
                 us.Add(u);
@@ -148,17 +166,11 @@ namespace Pi_Serasa_Starlents
             
         }
         
-        public void alterarTalentos(int u,string interesse, string interesse2, string interesse3)
-        {
-
-            string query = $"UPDATE usuarios SET interesse1 = '{interesse}', interesse2='{interesse2}', interesse3='{interesse3}' WHERE id = {u};";
-            Conexao.executaQuery(query);
-        }
-        public void alteraInteresse (int u , string aprender , string aprender2)
-        {
-            string query = $"UPDATE usuarios SET aprender = '{aprender}' , aprender2 = '{aprender2}' WHERE = id = {u};";
-            Conexao.executaQuery(query);
-        }
+        //public void Curtida(int id_usuario_1, int id_usuario_2, bool curtiu)
+        //{
+        //    string query = $"INSERT INTO mix (id_usuario_1, id_usuario_2, curtiu) VALUES ({=id_usuario_1}, {id_usuario_2}, {curtiu});";
+        //    Conexao.executaQuery(query);
+        //}
 
     }
 }
