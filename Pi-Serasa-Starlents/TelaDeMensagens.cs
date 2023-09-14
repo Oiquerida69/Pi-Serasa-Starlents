@@ -255,7 +255,7 @@ namespace Pi_Serasa_Starlents
             this.Hide ();
             TelaDeInicio telaDeInicio = new TelaDeInicio();
             panel2.Location = new Point(0, 0);
-            telaDeInicio.Size = new Size(ClientSize.Width, ClientSize.Height);
+            telaDeInicio.Size = new Size (ClientSize.Width, ClientSize.Height);
             telaDeInicio.Show();
         }
 
@@ -268,6 +268,7 @@ namespace Pi_Serasa_Starlents
             TelaDeDenuncia telaDeDenuncia = new TelaDeDenuncia();
             panel2.Location = new Point(0, 0);
             telaDeDenuncia.Size = new Size(ClientSize.Width, ClientSize.Height);
+
             telaDeDenuncia.Show();
         }
     }

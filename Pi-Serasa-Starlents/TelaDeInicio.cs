@@ -60,5 +60,15 @@ namespace Pi_Serasa_Starlents
         {
 
         }
+
+        private void wilBitGradientPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void TelaDeInicio_Load_1(object sender, EventArgs e)
+        {
+           
+        }
     }
 }

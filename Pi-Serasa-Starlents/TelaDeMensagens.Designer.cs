@@ -176,7 +176,7 @@
             this.fotoUsuario.Location = new System.Drawing.Point(19, 14);
             this.fotoUsuario.Name = "fotoUsuario";
             this.fotoUsuario.Size = new System.Drawing.Size(83, 83);
-            this.fotoUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.fotoUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.fotoUsuario.TabIndex = 1;
             this.fotoUsuario.TabStop = false;
             // 
@@ -186,7 +186,7 @@
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(55)))), ((int)(((byte)(148)))));
             this.panel4.Controls.Add(this.label2);
             this.panel4.Controls.Add(this.btnVoltaInicio);
-            this.panel4.Location = new System.Drawing.Point(1, 7);
+            this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(220, 50);
             this.panel4.TabIndex = 1;
@@ -227,11 +227,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             this.ClientSize = new System.Drawing.Size(779, 445);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.painel_Lista);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "TelaDeMensagens";
             this.Text = "TelaDeMensagens";
             this.Load += new System.EventHandler(this.TelaDeMensagens_Load_3);
