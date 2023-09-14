@@ -73,24 +73,30 @@ namespace Pi_Serasa_Starlents
 
         }
 
-        public void atualizaInterface()
+        public void expandeTela()
         {
+            if (WindowState == FormWindowState.Maximized)
+            {
+                picFotoUsuario.Height = 500;
+                picFotoUsuario.Width = 500;
+            }
 
         }
 
         private void TelaDoModerador_Load(object sender, EventArgs e)
         {
-            lblNomeMiniatura = new Label();
-            picFotoMiniatura = new WiLBiT.WiLBiTRoundedPictureBox();
 
-            picFotoUsuario = picFotoMiniatura;
+            lblNomeMiniatura = new Label();
+            //picFotoMiniatura = new WiLBiT.WiLBiTRoundedPictureBox();
+
+            //picFotoUsuario = picFotoMiniatura;
             lblUsuario = lblNomeMiniatura;
 
             //lblBiografiaUsuario = new Label();
             //lblBiografiaMix = new Label();
 
             lblDetalhesDenuncia = new Label();
-            lblidUsuario = new Label();
+            //lblidUsuario = new Label();
 
         }
 
@@ -119,13 +125,7 @@ namespace Pi_Serasa_Starlents
 
         private void btnSuspendeDenuncia_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("A denúncia foi suspensa.");
-            lblUsuario.Text = "Usuario";
-            lblidUsuario.Text = "0";
-            lblDetalhesDenuncia.Text = "Detalhes da denúncia";
-            //lblBiografiaMix.Text = "Biografia de Mix";
-            //lblBiografiaUsuario.Text = "Biografia do usuário";
-            txtJustificativaBanimento.Texts = "";
+
 
         }
 
@@ -138,5 +138,19 @@ namespace Pi_Serasa_Starlents
         {
 
         }
+
+        private void btnSuspendeDenuncia_Click_1(object sender, EventArgs e)
+        {
+            MessageBox.Show("A denúncia foi suspensa.");
+            lblUsuario.Text = "Usuario";
+            //lblidUsuario.Text = "000000000";
+            lbl_idUsuario.Text = "01";
+            lblDetalhesDenuncia.Text = "Detalhes da denúncia";
+            txtBiografiaMix.Text = "Biografia de Mix";
+            txtBiografiaUsuario.Text = "Biografia do usuário";
+            txtJustificativaBanimento.Texts = "";
+        }
+
+
     }
 }
