@@ -126,16 +126,16 @@ namespace Pi_Serasa_Starlents
             {
                 List<string> avatars = new List<string> { caminho1, caminho2, caminho3, caminho4, caminho5, caminho6, caminho7, caminho8, caminho9, caminho10, caminho11, caminho12, caminho13, caminho14, caminho15, caminho16, caminho17, caminho18 };
                 Random random = new Random();
-                
-                    pictureBox1.ImageLocation = avatars[random.Next(0,18)].ToString();
+
+                pictureBox1.ImageLocation = avatars[random.Next(0, 18)].ToString();
             }
-                pictureBox3.Click += clique;
-            
+            pictureBox3.Click += clique;
+
         }
 
         private void wilBitButton1_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void wilBitButton1_Click_3(object sender, EventArgs e)
@@ -182,7 +182,7 @@ namespace Pi_Serasa_Starlents
                 string mensagemU = wilBitTextBox6.Texts;
                 string aprender = comboBox4.Text;
                 string aprender2 = comboBox5.Text;
-                Usuario usuariototal = new Usuario(0, interesse, interesse2, interesee3, nome, email, senha, telefone, descricao, avatar, mensagemU , aprender,aprender2);
+                Usuario usuariototal = new Usuario(0, interesse, interesse2, interesee3, nome, email, senha, telefone, descricao, avatar, mensagemU, aprender, aprender2);
                 Program.usuario.CadastrarUsuario(usuariototal);
                 MessageBox.Show("Cadastro Feito com Sucesso");
                 Form1.panel1.Controls.Clear();
