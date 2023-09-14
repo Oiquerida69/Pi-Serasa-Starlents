@@ -24,7 +24,7 @@ namespace Pi_Serasa_Starlents
         {
             InitializeComponent();
         }
-        public void geraform(string nome, string avatar, string mensagemUsuario)
+        public void geraform(string nome, string avatar, string descricao)
         {
 
 
@@ -39,6 +39,7 @@ namespace Pi_Serasa_Starlents
             void clique(object sender, EventArgs e)
             {
                 lblNome.Text = nome;
+                lblDescricaoDeMatch.Text = descricao;
 
 
                 lblNome.ForeColor = Color.Black;
@@ -111,7 +112,7 @@ namespace Pi_Serasa_Starlents
            
 
         }
-        public void atualizaInterface (string nome, string avatar, string mensagem_usuario )
+        public void atualizaInterface (string nome, string avatar, string descricao )
         {
             WiLBiTPanel panel= new WiLBiTPanel();
             panel.Size = new Size(530, 400);
@@ -134,7 +135,7 @@ namespace Pi_Serasa_Starlents
             Label label1= new Label();
             label1.Size = new Size(170,15);
             label1.Location = new Point(29, 112);
-            label1.Text = mensagem_usuario;
+            label1.Text = descricao;
             
             panel.Controls.Add(label);
             panel.Controls.Add(label1);

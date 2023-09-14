@@ -13,15 +13,34 @@ namespace Pi_Serasa_Starlents
     public partial class TelaDeInicio : Form
     {
 
-
-
+        List<Usuario> usuarios;
+        int mostrando = 0;
 
         public TelaDeInicio()
         {
             InitializeComponent();
         }
 
-        
+        void mostraPerfil()
+        {
+
+            Usuario usuario = usuarios[mostrando];
+            lblNomeUsuario.Text = usuario.nome;
+            lblDescricao.Text = usuario.descricao;
+            lblTalento01.Text = usuario.interesse01;
+            lblTalento02.Text = usuario.interesse02;
+
+            if (mostrando + 1 > usuarios.Count-1)
+            {
+                MessageBox.Show("Você ´visuaouzlou aishdaosdoa jds");
+            }
+            else
+            {
+                mostrando += 1;
+            }
+
+        }
+
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
@@ -50,8 +69,20 @@ namespace Pi_Serasa_Starlents
         private void TelaDeInicio_Load(object sender, EventArgs e)
         {
             Usuario usuario = new Usuario();
+            usuarios = usuario.buscaPerfil( Program.usuario.id, Program.usuario.interesse01, Program.usuario.interesse02, Program.usuario.interesse03);
+            mostraPerfil();
+
+        }
 
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCurtida_Click(object sender, EventArgs e)
+        {
+            mostraPerfil();
         }
     }
 }

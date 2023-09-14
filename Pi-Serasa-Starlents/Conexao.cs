@@ -12,15 +12,16 @@ namespace Pi_Serasa_Starlents
 {
     internal class Conexao
     {
-        const string host = "localhost";
-        const string banco = "projeto_senac";
-        const string usuario = "root";
-        const string senha = "";
-        //const string host = "10.60.45.48";
-        //const string banco = "projetointegrador";
-        //const string usuario = "senac";
-        //const string senha = "senac";
-
+        const string host = "srv793.hstgr.io";
+        const string banco = "u647084545_serasa_wmbrd";
+        const string usuario = "u647084545_serasa_wmbrd";
+        const string senha = "Serasa2024";
+       /*
+        const string host = "10.60.45.48";
+        const string banco = "novobanco";
+        const string usuario = "senac";
+        const string senha = "senac";
+       */
         const string dadosConexao = $"Server={host};Database={banco};Uid={usuario};Pwd={senha};";
         static MySqlConnection conexao = new MySqlConnection(dadosConexao);
 

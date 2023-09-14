@@ -18,7 +18,7 @@
     <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
     <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
     <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
-    <data name="Color1" type="System.Drawing.Color, System.Drawing"">Blue</data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
     <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
         <value>[base64 mime encoded serialized .NET Framework object]</value>
     </data>
@@ -221,10 +221,10 @@
         AAAASUVORK5CYII=
 </value>
   </data>
-  <data name="btnGerenciadorDoUsuario.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pictureBox4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wQAADsEBuJFr7QAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAO/SURBVFhHrZdb
+        wAAADsABataJCQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAO/SURBVFhHrZdb
         q1VVGIZ3EWogniDweFlkeCK8LrvIkroyVPLC6E+opReKFXYZqbVL0X5IRAfTIr0sulWsVLS0lPI0e541
         37H3Ws4591pLfeDVNb73G2OexuHbE6NSVdU8tB19jn5El9CtyN8/oM/Qm2heuj08DLYUfYpuon5uoAuR
         v/ux/QlakmHGh85z0HsZTK6ho2gzWpa0KYzFO4bMlX/QATQnaaNBhyXoNBJv4CBaEHso5M5Fu9B1JGfR
@@ -244,7 +244,7 @@
         AABJRU5ErkJggg==
 </value>
   </data>
-  <data name="btnTelaInicio.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1
         MAAA6mAAADqYAAAXcJy6UTwAAAAHdElNRQfnCQkJAAXINmNhAAACaUlEQVRYR+2XS2vUYBSGq9B6+QH2
@@ -261,25 +261,7 @@
         qSk5pOgAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="btnTelaDeMensagem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1
-        MAAA6mAAADqYAAAXcJy6UTwAAAAHdElNRQfnCQkINyb7lNgQAAACrUlEQVRYR+2Wy29MYRiHh7ZIXBuU
-        IiRiQRqq8SdYEZpGXRYEK7dEmtiwwU5U0misWViRukX9AUIkIkGQlCCClcvOwiVx+Ty/8/3OdGRm9Jwx
-        Y9UnedIzv/d9v2/OdOacUxinVkIIB/AjfsC9jv8PbLgGf2KKjrtcbjxsdj3ZNoTTOBgPwzWXGwsbrcZf
-        +BnbcJ6PlXW6rXGwyVUUA46U6ZMQlxw1BjboQP2/v+ICx8rn4xfUp7DScf1h8SEUg46KkJ2JpXDBUf1g
-        0em4HtOzX+hSEWX4zT3rcIZL2WFoOW7Cw3gWb+E7LKXf7WVQOxVbirzH23gOj2AvrnD7KITNmP60KqGz
-        foxHsdljZaiGx92rmWpor9F1eNGTxCF8wmEcwH24FhfjBLdmRjOe1RpaS2tqbe0hetyaNO+OWXiA0xzX
-        Ha3tPcROx0lhFr5J4hDuYP4v0BhoTa8ttNdMlyIES/CVqnAfZ7v0z7CWTvCuFoa3uMylP6Gg/9lLdcFD
-        nONSzbBGK97TgvAal7pUGRp0VRtRt/+2u5QbZufiIy0Ez3GRS3+HxnZ8qinQl6bqT68azLSgPkWhtfKd
-        CAO6y73QNGxwnBlmNsbR5MzbHOeDwSvJEiFsdZQZZrbF0XDZUX4Y1rsXqxxlhpnOOBqeOcoHg1PwB37H
-        yY4zoxnP1jSvBbpQjDjKDbPpFzn/kxJDO+JsGHJUhEzfcF3fdWWTOm5xuQhZ+vyw3VF2GDoZZ8MxR8om
-        4hZMfx2l6PK6B5vcrn7dGcUJR9lh6EacDb1+3Y1PkiSij3ezTT9qoZ5uz+j+L4b1OhcMpdfufkyPhc5U
-        d8/SM21ylt7QhGY0K266NTsM6QmmFD3dHMRJbilDNfeot5Q+t2SHIT1Q7MeLeAinujQm6kW9kfO4y/E4
-        FSgUfgMuiSfGUbNxsQAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="btnNotificacoes.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1
         MAAA6mAAADqYAAAXcJy6UTwAAAAHdElNRQfnCQkINjQRNpgZAAAC2UlEQVRYR7WXO2gUURhGo/ERJUbF
@@ -296,6 +278,24 @@
         eS/G6cMVR5Uw8CCOLzpnvGQlDOgjQn8i6823DL7hNaz70poJjac1C9zHZscJ/Nbrm96Y9ec3Oi4XJm5D
         fWSKKdyNygZQ17m47vLFgQX24ZdkqWr0Ktbm0sWDRTpRx1Ifmtrtz/EcLuBjs6npP8WNr7ZCpG/nAAAA
         AElFTkSuQmCC
+</value>
+  </data>
+  <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1
+        MAAA6mAAADqYAAAXcJy6UTwAAAAHdElNRQfnCQkINyb7lNgQAAACrUlEQVRYR+2Wy29MYRiHh7ZIXBuU
+        IiRiQRqq8SdYEZpGXRYEK7dEmtiwwU5U0misWViRukX9AUIkIkGQlCCClcvOwiVx+Ty/8/3OdGRm9Jwx
+        Y9UnedIzv/d9v2/OdOacUxinVkIIB/AjfsC9jv8PbLgGf2KKjrtcbjxsdj3ZNoTTOBgPwzWXGwsbrcZf
+        +BnbcJ6PlXW6rXGwyVUUA46U6ZMQlxw1BjboQP2/v+ICx8rn4xfUp7DScf1h8SEUg46KkJ2JpXDBUf1g
+        0em4HtOzX+hSEWX4zT3rcIZL2WFoOW7Cw3gWb+E7LKXf7WVQOxVbirzH23gOj2AvrnD7KITNmP60KqGz
+        foxHsdljZaiGx92rmWpor9F1eNGTxCF8wmEcwH24FhfjBLdmRjOe1RpaS2tqbe0hetyaNO+OWXiA0xzX
+        Ha3tPcROx0lhFr5J4hDuYP4v0BhoTa8ttNdMlyIES/CVqnAfZ7v0z7CWTvCuFoa3uMylP6Gg/9lLdcFD
+        nONSzbBGK97TgvAal7pUGRp0VRtRt/+2u5QbZufiIy0Ez3GRS3+HxnZ8qinQl6bqT68azLSgPkWhtfKd
+        CAO6y73QNGxwnBlmNsbR5MzbHOeDwSvJEiFsdZQZZrbF0XDZUX4Y1rsXqxxlhpnOOBqeOcoHg1PwB37H
+        yY4zoxnP1jSvBbpQjDjKDbPpFzn/kxJDO+JsGHJUhEzfcF3fdWWTOm5xuQhZ+vyw3VF2GDoZZ8MxR8om
+        4hZMfx2l6PK6B5vcrn7dGcUJR9lh6EacDb1+3Y1PkiSij3ezTT9qoZ5uz+j+L4b1OhcMpdfufkyPhc5U
+        d8/SM21ylt7QhGY0K266NTsM6QmmFD3dHMRJbilDNfeot5Q+t2SHIT1Q7MeLeAinujQm6kW9kfO4y/E4
+        FSgUfgMuiSfGUbNxsQAAAABJRU5ErkJggg==
 </value>
   </data>
 </root>

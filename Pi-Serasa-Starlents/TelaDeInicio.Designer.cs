@@ -44,12 +44,8 @@
             lblNomeUsuario = new Label();
             picFotoUsuario = new PictureBox();
             panel1 = new Panel();
-            panel5 = new Panel();
             pictureBox4 = new PictureBox();
             pictureBox1 = new PictureBox();
-            panel4 = new Panel();
-            panel3 = new Panel();
-            panel2 = new Panel();
             pictureBox3 = new PictureBox();
             pictureBox2 = new PictureBox();
             wilBitGradientPanel1.SuspendLayout();
@@ -102,6 +98,7 @@
             btnCurtida.SizeMode = PictureBoxSizeMode.CenterImage;
             btnCurtida.TabIndex = 14;
             btnCurtida.TabStop = false;
+            btnCurtida.Click += btnCurtida_Click;
             // 
             // btnDescurtida
             // 
@@ -246,12 +243,8 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(74, 5, 112);
-            panel1.Controls.Add(panel5);
             panel1.Controls.Add(pictureBox4);
             panel1.Controls.Add(pictureBox1);
-            panel1.Controls.Add(panel4);
-            panel1.Controls.Add(panel3);
-            panel1.Controls.Add(panel2);
             panel1.Controls.Add(pictureBox3);
             panel1.Controls.Add(pictureBox2);
             panel1.Location = new Point(0, 0);
@@ -259,21 +252,13 @@
             panel1.Size = new Size(815, 70);
             panel1.TabIndex = 0;
             // 
-            // panel5
-            // 
-            panel5.BackColor = Color.White;
-            panel5.Location = new Point(545, 60);
-            panel5.Name = "panel5";
-            panel5.Size = new Size(70, 10);
-            panel5.TabIndex = 6;
-            // 
             // pictureBox4
             // 
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
             pictureBox4.Location = new Point(555, 4);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(50, 50);
-            pictureBox4.SizeMode = PictureBoxSizeMode.CenterImage;
+            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox4.TabIndex = 2;
             pictureBox4.TabStop = false;
             pictureBox4.Click += pictureBox4_Click;
@@ -287,30 +272,7 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
-            // 
-            // panel4
-            // 
-            panel4.BackColor = Color.White;
-            panel4.Location = new Point(430, 60);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(70, 10);
-            panel4.TabIndex = 5;
-            // 
-            // panel3
-            // 
-            panel3.BackColor = Color.White;
-            panel3.Location = new Point(315, 60);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(70, 10);
-            panel3.TabIndex = 4;
-            // 
-            // panel2
-            // 
-            panel2.BackColor = Color.White;
-            panel2.Location = new Point(200, 60);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(70, 10);
-            panel2.TabIndex = 3;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // pictureBox3
             // 
@@ -318,7 +280,7 @@
             pictureBox3.Location = new Point(211, 4);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(50, 50);
-            pictureBox3.SizeMode = PictureBoxSizeMode.CenterImage;
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 2;
             pictureBox3.TabStop = false;
             pictureBox3.Click += pictureBox3_Click;
@@ -329,7 +291,7 @@
             pictureBox2.Location = new Point(324, 4);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(50, 50);
-            pictureBox2.SizeMode = PictureBoxSizeMode.CenterImage;
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
             pictureBox2.Click += pictureBox2_Click;
@@ -338,7 +300,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(803, 450);
+            ClientSize = new Size(826, 450);
             Controls.Add(wilBitGradientPanel1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "TelaDeInicio";
@@ -369,15 +331,6 @@
         #endregion
 
         private WiLBiT.WiLBiTGradientPanel wilBitGradientPanel1;
-        private Panel panel1;
-        private PictureBox pictureBox4;
-        private PictureBox pictureBox3;
-        private PictureBox pictureBox2;
-        private PictureBox pictureBox1;
-        private Panel panel5;
-        private Panel panel4;
-        private Panel panel3;
-        private Panel panel2;
         private PictureBox picFotoUsuario;
         private Panel panel6;
         private Label lblNomeUsuario;
@@ -391,5 +344,10 @@
         private Label lblTalento02;
         private Label lblTalento01;
         private Label lblDescricao;
+        private Panel panel1;
+        private PictureBox pictureBox4;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox3;
+        private PictureBox pictureBox2;
     }
 }
