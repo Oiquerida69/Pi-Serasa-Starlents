@@ -98,6 +98,7 @@
             btnCurtida.SizeMode = PictureBoxSizeMode.CenterImage;
             btnCurtida.TabIndex = 14;
             btnCurtida.TabStop = false;
+            btnCurtida.Click += btnCurtida_Click;
             // 
             // btnDescurtida
             // 
