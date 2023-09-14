@@ -24,7 +24,6 @@ namespace Pi_Serasa_Starlents
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            MessageBox.Show("UHUEHEEUHE");
             Login login = new Login();
             login.Show();
 
@@ -33,15 +32,7 @@ namespace Pi_Serasa_Starlents
             panel1.Controls.Add(login);
             login.Location = new Point(0, 0);
             login.Show();
-            //--------------------------------
-            Cadastro cadastro = new Cadastro();
-            cadastro.Show();
-
-            cadastro.TopLevel = false;
-            panel1.Controls.Clear();
-            panel1.Controls.Add(cadastro);
-            cadastro.Location = new Point(0, 0);
-            cadastro.Show();
+          
 
         }
     }

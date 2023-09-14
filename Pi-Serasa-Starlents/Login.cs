@@ -17,7 +17,7 @@ namespace Pi_Serasa_Starlents
         {
             InitializeComponent();
         }
-    
+
         public void carregaForm(Form form)
         {
 
@@ -57,8 +57,7 @@ namespace Pi_Serasa_Starlents
         private void wilBitButton2_Click(object sender, EventArgs e)
         {
 
-            carregaForm(new Cadastro());
-            pictureBox1.Location = new Point(700, 100);
+            
 
         }
 
@@ -74,7 +73,7 @@ namespace Pi_Serasa_Starlents
 
         private void wilBitButton1_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void wilBitButton1_Click_1(object sender, EventArgs e)
@@ -104,6 +103,12 @@ namespace Pi_Serasa_Starlents
         private void Login_Load_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void wilBitButton2_Click_1(object sender, EventArgs e)
+        {
+            carregaForm(new Cadastro());
+            pictureBox1.Location = new Point(700, 100);
         }
     }
 }

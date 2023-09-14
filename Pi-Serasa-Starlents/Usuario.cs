@@ -24,8 +24,10 @@ namespace Pi_Serasa_Starlents
         public string descricao;
         public string avatar;
         public string mensagemUsuario;
+        public string aprender;
+        public string aprender2;
 
-        public Usuario(int id,string interesse01,string interesse02,string interesse03,string nome,string email,string senha,string telefone,string descricao , string avatar, string mensagemU)
+        public Usuario(int id,string interesse01,string interesse02,string interesse03,string nome,string email,string senha,string telefone,string descricao , string avatar, string mensagemU,string aprender,string aprender2)
         {
             this.id = id;
             this.interesse01 = interesse01;
@@ -38,6 +40,8 @@ namespace Pi_Serasa_Starlents
             this.descricao = descricao;
             this.avatar = avatar;
             this.mensagemUsuario = mensagemU;
+            this.aprender = aprender;
+            this.aprender2 = aprender2;
 
         }
         public Usuario carregadados(DataRow linha)
@@ -53,8 +57,9 @@ namespace Pi_Serasa_Starlents
             string descricao = linha["descricao"].ToString();
             string avatar = (linha["avatar"].ToString());
             string mensagemU = linha["mensagem"].ToString();
-
-            Usuario usuarioTotal = new Usuario(id,interesse,interesse2,interesse3, nome, email, senha, telefone, descricao, avatar, mensagemU);
+            string aprender = linha["aprender"].ToString();
+            string aprender2 = linha["aprender2"].ToString();
+            Usuario usuarioTotal = new Usuario(id,interesse,interesse2,interesse3, nome, email, senha, telefone, descricao, avatar, mensagemU,aprender,aprender2);
             return usuarioTotal;
 
         }
@@ -64,7 +69,7 @@ namespace Pi_Serasa_Starlents
         }
         public void CadastrarUsuario(Usuario u)
         {
-            string query = $"INSERT INTO usuarios (,nome,senha,email,telefone,descricao,avatar,mensagem,interesse1,interesse2,interesse3) VALUES ('{u.nome}','{u.senha}','{u.email}','{u.telefone}','{u.descricao}','{u.avatar}','{u.mensagemUsuario}','{u.interesse01}','{u.interesse02}','{u.interesse03}');";
+            string query = $"INSERT INTO usuarios (nome,senha,email,telefone,descricao,avatar,mensagem,interesse1,interesse2,interesse3) VALUES ('{u.nome}','{u.senha}','{u.email}','{u.telefone}','{u.descricao}','{u.avatar}','{u.mensagemUsuario}','{u.interesse01}','{u.interesse02}','{u.interesse03}');";
             Conexao.executaQuery(query);
         }
         public List<Usuario> ListarUsuarios()
