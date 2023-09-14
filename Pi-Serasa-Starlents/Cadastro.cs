@@ -11,29 +11,30 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WiLBiT;
+using static System.Net.WebRequestMethods;
 
 namespace Pi_Serasa_Starlents
 {
     public partial class Cadastro : Form
     {
-        public string caminho1 = "C:/Users/DELL/source/repos/Pi-Serasa-Starlents/Pi-Serasa-Starlents/Imagens/Icon01.png";
-        public string caminho2 = "C:/Users/DELL/source/repos/Pi-Serasa-Starlents/Pi-Serasa-Starlents/Imagens/Icon02.png";
-        public string caminho3 = "C:/Users/DELL/source/repos/Pi-Serasa-Starlents/Pi-Serasa-Starlents/Imagens/Icon03.png";
-        public string caminho4 = "C:/Users/DELL/source/repos/Pi-Serasa-Starlents/Pi-Serasa-Starlents/Imagens/Icon04.png";
-        public string caminho5 = "C:/Users/DELL/source/repos/Pi-Serasa-Starlents/Pi-Serasa-Starlents/Imagens/Icon05.png";
-        public string caminho6 = "C:/Users/DELL/source/repos/Pi-Serasa-Starlents/Pi-Serasa-Starlents/Imagens/Icon06.png";
-        public string caminho7 = "C:/Users/DELL/source/repos/Pi-Serasa-Starlents/Pi-Serasa-Starlents/Imagens/Icon07.png";
-        public string caminho8 = "C:/Users/DELL/source/repos/Pi-Serasa-Starlents/Pi-Serasa-Starlents/Imagens/Icon08.png";
-        public string caminho9 = "C:/Users/DELL/source/repos/Pi-Serasa-Starlents/Pi-Serasa-Starlents/Imagens/Icon09.png";
-        public string caminho10 = "C:/Users/DELL/source/repos/Pi-Serasa-Starlents/Pi-Serasa-Starlents/Imagens/Icon10.png";
-        public string caminho11 = "C:/Users/DELL/source/repos/Pi-Serasa-Starlents/Pi-Serasa-Starlents/Imagens/Icon11.png";
-        public string caminho12 = "C:/Users/DELL/source/repos/Pi-Serasa-Starlents/Pi-Serasa-Starlents/Imagens/Icon12.png";
-        public string caminho13 = "C:/Users/DELL/source/repos/Pi-Serasa-Starlents/Pi-Serasa-Starlents/Imagens/Icon13.png";
-        public string caminho14 = "C:/Users/DELL/source/repos/Pi-Serasa-Starlents/Pi-Serasa-Starlents/Imagens/Icon14.png";
-        public string caminho15 = "C:/Users/DELL/source/repos/Pi-Serasa-Starlents/Pi-Serasa-Starlents/Imagens/Icon15.png";
-        public string caminho16 = "C:/Users/DELL/source/repos/Pi-Serasa-Starlents/Pi-Serasa-Starlents/Imagens/Icon16.png";
-        public string caminho17 = "C:/Users/DELL/source/repos/Pi-Serasa-Starlents/Pi-Serasa-Starlents/Imagens/Icon17.png";
-        public string caminho18 = "C:/Users/DELL/source/repos/Pi-Serasa-Starlents/Pi-Serasa-Starlents/Imagens/Icon10.png";
+        public string caminho1 = "https://i.imgur.com/Uqamx5Q.png";
+        public string caminho2 = "https://i.imgur.com/MJeq7KG.png";
+        public string caminho3 = "https://i.imgur.com/hGZfrfT.png";
+        public string caminho4 = "https://i.imgur.com/6G3KaBG.png";
+        public string caminho5 = "https://i.imgur.com/7QNYR4q.png";
+        public string caminho6 = "https://i.imgur.com/961Yv3F.png";
+        public string caminho7 = "https://i.imgur.com/2aoeof2.png";
+        public string caminho8 = "https://i.imgur.com/CSJ66va.png";
+        public string caminho9 = "https://i.imgur.com/ragZuSZ.png";
+        public string caminho10 = "https://i.imgur.com/cpUIqvH.png";
+        public string caminho11 = "https://i.imgur.com/CwKUseL.png";
+        public string caminho12 = "https://i.imgur.com/UAgNct5.png";
+        public string caminho13 = "https://i.imgur.com/Wg9LbVB.png";
+        public string caminho14 = "https://i.imgur.com/qbZVfpi.png";
+        public string caminho15 = "https://i.imgur.com/vwQwnFI.png";
+        public string caminho16 = "https://i.imgur.com/kr875VF.png";
+        public string caminho17 = "https://i.imgur.com/3uIn7uY.png";
+        public string caminho18 = "https://i.imgur.com/6UNFMHE.png";
         public Cadastro()
         {
             InitializeComponent();

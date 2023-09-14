@@ -137,7 +137,7 @@ namespace Pi_Serasa_Starlents
         public List<Usuario> buscaPerfil( string interesse ,string interesse2 ,string interesse3)
         {
             List<Usuario> us = new List<Usuario>();
-            string query = $"SELECT * FROM usuarios WHERE interesse1 = '{interesse}' OR interesse2 = '{interesse2}' OR interesse3 = '{interesse3}';";
+            string query = $"SELECT * FROM usuarios WHERE interesse1 IN ('{interesse}','{interesse2}','{interesse3}');";
             DataTable table = Conexao.executaQuery(query);
             foreach(DataRow linha in table.Rows)
             {

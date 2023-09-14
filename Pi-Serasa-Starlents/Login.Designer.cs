@@ -83,7 +83,7 @@
             wilBitTextBox2.Multiline = false;
             wilBitTextBox2.Name = "wilBitTextBox2";
             wilBitTextBox2.Padding = new Padding(10, 7, 10, 7);
-            wilBitTextBox2.PasswordChar = false;
+            wilBitTextBox2.PasswordChar = true;
             wilBitTextBox2.PlaceholderColor = Color.DarkGray;
             wilBitTextBox2.PlaceholderText = "";
             wilBitTextBox2.Size = new Size(252, 29);

@@ -57,7 +57,7 @@ namespace Pi_Serasa_Starlents
         private void wilBitButton2_Click(object sender, EventArgs e)
         {
 
-            
+
 
         }
 
@@ -84,7 +84,7 @@ namespace Pi_Serasa_Starlents
             Usuario u = new Usuario();
             u = u.login(email, senha);
 
-            if (u == null)
+            if (u.id == null)
             {
                 MessageBox.Show("email ou senha incorretos");
                 return;
@@ -92,12 +92,11 @@ namespace Pi_Serasa_Starlents
 
             Program.usuario = u;
 
-            //TelaDeInicio telaDeInicio = new TelaDeInicio();
-            Perfil perfil = new Perfil();
-            perfil.TopLevel = false;
+            TelaDeInicio telaDeInicio = new TelaDeInicio();
+            telaDeInicio.TopLevel = false;
             Form1.panel1.Controls.Clear();
-            Form1.panel1.Controls.Add(perfil);
-            perfil.Show();
+            Form1.panel1.Controls.Add(telaDeInicio);
+            telaDeInicio.Show();
         }
 
         private void Login_Load_1(object sender, EventArgs e)

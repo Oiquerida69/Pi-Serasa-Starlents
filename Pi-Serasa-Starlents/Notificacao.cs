@@ -111,7 +111,7 @@ namespace Pi_Serasa_Starlents
             string conteudo = linha["conteudo"].ToString();
             string promocoes = linha["promocao"].ToString();
 
-            Notificacao noti = new Notificacao(id, id_usuario, conteudo, promocoes);
+            Notificacao noti = new Notificacao(id, Program.usuario.id, conteudo, promocoes);
             return noti;
 
         }
@@ -261,6 +261,7 @@ namespace Pi_Serasa_Starlents
         private void pictureBox9_Click(object sender, EventArgs e)
         {
             TelaDeMensagens men = new TelaDeMensagens();
+            men.TopLevel = false;
             men.Show();
             Form1.panel1.Controls.Clear();
             Form1.panel1.Controls.Add(men);
@@ -269,6 +270,7 @@ namespace Pi_Serasa_Starlents
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             TelaDeInicio inicio= new TelaDeInicio();
+            inicio.TopLevel = false;
             inicio.Show();
             Form1.panel1.Controls.Clear();
             Form1.panel1.Controls.Add(inicio);
@@ -278,6 +280,7 @@ namespace Pi_Serasa_Starlents
         {
             Perfil perfil= new Perfil();
             perfil.Show();
+            perfil.TopLevel = false;
             Form1.panel1.Controls.Clear();
             Form1.panel1.Controls.Add(perfil);
         }
