@@ -12,10 +12,10 @@ namespace Pi_Serasa_Starlents
 {
     internal class Conexao
     {
-        const string host = "localhost";
-        const string banco = "mario_01";
-        const string usuario = "root";
-        const string senha = "";
+        const string host = "srv793.hstgr.io";
+        const string banco = "u647084545_serasa_wmbrd";
+        const string usuario = "u647084545_serasa_wmbrd";
+        const string senha = "Serasa2024";
        /*
         const string host = "10.60.45.48";
         const string banco = "novobanco";

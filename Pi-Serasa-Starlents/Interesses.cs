@@ -11,14 +11,14 @@ namespace Pi_Serasa_Starlents
     {
         public int id;
         public string interesse;
-        public string aprender;
+        
 
 
-        public Interesses( int id , string interesse, string aprender)
+        public Interesses( int id , string interesse)
         {
             this.id = id;
             this.interesse = interesse;
-            this.aprender = aprender;
+            
         }
 
         public Interesses()
@@ -49,9 +49,9 @@ namespace Pi_Serasa_Starlents
             {
                 int id = int.Parse(linha["id"].ToString());
                 string interesse = linha["interesse"].ToString();
-                string aprender = linha["aprender"].ToString();
+                
 
-                Interesses interesses1 = new Interesses(id, interesse,aprender);
+                Interesses interesses1 = new Interesses(id, interesse);
                 return interesses1;
 
             }
@@ -60,7 +60,7 @@ namespace Pi_Serasa_Starlents
             int id = int.Parse(linha["id"].ToString());
             string aprender = linha["aprender"].ToString();
 
-            Interesses interesses1 = new Interesses(id,"", aprender);
+            Interesses interesses1 = new Interesses(id, aprender);
             return interesses1;
 
         }
