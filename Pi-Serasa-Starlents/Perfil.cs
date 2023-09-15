@@ -20,10 +20,6 @@ namespace Pi_Serasa_Starlents
         {
             InitializeComponent();
         }
-
-        Interesses i = new Interesses();
-       
-
         public void carregaform(Form form)
         {
             form.TopLevel = false;
@@ -69,41 +65,42 @@ namespace Pi_Serasa_Starlents
 
         private void label5_Click(object sender, EventArgs e)
         {
-            // label descricao
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            //premium
         }
 
         private void lblNome_Click(object sender, EventArgs e)
         {
-            
         }
 
         private void wilBitTextBox6__TextChanged(object sender, EventArgs e)
         {
-
-            // descricao
         }
 
         private void wilBitGradientPanel1_Paint(object sender, PaintEventArgs e)
         {
-
         }
 
         private void Perfil_Load_1(object sender, EventArgs e)
         {
-            //pictureBox1.Image = Program.usuario.avatar;
+            pictureBox1.ImageLocation = Program.usuario.avatar;
             lblNome.Text = Program.usuario.nome;
-            wilBitTextBox6.Text = Program.usuario.descricao;
-            wilBitTextBox1.Text = Program.usuario.mensagemUsuario;
-            wilBitComboBox1.Text = Program.usuario.interesse01; 
-            wilBitComboBox2.Text = Program.usuario.interesse02;
-            wilBitComboBox3.Text = Program.usuario.interesse03;
-            //wilBitComboBox4.Text = Program.usuario.aprender;
-            //wilBitComboBox5.Text = Program.usuario.aprender;
+            wilBitTextBox6.Texts = Program.usuario.descricao;
+            wilBitTextBox1.Texts = Program.usuario.mensagemUsuario;
+            wilBitTextBox2.Texts = Program.usuario.interesse01; 
+            wilBitTextBox3.Texts = Program.usuario.interesse02;
+            wilBitTextBox4.Texts = Program.usuario.interesse03;
+            wilBitTextBox5.Texts = Program.usuario.aprender;
+            wilBitTextBox7.Texts = Program.usuario.aprender2;
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            TelaDeInicio telaDeInicio= new TelaDeInicio();
+            telaDeInicio.TopLevel = false;
+            telaDeInicio.Show();
         }
     }
 }
