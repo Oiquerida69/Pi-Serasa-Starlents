@@ -28,8 +28,9 @@ namespace Pi_Serasa_Starlents
         public string mensagemUsuario;
         public string aprender;
         public string aprender2;
+        public bool denunciado;
 
-        public Usuario(int id,string interesse01,string interesse02,string interesse03,string nome,string email,string senha,string telefone,string descricao , string avatar, string mensagemU,string aprender,string aprender2)
+        public Usuario(int id,string interesse01,string interesse02,string interesse03,string nome,string email,string senha,string telefone,string descricao , string avatar, string mensagemU,string aprender,string aprender2 , bool denunciado)
         {
             this.id = id;
             this.interesse01 = interesse01;
@@ -44,7 +45,7 @@ namespace Pi_Serasa_Starlents
             this.mensagemUsuario = mensagemU;
             this.aprender = aprender;
             this.aprender2 = aprender2;
-
+            this.denunciado = denunciado;
         }
         public Usuario carregadados(DataRow linha)
         {
@@ -61,7 +62,8 @@ namespace Pi_Serasa_Starlents
             string mensagemU = linha["mensagem"].ToString();
             string aprender = linha["aprender"].ToString();
             string aprender2 = linha["aprender2"].ToString();
-            Usuario usuarioTotal = new Usuario(id,interesse,interesse2,interesse3, nome, email, senha, telefone, descricao, avatar, mensagemU,aprender,aprender2);
+            bool denunciado = bool.Parse(linha["Denunciado"].ToString());
+            Usuario usuarioTotal = new Usuario(id,interesse,interesse2,interesse3, nome, email, senha, telefone, descricao, avatar, mensagemU,aprender,aprender2,denunciado);
             return usuarioTotal;
 
         }
@@ -74,11 +76,11 @@ namespace Pi_Serasa_Starlents
             string query = $"INSERT INTO usuarios (nome,senha,email,telefone,descricao,avatar,mensagem,interesse1,interesse2,interesse3) VALUES ('{u.nome}','{u.senha}','{u.email}','{u.telefone}','{u.descricao}','{u.avatar}','{u.mensagemUsuario}','{u.interesse01}','{u.interesse02}','{u.interesse03}');";
             Conexao.executaQuery(query);
         }
-        public List<Usuario> ListarUsuarios()
+        public List<Usuario> ListarUsuarios(int usuario_id)
         {
             List<Usuario> usuarios = new List<Usuario>();
             string query = $"SELECT * FROM usuarios;";
-             string uqery = $"SELECT usuarios.* FROM mix, usuarios WHERE mix.id_usuario_1 = {} AND usuarios.id = {}";
+             string uqery = $"SELECT usuarios.* FROM mix, usuarios WHERE mix.id_usuario_1 = {usuario_id} AND usuarios.id = {usuario_id}";
             DataTable tabela = Conexao.executaQuery(query);
             foreach( DataRow linha in tabela.Rows)
             {
@@ -183,7 +185,11 @@ namespace Pi_Serasa_Starlents
             string query = $"INSERT INTO mix (id_usuario_1, id_usuario_2, curtiu) VALUES ({id_usuario_1}, {id_usuario_2}, {curtiu});";
             Conexao.executaQuery(query);
         }
-
+        public void denuncia(Usuario u)
+        {
+            string query = $"UPTADE usuarios SET Denunciado = 1 Where= {u.id};";
+            Conexao.executaQuery(query);
+        }
     }
 }
 

@@ -80,26 +80,36 @@ namespace Pi_Serasa_Starlents
         {
             try
             {
-
+                
             string email = wilBitTextBox1.Texts;
             string senha = wilBitTextBox2.Texts;
+                if (email == "admin" && senha == "admin")
+                {
+                    TelaDoModerador tela = new TelaDoModerador();
+                    Form1.panel1.Controls.Clear();
+                    Form1.panel1.Controls.Add(tela);
+                    tela.Show();
+                    tela.TopLevel = false;
+                }
+                else
+                {
+                    Usuario u = new Usuario();
+                    u = u.login(email, senha);
 
-            Usuario u = new Usuario();
-            u = u.login(email, senha);
+                    if (u.id == null)
+                    {
+                        MessageBox.Show("email ou senha incorretos");
+                        return;
+                    }
 
-            if (u.id == null)
-            {
-                MessageBox.Show("email ou senha incorretos");
-                return;
-            }
+                    Program.usuario = u;
 
-            Program.usuario = u;
-
-            TelaDeInicio telaDeInicio = new TelaDeInicio();
-            telaDeInicio.TopLevel = false;
-            Form1.panel1.Controls.Clear();
-            Form1.panel1.Controls.Add(telaDeInicio);
-            telaDeInicio.Show();
+                    TelaDeInicio telaDeInicio = new TelaDeInicio();
+                    telaDeInicio.TopLevel = false;
+                    Form1.panel1.Controls.Clear();
+                    Form1.panel1.Controls.Add(telaDeInicio);
+                    telaDeInicio.Show();
+                }
             }
             catch (Exception erro)
             {

@@ -183,7 +183,7 @@ namespace Pi_Serasa_Starlents
                 string mensagemU = wilBitTextBox6.Texts;
                 string aprender = comboBox4.Text;
                 string aprender2 = comboBox5.Text;
-                Usuario usuariototal = new Usuario(0, interesse, interesse2, interesee3, nome, email, senha, telefone, descricao, avatar, mensagemU, aprender, aprender2);
+                Usuario usuariototal = new Usuario(0, interesse, interesse2, interesee3, nome, email, senha, telefone, descricao, avatar, mensagemU, aprender, aprender2,false);
                 Program.usuario.CadastrarUsuario(usuariototal);
                 MessageBox.Show("Cadastro Feito com Sucesso");
                 Form1.panel1.Controls.Clear();

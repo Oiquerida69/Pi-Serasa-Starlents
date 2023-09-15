@@ -207,7 +207,7 @@ namespace Pi_Serasa_Starlents
         private void TelaDeMensagens_Load_3(object sender, EventArgs e)
         {
             panelUsuarioNoChat.Hide();
-            List<Usuario> usuarios = usuario.ListarUsuarios();
+            List<Usuario> usuarios = usuario.ListarUsuarios(Program.usuario.id);
 
 
             foreach (Usuario u in usuarios)
