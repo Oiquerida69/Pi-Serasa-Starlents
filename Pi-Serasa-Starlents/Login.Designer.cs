@@ -121,9 +121,9 @@
             wilBitButton2.FlatStyle = FlatStyle.Flat;
             wilBitButton2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             wilBitButton2.ForeColor = Color.White;
-            wilBitButton2.Location = new Point(76, 231);
+            wilBitButton2.Location = new Point(35, 231);
             wilBitButton2.Name = "wilBitButton2";
-            wilBitButton2.Size = new Size(178, 32);
+            wilBitButton2.Size = new Size(252, 32);
             wilBitButton2.TabIndex = 12;
             wilBitButton2.Text = "Criar conta";
             wilBitButton2.UseVisualStyleBackColor = false;
