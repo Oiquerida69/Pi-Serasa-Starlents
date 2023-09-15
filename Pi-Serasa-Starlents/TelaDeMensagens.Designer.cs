@@ -38,7 +38,7 @@
             this.lblDescricaoDeMatch = new System.Windows.Forms.Label();
             this.btnDenunciaUsuario = new System.Windows.Forms.PictureBox();
             this.lblNome = new System.Windows.Forms.Label();
-            this.picFotoUsuario = new WiLBiT.WiLBiTRoundedPictureBox();
+            this.fotoUsuario = new WiLBiT.WiLBiTRoundedPictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.btnVoltaInicio = new System.Windows.Forms.PictureBox();
@@ -49,7 +49,7 @@
             this.panel2.SuspendLayout();
             this.wilBitPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnDenunciaUsuario)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picFotoUsuario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fotoUsuario)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnVoltaInicio)).BeginInit();
             this.panel1.SuspendLayout();
@@ -124,7 +124,7 @@
             this.wilBitPanel2.Controls.Add(this.lblDescricaoDeMatch);
             this.wilBitPanel2.Controls.Add(this.btnDenunciaUsuario);
             this.wilBitPanel2.Controls.Add(this.lblNome);
-            this.wilBitPanel2.Controls.Add(this.picFotoUsuario);
+            this.wilBitPanel2.Controls.Add(this.fotoUsuario);
             this.wilBitPanel2.ForeColor = System.Drawing.Color.White;
             this.wilBitPanel2.Location = new System.Drawing.Point(18, 12);
             this.wilBitPanel2.Name = "wilBitPanel2";
@@ -165,20 +165,20 @@
             this.lblNome.TabIndex = 20;
             this.lblNome.Text = "Usuário";
             // 
-            // picFotoUsuario
+            // fotoUsuario
             // 
-            this.picFotoUsuario.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            this.picFotoUsuario.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(15)))), ((int)(((byte)(87)))));
-            this.picFotoUsuario.BorderColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(15)))), ((int)(((byte)(87)))));
-            this.picFotoUsuario.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            this.picFotoUsuario.BorderSize = 2;
-            this.picFotoUsuario.GradientAngle = 50F;
-            this.picFotoUsuario.Location = new System.Drawing.Point(19, 14);
-            this.picFotoUsuario.Name = "picFotoUsuario";
-            this.picFotoUsuario.Size = new System.Drawing.Size(83, 83);
-            this.picFotoUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picFotoUsuario.TabIndex = 1;
-            this.picFotoUsuario.TabStop = false;
+            this.fotoUsuario.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.fotoUsuario.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(15)))), ((int)(((byte)(87)))));
+            this.fotoUsuario.BorderColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(15)))), ((int)(((byte)(87)))));
+            this.fotoUsuario.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.fotoUsuario.BorderSize = 2;
+            this.fotoUsuario.GradientAngle = 50F;
+            this.fotoUsuario.Location = new System.Drawing.Point(19, 14);
+            this.fotoUsuario.Name = "fotoUsuario";
+            this.fotoUsuario.Size = new System.Drawing.Size(83, 83);
+            this.fotoUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.fotoUsuario.TabIndex = 1;
+            this.fotoUsuario.TabStop = false;
             // 
             // panel4
             // 
@@ -243,7 +243,7 @@
             this.wilBitPanel2.ResumeLayout(false);
             this.wilBitPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnDenunciaUsuario)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picFotoUsuario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fotoUsuario)).EndInit();
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnVoltaInicio)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -255,7 +255,7 @@
 
         private Panel painel_Lista;
         private Panel panel2;
-        private WiLBiT.WiLBiTRoundedPictureBox picFotoUsuario;
+        private WiLBiT.WiLBiTRoundedPictureBox fotoUsuario;
         private PictureBox btnVoltaInicio;
         private Label lblNome;
         private Panel panel4;
