@@ -363,3 +363,5 @@ MigrationBackup/
 FodyWeavers.xsd
 /Pi-Serasa-Starlents/Conexao.cs
 /Pi-Serasa-Starlents/Program.cs
+/Pi-Serasa-Starlents/Login.cs
+/Pi-Serasa-Starlents/Login.resx
