@@ -40,6 +40,8 @@ namespace Pi_Serasa_Starlents
             {
                 lblNome.Text = nome;
                 lblDescricaoDeMatch.Text = descricao;
+                fotoUsuario.ImageLocation = avatar;
+
 
 
                 lblNome.ForeColor = Color.Black;
@@ -66,6 +68,7 @@ namespace Pi_Serasa_Starlents
             picFotoUsuario.SizeMode = PictureBoxSizeMode.StretchImage;
             picFotoUsuario.TabIndex = 1;
             picFotoUsuario.TabStop = false;
+            picFotoUsuario.ImageLocation = avatar;
             picFotoUsuario.Click += clique;
 
 
@@ -221,32 +224,7 @@ namespace Pi_Serasa_Starlents
 
             WindowState = FormWindowState.Maximized;
 
-
-            if (panel1.Visible)
-            {
-                panel1.Visible = false;
-            }
-
-            if (panel2.Visible)
-            {
-                panel2.Visible = false;
-            }
-
-            if (wilBitPanel2.Visible)
-            {
-                wilBitPanel2.Visible = false;
-
-            }
-
-            if (panel4.Visible)
-            {
-                panel4.Visible = false;
-            }
-
-            if (painel_Lista.Visible)
-            {
-                painel_Lista.Visible = false;
-            }
+            this.Hide();
 
             TelaDeInicio telaDeInicio = new TelaDeInicio();
             panel2.Location = new Point(0, 0);
@@ -256,10 +234,11 @@ namespace Pi_Serasa_Starlents
 
         private void btnDenunciaUsuario_Click_1(object sender, EventArgs e)
         {
-            WindowState = FormWindowState.Maximized;
 
 
-            if (panel1.Visible)
+            this.Hide();
+
+           /* if (panel1.Visible)
             {
                 panel1.Visible = false;
             }
@@ -283,11 +262,12 @@ namespace Pi_Serasa_Starlents
             if (painel_Lista.Visible)
             {
                 painel_Lista.Visible = false;
-            }
+            } */
 
             TelaDeDenuncia telaDeDenuncia = new TelaDeDenuncia();
             panel2.Location = new Point(0, 0);
             telaDeDenuncia.Size = new Size(ClientSize.Width, ClientSize.Height);
+            telaDeDenuncia.Location = new Point(ClientSize.Width/2, ClientSize.Height/2);
             telaDeDenuncia.Show();
         }
     }
