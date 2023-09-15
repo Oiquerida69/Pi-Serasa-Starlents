@@ -29,304 +29,349 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaDeInicio));
-            this.wilBitGradientPanel1 = new WiLBiT.WiLBiTGradientPanel();
-            this.btnCurtida = new System.Windows.Forms.PictureBox();
-            this.btnDescurtida = new System.Windows.Forms.PictureBox();
-            this.wilBitPanel3 = new WiLBiT.WiLBiTPanel();
-            this.lblTalento03 = new System.Windows.Forms.Label();
-            this.wilBitPanel2 = new WiLBiT.WiLBiTPanel();
-            this.lblTalento02 = new System.Windows.Forms.Label();
-            this.wilBitPanel1 = new WiLBiT.WiLBiTPanel();
-            this.lblTalento01 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.lblDescricao = new System.Windows.Forms.Label();
-            this.lblNomeUsuario = new System.Windows.Forms.Label();
-            this.picFotoUsuario = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.wilBitGradientPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCurtida)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnDescurtida)).BeginInit();
-            this.wilBitPanel3.SuspendLayout();
-            this.wilBitPanel2.SuspendLayout();
-            this.wilBitPanel1.SuspendLayout();
-            this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picFotoUsuario)).BeginInit();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.SuspendLayout();
+            wilBitGradientPanel1 = new WiLBiT.WiLBiTGradientPanel();
+            btnCurtida = new PictureBox();
+            btnDescurtida = new PictureBox();
+            wilBitPanel3 = new WiLBiT.WiLBiTPanel();
+            lblTalento03 = new Label();
+            wilBitPanel2 = new WiLBiT.WiLBiTPanel();
+            lblTalento02 = new Label();
+            wilBitPanel1 = new WiLBiT.WiLBiTPanel();
+            lblTalento01 = new Label();
+            label2 = new Label();
+            panel6 = new Panel();
+            lblDescricao = new Label();
+            lblNomeUsuario = new Label();
+            picFotoUsuario = new PictureBox();
+            panel1 = new Panel();
+            panel5 = new Panel();
+            pictureBox4 = new PictureBox();
+            pictureBox1 = new PictureBox();
+            panel4 = new Panel();
+            panel3 = new Panel();
+            panel2 = new Panel();
+            pictureBox3 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            wilBitGradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)btnCurtida).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnDescurtida).BeginInit();
+            wilBitPanel3.SuspendLayout();
+            wilBitPanel2.SuspendLayout();
+            wilBitPanel1.SuspendLayout();
+            panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)picFotoUsuario).BeginInit();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            SuspendLayout();
             // 
             // wilBitGradientPanel1
             // 
-            this.wilBitGradientPanel1.AutoSize = true;
-            this.wilBitGradientPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(1)))), ((int)(((byte)(214)))));
-            this.wilBitGradientPanel1.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(191)))), ((int)(((byte)(223)))));
-            this.wilBitGradientPanel1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.wilBitGradientPanel1.BorderRadius = 6;
-            this.wilBitGradientPanel1.BorderSize = 0;
-            this.wilBitGradientPanel1.Controls.Add(this.btnCurtida);
-            this.wilBitGradientPanel1.Controls.Add(this.btnDescurtida);
-            this.wilBitGradientPanel1.Controls.Add(this.wilBitPanel3);
-            this.wilBitGradientPanel1.Controls.Add(this.wilBitPanel2);
-            this.wilBitGradientPanel1.Controls.Add(this.wilBitPanel1);
-            this.wilBitGradientPanel1.Controls.Add(this.label2);
-            this.wilBitGradientPanel1.Controls.Add(this.panel6);
-            this.wilBitGradientPanel1.Controls.Add(this.lblNomeUsuario);
-            this.wilBitGradientPanel1.Controls.Add(this.picFotoUsuario);
-            this.wilBitGradientPanel1.Controls.Add(this.panel1);
-            this.wilBitGradientPanel1.ForeColor = System.Drawing.Color.White;
-            this.wilBitGradientPanel1.Location = new System.Drawing.Point(-8, -4);
-            this.wilBitGradientPanel1.Name = "wilBitGradientPanel1";
-            this.wilBitGradientPanel1.Size = new System.Drawing.Size(818, 460);
-            this.wilBitGradientPanel1.TabIndex = 0;
+            wilBitGradientPanel1.BackColor = Color.FromArgb(129, 1, 214);
+            wilBitGradientPanel1.BackColor2 = Color.FromArgb(219, 191, 223);
+            wilBitGradientPanel1.BorderColor = Color.PaleVioletRed;
+            wilBitGradientPanel1.BorderRadius = 6;
+            wilBitGradientPanel1.BorderSize = 0;
+            wilBitGradientPanel1.Controls.Add(btnCurtida);
+            wilBitGradientPanel1.Controls.Add(btnDescurtida);
+            wilBitGradientPanel1.Controls.Add(wilBitPanel3);
+            wilBitGradientPanel1.Controls.Add(wilBitPanel2);
+            wilBitGradientPanel1.Controls.Add(wilBitPanel1);
+            wilBitGradientPanel1.Controls.Add(label2);
+            wilBitGradientPanel1.Controls.Add(panel6);
+            wilBitGradientPanel1.Controls.Add(lblNomeUsuario);
+            wilBitGradientPanel1.Controls.Add(picFotoUsuario);
+            wilBitGradientPanel1.Controls.Add(panel1);
+            wilBitGradientPanel1.ForeColor = Color.White;
+            wilBitGradientPanel1.Location = new Point(-8, -4);
+            wilBitGradientPanel1.Name = "wilBitGradientPanel1";
+            wilBitGradientPanel1.Size = new Size(813, 460);
+            wilBitGradientPanel1.TabIndex = 0;
             // 
             // btnCurtida
             // 
-            this.btnCurtida.BackColor = System.Drawing.Color.Transparent;
-            this.btnCurtida.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCurtida.Image = ((System.Drawing.Image)(resources.GetObject("btnCurtida.Image")));
-            this.btnCurtida.Location = new System.Drawing.Point(463, 311);
-            this.btnCurtida.Name = "btnCurtida";
-            this.btnCurtida.Size = new System.Drawing.Size(64, 64);
-            this.btnCurtida.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.btnCurtida.TabIndex = 14;
-            this.btnCurtida.TabStop = false;
+            btnCurtida.BackColor = Color.Transparent;
+            btnCurtida.Cursor = Cursors.Hand;
+            btnCurtida.Image = (Image)resources.GetObject("btnCurtida.Image");
+            btnCurtida.Location = new Point(463, 311);
+            btnCurtida.Name = "btnCurtida";
+            btnCurtida.Size = new Size(64, 64);
+            btnCurtida.SizeMode = PictureBoxSizeMode.CenterImage;
+            btnCurtida.TabIndex = 14;
+            btnCurtida.TabStop = false;
             // 
             // btnDescurtida
             // 
-            this.btnDescurtida.BackColor = System.Drawing.Color.Transparent;
-            this.btnDescurtida.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDescurtida.Image = ((System.Drawing.Image)(resources.GetObject("btnDescurtida.Image")));
-            this.btnDescurtida.Location = new System.Drawing.Point(337, 311);
-            this.btnDescurtida.Name = "btnDescurtida";
-            this.btnDescurtida.Size = new System.Drawing.Size(64, 64);
-            this.btnDescurtida.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.btnDescurtida.TabIndex = 13;
-            this.btnDescurtida.TabStop = false;
+            btnDescurtida.BackColor = Color.Transparent;
+            btnDescurtida.Cursor = Cursors.Hand;
+            btnDescurtida.Image = (Image)resources.GetObject("btnDescurtida.Image");
+            btnDescurtida.Location = new Point(337, 311);
+            btnDescurtida.Name = "btnDescurtida";
+            btnDescurtida.Size = new Size(64, 64);
+            btnDescurtida.SizeMode = PictureBoxSizeMode.CenterImage;
+            btnDescurtida.TabIndex = 13;
+            btnDescurtida.TabStop = false;
             // 
             // wilBitPanel3
             // 
-            this.wilBitPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(49)))), ((int)(((byte)(229)))));
-            this.wilBitPanel3.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.wilBitPanel3.BorderRadius = 6;
-            this.wilBitPanel3.BorderSize = 0;
-            this.wilBitPanel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.wilBitPanel3.Controls.Add(this.lblTalento03);
-            this.wilBitPanel3.ForeColor = System.Drawing.Color.White;
-            this.wilBitPanel3.Location = new System.Drawing.Point(579, 320);
-            this.wilBitPanel3.Name = "wilBitPanel3";
-            this.wilBitPanel3.Size = new System.Drawing.Size(187, 40);
-            this.wilBitPanel3.TabIndex = 12;
+            wilBitPanel3.BackColor = Color.FromArgb(150, 49, 229);
+            wilBitPanel3.BorderColor = Color.PaleVioletRed;
+            wilBitPanel3.BorderRadius = 6;
+            wilBitPanel3.BorderSize = 0;
+            wilBitPanel3.BorderStyle = BorderStyle.Fixed3D;
+            wilBitPanel3.Controls.Add(lblTalento03);
+            wilBitPanel3.ForeColor = Color.White;
+            wilBitPanel3.Location = new Point(579, 320);
+            wilBitPanel3.Name = "wilBitPanel3";
+            wilBitPanel3.Size = new Size(187, 40);
+            wilBitPanel3.TabIndex = 12;
             // 
             // lblTalento03
             // 
-            this.lblTalento03.AutoSize = true;
-            this.lblTalento03.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblTalento03.Location = new System.Drawing.Point(58, 9);
-            this.lblTalento03.Name = "lblTalento03";
-            this.lblTalento03.Size = new System.Drawing.Size(62, 20);
-            this.lblTalento03.TabIndex = 2;
-            this.lblTalento03.Text = "Talento";
-            this.lblTalento03.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            lblTalento03.AutoSize = true;
+            lblTalento03.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblTalento03.Location = new Point(58, 9);
+            lblTalento03.Name = "lblTalento03";
+            lblTalento03.Size = new Size(62, 20);
+            lblTalento03.TabIndex = 2;
+            lblTalento03.Text = "Talento";
+            lblTalento03.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // wilBitPanel2
             // 
-            this.wilBitPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(49)))), ((int)(((byte)(229)))));
-            this.wilBitPanel2.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.wilBitPanel2.BorderRadius = 6;
-            this.wilBitPanel2.BorderSize = 0;
-            this.wilBitPanel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.wilBitPanel2.Controls.Add(this.lblTalento02);
-            this.wilBitPanel2.ForeColor = System.Drawing.Color.White;
-            this.wilBitPanel2.Location = new System.Drawing.Point(579, 260);
-            this.wilBitPanel2.Name = "wilBitPanel2";
-            this.wilBitPanel2.Size = new System.Drawing.Size(187, 40);
-            this.wilBitPanel2.TabIndex = 11;
+            wilBitPanel2.BackColor = Color.FromArgb(150, 49, 229);
+            wilBitPanel2.BorderColor = Color.PaleVioletRed;
+            wilBitPanel2.BorderRadius = 6;
+            wilBitPanel2.BorderSize = 0;
+            wilBitPanel2.BorderStyle = BorderStyle.Fixed3D;
+            wilBitPanel2.Controls.Add(lblTalento02);
+            wilBitPanel2.ForeColor = Color.White;
+            wilBitPanel2.Location = new Point(579, 260);
+            wilBitPanel2.Name = "wilBitPanel2";
+            wilBitPanel2.Size = new Size(187, 40);
+            wilBitPanel2.TabIndex = 11;
             // 
             // lblTalento02
             // 
-            this.lblTalento02.AutoSize = true;
-            this.lblTalento02.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblTalento02.Location = new System.Drawing.Point(58, 9);
-            this.lblTalento02.Name = "lblTalento02";
-            this.lblTalento02.Size = new System.Drawing.Size(62, 20);
-            this.lblTalento02.TabIndex = 1;
-            this.lblTalento02.Text = "Talento";
-            this.lblTalento02.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            lblTalento02.AutoSize = true;
+            lblTalento02.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblTalento02.Location = new Point(58, 9);
+            lblTalento02.Name = "lblTalento02";
+            lblTalento02.Size = new Size(62, 20);
+            lblTalento02.TabIndex = 1;
+            lblTalento02.Text = "Talento";
+            lblTalento02.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // wilBitPanel1
             // 
-            this.wilBitPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(49)))), ((int)(((byte)(229)))));
-            this.wilBitPanel1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.wilBitPanel1.BorderRadius = 6;
-            this.wilBitPanel1.BorderSize = 0;
-            this.wilBitPanel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.wilBitPanel1.Controls.Add(this.lblTalento01);
-            this.wilBitPanel1.ForeColor = System.Drawing.Color.White;
-            this.wilBitPanel1.Location = new System.Drawing.Point(579, 196);
-            this.wilBitPanel1.Name = "wilBitPanel1";
-            this.wilBitPanel1.Size = new System.Drawing.Size(187, 40);
-            this.wilBitPanel1.TabIndex = 10;
+            wilBitPanel1.BackColor = Color.FromArgb(150, 49, 229);
+            wilBitPanel1.BorderColor = Color.PaleVioletRed;
+            wilBitPanel1.BorderRadius = 6;
+            wilBitPanel1.BorderSize = 0;
+            wilBitPanel1.BorderStyle = BorderStyle.Fixed3D;
+            wilBitPanel1.Controls.Add(lblTalento01);
+            wilBitPanel1.ForeColor = Color.White;
+            wilBitPanel1.Location = new Point(579, 196);
+            wilBitPanel1.Name = "wilBitPanel1";
+            wilBitPanel1.Size = new Size(187, 40);
+            wilBitPanel1.TabIndex = 10;
             // 
             // lblTalento01
             // 
-            this.lblTalento01.AutoSize = true;
-            this.lblTalento01.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblTalento01.Location = new System.Drawing.Point(58, 9);
-            this.lblTalento01.Name = "lblTalento01";
-            this.lblTalento01.Size = new System.Drawing.Size(62, 20);
-            this.lblTalento01.TabIndex = 0;
-            this.lblTalento01.Text = "Talento";
+            lblTalento01.AutoSize = true;
+            lblTalento01.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblTalento01.Location = new Point(58, 9);
+            lblTalento01.Name = "lblTalento01";
+            lblTalento01.Size = new Size(62, 20);
+            lblTalento01.TabIndex = 0;
+            lblTalento01.Text = "Talento";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(5)))), ((int)(((byte)(112)))));
-            this.label2.Location = new System.Drawing.Point(608, 157);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(131, 36);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Talentos";
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Arial", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.ForeColor = Color.FromArgb(74, 5, 112);
+            label2.Location = new Point(608, 157);
+            label2.Name = "label2";
+            label2.Size = new Size(131, 36);
+            label2.TabIndex = 9;
+            label2.Text = "Talentos";
             // 
             // panel6
             // 
-            this.panel6.BackColor = System.Drawing.Color.White;
-            this.panel6.Controls.Add(this.lblDescricao);
-            this.panel6.Location = new System.Drawing.Point(315, 196);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(229, 104);
-            this.panel6.TabIndex = 5;
+            panel6.BackColor = Color.White;
+            panel6.Controls.Add(lblDescricao);
+            panel6.Location = new Point(315, 196);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(229, 104);
+            panel6.TabIndex = 5;
             // 
             // lblDescricao
             // 
-            this.lblDescricao.AutoSize = true;
-            this.lblDescricao.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblDescricao.ForeColor = System.Drawing.Color.Black;
-            this.lblDescricao.Location = new System.Drawing.Point(9, 11);
-            this.lblDescricao.Name = "lblDescricao";
-            this.lblDescricao.Size = new System.Drawing.Size(129, 16);
-            this.lblDescricao.TabIndex = 1;
-            this.lblDescricao.Text = "Descrição do usuário";
+            lblDescricao.AutoSize = true;
+            lblDescricao.Font = new Font("Arial", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lblDescricao.ForeColor = Color.Black;
+            lblDescricao.Location = new Point(9, 11);
+            lblDescricao.Name = "lblDescricao";
+            lblDescricao.Size = new Size(129, 16);
+            lblDescricao.TabIndex = 1;
+            lblDescricao.Text = "Descrição do usuário";
             // 
             // lblNomeUsuario
             // 
-            this.lblNomeUsuario.AutoSize = true;
-            this.lblNomeUsuario.BackColor = System.Drawing.Color.Transparent;
-            this.lblNomeUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblNomeUsuario.Location = new System.Drawing.Point(362, 156);
-            this.lblNomeUsuario.Name = "lblNomeUsuario";
-            this.lblNomeUsuario.Size = new System.Drawing.Size(128, 37);
-            this.lblNomeUsuario.TabIndex = 8;
-            this.lblNomeUsuario.Text = "Usuário";
+            lblNomeUsuario.AutoSize = true;
+            lblNomeUsuario.BackColor = Color.Transparent;
+            lblNomeUsuario.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            lblNomeUsuario.Location = new Point(362, 156);
+            lblNomeUsuario.Name = "lblNomeUsuario";
+            lblNomeUsuario.Size = new Size(128, 37);
+            lblNomeUsuario.TabIndex = 8;
+            lblNomeUsuario.Text = "Usuário";
             // 
             // picFotoUsuario
             // 
-            this.picFotoUsuario.BackColor = System.Drawing.Color.Transparent;
-            this.picFotoUsuario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.picFotoUsuario.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.picFotoUsuario.Location = new System.Drawing.Point(41, 135);
-            this.picFotoUsuario.Name = "picFotoUsuario";
-            this.picFotoUsuario.Size = new System.Drawing.Size(240, 240);
-            this.picFotoUsuario.TabIndex = 7;
-            this.picFotoUsuario.TabStop = false;
+            picFotoUsuario.BackColor = Color.Transparent;
+            picFotoUsuario.BackgroundImageLayout = ImageLayout.Center;
+            picFotoUsuario.BorderStyle = BorderStyle.Fixed3D;
+            picFotoUsuario.Location = new Point(41, 135);
+            picFotoUsuario.Name = "picFotoUsuario";
+            picFotoUsuario.Size = new Size(240, 240);
+            picFotoUsuario.TabIndex = 7;
+            picFotoUsuario.TabStop = false;
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(5)))), ((int)(((byte)(112)))));
-            this.panel1.Controls.Add(this.pictureBox4);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(815, 70);
-            this.panel1.TabIndex = 0;
+            panel1.BackColor = Color.FromArgb(74, 5, 112);
+            panel1.Controls.Add(panel5);
+            panel1.Controls.Add(pictureBox4);
+            panel1.Controls.Add(pictureBox1);
+            panel1.Controls.Add(panel4);
+            panel1.Controls.Add(panel3);
+            panel1.Controls.Add(panel2);
+            panel1.Controls.Add(pictureBox3);
+            panel1.Controls.Add(pictureBox2);
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(815, 70);
+            panel1.TabIndex = 0;
+            // 
+            // panel5
+            // 
+            panel5.BackColor = Color.White;
+            panel5.Location = new Point(545, 60);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(70, 10);
+            panel5.TabIndex = 6;
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(555, 4);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 2;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click_1);
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+            pictureBox4.Location = new Point(555, 4);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(50, 50);
+            pictureBox4.SizeMode = PictureBoxSizeMode.CenterImage;
+            pictureBox4.TabIndex = 2;
+            pictureBox4.TabStop = false;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(441, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(441, 4);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(50, 50);
+            pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
+            // 
+            // panel4
+            // 
+            panel4.BackColor = Color.White;
+            panel4.Location = new Point(430, 60);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(70, 10);
+            panel4.TabIndex = 5;
+            // 
+            // panel3
+            // 
+            panel3.BackColor = Color.White;
+            panel3.Location = new Point(315, 60);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(70, 10);
+            panel3.TabIndex = 4;
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.White;
+            panel2.Location = new Point(200, 60);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(70, 10);
+            panel2.TabIndex = 3;
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(211, 4);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(211, 4);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(50, 50);
+            pictureBox3.SizeMode = PictureBoxSizeMode.CenterImage;
+            pictureBox3.TabIndex = 2;
+            pictureBox3.TabStop = false;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(324, 4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(324, 4);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(50, 50);
+            pictureBox2.SizeMode = PictureBoxSizeMode.CenterImage;
+            pictureBox2.TabIndex = 1;
+            pictureBox2.TabStop = false;
             // 
             // TelaDeInicio
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(826, 450);
-            this.Controls.Add(this.wilBitGradientPanel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "TelaDeInicio";
-            this.Text = "TelaDeInicio";
-            this.wilBitGradientPanel1.ResumeLayout(false);
-            this.wilBitGradientPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCurtida)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnDescurtida)).EndInit();
-            this.wilBitPanel3.ResumeLayout(false);
-            this.wilBitPanel3.PerformLayout();
-            this.wilBitPanel2.ResumeLayout(false);
-            this.wilBitPanel2.PerformLayout();
-            this.wilBitPanel1.ResumeLayout(false);
-            this.wilBitPanel1.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picFotoUsuario)).EndInit();
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(803, 450);
+            Controls.Add(wilBitGradientPanel1);
+            FormBorderStyle = FormBorderStyle.None;
+            Name = "TelaDeInicio";
+            Text = "TelaDeInicio";
+            wilBitGradientPanel1.ResumeLayout(false);
+            wilBitGradientPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)btnCurtida).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnDescurtida).EndInit();
+            wilBitPanel3.ResumeLayout(false);
+            wilBitPanel3.PerformLayout();
+            wilBitPanel2.ResumeLayout(false);
+            wilBitPanel2.PerformLayout();
+            wilBitPanel1.ResumeLayout(false);
+            wilBitPanel1.PerformLayout();
+            panel6.ResumeLayout(false);
+            panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)picFotoUsuario).EndInit();
+            panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
 
         private WiLBiT.WiLBiTGradientPanel wilBitGradientPanel1;
+        private Panel panel1;
+        private PictureBox pictureBox4;
+        private PictureBox pictureBox3;
+        private PictureBox pictureBox2;
+        private PictureBox pictureBox1;
+        private Panel panel5;
+        private Panel panel4;
+        private Panel panel3;
+        private Panel panel2;
         private PictureBox picFotoUsuario;
         private Panel panel6;
         private Label lblNomeUsuario;
@@ -340,10 +385,5 @@
         private Label lblTalento02;
         private Label lblTalento01;
         private Label lblDescricao;
-        private Panel panel1;
-        private PictureBox pictureBox4;
-        private PictureBox pictureBox1;
-        private PictureBox pictureBox3;
-        private PictureBox pictureBox2;
     }
 }

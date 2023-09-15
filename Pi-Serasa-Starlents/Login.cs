@@ -23,9 +23,9 @@ namespace Pi_Serasa_Starlents
 
 
             form.TopLevel = false;
-            Form1.panel1.Controls.Clear();
-            Form1.panel1.Controls.Add(form);
-            form.Size = new Size(ClientSize.Width, ClientSize.Height);
+
+            wilBitGradientPanel1.Controls.Clear();
+            wilBitGradientPanel1.Controls.Add(form);
             form.Show();
         }
 
@@ -57,8 +57,8 @@ namespace Pi_Serasa_Starlents
         private void wilBitButton2_Click(object sender, EventArgs e)
         {
 
-
-
+            carregaForm(new Cadastro());
+            pictureBox1.Location = new Point(700, 100);
         }
 
         private void wilBitGradientPanel2_Paint(object sender, PaintEventArgs e)
@@ -71,43 +71,9 @@ namespace Pi_Serasa_Starlents
 
         }
 
-        private void wilBitButton1_Click(object sender, EventArgs e)
+        private void wilBitGradientPanel1_Paint(object sender, PaintEventArgs e)
         {
 
-        }
-
-        private void wilBitButton1_Click_1(object sender, EventArgs e)
-        {
-            string email = wilBitTextBox1.Texts;
-            string senha = wilBitTextBox2.Texts;
-
-            Usuario u = new Usuario();
-            u = u.login(email, senha);
-
-            if (u.id == null)
-            {
-                MessageBox.Show("email ou senha incorretos");
-                return;
-            }
-
-            Program.usuario = u;
-
-            TelaDeInicio telaDeInicio = new TelaDeInicio();
-            telaDeInicio.TopLevel = false;
-            Form1.panel1.Controls.Clear();
-            Form1.panel1.Controls.Add(telaDeInicio);
-            telaDeInicio.Show();
-        }
-
-        private void Login_Load_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void wilBitButton2_Click_1(object sender, EventArgs e)
-        {
-            carregaForm(new Cadastro());
-            pictureBox1.Location = new Point(700, 100);
         }
     }
 }

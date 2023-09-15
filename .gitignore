@@ -361,5 +361,3 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
-/Pi-Serasa-Starlents/Conexao.cs
-/Pi-Serasa-Starlents/Program.cs

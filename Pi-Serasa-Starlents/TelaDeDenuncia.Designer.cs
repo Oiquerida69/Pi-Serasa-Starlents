@@ -1,6 +1,6 @@
 ﻿namespace Pi_Serasa_Starlents
 {
-    partial class TelaDeDenuncia
+    partial class telaDenuncia
     {
         /// <summary>
         /// Required designer variable.
@@ -37,11 +37,11 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Arial Rounded MT Bold", 21.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Font = new Font("Microsoft Sans Serif", 21.75F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.FromArgb(119, 1, 175);
             label1.Location = new Point(12, 32);
             label1.Name = "label1";
-            label1.Size = new Size(419, 33);
+            label1.Size = new Size(386, 33);
             label1.TabIndex = 0;
             label1.Text = "Deseja denunciar o usuário?";
             // 
@@ -68,13 +68,13 @@
             // 
             btnDenunciar.BackColor = Color.FromArgb(119, 1, 175);
             btnDenunciar.BackgroundImageLayout = ImageLayout.None;
-            btnDenunciar.BorderColor = Color.FromArgb(192, 0, 192);
+            btnDenunciar.BorderColor = Color.FromArgb(72, 116, 245);
             btnDenunciar.BorderRadius = 6;
             btnDenunciar.BorderSize = 0;
             btnDenunciar.Cursor = Cursors.Hand;
             btnDenunciar.FlatAppearance.BorderSize = 0;
             btnDenunciar.FlatStyle = FlatStyle.Flat;
-            btnDenunciar.Font = new Font("Arial Rounded MT Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            btnDenunciar.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             btnDenunciar.ForeColor = Color.White;
             btnDenunciar.Location = new Point(41, 242);
             btnDenunciar.Name = "btnDenunciar";
@@ -83,7 +83,7 @@
             btnDenunciar.Text = "Denunciar";
             btnDenunciar.UseVisualStyleBackColor = false;
             // 
-            // TelaDeDenuncia
+            // telaDenuncia
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -93,8 +93,8 @@
             Controls.Add(txtMotivoDenuncia);
             Controls.Add(label2);
             Controls.Add(label1);
-            FormBorderStyle = FormBorderStyle.Fixed3D;
-            Name = "TelaDeDenuncia";
+            FormBorderStyle = FormBorderStyle.None;
+            Name = "telaDenuncia";
             Text = "TelaDeDenuncia";
             ResumeLayout(false);
             PerformLayout();
