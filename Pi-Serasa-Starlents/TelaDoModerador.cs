@@ -26,7 +26,7 @@ namespace Pi_Serasa_Starlents
 
         public void geraForm(string nome, string avatar, string descricao)
         {
-
+            // Painel que fica listado o usuário.
             Panel painel = new Panel();
             painel.Name = "painel";
             painel.BackColor = Color.FromArgb(228, 193, 249);
@@ -36,6 +36,7 @@ namespace Pi_Serasa_Starlents
             painel.Click += clique;
             painel.Cursor = Cursors.Hand;
 
+            // A cada clique ele muda as seguintes informações na tela principal
             void clique(object sender, EventArgs e)
             {
                 lblUsuario.Text = nome;
@@ -45,6 +46,7 @@ namespace Pi_Serasa_Starlents
 
 
             }
+            // Esse é o label que contém o nome do usuário na min
             Label label = new Label();
             label.Text = nome;  //label.Text = $"{usuario.buscarnome(nome)}";
             label.AutoSize = true;
