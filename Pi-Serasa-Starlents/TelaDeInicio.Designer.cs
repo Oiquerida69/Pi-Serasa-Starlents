@@ -1,4 +1,4 @@
-﻿namespace Pi_Serasa_Starlents
+namespace Pi_Serasa_Starlents
 {
     partial class TelaDeInicio
     {
