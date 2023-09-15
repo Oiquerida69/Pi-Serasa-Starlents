@@ -863,6 +863,101 @@
             this.wilBitComboBox1.TabIndex = 29;
             this.wilBitComboBox1.Texts = "";
             // 
+            // wilBitComboBox5
+            // 
+            this.wilBitComboBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(220)))), ((int)(((byte)(250)))));
+            this.wilBitComboBox5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(26)))), ((int)(((byte)(181)))));
+            this.wilBitComboBox5.BorderSize = 1;
+            this.wilBitComboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.wilBitComboBox5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.wilBitComboBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(30)))), ((int)(((byte)(104)))));
+            this.wilBitComboBox5.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(26)))), ((int)(((byte)(181)))));
+            this.wilBitComboBox5.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
+            this.wilBitComboBox5.ListTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(30)))), ((int)(((byte)(104)))));
+            this.wilBitComboBox5.Location = new System.Drawing.Point(687, 328);
+            this.wilBitComboBox5.MinimumSize = new System.Drawing.Size(200, 30);
+            this.wilBitComboBox5.Name = "wilBitComboBox5";
+            this.wilBitComboBox5.Padding = new System.Windows.Forms.Padding(1);
+            this.wilBitComboBox5.Size = new System.Drawing.Size(200, 30);
+            this.wilBitComboBox5.TabIndex = 33;
+            this.wilBitComboBox5.Texts = "";
+            // 
+            // wilBitComboBox4
+            // 
+            this.wilBitComboBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(220)))), ((int)(((byte)(250)))));
+            this.wilBitComboBox4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(26)))), ((int)(((byte)(181)))));
+            this.wilBitComboBox4.BorderSize = 1;
+            this.wilBitComboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.wilBitComboBox4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.wilBitComboBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(30)))), ((int)(((byte)(104)))));
+            this.wilBitComboBox4.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(26)))), ((int)(((byte)(181)))));
+            this.wilBitComboBox4.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(220)))), ((int)(((byte)(250)))));
+            this.wilBitComboBox4.ListTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(30)))), ((int)(((byte)(104)))));
+            this.wilBitComboBox4.Location = new System.Drawing.Point(687, 290);
+            this.wilBitComboBox4.MinimumSize = new System.Drawing.Size(200, 30);
+            this.wilBitComboBox4.Name = "wilBitComboBox4";
+            this.wilBitComboBox4.Padding = new System.Windows.Forms.Padding(1);
+            this.wilBitComboBox4.Size = new System.Drawing.Size(200, 30);
+            this.wilBitComboBox4.TabIndex = 32;
+            this.wilBitComboBox4.Texts = "";
+            // 
+            // wilBitComboBox3
+            // 
+            this.wilBitComboBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(220)))), ((int)(((byte)(250)))));
+            this.wilBitComboBox3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(26)))), ((int)(((byte)(181)))));
+            this.wilBitComboBox3.BorderSize = 1;
+            this.wilBitComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.wilBitComboBox3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.wilBitComboBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(30)))), ((int)(((byte)(104)))));
+            this.wilBitComboBox3.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(26)))), ((int)(((byte)(181)))));
+            this.wilBitComboBox3.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(220)))), ((int)(((byte)(250)))));
+            this.wilBitComboBox3.ListTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(30)))), ((int)(((byte)(104)))));
+            this.wilBitComboBox3.Location = new System.Drawing.Point(687, 188);
+            this.wilBitComboBox3.MinimumSize = new System.Drawing.Size(200, 30);
+            this.wilBitComboBox3.Name = "wilBitComboBox3";
+            this.wilBitComboBox3.Padding = new System.Windows.Forms.Padding(1);
+            this.wilBitComboBox3.Size = new System.Drawing.Size(200, 30);
+            this.wilBitComboBox3.TabIndex = 31;
+            this.wilBitComboBox3.Texts = "";
+            // 
+            // wilBitComboBox2
+            // 
+            this.wilBitComboBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(220)))), ((int)(((byte)(250)))));
+            this.wilBitComboBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(26)))), ((int)(((byte)(181)))));
+            this.wilBitComboBox2.BorderSize = 1;
+            this.wilBitComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.wilBitComboBox2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.wilBitComboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(30)))), ((int)(((byte)(104)))));
+            this.wilBitComboBox2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(26)))), ((int)(((byte)(181)))));
+            this.wilBitComboBox2.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(220)))), ((int)(((byte)(250)))));
+            this.wilBitComboBox2.ListTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(30)))), ((int)(((byte)(104)))));
+            this.wilBitComboBox2.Location = new System.Drawing.Point(687, 152);
+            this.wilBitComboBox2.MinimumSize = new System.Drawing.Size(200, 30);
+            this.wilBitComboBox2.Name = "wilBitComboBox2";
+            this.wilBitComboBox2.Padding = new System.Windows.Forms.Padding(1);
+            this.wilBitComboBox2.Size = new System.Drawing.Size(200, 30);
+            this.wilBitComboBox2.TabIndex = 30;
+            this.wilBitComboBox2.Texts = "";
+            // 
+            // wilBitComboBox1
+            // 
+            this.wilBitComboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(220)))), ((int)(((byte)(250)))));
+            this.wilBitComboBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(26)))), ((int)(((byte)(181)))));
+            this.wilBitComboBox1.BorderSize = 1;
+            this.wilBitComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.wilBitComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.wilBitComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(30)))), ((int)(((byte)(104)))));
+            this.wilBitComboBox1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(26)))), ((int)(((byte)(181)))));
+            this.wilBitComboBox1.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(220)))), ((int)(((byte)(250)))));
+            this.wilBitComboBox1.ListTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(30)))), ((int)(((byte)(104)))));
+            this.wilBitComboBox1.Location = new System.Drawing.Point(687, 116);
+            this.wilBitComboBox1.MinimumSize = new System.Drawing.Size(200, 30);
+            this.wilBitComboBox1.Name = "wilBitComboBox1";
+            this.wilBitComboBox1.Padding = new System.Windows.Forms.Padding(1);
+            this.wilBitComboBox1.Size = new System.Drawing.Size(200, 30);
+            this.wilBitComboBox1.TabIndex = 29;
+            this.wilBitComboBox1.Texts = "";
+            // 
             // wilBitTextBox6
             // 
             wilBitTextBox6.BackColor = SystemColors.Window;
