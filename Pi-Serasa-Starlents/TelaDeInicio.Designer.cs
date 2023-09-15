@@ -111,6 +111,7 @@
             btnDescurtida.SizeMode = PictureBoxSizeMode.CenterImage;
             btnDescurtida.TabIndex = 13;
             btnDescurtida.TabStop = false;
+            btnDescurtida.Click += btnDescurtida_Click;
             // 
             // wilBitPanel3
             // 

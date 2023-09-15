@@ -56,11 +56,13 @@
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
+            pictureBox4 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             GradientPanelCadastro.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)wilBitRoundedPictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -144,7 +146,7 @@
             // 
             // wilBitButton1
             // 
-            wilBitButton1.BackColor = Color.Thistle;
+            wilBitButton1.BackColor = Color.FromArgb(54, 0, 57);
             wilBitButton1.BorderColor = Color.FromArgb(119, 0, 176);
             wilBitButton1.BorderRadius = 6;
             wilBitButton1.BorderSize = 0;
@@ -152,7 +154,7 @@
             wilBitButton1.FlatAppearance.BorderSize = 0;
             wilBitButton1.FlatStyle = FlatStyle.Flat;
             wilBitButton1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            wilBitButton1.ForeColor = Color.Black;
+            wilBitButton1.ForeColor = Color.White;
             wilBitButton1.Location = new Point(596, 445);
             wilBitButton1.Name = "wilBitButton1";
             wilBitButton1.Size = new Size(210, 40);
@@ -169,6 +171,7 @@
             GradientPanelCadastro.BorderColor = Color.PaleVioletRed;
             GradientPanelCadastro.BorderRadius = 6;
             GradientPanelCadastro.BorderSize = 0;
+            GradientPanelCadastro.Controls.Add(pictureBox4);
             GradientPanelCadastro.Controls.Add(comboBox5);
             GradientPanelCadastro.Controls.Add(comboBox4);
             GradientPanelCadastro.Controls.Add(comboBox3);
@@ -284,15 +287,15 @@
             label10.ForeColor = Color.White;
             label10.Location = new Point(317, 369);
             label10.Name = "label10";
-            label10.Size = new Size(229, 19);
+            label10.Size = new Size(205, 19);
             label10.TabIndex = 40;
-            label10.Text = "O que você deseja compartilhar?";
+            label10.Text = "Insera seus meios de contato:";
             // 
             // pictureBox2
             // 
             pictureBox2.BackColor = Color.Transparent;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(0, 3);
+            pictureBox2.Location = new Point(3, 445);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(100, 50);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -467,6 +470,17 @@
             label1.TabIndex = 10;
             label1.Text = "Digite seu e-mail";
             // 
+            // pictureBox4
+            // 
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+            pictureBox4.Location = new Point(3, 3);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(48, 35);
+            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox4.TabIndex = 48;
+            pictureBox4.TabStop = false;
+            pictureBox4.Click += pictureBox4_Click;
+            // 
             // Cadastro
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -485,6 +499,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)wilBitRoundedPictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -517,5 +532,6 @@
         private ComboBox comboBox1;
         private ComboBox comboBox5;
         private ComboBox comboBox4;
+        private PictureBox pictureBox4;
     }
 }

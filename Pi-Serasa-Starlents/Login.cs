@@ -78,6 +78,9 @@ namespace Pi_Serasa_Starlents
 
         private void wilBitButton1_Click_1(object sender, EventArgs e)
         {
+            try
+            {
+
             string email = wilBitTextBox1.Texts;
             string senha = wilBitTextBox2.Texts;
 
@@ -97,6 +100,12 @@ namespace Pi_Serasa_Starlents
             Form1.panel1.Controls.Clear();
             Form1.panel1.Controls.Add(telaDeInicio);
             telaDeInicio.Show();
+            }
+            catch (Exception erro)
+            {
+
+                MessageBox.Show("O email ou senha ainda não existe no sistema");
+            }
         }
 
         private void Login_Load_1(object sender, EventArgs e)

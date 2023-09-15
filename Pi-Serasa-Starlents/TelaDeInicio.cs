@@ -15,6 +15,7 @@ namespace Pi_Serasa_Starlents
 
         List<Usuario> usuarios;
         int mostrando = 0;
+        int id_mostrando = 0;
 
         public TelaDeInicio()
         {
@@ -24,15 +25,24 @@ namespace Pi_Serasa_Starlents
         void mostraPerfil()
         {
 
+            if (usuarios == null)
+            {
+                MessageBox.Show("Ninguem para dar match com voce");
+                return;
+            }
+
             Usuario usuario = usuarios[mostrando];
+            id_mostrando = usuario.id;
             lblNomeUsuario.Text = usuario.nome;
             lblDescricao.Text = usuario.descricao;
             lblTalento01.Text = usuario.interesse01;
             lblTalento02.Text = usuario.interesse02;
+            lblTalento03.Text = usuario.interesse03;
+            picFotoUsuario.ImageLocation = usuario.avatar;
 
-            if (mostrando + 1 > usuarios.Count-1)
+            if (mostrando + 1 > usuarios.Count - 1)
             {
-                MessageBox.Show("Você ´visuaouzlou aishdaosdoa jds");
+                MessageBox.Show("Você visualizou todos os perfis compativeis com você ");
             }
             else
             {
@@ -69,7 +79,7 @@ namespace Pi_Serasa_Starlents
         private void TelaDeInicio_Load(object sender, EventArgs e)
         {
             Usuario usuario = new Usuario();
-            usuarios = usuario.buscaPerfil( Program.usuario.id, Program.usuario.interesse01, Program.usuario.interesse02, Program.usuario.interesse03);
+            usuarios = usuario.buscaPerfil(Program.usuario.id, Program.usuario.interesse01, Program.usuario.interesse02, Program.usuario.interesse03);
             mostraPerfil();
 
         }
@@ -82,6 +92,15 @@ namespace Pi_Serasa_Starlents
 
         private void btnCurtida_Click(object sender, EventArgs e)
         {
+            Usuario u = new Usuario();
+            u.Curtida(Program.usuario.id, id_mostrando, true);
+            mostraPerfil();
+        }
+
+        private void btnDescurtida_Click(object sender, EventArgs e)
+        {
+            Usuario u = new Usuario();
+            u.Curtida(Program.usuario.id, id_mostrando, false);
             mostraPerfil();
         }
     }

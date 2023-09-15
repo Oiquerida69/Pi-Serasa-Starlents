@@ -127,18 +127,27 @@ namespace Pi_Serasa_Starlents
         {
             string query = $" SELECT * FROM usuarios WHERE email = '{email}' AND senha = '{senha}';";
             DataTable resutlados = Conexao.executaQuery(query);
-            if (resutlados.Rows.Count == null)
+            if (resutlados.Rows.Count == 0)
                 return null;
 
             Usuario u = carregadados(resutlados.Rows[0]);
+
+            query = $" SELECT * FROM mix WHERE id_usuario_1 = {u.id} AND id_usuario_2 = {u.id};";
+            resutlados = Conexao.executaQuery(query);
+            if( resutlados.Rows.Count == 0)
+            {
+                query = $"INSERT INTO mix (id_usuario_1, id_usuario_2, curtiu) VALUES ({u.id}, {u.id}, 1);";
+                Conexao.executaQuery(query);
+            }
+
             return u;
         }
 
         public List<Usuario> buscaPerfil(int id_usuario, string interesse ,string interesse2 ,string interesse3)
         {
             List<Usuario> us = new List<Usuario>();
-            //string query = $"SELECT * FROM usuarios WHERE interesse1 IN ('{interesse}','{interesse2}','{interesse3}') OR interesse2 IN ('{interesse}','{interesse2}','{interesse3}') OR interesse3 IN ('{interesse}','{interesse2}','{interesse3}');";
-            string query = $"SELECT * FROM usuarios WHERE interesse1 IN ('{interesse}','{interesse2}','{interesse3}') OR interesse2 IN ('{interesse}','{interesse2}','{interesse3}') OR interesse3 IN ('{interesse}','{interesse2}','{interesse3}');";
+            
+            string query = $"SELECT * FROM usuarios WHERE id <> {id_usuario} AND ( interesse1 IN ('{interesse}','{interesse2}','{interesse3}') OR interesse2 IN ('{interesse}','{interesse2}','{interesse3}') OR interesse3 IN ('{interesse}','{interesse2}','{interesse3}'));";
             DataTable table = Conexao.executaQuery(query);
             if(table.Rows.Count == 0)
             {
@@ -152,7 +161,7 @@ namespace Pi_Serasa_Starlents
             }
             ids = ids.Substring(0, ids.Length-1);
             MessageBox.Show(ids);
-
+            //SELECT usuarios.*FROM usuarios, mix WHERE mix.id_usuario_1 = 18 AND mix.id_usuario_2 NOT IN(16, 18);
             query = $"SELECT usuarios.* FROM usuarios, mix WHERE mix.id_usuario_1 = {id_usuario} AND mix.id_usuario_2 NOT IN ({ids});";
             table = Conexao.executaQuery(query);
 
@@ -165,12 +174,12 @@ namespace Pi_Serasa_Starlents
             return us;
             
         }
-        
-        //public void Curtida(int id_usuario_1, int id_usuario_2, bool curtiu)
-        //{
-        //    string query = $"INSERT INTO mix (id_usuario_1, id_usuario_2, curtiu) VALUES ({=id_usuario_1}, {id_usuario_2}, {curtiu});";
-        //    Conexao.executaQuery(query);
-        //}
+
+        public void Curtida(int id_usuario_1, int id_usuario_2, bool curtiu)
+        {
+            string query = $"INSERT INTO mix (id_usuario_1, id_usuario_2, curtiu) VALUES ({id_usuario_1}, {id_usuario_2}, {curtiu});";
+            Conexao.executaQuery(query);
+        }
 
     }
 }
