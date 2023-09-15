@@ -10,6 +10,8 @@ using System.Windows.Forms;
 using System.Diagnostics;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Tab;
 using System.Net.Mail;
+using WiLBiT;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Pi_Serasa_Starlents
 {
@@ -19,48 +21,56 @@ namespace Pi_Serasa_Starlents
     {
         Usuario usuario = new Usuario();
         List<Usuario> usuarios = new List<Usuario>();
+        List<TelaDoModerador> denuncias = new List<TelaDoModerador>();
 
 
-        public void geraForm()
+        public void geraForm(string nome, string avatar, string descricao)
         {
 
-
-            Panel painel = new WiLBiT.WiLBiTPanel();
+            Panel painel = new Panel();
             painel.Name = "painel";
             painel.BackColor = Color.FromArgb(228, 193, 249);
             painel.ForeColor = Color.White;
-            painel.Size = new Size(180, 50);
+            painel.Size = new Size(174, 50);
             painel.Location = new Point(12, panelListaDenuncias.Height);
+            painel.Click += clique;
+            painel.Cursor = Cursors.Hand;
 
+            void clique(object sender, EventArgs e)
+            {
+                lblUsuario.Text = nome;
+                txtBiografiaMix.Text = descricao;
+
+                lblUsuario.ForeColor = Color.FromArgb(52, 11, 66);
+
+
+            }
             Label label = new Label();
-            label.Text = usuario.nome;
+            label.Text = nome;  //label.Text = $"{usuario.buscarnome(nome)}";
             label.AutoSize = true;
             label.Size = new Size(0, 0);
             label.Location = new Point(painel.Width / 2, painel.Height / 2);
             label.ForeColor = Color.Purple;
             label.Font = new Font("Microsoft Sans Serif", 12);
+            label.Click += clique;
 
-            WiLBiT.WiLBiTRoundedPictureBox picFotoUsuario = new WiLBiT.WiLBiTRoundedPictureBox();
-            picFotoUsuario.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            picFotoUsuario.BorderColor = Color.FromArgb(64, 15, 87);
-            picFotoUsuario.BorderColor2 = Color.FromArgb(64, 15, 87);
-            picFotoUsuario.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            picFotoUsuario.BorderSize = 2;
-            picFotoUsuario.GradientAngle = 50F;
-            picFotoUsuario.Location = new Point(12, 5);
+            PictureBox picFotoUsuario = new PictureBox();
+            picFotoUsuario.Location = new Point(painel.Width / 2, painel.Height /2);
             picFotoUsuario.Name = "picFotoUsuario";
             picFotoUsuario.Size = new Size(42, 42);
             picFotoUsuario.SizeMode = PictureBoxSizeMode.StretchImage;
+            //picFotoUsuario.BackgroundImage = uavatar;
             picFotoUsuario.TabIndex = 1;
             picFotoUsuario.TabStop = false;
+            picFotoUsuario.Click += clique;
 
 
             panelListaDenuncias.Controls.Add(painel);
             painel.Controls.Add(label);
             painel.Controls.Add(picFotoUsuario);
-            if (panelListaDenuncias.Height < 10)
+            if (panelListaDenuncias.Height < 500)
             {
-                panelListaDenuncias.Height += painel.Height + 10;
+                panelListaDenuncias.Height += painel.Height + 5;
 
             }
 
@@ -70,33 +80,47 @@ namespace Pi_Serasa_Starlents
         public TelaDoModerador()
         {
             InitializeComponent();
+            this.SizeChanged += new EventHandler(TelaDoModerador_SizeChanged);
+            // Faz com que o comando de maximizar funcione
 
         }
 
-        public void expandeTela()
+
+
+        private void TelaDoModerador_SizeChanged(object sender, EventArgs e)
         {
-            if (WindowState == FormWindowState.Maximized)
+            if (this.WindowState == FormWindowState.Maximized)
             {
-                picFotoUsuario.Height = 500;
-                picFotoUsuario.Width = 500;
+                // A janela está maximizada, faça algo aqui
+                picFotoUsuario.Height = ClientSize.Width / 5;
+                picFotoUsuario.Width = ClientSize.Width / 5;
+
+                lblUsuario.AutoSize = true;
+                lblUsuario.Font = new Font("Microsoft Sans Serif", 26);
+                lblUsuario.Location = new Point(ClientSize.Width / 6, ClientSize.Height / 2);
+
+
+                lblBiografiaDeMix.Location = new Point(ClientSize.Width / 6, ClientSize.Height / 2 + 50);
+                txtBiografiaMix.Location = new Point(ClientSize.Width / 6, ClientSize.Height / 2 + 80);
+                txtBiografiaMix.Height = ClientSize.Height / 6;
+                txtBiografiaMix.Width = ClientSize.Width / 5;
+
             }
 
         }
 
+
         private void TelaDoModerador_Load(object sender, EventArgs e)
         {
+            WindowState = FormWindowState.Maximized;
+            //panelPerfilDenunciado.Hide();
+            List<Usuario> usuarios = usuario.ListarUsuarios();
 
-            lblNomeMiniatura = new Label();
-            //picFotoMiniatura = new WiLBiT.WiLBiTRoundedPictureBox();
 
-            //picFotoUsuario = picFotoMiniatura;
-            lblUsuario = lblNomeMiniatura;
-
-            //lblBiografiaUsuario = new Label();
-            //lblBiografiaMix = new Label();
-
-            lblDetalhesDenuncia = new Label();
-            //lblidUsuario = new Label();
+            foreach (Usuario u in usuarios)
+            {
+                geraForm(u.nome, u.avatar, u.mensagemUsuario);
+            }
 
         }
 
@@ -143,14 +167,16 @@ namespace Pi_Serasa_Starlents
         {
             MessageBox.Show("A denúncia foi suspensa.");
             lblUsuario.Text = "Usuario";
-            //lblidUsuario.Text = "000000000";
             lbl_idUsuario.Text = "01";
-            lblDetalhesDenuncia.Text = "Detalhes da denúncia";
             txtBiografiaMix.Text = "Biografia de Mix";
             txtBiografiaUsuario.Text = "Biografia do usuário";
+            txtDetalhesDenuncia.Text = "Detalhes da denúncia";
             txtJustificativaBanimento.Texts = "";
         }
 
+        private void btnBanirUsuario_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }

@@ -31,9 +31,6 @@
             panel1 = new Panel();
             label1 = new Label();
             panelListaDenuncias = new Panel();
-            panelPerfilDenunciado = new WiLBiT.WiLBiTPanel();
-            pictureBox1 = new PictureBox();
-            lblNomeMiniatura = new Label();
             panel3 = new Panel();
             wilBitPanel3 = new WiLBiT.WiLBiTPanel();
             linkLabel2 = new LinkLabel();
@@ -49,16 +46,13 @@
             label5 = new Label();
             btnBanirUsuario = new WiLBiT.WiLBiTButton();
             txtJustificativaBanimento = new WiLBiT.WiLBiTTextBox();
-            label2 = new Label();
-            label7 = new Label();
+            lblBiografiaDoUsuario = new Label();
+            lblBiografiaDeMix = new Label();
             txtBiografiaMix = new TextBox();
             txtBiografiaUsuario = new TextBox();
             txtDetalhesDenuncia = new TextBox();
             lbl_idUsuario = new Label();
             panel1.SuspendLayout();
-            panelListaDenuncias.SuspendLayout();
-            panelPerfilDenunciado.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel3.SuspendLayout();
             wilBitPanel3.SuspendLayout();
             wilBitPanel2.SuspendLayout();
@@ -89,54 +83,13 @@
             // panelListaDenuncias
             // 
             panelListaDenuncias.AllowDrop = true;
-            panelListaDenuncias.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             panelListaDenuncias.AutoScroll = true;
+            panelListaDenuncias.AutoSize = true;
             panelListaDenuncias.BackColor = Color.FromArgb(163, 142, 167);
-            panelListaDenuncias.Controls.Add(panelPerfilDenunciado);
             panelListaDenuncias.Location = new Point(0, 51);
             panelListaDenuncias.Name = "panelListaDenuncias";
-            panelListaDenuncias.Size = new Size(210, 483);
+            panelListaDenuncias.Size = new Size(210, 0);
             panelListaDenuncias.TabIndex = 1;
-            // 
-            // panelPerfilDenunciado
-            // 
-            panelPerfilDenunciado.Anchor = AnchorStyles.None;
-            panelPerfilDenunciado.BackColor = Color.FromArgb(228, 193, 249);
-            panelPerfilDenunciado.BorderColor = Color.PaleVioletRed;
-            panelPerfilDenunciado.BorderRadius = 6;
-            panelPerfilDenunciado.BorderSize = 0;
-            panelPerfilDenunciado.Controls.Add(pictureBox1);
-            panelPerfilDenunciado.Controls.Add(lblNomeMiniatura);
-            panelPerfilDenunciado.Cursor = Cursors.Hand;
-            panelPerfilDenunciado.ForeColor = Color.White;
-            panelPerfilDenunciado.Location = new Point(12, 6);
-            panelPerfilDenunciado.Name = "panelPerfilDenunciado";
-            panelPerfilDenunciado.Size = new Size(180, 50);
-            panelPerfilDenunciado.TabIndex = 6;
-            panelPerfilDenunciado.Paint += panelPerfilDenunciado_Paint;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Anchor = AnchorStyles.None;
-            pictureBox1.BackColor = Color.FromArgb(228, 193, 249);
-            pictureBox1.BackgroundImageLayout = ImageLayout.None;
-            pictureBox1.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox1.Location = new Point(12, 10);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(35, 35);
-            pictureBox1.TabIndex = 21;
-            pictureBox1.TabStop = false;
-            // 
-            // lblNomeMiniatura
-            // 
-            lblNomeMiniatura.Anchor = AnchorStyles.None;
-            lblNomeMiniatura.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblNomeMiniatura.ForeColor = Color.FromArgb(52, 11, 66);
-            lblNomeMiniatura.Location = new Point(55, 17);
-            lblNomeMiniatura.Name = "lblNomeMiniatura";
-            lblNomeMiniatura.Size = new Size(70, 18);
-            lblNomeMiniatura.TabIndex = 19;
-            lblNomeMiniatura.Text = "Usuário";
             // 
             // panel3
             // 
@@ -147,7 +100,7 @@
             panel3.Controls.Add(wilBitPanel2);
             panel3.Location = new Point(208, 0);
             panel3.Name = "panel3";
-            panel3.Size = new Size(596, 51);
+            panel3.Size = new Size(612, 51);
             panel3.TabIndex = 1;
             // 
             // wilBitPanel3
@@ -329,6 +282,7 @@
             btnBanirUsuario.TabIndex = 18;
             btnBanirUsuario.Text = "Banir usuário";
             btnBanirUsuario.UseVisualStyleBackColor = false;
+            btnBanirUsuario.Click += btnBanirUsuario_Click;
             // 
             // txtJustificativaBanimento
             // 
@@ -354,30 +308,31 @@
             txtJustificativaBanimento.Texts = "";
             txtJustificativaBanimento.UnderlinedStyle = false;
             // 
-            // label2
+            // lblBiografiaDoUsuario
             // 
-            label2.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            label2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.ForeColor = Color.FromArgb(52, 11, 66);
-            label2.Location = new Point(224, 403);
-            label2.Name = "label2";
-            label2.Size = new Size(186, 27);
-            label2.TabIndex = 19;
-            label2.Text = "Biografia do usuário";
+            lblBiografiaDoUsuario.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            lblBiografiaDoUsuario.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblBiografiaDoUsuario.ForeColor = Color.FromArgb(52, 11, 66);
+            lblBiografiaDoUsuario.Location = new Point(224, 403);
+            lblBiografiaDoUsuario.Name = "lblBiografiaDoUsuario";
+            lblBiografiaDoUsuario.Size = new Size(186, 27);
+            lblBiografiaDoUsuario.TabIndex = 19;
+            lblBiografiaDoUsuario.Text = "Biografia do usuário";
             // 
-            // label7
+            // lblBiografiaDeMix
             // 
-            label7.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            label7.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.ForeColor = Color.FromArgb(52, 11, 66);
-            label7.Location = new Point(231, 281);
-            label7.Name = "label7";
-            label7.Size = new Size(186, 27);
-            label7.TabIndex = 20;
-            label7.Text = "Biografia de mix";
+            lblBiografiaDeMix.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            lblBiografiaDeMix.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblBiografiaDeMix.ForeColor = Color.FromArgb(52, 11, 66);
+            lblBiografiaDeMix.Location = new Point(231, 281);
+            lblBiografiaDeMix.Name = "lblBiografiaDeMix";
+            lblBiografiaDeMix.Size = new Size(186, 27);
+            lblBiografiaDeMix.TabIndex = 20;
+            lblBiografiaDeMix.Text = "Biografia de mix";
             // 
             // txtBiografiaMix
             // 
+            txtBiografiaMix.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             txtBiografiaMix.BackColor = Color.FromArgb(240, 208, 255);
             txtBiografiaMix.BorderStyle = BorderStyle.None;
             txtBiografiaMix.ForeColor = Color.FromArgb(52, 11, 66);
@@ -391,6 +346,7 @@
             // 
             // txtBiografiaUsuario
             // 
+            txtBiografiaUsuario.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             txtBiografiaUsuario.BackColor = Color.FromArgb(240, 208, 255);
             txtBiografiaUsuario.BorderStyle = BorderStyle.None;
             txtBiografiaUsuario.ForeColor = Color.FromArgb(52, 11, 66);
@@ -404,6 +360,7 @@
             // 
             // txtDetalhesDenuncia
             // 
+            txtDetalhesDenuncia.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             txtDetalhesDenuncia.BackColor = Color.FromArgb(240, 208, 255);
             txtDetalhesDenuncia.Location = new Point(468, 91);
             txtDetalhesDenuncia.Multiline = true;
@@ -437,8 +394,8 @@
             Controls.Add(txtBiografiaMix);
             Controls.Add(panel1);
             Controls.Add(panelListaDenuncias);
-            Controls.Add(label7);
-            Controls.Add(label2);
+            Controls.Add(lblBiografiaDeMix);
+            Controls.Add(lblBiografiaDoUsuario);
             Controls.Add(txtJustificativaBanimento);
             Controls.Add(btnBanirUsuario);
             Controls.Add(label5);
@@ -449,15 +406,12 @@
             Controls.Add(lblUsuario);
             Controls.Add(picFotoUsuario);
             Controls.Add(panel3);
-            FormBorderStyle = FormBorderStyle.FixedSingle;
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             MinimumSize = new Size(819, 570);
             Name = "TelaDoModerador";
             Text = "TelaDoModerador";
             Load += TelaDoModerador_Load;
             panel1.ResumeLayout(false);
-            panelListaDenuncias.ResumeLayout(false);
-            panelPerfilDenunciado.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel3.ResumeLayout(false);
             wilBitPanel3.ResumeLayout(false);
             wilBitPanel2.ResumeLayout(false);
@@ -475,14 +429,12 @@
         private Panel panel3;
         private PictureBox picFotoUsuario;
         private Label label1;
-        private WiLBiT.WiLBiTPanel panelPerfilDenunciado;
         private Label lblUsuario;
         private Label label3;
         private WiLBiT.WiLBiTPanel wilBitPanel10;
         private Label label4;
         private WiLBiT.WiLBiTButton btnSuspendeDenuncia;
         private Label label5;
-        private Label lblNomeMiniatura;
         private WiLBiT.WiLBiTButton btnBanirUsuario;
         private Label lblDetalhesDenuncia;
         private WiLBiT.WiLBiTTextBox txtJustificativaBanimento;
@@ -490,9 +442,8 @@
         private LinkLabel linkLabel1;
         private WiLBiT.WiLBiTPanel wilBitPanel3;
         private LinkLabel linkLabel2;
-        private Label label2;
-        private Label label7;
-        private PictureBox pictureBox1;
+        private Label lblBiografiaDoUsuario;
+        private Label lblBiografiaDeMix;
         private TextBox txtBiografiaMix;
         private TextBox txtBiografiaUsuario;
         private TextBox txtDetalhesDenuncia;
