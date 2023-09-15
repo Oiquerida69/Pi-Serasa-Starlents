@@ -20,6 +20,10 @@ namespace Pi_Serasa_Starlents
             InitializeComponent();
         }
 
+
+        Interesses i = new Interesses();
+       
+
         public void carregaform(Form form)
         {
             form.TopLevel = false;
@@ -72,6 +76,7 @@ namespace Pi_Serasa_Starlents
 
         }
 
+
         private void Perfil_Load(object sender, EventArgs e)
         {
             rendeirizaInterface();
@@ -122,6 +127,24 @@ namespace Pi_Serasa_Starlents
         private void label5_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void wilBitGradientPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Perfil_Load_1(object sender, EventArgs e)
+        {
+            //pictureBox1.Image = Program.usuario.avatar;
+            lblNome.Text = Program.usuario.nome;
+            wilBitTextBox6.Text = Program.usuario.descricao;
+            wilBitTextBox1.Text = Program.usuario.mensagemUsuario;
+            wilBitComboBox1.Text = Program.usuario.interesse01; 
+            wilBitComboBox2.Text = Program.usuario.interesse02;
+            wilBitComboBox3.Text = Program.usuario.interesse03;
+            //wilBitComboBox4.Text = Program.usuario.aprender;
+            //wilBitComboBox5.Text = Program.usuario.aprender;
         }
 
         private void wilBitGradientPanel1_Paint(object sender, PaintEventArgs e)
