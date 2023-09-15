@@ -5,6 +5,8 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.ComponentModel.Design.ObjectSelectorEditor;
+using System.Windows.Forms;
 
 namespace Pi_Serasa_Starlents
 {
@@ -76,6 +78,7 @@ namespace Pi_Serasa_Starlents
         {
             List<Usuario> usuarios = new List<Usuario>();
             string query = $"SELECT * FROM usuarios;";
+             string uqery = $"SELECT usuarios.* FROM mix, usuarios WHERE mix.id_usuario_1 = {} AND usuarios.id = {}";
             DataTable tabela = Conexao.executaQuery(query);
             foreach( DataRow linha in tabela.Rows)
             {

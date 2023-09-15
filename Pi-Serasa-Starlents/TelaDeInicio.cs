@@ -55,6 +55,7 @@ namespace Pi_Serasa_Starlents
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             Perfil perfil = new Perfil();
+            perfil.Show();
             Form1.panel1.Controls.Clear();
             perfil.TopLevel = false;
             Form1.panel1.Controls.Add(perfil);
@@ -64,6 +65,7 @@ namespace Pi_Serasa_Starlents
         {
             TelaDeMensagens tela = new TelaDeMensagens();
             Form1.panel1.Controls.Clear();
+            tela.Show();
             tela.TopLevel = false;
             Form1.panel1.Controls.Add(tela);
         }
@@ -72,6 +74,7 @@ namespace Pi_Serasa_Starlents
         {
             Notificacao not = new Notificacao();
             Form1.panel1.Controls.Clear();
+            not.Show();
             not.TopLevel = false;
             Form1.panel1.Controls.Add(not);
         }
