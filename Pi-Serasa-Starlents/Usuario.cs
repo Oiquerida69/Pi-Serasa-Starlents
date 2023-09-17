@@ -165,7 +165,6 @@ namespace Pi_Serasa_Starlents
                 ids += l["id"] + ",";
             }
             ids = ids.Substring(0, ids.Length-1);
-            MessageBox.Show(ids);
             //SELECT usuarios.*FROM usuarios, mix WHERE mix.id_usuario_1 = 18 AND mix.id_usuario_2 NOT IN(16, 18);
             query = $"SELECT usuarios.* FROM usuarios, mix WHERE mix.id_usuario_1 = {id_usuario} AND mix.id_usuario_2 NOT IN ({ids});";
             table = Conexao.executaQuery(query);
