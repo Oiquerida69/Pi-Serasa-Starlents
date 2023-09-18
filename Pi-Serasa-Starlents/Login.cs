@@ -60,7 +60,7 @@ namespace Pi_Serasa_Starlents
 
         private void Login_Load(object sender, EventArgs e)
         {
-            rendeirizaInterface();
+           
         }
 
         private void wilBitButton2_Click(object sender, EventArgs e)
