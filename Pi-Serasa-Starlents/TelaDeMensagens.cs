@@ -229,6 +229,7 @@ namespace Pi_Serasa_Starlents
             TelaDeInicio telaDeInicio = new TelaDeInicio();
             panel2.Location = new Point(0, 0);
             telaDeInicio.Size = new Size(ClientSize.Width, ClientSize.Height);
+            telaDeInicio.TopLevel = false;
             Form1.panel1.Controls.Clear();
             Form1.panel1.Controls.Add(telaDeInicio);
             telaDeInicio.Show();
