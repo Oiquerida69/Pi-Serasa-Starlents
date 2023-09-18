@@ -17,15 +17,7 @@ namespace Pi_Serasa_Starlents
         {
             InitializeComponent();
         }
-        public void rendizatela()
-        {
-            int painelprincipalaltura = ClientSize.Height;
-            int painelprincipallargura = ClientSize.Width;
 
-            WindowState = FormWindowState.Maximized;
-
-
-        }
         public void carregaForm(Form form)
         {
 
@@ -46,9 +38,8 @@ namespace Pi_Serasa_Starlents
 
             wilBitGradientPanel1.Location = new Point(ClientSize.Width / 2 - wilBitGradientPanel1.Size.Width / 2, ClientSize.Height / 2 - wilBitGradientPanel1.Size.Height / 2);
 
-            wilBitGradientPanel2.Location = new Point(ClientSize.Width / 2 - wilBitGradientPanel2.Size.Width / 2 + 400, ClientSize.Height / 2 - wilBitGradientPanel2.Size.Height / 2);
-            pictureBox1.Location = new Point(ClientSize.Width / 2 - pictureBox1.Size.Width / 2 + 400, ClientSize.Height / 2  - wilBitGradientPanel2.Size.Height / 1);
-            wilBitRoundedPictureBox1.Location = new Point(ClientSize.Width / 2 - 500 , ClientSize.Height / 2 -150);
+            wilBitGradientPanel2.Location = new Point(ClientSize.Width / 2 - wilBitGradientPanel2.Size.Width / 2 + 700, ClientSize.Height / 2 - wilBitGradientPanel2.Size.Height / 2);
+
 
         }
 
@@ -89,9 +80,9 @@ namespace Pi_Serasa_Starlents
         {
             try
             {
-
-                string email = wilBitTextBox1.Texts;
-                string senha = wilBitTextBox2.Texts;
+                
+            string email = wilBitTextBox1.Texts;
+            string senha = wilBitTextBox2.Texts;
                 if (email == "admin" && senha == "admin")
                 {
                     TelaDoModerador tela = new TelaDoModerador();
@@ -129,7 +120,7 @@ namespace Pi_Serasa_Starlents
 
         private void Login_Load_1(object sender, EventArgs e)
         {
-            rendeirizaInterface();
+
         }
 
         private void wilBitButton2_Click_1(object sender, EventArgs e)

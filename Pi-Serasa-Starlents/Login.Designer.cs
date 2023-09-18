@@ -131,7 +131,6 @@
             // 
             // wilBitGradientPanel1
             // 
-            wilBitGradientPanel1.AutoSize = true;
             wilBitGradientPanel1.BackColor = Color.FromArgb(64, 15, 87);
             wilBitGradientPanel1.BackColor2 = Color.FromArgb(153, 47, 240);
             wilBitGradientPanel1.BorderColor = Color.Transparent;
@@ -252,10 +251,8 @@
             ClientSize = new Size(944, 535);
             Controls.Add(wilBitGradientPanel1);
             FormBorderStyle = FormBorderStyle.None;
-            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Login";
             Text = "Login";
-            WindowState = FormWindowState.Maximized;
             Load += Login_Load_1;
             wilBitGradientPanel1.ResumeLayout(false);
             wilBitGradientPanel1.PerformLayout();
@@ -264,7 +261,6 @@
             wilBitGradientPanel2.ResumeLayout(false);
             wilBitGradientPanel2.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion

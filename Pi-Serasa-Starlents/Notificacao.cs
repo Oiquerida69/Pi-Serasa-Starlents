@@ -43,13 +43,13 @@ namespace Pi_Serasa_Starlents
         {
             WindowState = FormWindowState.Maximized;
 
-            int menuEsquerdo_largura = 63;
+            int menuEsquerdo_largura = 200;
 
-
-            wilBitGradientPanel1.Location = new Point(0, 0);
+            int menuEsquerdo_ = ClientSize.Width;
+            wilBitGradientPanel1.Location = new Point(0,0);
             wilBitGradientPanel1.Size = new Size(ClientSize.Width, ClientSize.Height);
 
-            wilBitPanel1.Location = new Point(ClientSize.Width / 2 - wilBitPanel1.Size.Width / 2, ClientSize.Height / 2 - wilBitPanel1.Size.Height / 2);
+            wilBitPanel1.Location = new Point(ClientSize.Width / 2 - wilBitPanel1.Size.Width / 2 + menuEsquerdo_largura - 20, ClientSize.Height / 2 - wilBitPanel1.Size.Height / 2);
 
             panelIcones.Location = new Point(ClientSize.Width / 2 - panelIcones.Width / 2);
 
@@ -57,11 +57,55 @@ namespace Pi_Serasa_Starlents
 
             label3.Location = new Point(ClientSize.Width / 2 - label3.Size.Width / 2, ClientSize.Height / 2 - label3.Size.Height / 2 - 300);
 
+            
         }
+        public void geratela() 
+        {
+            WindowState = FormWindowState.Maximized;
+
+            
+
+            
+            wilBitGradientPanel1.Location = new Point(0, 0);
+            wilBitGradientPanel1.Size = new Size(ClientSize.Width , ClientSize.Height );
+            wilBitPanel1.Size = new Size(ClientSize.Width / 2 - wilBitPanel1.Size.Width / 2 + 500, ClientSize.Height / 2 - wilBitPanel1.Size.Height / 2 + 250);
+
+            wilBitPanel1.Location = new Point(ClientSize.Width / 2 - wilBitPanel1.Size.Width / 2, ClientSize.Height / 2 - wilBitPanel1.Size.Height / 2);
+
+            panelIcones.Location = new Point(ClientSize.Width / 2 - panelIcones.Width / 2);
+
+            label3.Location = new Point(ClientSize.Height / 2 - label3.Width / 2);
+
+            label3.Location = new Point(ClientSize.Width / 2 - label3.Size.Width / 2, ClientSize.Height / 2 - label3.Size.Height / 2 - 400);
+
+           
+
+
+            WindowState = FormWindowState.Maximized;
+            wilBitGradientPanel1.Location = new Point(0,0);
+            wilBitGradientPanel1.Size = new Size (ClientSize.Width, ClientSize.Height);
+            panelIcones.Location = new Point(ClientSize.Width / 2 - panelIcones.Width / 2);
+            wilBitPanel1.Location = new Point(ClientSize.Width / 2 - wilBitPanel1.Size.Width / 2, ClientSize.Height / 2 - wilBitPanel1.Size.Height / 2);
+
+            wilBitButton1.Location = new Point(ClientSize.Width / 2 - wilBitPanel1.Size.Width / 2 , ClientSize.Height / 2 - 500);
+            wilBitButton2.Location = new Point(ClientSize.Width / 2 - wilBitPanel1.Size.Width / 2 - 300, ClientSize.Height / 2 - 500);
+            wilBitButton3.Location = new Point(ClientSize.Width / 2 - wilBitPanel1.Size.Width / 2 +300 , ClientSize.Height / 2 - 500);
+
+
+
+
+
+
+
+
+        }
+
+
 
 
         private void wilBitPanel1_Paint(object sender, PaintEventArgs e)
         {
+           
 
         }
 
@@ -80,6 +124,8 @@ namespace Pi_Serasa_Starlents
 
         }
 
+       
+      
         private void wilBitGradientPanel1_Paint(object sender, PaintEventArgs e)
         {
 
@@ -283,6 +329,21 @@ namespace Pi_Serasa_Starlents
             perfil.TopLevel = false;
             Form1.panel1.Controls.Clear();
             Form1.panel1.Controls.Add(perfil);
+        }
+
+        private void Notificacao_Load_1(object sender, EventArgs e)
+        {
+
+            //renderizaInterface();
+            Notificacao notificacao = new Notificacao();
+            notificacao.TopLevel = false;
+            wilBitGradientPanel1.Controls.Add(notificacao);
+            foreach (Notificacao not in todas)
+            {
+                geranotificaçoes(not.conteudo);
+            }
+
+            geratela();
         }
     }
 }

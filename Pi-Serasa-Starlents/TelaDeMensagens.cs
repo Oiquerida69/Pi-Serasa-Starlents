@@ -24,6 +24,8 @@ namespace Pi_Serasa_Starlents
         {
             InitializeComponent();
         }
+
+
         public void geraform(string nome, string avatar, string descricao)
         {
 
@@ -32,7 +34,7 @@ namespace Pi_Serasa_Starlents
             painel.Name = "painel";
             painel.BackColor = Color.FromArgb(228, 193, 249);
             painel.ForeColor = Color.White;
-            painel.Size = new Size(174, 50);
+            painel.Size = new Size(250, 50);
             painel.Location = new Point(12, painel_Lista.Height);
             painel.Click += clique;
 
@@ -54,6 +56,7 @@ namespace Pi_Serasa_Starlents
             label.ForeColor = Color.Purple;
             label.Font = new Font("Microsoft Sans Serif", 12);
             label.Click += clique;
+            
 
             WiLBiT.WiLBiTRoundedPictureBox picFotoUsuario = new WiLBiT.WiLBiTRoundedPictureBox();
             picFotoUsuario.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
@@ -145,10 +148,27 @@ namespace Pi_Serasa_Starlents
             panel.Controls.Add(pic);
 
         }
-        public void carregaForm(Form form)
+        public void carregaForm()
         {
            
-            form.TopLevel = false;
+          
+            WindowState = FormWindowState.Maximized;
+            panel1.Location = new Point(0, 0);
+            panel1.Size = new Size(350,ClientSize.Height);
+            panel2.Location= new Point(350, 0);
+            panel2.Size = new Size(ClientSize.Width, ClientSize.Height);
+            wilBitPanel2.Location= new Point(0, 0);
+            wilBitPanel2.Size = new Size(ClientSize.Width,ClientSize.Height);
+            panel4.Location= new Point(0, 0);
+            panel4.Size = new Size(350,60);
+            painel_Lista.Location = new Point(60, 0);
+            painel_Lista.Size = new Size(ClientSize.Height, 350);
+            btnDenunciaUsuario.Location = new Point(1500, 20);
+            label2.Location = new Point(120, 5);
+            
+            
+
+
         }
 
         private void TelaDeMensagens_Load(object sender, EventArgs e)
@@ -217,6 +237,8 @@ namespace Pi_Serasa_Starlents
 
                 geraform(u.nome, u.avatar, u.mensagemUsuario);
             }
+
+            carregaForm();
         }
 
         private void btnVoltaInicio_Click_1(object sender, EventArgs e)
@@ -229,7 +251,6 @@ namespace Pi_Serasa_Starlents
             TelaDeInicio telaDeInicio = new TelaDeInicio();
             panel2.Location = new Point(0, 0);
             telaDeInicio.Size = new Size(ClientSize.Width, ClientSize.Height);
-            telaDeInicio.TopLevel = false;
             Form1.panel1.Controls.Clear();
             Form1.panel1.Controls.Add(telaDeInicio);
             telaDeInicio.Show();

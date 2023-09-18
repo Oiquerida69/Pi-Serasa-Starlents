@@ -52,7 +52,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.fotoUsuario)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnVoltaInicio)).BeginInit();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // painel_Lista
@@ -112,7 +111,7 @@
             this.panel2.Controls.Add(this.wilBitPanel2);
             this.panel2.Location = new System.Drawing.Point(220, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(560, 463);
+            this.panel2.Size = new System.Drawing.Size(560, 446);
             this.panel2.TabIndex = 1;
             // 
             // wilBitPanel2
@@ -186,7 +185,7 @@
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(55)))), ((int)(((byte)(148)))));
             this.panel4.Controls.Add(this.label2);
             this.panel4.Controls.Add(this.btnVoltaInicio);
-            this.panel4.Location = new System.Drawing.Point(1, 7);
+            this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(220, 50);
             this.panel4.TabIndex = 1;
@@ -216,10 +215,9 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(15)))), ((int)(((byte)(87)))));
-            this.panel1.Controls.Add(this.panel4);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(0, 50);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(220, 460);
+            this.panel1.Size = new System.Drawing.Size(220, 399);
             this.panel1.TabIndex = 3;
             // 
             // TelaDeMensagens
@@ -228,6 +226,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(779, 445);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.painel_Lista);
             this.Controls.Add(this.panel1);
@@ -246,7 +245,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.fotoUsuario)).EndInit();
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnVoltaInicio)).EndInit();
-            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
