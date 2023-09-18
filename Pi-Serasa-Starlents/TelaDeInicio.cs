@@ -61,7 +61,7 @@ namespace Pi_Serasa_Starlents
             pictureBox4.Location = new Point(panel1.Size.Width / 2 + 300, 0);
             picFotoUsuario.Location = new Point(ClientSize.Width / 6, ClientSize.Height / 3);
             panel6.Location = new Point(picFotoUsuario.Width + 280, ClientSize.Height / 3);
-            panel6.Size = new Size(300,245);
+            panel6.Size = new Size(300, 245);
             btnDescurtida.Location = new Point(picFotoUsuario.Width + 280, panel6.Height + 260);
             btnCurtida.Location = new Point(picFotoUsuario.Width + 520, panel6.Height + 260);
             wilBitGradientPanel1.Size = new Size(ClientSize.Width, ClientSize.Height);
@@ -69,7 +69,7 @@ namespace Pi_Serasa_Starlents
             lblNomeUsuario.Location = new Point(ClientSize.Width / 6, ClientSize.Height / 2 - 200);
             lblTalento01.Location = new Point(ClientSize.Width - 500, ClientSize.Height / 2 - 150);
             lblTalento02.Location = new Point(ClientSize.Width - 500, ClientSize.Height / 2 - 50);
-            lblTalento03.Location = new Point(ClientSize.Width - 500, ClientSize.Height / 2 - (-50) );
+            lblTalento03.Location = new Point(ClientSize.Width - 500, ClientSize.Height / 2 - (-50));
 
             wilBitGradientPanel1.Location = new Point(ClientSize.Width / 2 - wilBitGradientPanel1.Size.Width / 2, ClientSize.Height / 2 - wilBitGradientPanel1.Size.Height / 2);
         }

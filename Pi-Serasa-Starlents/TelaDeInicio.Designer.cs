@@ -30,6 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaDeInicio));
             wilBitGradientPanel1 = new WiLBiT.WiLBiTGradientPanel();
+            lblTalento03 = new Button();
+            lblTalento02 = new Button();
+            lblTalento01 = new Button();
             btnCurtida = new PictureBox();
             btnDescurtida = new PictureBox();
             label2 = new Label();
@@ -41,9 +44,6 @@
             pictureBox4 = new PictureBox();
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
-            lblTalento01 = new Button();
-            lblTalento02 = new Button();
-            lblTalento03 = new Button();
             wilBitGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btnCurtida).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btnDescurtida).BeginInit();
@@ -79,6 +79,39 @@
             wilBitGradientPanel1.Size = new Size(839, 460);
             wilBitGradientPanel1.TabIndex = 0;
             // 
+            // lblTalento03
+            // 
+            lblTalento03.BackColor = Color.FromArgb(95, 13, 108);
+            lblTalento03.FlatStyle = FlatStyle.Popup;
+            lblTalento03.Location = new Point(607, 262);
+            lblTalento03.Name = "lblTalento03";
+            lblTalento03.Size = new Size(184, 38);
+            lblTalento03.TabIndex = 17;
+            lblTalento03.Text = "button3";
+            lblTalento03.UseVisualStyleBackColor = false;
+            // 
+            // lblTalento02
+            // 
+            lblTalento02.BackColor = Color.FromArgb(95, 13, 108);
+            lblTalento02.FlatStyle = FlatStyle.Popup;
+            lblTalento02.Location = new Point(607, 218);
+            lblTalento02.Name = "lblTalento02";
+            lblTalento02.Size = new Size(184, 38);
+            lblTalento02.TabIndex = 16;
+            lblTalento02.Text = "button2";
+            lblTalento02.UseVisualStyleBackColor = false;
+            // 
+            // lblTalento01
+            // 
+            lblTalento01.BackColor = Color.FromArgb(95, 13, 108);
+            lblTalento01.FlatStyle = FlatStyle.Popup;
+            lblTalento01.Location = new Point(607, 174);
+            lblTalento01.Name = "lblTalento01";
+            lblTalento01.Size = new Size(184, 38);
+            lblTalento01.TabIndex = 15;
+            lblTalento01.Text = "button1";
+            lblTalento01.UseVisualStyleBackColor = false;
+            // 
             // btnCurtida
             // 
             btnCurtida.BackColor = Color.Transparent;
@@ -87,7 +120,7 @@
             btnCurtida.Location = new Point(463, 311);
             btnCurtida.Name = "btnCurtida";
             btnCurtida.Size = new Size(64, 64);
-            btnCurtida.SizeMode = PictureBoxSizeMode.CenterImage;
+            btnCurtida.SizeMode = PictureBoxSizeMode.StretchImage;
             btnCurtida.TabIndex = 14;
             btnCurtida.TabStop = false;
             btnCurtida.Click += btnCurtida_Click;
@@ -100,7 +133,7 @@
             btnDescurtida.Location = new Point(337, 311);
             btnDescurtida.Name = "btnDescurtida";
             btnDescurtida.Size = new Size(64, 64);
-            btnDescurtida.SizeMode = PictureBoxSizeMode.CenterImage;
+            btnDescurtida.SizeMode = PictureBoxSizeMode.StretchImage;
             btnDescurtida.TabIndex = 13;
             btnDescurtida.TabStop = false;
             btnDescurtida.Click += btnDescurtida_Click;
@@ -111,7 +144,7 @@
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Arial", 24F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.FromArgb(74, 5, 112);
-            label2.Location = new Point(607, 135);
+            label2.Location = new Point(630, 135);
             label2.Name = "label2";
             label2.Size = new Size(131, 36);
             label2.TabIndex = 9;
@@ -176,7 +209,7 @@
             pictureBox4.Location = new Point(555, 4);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(50, 50);
-            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox4.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox4.TabIndex = 2;
             pictureBox4.TabStop = false;
             pictureBox4.Click += pictureBox4_Click;
@@ -187,7 +220,7 @@
             pictureBox1.Location = new Point(414, 4);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(50, 50);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
@@ -198,43 +231,10 @@
             pictureBox2.Location = new Point(258, 4);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(50, 50);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
             pictureBox2.Click += pictureBox2_Click;
-            // 
-            // lblTalento01
-            // 
-            lblTalento01.BackColor = Color.Purple;
-            lblTalento01.FlatStyle = FlatStyle.Popup;
-            lblTalento01.Location = new Point(607, 174);
-            lblTalento01.Name = "lblTalento01";
-            lblTalento01.Size = new Size(184, 38);
-            lblTalento01.TabIndex = 15;
-            lblTalento01.Text = "button1";
-            lblTalento01.UseVisualStyleBackColor = false;
-            // 
-            // lblTalento02
-            // 
-            lblTalento02.BackColor = Color.Purple;
-            lblTalento02.FlatStyle = FlatStyle.Popup;
-            lblTalento02.Location = new Point(607, 218);
-            lblTalento02.Name = "lblTalento02";
-            lblTalento02.Size = new Size(184, 38);
-            lblTalento02.TabIndex = 16;
-            lblTalento02.Text = "button2";
-            lblTalento02.UseVisualStyleBackColor = false;
-            // 
-            // lblTalento03
-            // 
-            lblTalento03.BackColor = Color.Purple;
-            lblTalento03.FlatStyle = FlatStyle.Popup;
-            lblTalento03.Location = new Point(607, 262);
-            lblTalento03.Name = "lblTalento03";
-            lblTalento03.Size = new Size(184, 38);
-            lblTalento03.TabIndex = 17;
-            lblTalento03.Text = "button3";
-            lblTalento03.UseVisualStyleBackColor = false;
             // 
             // TelaDeInicio
             // 
