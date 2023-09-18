@@ -118,5 +118,10 @@ namespace Pi_Serasa_Starlents
             Form1.panel1.Controls.Add(telaDeInicio);
             telaDeInicio.Show();
         }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("explorer.exe", "https://z0l410j1jxi3uj0d.umso.co");
+        }
     }
 }

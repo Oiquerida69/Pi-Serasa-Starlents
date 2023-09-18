@@ -24,6 +24,8 @@ namespace Pi_Serasa_Starlents
 
         private void Form1_Load(object sender, EventArgs e)
         {
+
+
             Login login = new Login();
             login.Show();
 
