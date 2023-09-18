@@ -17,6 +17,16 @@ namespace Pi_Serasa_Starlents
 {
     public partial class Cadastro : Form
     {
+
+        public void rendizatela()
+        {
+            int painelprincipalaltura = ClientSize.Height;
+            int painelprincipallargura = ClientSize.Width;
+
+            WindowState = FormWindowState.Maximized;
+            GradientPanelCadastro.Location = new Point(0, 0);
+
+        }
         public string caminho1 = "https://i.imgur.com/Uqamx5Q.png";
         public string caminho2 = "https://i.imgur.com/MJeq7KG.png";
         public string caminho3 = "https://i.imgur.com/hGZfrfT.png";
@@ -50,6 +60,7 @@ namespace Pi_Serasa_Starlents
 
         private void Cadastro_Load(object sender, EventArgs e)
         {
+            rendizatela();
             GradientPanelCadastro.Size = new Size(ClientSize.Width, ClientSize.Height);
             List<Interesses> All = i.buscaTodos();
             foreach (Interesses i in All)
