@@ -88,7 +88,7 @@
             this.wilBitGradientPanel1.ForeColor = System.Drawing.Color.White;
             this.wilBitGradientPanel1.Location = new System.Drawing.Point(-5, -6);
             this.wilBitGradientPanel1.Name = "wilBitGradientPanel1";
-            this.wilBitGradientPanel1.Size = new System.Drawing.Size(1082, 626);
+            this.wilBitGradientPanel1.Size = new System.Drawing.Size(1056, 626);
             this.wilBitGradientPanel1.TabIndex = 0;
             this.wilBitGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.wilBitGradientPanel1_Paint_1);
             // 
@@ -295,7 +295,7 @@
             this.panelCima.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelCima.Location = new System.Drawing.Point(0, 0);
             this.panelCima.Name = "panelCima";
-            this.panelCima.Size = new System.Drawing.Size(1082, 63);
+            this.panelCima.Size = new System.Drawing.Size(1056, 63);
             this.panelCima.TabIndex = 0;
             // 
             // panelIcones
@@ -369,6 +369,7 @@
             this.Controls.Add(this.wilBitGradientPanel1);
             this.Name = "Notificacao";
             this.Text = "Notificacao";
+            this.Load += new System.EventHandler(this.Notificacao_Load_1);
             this.wilBitGradientPanel1.ResumeLayout(false);
             this.wilBitGradientPanel1.PerformLayout();
             this.wilBitPanel1.ResumeLayout(false);
