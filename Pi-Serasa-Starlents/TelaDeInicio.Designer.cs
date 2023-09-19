@@ -1,4 +1,4 @@
-﻿namespace Pi_Serasa_Starlents
+namespace Pi_Serasa_Starlents
 {
     partial class TelaDeInicio
     {
@@ -29,61 +29,61 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaDeInicio));
-            wilBitGradientPanel1 = new WiLBiT.WiLBiTGradientPanel();
-            btnCurtida = new PictureBox();
-            btnDescurtida = new PictureBox();
-            wilBitPanel3 = new WiLBiT.WiLBiTPanel();
-            lblTalento03 = new Label();
-            wilBitPanel2 = new WiLBiT.WiLBiTPanel();
-            lblTalento02 = new Label();
-            wilBitPanel1 = new WiLBiT.WiLBiTPanel();
-            lblTalento01 = new Label();
-            label2 = new Label();
-            panel6 = new Panel();
-            lblDescricao = new Label();
-            lblNomeUsuario = new Label();
-            picFotoUsuario = new PictureBox();
-            panel1 = new Panel();
-            pictureBox4 = new PictureBox();
-            pictureBox1 = new PictureBox();
-            pictureBox2 = new PictureBox();
-            wilBitGradientPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)btnCurtida).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)btnDescurtida).BeginInit();
-            wilBitPanel3.SuspendLayout();
-            wilBitPanel2.SuspendLayout();
-            wilBitPanel1.SuspendLayout();
-            panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)picFotoUsuario).BeginInit();
-            panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            SuspendLayout();
+            this.wilBitGradientPanel1 = new WiLBiT.WiLBiTGradientPanel();
+            this.btnCurtida = new System.Windows.Forms.PictureBox();
+            this.btnDescurtida = new System.Windows.Forms.PictureBox();
+            this.wilBitPanel3 = new WiLBiT.WiLBiTPanel();
+            this.lblTalento03 = new System.Windows.Forms.Label();
+            this.wilBitPanel2 = new WiLBiT.WiLBiTPanel();
+            this.lblTalento02 = new System.Windows.Forms.Label();
+            this.wilBitPanel1 = new WiLBiT.WiLBiTPanel();
+            this.lblTalento01 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.lblDescricao = new System.Windows.Forms.Label();
+            this.lblNomeUsuario = new System.Windows.Forms.Label();
+            this.picFotoUsuario = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.wilBitGradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCurtida)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnDescurtida)).BeginInit();
+            this.wilBitPanel3.SuspendLayout();
+            this.wilBitPanel2.SuspendLayout();
+            this.wilBitPanel1.SuspendLayout();
+            this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picFotoUsuario)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.SuspendLayout();
             // 
             // wilBitGradientPanel1
             // 
-            wilBitGradientPanel1.AutoSize = true;
-            wilBitGradientPanel1.BackColor = Color.FromArgb(129, 1, 214);
-            wilBitGradientPanel1.BackColor2 = Color.FromArgb(219, 191, 223);
-            wilBitGradientPanel1.BorderColor = Color.PaleVioletRed;
-            wilBitGradientPanel1.BorderRadius = 6;
-            wilBitGradientPanel1.BorderSize = 0;
-            wilBitGradientPanel1.Controls.Add(btnCurtida);
-            wilBitGradientPanel1.Controls.Add(btnDescurtida);
-            wilBitGradientPanel1.Controls.Add(wilBitPanel3);
-            wilBitGradientPanel1.Controls.Add(wilBitPanel2);
-            wilBitGradientPanel1.Controls.Add(wilBitPanel1);
-            wilBitGradientPanel1.Controls.Add(label2);
-            wilBitGradientPanel1.Controls.Add(panel6);
-            wilBitGradientPanel1.Controls.Add(lblNomeUsuario);
-            wilBitGradientPanel1.Controls.Add(picFotoUsuario);
-            wilBitGradientPanel1.Controls.Add(panel1);
-            wilBitGradientPanel1.ForeColor = Color.White;
-            wilBitGradientPanel1.Location = new Point(-8, -4);
-            wilBitGradientPanel1.Name = "wilBitGradientPanel1";
-            wilBitGradientPanel1.Size = new Size(836, 460);
-            wilBitGradientPanel1.TabIndex = 0;
+            this.wilBitGradientPanel1.AutoSize = true;
+            this.wilBitGradientPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(1)))), ((int)(((byte)(214)))));
+            this.wilBitGradientPanel1.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(191)))), ((int)(((byte)(223)))));
+            this.wilBitGradientPanel1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.wilBitGradientPanel1.BorderRadius = 6;
+            this.wilBitGradientPanel1.BorderSize = 0;
+            this.wilBitGradientPanel1.Controls.Add(this.btnCurtida);
+            this.wilBitGradientPanel1.Controls.Add(this.btnDescurtida);
+            this.wilBitGradientPanel1.Controls.Add(this.wilBitPanel3);
+            this.wilBitGradientPanel1.Controls.Add(this.wilBitPanel2);
+            this.wilBitGradientPanel1.Controls.Add(this.wilBitPanel1);
+            this.wilBitGradientPanel1.Controls.Add(this.label2);
+            this.wilBitGradientPanel1.Controls.Add(this.panel6);
+            this.wilBitGradientPanel1.Controls.Add(this.lblNomeUsuario);
+            this.wilBitGradientPanel1.Controls.Add(this.picFotoUsuario);
+            this.wilBitGradientPanel1.Controls.Add(this.panel1);
+            this.wilBitGradientPanel1.ForeColor = System.Drawing.Color.White;
+            this.wilBitGradientPanel1.Location = new System.Drawing.Point(-8, -4);
+            this.wilBitGradientPanel1.Name = "wilBitGradientPanel1";
+            this.wilBitGradientPanel1.Size = new System.Drawing.Size(836, 460);
+            this.wilBitGradientPanel1.TabIndex = 0;
             // 
             // btnCurtida
             // 
