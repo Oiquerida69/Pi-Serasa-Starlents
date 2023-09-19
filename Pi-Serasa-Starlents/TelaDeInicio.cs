@@ -56,27 +56,27 @@ namespace Pi_Serasa_Starlents
         {
             Perfil perfil = new Perfil();
             perfil.Show();
-            Form1.wilBitGradientPanel3.Controls.Clear();
+            Form1.panel1.Controls.Clear();
             perfil.TopLevel = false;
-            Form1.wilBitGradientPanel3.Controls.Add(perfil);
+            Form1.panel1.Controls.Add(perfil);
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             TelaDeMensagens tela = new TelaDeMensagens();
-            Form1.wilBitGradientPanel3.Controls.Clear();
+            Form1.panel1.Controls.Clear();
             tela.Show();
             tela.TopLevel = false;
-            Form1.wilBitGradientPanel3.Controls.Add(tela);
+            Form1.panel1.Controls.Add(tela);
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             Notificacao not = new Notificacao();
-            Form1.wilBitGradientPanel3.Controls.Clear();
+            Form1.panel1.Controls.Clear();
             not.Show();
             not.TopLevel = false;
-            Form1.wilBitGradientPanel3.Controls.Add(not);
+            Form1.panel1.Controls.Add(not);
         }
 
         private void TelaDeInicio_Load(object sender, EventArgs e)

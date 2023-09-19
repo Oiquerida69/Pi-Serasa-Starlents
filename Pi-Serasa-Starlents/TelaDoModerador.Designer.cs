@@ -28,444 +28,604 @@
         /// </summary>
         private void InitializeComponent()
         {
-            panel1 = new Panel();
-            label1 = new Label();
-            panelListaDenuncias = new Panel();
-            panelPerfilDenunciado = new WiLBiT.WiLBiTPanel();
-            pictureBox1 = new PictureBox();
-            lblNomeMiniatura = new Label();
-            panel3 = new Panel();
-            wilBitPanel3 = new WiLBiT.WiLBiTPanel();
-            linkLabel2 = new LinkLabel();
-            wilBitPanel2 = new WiLBiT.WiLBiTPanel();
-            linkLabel1 = new LinkLabel();
-            picFotoUsuario = new PictureBox();
-            lblUsuario = new Label();
-            label3 = new Label();
-            wilBitPanel10 = new WiLBiT.WiLBiTPanel();
-            lblDetalhesDenuncia = new Label();
-            label4 = new Label();
-            btnSuspendeDenuncia = new WiLBiT.WiLBiTButton();
-            label5 = new Label();
-            btnBanirUsuario = new WiLBiT.WiLBiTButton();
-            txtJustificativaBanimento = new WiLBiT.WiLBiTTextBox();
-            label2 = new Label();
-            label7 = new Label();
-            txtBiografiaMix = new TextBox();
-            txtBiografiaUsuario = new TextBox();
-            txtDetalhesDenuncia = new TextBox();
-            lbl_idUsuario = new Label();
-            panel1.SuspendLayout();
-            panelListaDenuncias.SuspendLayout();
-            panelPerfilDenunciado.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            panel3.SuspendLayout();
-            wilBitPanel3.SuspendLayout();
-            wilBitPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)picFotoUsuario).BeginInit();
-            wilBitPanel10.SuspendLayout();
-            SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaDoModerador));
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panelListaDenuncias = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.panel01 = new System.Windows.Forms.Panel();
+            this.pic01 = new System.Windows.Forms.PictureBox();
+            this.lblNome01 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.wilBitPanel3 = new WiLBiT.WiLBiTPanel();
+            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.wilBitPanel2 = new WiLBiT.WiLBiTPanel();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.picFotoUsuario = new System.Windows.Forms.PictureBox();
+            this.lblUsuario = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.wilBitPanel10 = new WiLBiT.WiLBiTPanel();
+            this.lblDetalhesDenuncia = new System.Windows.Forms.Label();
+            this.btnSuspendeDenuncia = new WiLBiT.WiLBiTButton();
+            this.label5 = new System.Windows.Forms.Label();
+            this.btnBanirUsuario = new WiLBiT.WiLBiTButton();
+            this.txtJustificativaBanimento = new WiLBiT.WiLBiTTextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtBiografiaMix = new System.Windows.Forms.TextBox();
+            this.txtBiografiaUsuario = new System.Windows.Forms.TextBox();
+            this.txtDetalhesDenuncia = new System.Windows.Forms.TextBox();
+            this.panel1.SuspendLayout();
+            this.panelListaDenuncias.SuspendLayout();
+            this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel01.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic01)).BeginInit();
+            this.panel3.SuspendLayout();
+            this.wilBitPanel3.SuspendLayout();
+            this.wilBitPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picFotoUsuario)).BeginInit();
+            this.wilBitPanel10.SuspendLayout();
+            this.SuspendLayout();
             // 
             // panel1
             // 
-            panel1.BackColor = Color.FromArgb(101, 80, 105);
-            panel1.Controls.Add(label1);
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(210, 51);
-            panel1.TabIndex = 0;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(80)))), ((int)(((byte)(105)))));
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(210, 51);
+            this.panel1.TabIndex = 0;
             // 
             // label1
             // 
-            label1.Anchor = AnchorStyles.None;
-            label1.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.ForeColor = Color.FromArgb(231, 189, 255);
-            label1.Location = new Point(35, 13);
-            label1.Name = "label1";
-            label1.Size = new Size(140, 24);
-            label1.TabIndex = 2;
-            label1.Text = "DENÚNCIAS";
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(189)))), ((int)(((byte)(255)))));
+            this.label1.Location = new System.Drawing.Point(35, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(140, 24);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "DENÚNCIAS";
             // 
             // panelListaDenuncias
             // 
-            panelListaDenuncias.AllowDrop = true;
-            panelListaDenuncias.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            panelListaDenuncias.AutoScroll = true;
-            panelListaDenuncias.BackColor = Color.FromArgb(163, 142, 167);
-            panelListaDenuncias.Controls.Add(panelPerfilDenunciado);
-            panelListaDenuncias.Location = new Point(0, 51);
-            panelListaDenuncias.Name = "panelListaDenuncias";
-            panelListaDenuncias.Size = new Size(210, 483);
-            panelListaDenuncias.TabIndex = 1;
+            this.panelListaDenuncias.AllowDrop = true;
+            this.panelListaDenuncias.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.panelListaDenuncias.AutoScroll = true;
+            this.panelListaDenuncias.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(142)))), ((int)(((byte)(167)))));
+            this.panelListaDenuncias.Controls.Add(this.panel7);
+            this.panelListaDenuncias.Controls.Add(this.panel4);
+            this.panelListaDenuncias.Controls.Add(this.panel5);
+            this.panelListaDenuncias.Controls.Add(this.panel2);
+            this.panelListaDenuncias.Controls.Add(this.panel01);
+            this.panelListaDenuncias.Location = new System.Drawing.Point(0, 51);
+            this.panelListaDenuncias.Name = "panelListaDenuncias";
+            this.panelListaDenuncias.Size = new System.Drawing.Size(210, 483);
+            this.panelListaDenuncias.TabIndex = 1;
+            this.panelListaDenuncias.Paint += new System.Windows.Forms.PaintEventHandler(this.panelListaDenuncias_Paint);
             // 
-            // panelPerfilDenunciado
+            // panel7
             // 
-            panelPerfilDenunciado.Anchor = AnchorStyles.None;
-            panelPerfilDenunciado.BackColor = Color.FromArgb(228, 193, 249);
-            panelPerfilDenunciado.BorderColor = Color.PaleVioletRed;
-            panelPerfilDenunciado.BorderRadius = 6;
-            panelPerfilDenunciado.BorderSize = 0;
-            panelPerfilDenunciado.Controls.Add(pictureBox1);
-            panelPerfilDenunciado.Controls.Add(lblNomeMiniatura);
-            panelPerfilDenunciado.Cursor = Cursors.Hand;
-            panelPerfilDenunciado.ForeColor = Color.White;
-            panelPerfilDenunciado.Location = new Point(12, 6);
-            panelPerfilDenunciado.Name = "panelPerfilDenunciado";
-            panelPerfilDenunciado.Size = new Size(180, 50);
-            panelPerfilDenunciado.TabIndex = 6;
-            panelPerfilDenunciado.Paint += panelPerfilDenunciado_Paint;
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(193)))), ((int)(((byte)(249)))));
+            this.panel7.Controls.Add(this.pictureBox5);
+            this.panel7.Controls.Add(this.label11);
+            this.panel7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panel7.Location = new System.Drawing.Point(12, 214);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(173, 46);
+            this.panel7.TabIndex = 26;
+            this.panel7.Click += new System.EventHandler(this.panel7_Click);
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(193)))), ((int)(((byte)(249)))));
+            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(12, 7);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 21;
+            this.pictureBox5.TabStop = false;
+            // 
+            // label11
+            // 
+            this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(11)))), ((int)(((byte)(66)))));
+            this.label11.Location = new System.Drawing.Point(48, 13);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(70, 18);
+            this.label11.TabIndex = 19;
+            this.label11.Text = "Julia";
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(193)))), ((int)(((byte)(249)))));
+            this.panel4.Controls.Add(this.pictureBox2);
+            this.panel4.Controls.Add(this.label8);
+            this.panel4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panel4.Location = new System.Drawing.Point(12, 162);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(173, 46);
+            this.panel4.TabIndex = 25;
+            this.panel4.Click += new System.EventHandler(this.panel4_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(193)))), ((int)(((byte)(249)))));
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox2.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.ErrorImage")));
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(12, 7);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 21;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label8
+            // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(11)))), ((int)(((byte)(66)))));
+            this.label8.Location = new System.Drawing.Point(48, 13);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(70, 18);
+            this.label8.TabIndex = 19;
+            this.label8.Text = "Bianca";
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(193)))), ((int)(((byte)(249)))));
+            this.panel5.Controls.Add(this.pictureBox3);
+            this.panel5.Controls.Add(this.label9);
+            this.panel5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panel5.Location = new System.Drawing.Point(12, 110);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(173, 46);
+            this.panel5.TabIndex = 24;
+            this.panel5.Click += new System.EventHandler(this.panel5_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(193)))), ((int)(((byte)(249)))));
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox3.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.ErrorImage")));
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(12, 7);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 21;
+            this.pictureBox3.TabStop = false;
+            // 
+            // label9
+            // 
+            this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(11)))), ((int)(((byte)(66)))));
+            this.label9.Location = new System.Drawing.Point(48, 13);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(80, 18);
+            this.label9.TabIndex = 19;
+            this.label9.Text = "Conradito";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(193)))), ((int)(((byte)(249)))));
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panel2.Location = new System.Drawing.Point(12, 58);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(173, 46);
+            this.panel2.TabIndex = 23;
+            this.panel2.Click += new System.EventHandler(this.panel2_Click);
             // 
             // pictureBox1
             // 
-            pictureBox1.Anchor = AnchorStyles.None;
-            pictureBox1.BackColor = Color.FromArgb(228, 193, 249);
-            pictureBox1.BackgroundImageLayout = ImageLayout.None;
-            pictureBox1.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox1.Location = new Point(12, 10);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(35, 35);
-            pictureBox1.TabIndex = 21;
-            pictureBox1.TabStop = false;
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(193)))), ((int)(((byte)(249)))));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.ErrorImage")));
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 7);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 21;
+            this.pictureBox1.TabStop = false;
             // 
-            // lblNomeMiniatura
+            // label6
             // 
-            lblNomeMiniatura.Anchor = AnchorStyles.None;
-            lblNomeMiniatura.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblNomeMiniatura.ForeColor = Color.FromArgb(52, 11, 66);
-            lblNomeMiniatura.Location = new Point(55, 17);
-            lblNomeMiniatura.Name = "lblNomeMiniatura";
-            lblNomeMiniatura.Size = new Size(70, 18);
-            lblNomeMiniatura.TabIndex = 19;
-            lblNomeMiniatura.Text = "Usuário";
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(11)))), ((int)(((byte)(66)))));
+            this.label6.Location = new System.Drawing.Point(48, 13);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(80, 18);
+            this.label6.TabIndex = 19;
+            this.label6.Text = "Junior";
+            // 
+            // panel01
+            // 
+            this.panel01.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(193)))), ((int)(((byte)(249)))));
+            this.panel01.Controls.Add(this.pic01);
+            this.panel01.Controls.Add(this.lblNome01);
+            this.panel01.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panel01.Location = new System.Drawing.Point(12, 6);
+            this.panel01.Name = "panel01";
+            this.panel01.Size = new System.Drawing.Size(173, 46);
+            this.panel01.TabIndex = 22;
+            this.panel01.Click += new System.EventHandler(this.panel01_Click);
+            this.panel01.Paint += new System.Windows.Forms.PaintEventHandler(this.panel01_Paint);
+            // 
+            // pic01
+            // 
+            this.pic01.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pic01.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(193)))), ((int)(((byte)(249)))));
+            this.pic01.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pic01.BackgroundImage")));
+            this.pic01.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pic01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pic01.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pic01.ErrorImage")));
+            this.pic01.Image = ((System.Drawing.Image)(resources.GetObject("pic01.Image")));
+            this.pic01.ImageLocation = "";
+            this.pic01.InitialImage = ((System.Drawing.Image)(resources.GetObject("pic01.InitialImage")));
+            this.pic01.Location = new System.Drawing.Point(12, 7);
+            this.pic01.Name = "pic01";
+            this.pic01.Size = new System.Drawing.Size(30, 30);
+            this.pic01.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pic01.TabIndex = 21;
+            this.pic01.TabStop = false;
+            // 
+            // lblNome01
+            // 
+            this.lblNome01.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblNome01.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblNome01.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(11)))), ((int)(((byte)(66)))));
+            this.lblNome01.Location = new System.Drawing.Point(48, 13);
+            this.lblNome01.Name = "lblNome01";
+            this.lblNome01.Size = new System.Drawing.Size(70, 18);
+            this.lblNome01.TabIndex = 19;
+            this.lblNome01.Text = "Nicolas";
             // 
             // panel3
             // 
-            panel3.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            panel3.AutoSize = true;
-            panel3.BackColor = Color.FromArgb(162, 136, 167);
-            panel3.Controls.Add(wilBitPanel3);
-            panel3.Controls.Add(wilBitPanel2);
-            panel3.Location = new Point(208, 0);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(596, 51);
-            panel3.TabIndex = 1;
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel3.AutoSize = true;
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(136)))), ((int)(((byte)(167)))));
+            this.panel3.Controls.Add(this.wilBitPanel3);
+            this.panel3.Controls.Add(this.wilBitPanel2);
+            this.panel3.Location = new System.Drawing.Point(208, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(596, 51);
+            this.panel3.TabIndex = 1;
             // 
             // wilBitPanel3
             // 
-            wilBitPanel3.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            wilBitPanel3.BackColor = Color.FromArgb(216, 196, 215);
-            wilBitPanel3.BorderColor = Color.PaleVioletRed;
-            wilBitPanel3.BorderRadius = 6;
-            wilBitPanel3.BorderSize = 0;
-            wilBitPanel3.Controls.Add(linkLabel2);
-            wilBitPanel3.ForeColor = Color.White;
-            wilBitPanel3.Location = new Point(433, 3);
-            wilBitPanel3.Name = "wilBitPanel3";
-            wilBitPanel3.Size = new Size(150, 40);
-            wilBitPanel3.TabIndex = 25;
+            this.wilBitPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.wilBitPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(196)))), ((int)(((byte)(215)))));
+            this.wilBitPanel3.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.wilBitPanel3.BorderRadius = 6;
+            this.wilBitPanel3.BorderSize = 0;
+            this.wilBitPanel3.Controls.Add(this.linkLabel2);
+            this.wilBitPanel3.ForeColor = System.Drawing.Color.White;
+            this.wilBitPanel3.Location = new System.Drawing.Point(433, 3);
+            this.wilBitPanel3.Name = "wilBitPanel3";
+            this.wilBitPanel3.Size = new System.Drawing.Size(150, 40);
+            this.wilBitPanel3.TabIndex = 25;
             // 
             // linkLabel2
             // 
-            linkLabel2.ActiveLinkColor = Color.FromArgb(118, 1, 224);
-            linkLabel2.Anchor = AnchorStyles.None;
-            linkLabel2.BackColor = Color.FromArgb(216, 196, 215);
-            linkLabel2.Cursor = Cursors.Hand;
-            linkLabel2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            linkLabel2.LinkColor = Color.FromArgb(52, 11, 66);
-            linkLabel2.Location = new Point(16, 11);
-            linkLabel2.Name = "linkLabel2";
-            linkLabel2.Size = new Size(131, 28);
-            linkLabel2.TabIndex = 0;
-            linkLabel2.TabStop = true;
-            linkLabel2.Text = "Enviar relatório";
-            linkLabel2.LinkClicked += linkLabel2_LinkClicked;
+            this.linkLabel2.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(1)))), ((int)(((byte)(224)))));
+            this.linkLabel2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.linkLabel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(196)))), ((int)(((byte)(215)))));
+            this.linkLabel2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.linkLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.linkLabel2.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(11)))), ((int)(((byte)(66)))));
+            this.linkLabel2.Location = new System.Drawing.Point(16, 11);
+            this.linkLabel2.Name = "linkLabel2";
+            this.linkLabel2.Size = new System.Drawing.Size(131, 28);
+            this.linkLabel2.TabIndex = 0;
+            this.linkLabel2.TabStop = true;
+            this.linkLabel2.Text = "Enviar relatório";
             // 
             // wilBitPanel2
             // 
-            wilBitPanel2.BackColor = Color.FromArgb(216, 196, 215);
-            wilBitPanel2.BorderColor = Color.PaleVioletRed;
-            wilBitPanel2.BorderRadius = 6;
-            wilBitPanel2.BorderSize = 0;
-            wilBitPanel2.Controls.Add(linkLabel1);
-            wilBitPanel2.ForeColor = Color.White;
-            wilBitPanel2.Location = new Point(13, 3);
-            wilBitPanel2.Name = "wilBitPanel2";
-            wilBitPanel2.Size = new Size(150, 40);
-            wilBitPanel2.TabIndex = 24;
+            this.wilBitPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(196)))), ((int)(((byte)(215)))));
+            this.wilBitPanel2.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.wilBitPanel2.BorderRadius = 6;
+            this.wilBitPanel2.BorderSize = 0;
+            this.wilBitPanel2.Controls.Add(this.linkLabel1);
+            this.wilBitPanel2.ForeColor = System.Drawing.Color.White;
+            this.wilBitPanel2.Location = new System.Drawing.Point(13, 3);
+            this.wilBitPanel2.Name = "wilBitPanel2";
+            this.wilBitPanel2.Size = new System.Drawing.Size(150, 40);
+            this.wilBitPanel2.TabIndex = 24;
             // 
             // linkLabel1
             // 
-            linkLabel1.ActiveLinkColor = Color.FromArgb(118, 1, 224);
-            linkLabel1.Anchor = AnchorStyles.None;
-            linkLabel1.BackColor = Color.FromArgb(216, 196, 215);
-            linkLabel1.Cursor = Cursors.Hand;
-            linkLabel1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            linkLabel1.LinkColor = Color.FromArgb(52, 11, 66);
-            linkLabel1.Location = new Point(14, 11);
-            linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new Size(133, 28);
-            linkLabel1.TabIndex = 0;
-            linkLabel1.TabStop = true;
-            linkLabel1.Text = "Acessar código";
-            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
+            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(1)))), ((int)(((byte)(224)))));
+            this.linkLabel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.linkLabel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(196)))), ((int)(((byte)(215)))));
+            this.linkLabel1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(11)))), ((int)(((byte)(66)))));
+            this.linkLabel1.Location = new System.Drawing.Point(14, 11);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(133, 28);
+            this.linkLabel1.TabIndex = 0;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Acessar código";
             // 
             // picFotoUsuario
             // 
-            picFotoUsuario.BackColor = Color.FromArgb(228, 193, 249);
-            picFotoUsuario.BackgroundImageLayout = ImageLayout.None;
-            picFotoUsuario.BorderStyle = BorderStyle.FixedSingle;
-            picFotoUsuario.Location = new Point(224, 64);
-            picFotoUsuario.Name = "picFotoUsuario";
-            picFotoUsuario.Size = new Size(193, 178);
-            picFotoUsuario.TabIndex = 0;
-            picFotoUsuario.TabStop = false;
+            this.picFotoUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(193)))), ((int)(((byte)(249)))));
+            this.picFotoUsuario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.picFotoUsuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picFotoUsuario.Location = new System.Drawing.Point(224, 64);
+            this.picFotoUsuario.Name = "picFotoUsuario";
+            this.picFotoUsuario.Size = new System.Drawing.Size(193, 178);
+            this.picFotoUsuario.TabIndex = 0;
+            this.picFotoUsuario.TabStop = false;
             // 
             // lblUsuario
             // 
-            lblUsuario.Font = new Font("Microsoft Sans Serif", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblUsuario.ForeColor = Color.FromArgb(52, 11, 66);
-            lblUsuario.Location = new Point(265, 245);
-            lblUsuario.Name = "lblUsuario";
-            lblUsuario.Size = new Size(117, 32);
-            lblUsuario.TabIndex = 12;
-            lblUsuario.Text = "Usuário";
+            this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(11)))), ((int)(((byte)(66)))));
+            this.lblUsuario.Location = new System.Drawing.Point(265, 245);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(117, 32);
+            this.lblUsuario.TabIndex = 12;
+            this.lblUsuario.Text = "Usuário";
             // 
             // label3
             // 
-            label3.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            label3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.ForeColor = Color.FromArgb(52, 11, 66);
-            label3.Location = new Point(468, 70);
-            label3.Name = "label3";
-            label3.Size = new Size(186, 18);
-            label3.TabIndex = 13;
-            label3.Text = "Detalhes da denúncia:";
-            label3.TextAlign = ContentAlignment.TopCenter;
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(11)))), ((int)(((byte)(66)))));
+            this.label3.Location = new System.Drawing.Point(468, 70);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(186, 18);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "Detalhes da denúncia:";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // wilBitPanel10
             // 
-            wilBitPanel10.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            wilBitPanel10.BackColor = Color.FromArgb(240, 208, 255);
-            wilBitPanel10.BorderColor = Color.PaleVioletRed;
-            wilBitPanel10.BorderRadius = 0;
-            wilBitPanel10.BorderSize = 0;
-            wilBitPanel10.Controls.Add(lblDetalhesDenuncia);
-            wilBitPanel10.ForeColor = Color.White;
-            wilBitPanel10.Location = new Point(468, 88);
-            wilBitPanel10.Name = "wilBitPanel10";
-            wilBitPanel10.Size = new Size(0, 0);
-            wilBitPanel10.TabIndex = 12;
-            wilBitPanel10.Paint += wilBitPanel10_Paint;
+            this.wilBitPanel10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.wilBitPanel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(208)))), ((int)(((byte)(255)))));
+            this.wilBitPanel10.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.wilBitPanel10.BorderRadius = 0;
+            this.wilBitPanel10.BorderSize = 0;
+            this.wilBitPanel10.Controls.Add(this.lblDetalhesDenuncia);
+            this.wilBitPanel10.ForeColor = System.Drawing.Color.White;
+            this.wilBitPanel10.Location = new System.Drawing.Point(468, 88);
+            this.wilBitPanel10.Name = "wilBitPanel10";
+            this.wilBitPanel10.Size = new System.Drawing.Size(0, 0);
+            this.wilBitPanel10.TabIndex = 12;
             // 
             // lblDetalhesDenuncia
             // 
-            lblDetalhesDenuncia.AutoSize = true;
-            lblDetalhesDenuncia.ForeColor = Color.FromArgb(85, 47, 87);
-            lblDetalhesDenuncia.Location = new Point(11, 9);
-            lblDetalhesDenuncia.Name = "lblDetalhesDenuncia";
-            lblDetalhesDenuncia.Size = new Size(120, 15);
-            lblDetalhesDenuncia.TabIndex = 0;
-            lblDetalhesDenuncia.Text = "Detalhes da denúncia";
-            // 
-            // label4
-            // 
-            label4.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            label4.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.ForeColor = Color.FromArgb(52, 11, 66);
-            label4.Location = new Point(481, 224);
-            label4.Name = "label4";
-            label4.Size = new Size(118, 18);
-            label4.TabIndex = 14;
-            label4.Text = "ID do usuário:";
-            label4.TextAlign = ContentAlignment.TopCenter;
+            this.lblDetalhesDenuncia.AutoSize = true;
+            this.lblDetalhesDenuncia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(47)))), ((int)(((byte)(87)))));
+            this.lblDetalhesDenuncia.Location = new System.Drawing.Point(11, 9);
+            this.lblDetalhesDenuncia.Name = "lblDetalhesDenuncia";
+            this.lblDetalhesDenuncia.Size = new System.Drawing.Size(120, 15);
+            this.lblDetalhesDenuncia.TabIndex = 0;
+            this.lblDetalhesDenuncia.Text = "Detalhes da denúncia";
             // 
             // btnSuspendeDenuncia
             // 
-            btnSuspendeDenuncia.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            btnSuspendeDenuncia.BackColor = Color.FromArgb(131, 84, 169);
-            btnSuspendeDenuncia.BorderColor = Color.FromArgb(72, 116, 245);
-            btnSuspendeDenuncia.BorderRadius = 6;
-            btnSuspendeDenuncia.BorderSize = 0;
-            btnSuspendeDenuncia.Cursor = Cursors.Hand;
-            btnSuspendeDenuncia.FlatAppearance.BorderSize = 0;
-            btnSuspendeDenuncia.FlatStyle = FlatStyle.Flat;
-            btnSuspendeDenuncia.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            btnSuspendeDenuncia.ForeColor = Color.White;
-            btnSuspendeDenuncia.Location = new Point(635, 227);
-            btnSuspendeDenuncia.Name = "btnSuspendeDenuncia";
-            btnSuspendeDenuncia.Size = new Size(144, 36);
-            btnSuspendeDenuncia.TabIndex = 0;
-            btnSuspendeDenuncia.Text = "Suspender a denúncia";
-            btnSuspendeDenuncia.UseVisualStyleBackColor = false;
-            btnSuspendeDenuncia.Click += btnSuspendeDenuncia_Click_1;
+            this.btnSuspendeDenuncia.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSuspendeDenuncia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(84)))), ((int)(((byte)(169)))));
+            this.btnSuspendeDenuncia.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(116)))), ((int)(((byte)(245)))));
+            this.btnSuspendeDenuncia.BorderRadius = 6;
+            this.btnSuspendeDenuncia.BorderSize = 0;
+            this.btnSuspendeDenuncia.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSuspendeDenuncia.FlatAppearance.BorderSize = 0;
+            this.btnSuspendeDenuncia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSuspendeDenuncia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnSuspendeDenuncia.ForeColor = System.Drawing.Color.White;
+            this.btnSuspendeDenuncia.Location = new System.Drawing.Point(468, 227);
+            this.btnSuspendeDenuncia.Name = "btnSuspendeDenuncia";
+            this.btnSuspendeDenuncia.Size = new System.Drawing.Size(311, 36);
+            this.btnSuspendeDenuncia.TabIndex = 0;
+            this.btnSuspendeDenuncia.Text = "Suspender a denúncia";
+            this.btnSuspendeDenuncia.UseVisualStyleBackColor = false;
             // 
             // label5
             // 
-            label5.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            label5.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.ForeColor = Color.FromArgb(52, 11, 66);
-            label5.Location = new Point(468, 285);
-            label5.Name = "label5";
-            label5.Size = new Size(282, 24);
-            label5.TabIndex = 17;
-            label5.Text = "Justificativa de banimento:";
-            label5.TextAlign = ContentAlignment.TopCenter;
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(11)))), ((int)(((byte)(66)))));
+            this.label5.Location = new System.Drawing.Point(468, 285);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(282, 24);
+            this.label5.TabIndex = 17;
+            this.label5.Text = "Justificativa de banimento:";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // btnBanirUsuario
             // 
-            btnBanirUsuario.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            btnBanirUsuario.BackColor = Color.FromArgb(95, 40, 123);
-            btnBanirUsuario.BorderColor = Color.FromArgb(72, 116, 245);
-            btnBanirUsuario.BorderRadius = 6;
-            btnBanirUsuario.BorderSize = 0;
-            btnBanirUsuario.Cursor = Cursors.Hand;
-            btnBanirUsuario.FlatAppearance.BorderSize = 0;
-            btnBanirUsuario.FlatStyle = FlatStyle.Flat;
-            btnBanirUsuario.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            btnBanirUsuario.ForeColor = Color.White;
-            btnBanirUsuario.Location = new Point(468, 489);
-            btnBanirUsuario.Name = "btnBanirUsuario";
-            btnBanirUsuario.Size = new Size(311, 26);
-            btnBanirUsuario.TabIndex = 18;
-            btnBanirUsuario.Text = "Banir usuário";
-            btnBanirUsuario.UseVisualStyleBackColor = false;
+            this.btnBanirUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnBanirUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(40)))), ((int)(((byte)(123)))));
+            this.btnBanirUsuario.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(116)))), ((int)(((byte)(245)))));
+            this.btnBanirUsuario.BorderRadius = 6;
+            this.btnBanirUsuario.BorderSize = 0;
+            this.btnBanirUsuario.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBanirUsuario.FlatAppearance.BorderSize = 0;
+            this.btnBanirUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBanirUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnBanirUsuario.ForeColor = System.Drawing.Color.White;
+            this.btnBanirUsuario.Location = new System.Drawing.Point(468, 489);
+            this.btnBanirUsuario.Name = "btnBanirUsuario";
+            this.btnBanirUsuario.Size = new System.Drawing.Size(311, 26);
+            this.btnBanirUsuario.TabIndex = 18;
+            this.btnBanirUsuario.Text = "Banir usuário";
+            this.btnBanirUsuario.UseVisualStyleBackColor = false;
+            this.btnBanirUsuario.Click += new System.EventHandler(this.btnBanirUsuario_Click);
             // 
             // txtJustificativaBanimento
             // 
-            txtJustificativaBanimento.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            txtJustificativaBanimento.BackColor = Color.FromArgb(240, 208, 255);
-            txtJustificativaBanimento.BorderColor = Color.FromArgb(52, 11, 66);
-            txtJustificativaBanimento.BorderFocusColor = Color.Indigo;
-            txtJustificativaBanimento.BorderRadius = 4;
-            txtJustificativaBanimento.BorderSize = 2;
-            txtJustificativaBanimento.Cursor = Cursors.IBeam;
-            txtJustificativaBanimento.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
-            txtJustificativaBanimento.ForeColor = Color.FromArgb(64, 64, 64);
-            txtJustificativaBanimento.Location = new Point(468, 313);
-            txtJustificativaBanimento.Margin = new Padding(4);
-            txtJustificativaBanimento.Multiline = true;
-            txtJustificativaBanimento.Name = "txtJustificativaBanimento";
-            txtJustificativaBanimento.Padding = new Padding(10, 7, 10, 7);
-            txtJustificativaBanimento.PasswordChar = false;
-            txtJustificativaBanimento.PlaceholderColor = Color.DarkGray;
-            txtJustificativaBanimento.PlaceholderText = "";
-            txtJustificativaBanimento.Size = new Size(311, 169);
-            txtJustificativaBanimento.TabIndex = 0;
-            txtJustificativaBanimento.Texts = "";
-            txtJustificativaBanimento.UnderlinedStyle = false;
+            this.txtJustificativaBanimento.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtJustificativaBanimento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(208)))), ((int)(((byte)(255)))));
+            this.txtJustificativaBanimento.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(11)))), ((int)(((byte)(66)))));
+            this.txtJustificativaBanimento.BorderFocusColor = System.Drawing.Color.Indigo;
+            this.txtJustificativaBanimento.BorderRadius = 4;
+            this.txtJustificativaBanimento.BorderSize = 2;
+            this.txtJustificativaBanimento.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtJustificativaBanimento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtJustificativaBanimento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtJustificativaBanimento.Location = new System.Drawing.Point(468, 313);
+            this.txtJustificativaBanimento.Margin = new System.Windows.Forms.Padding(4);
+            this.txtJustificativaBanimento.Multiline = true;
+            this.txtJustificativaBanimento.Name = "txtJustificativaBanimento";
+            this.txtJustificativaBanimento.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtJustificativaBanimento.PasswordChar = false;
+            this.txtJustificativaBanimento.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtJustificativaBanimento.PlaceholderText = "";
+            this.txtJustificativaBanimento.Size = new System.Drawing.Size(311, 169);
+            this.txtJustificativaBanimento.TabIndex = 0;
+            this.txtJustificativaBanimento.Texts = "";
+            this.txtJustificativaBanimento.UnderlinedStyle = false;
             // 
             // label2
             // 
-            label2.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            label2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.ForeColor = Color.FromArgb(52, 11, 66);
-            label2.Location = new Point(224, 403);
-            label2.Name = "label2";
-            label2.Size = new Size(186, 27);
-            label2.TabIndex = 19;
-            label2.Text = "Biografia do usuário";
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(11)))), ((int)(((byte)(66)))));
+            this.label2.Location = new System.Drawing.Point(224, 403);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(186, 27);
+            this.label2.TabIndex = 19;
+            this.label2.Text = "Biografia do usuário";
             // 
             // label7
             // 
-            label7.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            label7.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.ForeColor = Color.FromArgb(52, 11, 66);
-            label7.Location = new Point(231, 281);
-            label7.Name = "label7";
-            label7.Size = new Size(186, 27);
-            label7.TabIndex = 20;
-            label7.Text = "Biografia de mix";
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(11)))), ((int)(((byte)(66)))));
+            this.label7.Location = new System.Drawing.Point(231, 281);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(186, 27);
+            this.label7.TabIndex = 20;
+            this.label7.Text = "Biografia de mix";
             // 
             // txtBiografiaMix
             // 
-            txtBiografiaMix.BackColor = Color.FromArgb(240, 208, 255);
-            txtBiografiaMix.BorderStyle = BorderStyle.None;
-            txtBiografiaMix.ForeColor = Color.FromArgb(52, 11, 66);
-            txtBiografiaMix.Location = new Point(224, 301);
-            txtBiografiaMix.Multiline = true;
-            txtBiografiaMix.Name = "txtBiografiaMix";
-            txtBiografiaMix.ReadOnly = true;
-            txtBiografiaMix.ScrollBars = ScrollBars.Vertical;
-            txtBiografiaMix.Size = new Size(193, 86);
-            txtBiografiaMix.TabIndex = 21;
+            this.txtBiografiaMix.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(208)))), ((int)(((byte)(255)))));
+            this.txtBiografiaMix.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtBiografiaMix.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(11)))), ((int)(((byte)(66)))));
+            this.txtBiografiaMix.Location = new System.Drawing.Point(224, 301);
+            this.txtBiografiaMix.Multiline = true;
+            this.txtBiografiaMix.Name = "txtBiografiaMix";
+            this.txtBiografiaMix.ReadOnly = true;
+            this.txtBiografiaMix.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtBiografiaMix.Size = new System.Drawing.Size(193, 86);
+            this.txtBiografiaMix.TabIndex = 21;
             // 
             // txtBiografiaUsuario
             // 
-            txtBiografiaUsuario.BackColor = Color.FromArgb(240, 208, 255);
-            txtBiografiaUsuario.BorderStyle = BorderStyle.None;
-            txtBiografiaUsuario.ForeColor = Color.FromArgb(52, 11, 66);
-            txtBiografiaUsuario.Location = new Point(224, 429);
-            txtBiografiaUsuario.Multiline = true;
-            txtBiografiaUsuario.Name = "txtBiografiaUsuario";
-            txtBiografiaUsuario.ReadOnly = true;
-            txtBiografiaUsuario.ScrollBars = ScrollBars.Vertical;
-            txtBiografiaUsuario.Size = new Size(193, 86);
-            txtBiografiaUsuario.TabIndex = 22;
+            this.txtBiografiaUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(208)))), ((int)(((byte)(255)))));
+            this.txtBiografiaUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtBiografiaUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(11)))), ((int)(((byte)(66)))));
+            this.txtBiografiaUsuario.Location = new System.Drawing.Point(224, 429);
+            this.txtBiografiaUsuario.Multiline = true;
+            this.txtBiografiaUsuario.Name = "txtBiografiaUsuario";
+            this.txtBiografiaUsuario.ReadOnly = true;
+            this.txtBiografiaUsuario.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtBiografiaUsuario.Size = new System.Drawing.Size(193, 86);
+            this.txtBiografiaUsuario.TabIndex = 22;
             // 
             // txtDetalhesDenuncia
             // 
-            txtDetalhesDenuncia.BackColor = Color.FromArgb(240, 208, 255);
-            txtDetalhesDenuncia.Location = new Point(468, 91);
-            txtDetalhesDenuncia.Multiline = true;
-            txtDetalhesDenuncia.Name = "txtDetalhesDenuncia";
-            txtDetalhesDenuncia.ReadOnly = true;
-            txtDetalhesDenuncia.Size = new Size(311, 130);
-            txtDetalhesDenuncia.TabIndex = 23;
-            // 
-            // lbl_idUsuario
-            // 
-            lbl_idUsuario.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            lbl_idUsuario.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lbl_idUsuario.ForeColor = Color.FromArgb(52, 11, 66);
-            lbl_idUsuario.Location = new Point(481, 245);
-            lbl_idUsuario.Name = "lbl_idUsuario";
-            lbl_idUsuario.Size = new Size(118, 18);
-            lbl_idUsuario.TabIndex = 24;
-            lbl_idUsuario.Text = "00";
-            lbl_idUsuario.TextAlign = ContentAlignment.MiddleCenter;
+            this.txtDetalhesDenuncia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(208)))), ((int)(((byte)(255)))));
+            this.txtDetalhesDenuncia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(17)))), ((int)(((byte)(64)))));
+            this.txtDetalhesDenuncia.Location = new System.Drawing.Point(468, 91);
+            this.txtDetalhesDenuncia.Multiline = true;
+            this.txtDetalhesDenuncia.Name = "txtDetalhesDenuncia";
+            this.txtDetalhesDenuncia.ReadOnly = true;
+            this.txtDetalhesDenuncia.Size = new System.Drawing.Size(311, 130);
+            this.txtDetalhesDenuncia.TabIndex = 23;
             // 
             // TelaDoModerador
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            AutoSize = true;
-            BackColor = Color.FromArgb(213, 192, 220);
-            ClientSize = new Size(803, 531);
-            Controls.Add(lbl_idUsuario);
-            Controls.Add(txtDetalhesDenuncia);
-            Controls.Add(txtBiografiaUsuario);
-            Controls.Add(txtBiografiaMix);
-            Controls.Add(panel1);
-            Controls.Add(panelListaDenuncias);
-            Controls.Add(label7);
-            Controls.Add(label2);
-            Controls.Add(txtJustificativaBanimento);
-            Controls.Add(btnBanirUsuario);
-            Controls.Add(label5);
-            Controls.Add(btnSuspendeDenuncia);
-            Controls.Add(label4);
-            Controls.Add(wilBitPanel10);
-            Controls.Add(label3);
-            Controls.Add(lblUsuario);
-            Controls.Add(picFotoUsuario);
-            Controls.Add(panel3);
-            FormBorderStyle = FormBorderStyle.FixedSingle;
-            MinimumSize = new Size(819, 570);
-            Name = "TelaDoModerador";
-            Text = "TelaDoModerador";
-            Load += TelaDoModerador_Load;
-            panel1.ResumeLayout(false);
-            panelListaDenuncias.ResumeLayout(false);
-            panelPerfilDenunciado.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            panel3.ResumeLayout(false);
-            wilBitPanel3.ResumeLayout(false);
-            wilBitPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)picFotoUsuario).EndInit();
-            wilBitPanel10.ResumeLayout(false);
-            wilBitPanel10.PerformLayout();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(192)))), ((int)(((byte)(220)))));
+            this.ClientSize = new System.Drawing.Size(803, 531);
+            this.Controls.Add(this.txtDetalhesDenuncia);
+            this.Controls.Add(this.txtBiografiaUsuario);
+            this.Controls.Add(this.txtBiografiaMix);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelListaDenuncias);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtJustificativaBanimento);
+            this.Controls.Add(this.btnBanirUsuario);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.btnSuspendeDenuncia);
+            this.Controls.Add(this.wilBitPanel10);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lblUsuario);
+            this.Controls.Add(this.picFotoUsuario);
+            this.Controls.Add(this.panel3);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MinimumSize = new System.Drawing.Size(819, 570);
+            this.Name = "TelaDoModerador";
+            this.Text = "TelaDoModerador";
+            this.Load += new System.EventHandler(this.TelaDoModerador_Load_1);
+            this.panel1.ResumeLayout(false);
+            this.panelListaDenuncias.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel01.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pic01)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.wilBitPanel3.ResumeLayout(false);
+            this.wilBitPanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picFotoUsuario)).EndInit();
+            this.wilBitPanel10.ResumeLayout(false);
+            this.wilBitPanel10.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
@@ -475,14 +635,12 @@
         private Panel panel3;
         private PictureBox picFotoUsuario;
         private Label label1;
-        private WiLBiT.WiLBiTPanel panelPerfilDenunciado;
         private Label lblUsuario;
         private Label label3;
         private WiLBiT.WiLBiTPanel wilBitPanel10;
-        private Label label4;
         private WiLBiT.WiLBiTButton btnSuspendeDenuncia;
         private Label label5;
-        private Label lblNomeMiniatura;
+        private Label lblNome01;
         private WiLBiT.WiLBiTButton btnBanirUsuario;
         private Label lblDetalhesDenuncia;
         private WiLBiT.WiLBiTTextBox txtJustificativaBanimento;
@@ -492,10 +650,22 @@
         private LinkLabel linkLabel2;
         private Label label2;
         private Label label7;
-        private PictureBox pictureBox1;
+        private PictureBox pic01;
         private TextBox txtBiografiaMix;
         private TextBox txtBiografiaUsuario;
         private TextBox txtDetalhesDenuncia;
-        private Label lbl_idUsuario;
+        private Panel panel4;
+        private PictureBox pictureBox2;
+        private Label label8;
+        private Panel panel5;
+        private PictureBox pictureBox3;
+        private Label label9;
+        private Panel panel2;
+        private PictureBox pictureBox1;
+        private Label label6;
+        private Panel panel01;
+        private Panel panel7;
+        private PictureBox pictureBox5;
+        private Label label11;
     }
 }

@@ -114,8 +114,8 @@ namespace Pi_Serasa_Starlents
         {
             TelaDeInicio telaDeInicio= new TelaDeInicio();
             telaDeInicio.TopLevel = false;
-            Form1.wilBitGradientPanel3.Controls.Clear();
-            Form1.wilBitGradientPanel3.Controls.Add(telaDeInicio);
+            Form1.panel1.Controls.Clear();
+            Form1.panel1.Controls.Add(telaDeInicio);
             telaDeInicio.Show();
         }
 

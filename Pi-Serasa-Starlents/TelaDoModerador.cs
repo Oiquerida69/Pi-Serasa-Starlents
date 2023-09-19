@@ -25,46 +25,7 @@ namespace Pi_Serasa_Starlents
         {
 
 
-            Panel painel = new WiLBiT.WiLBiTPanel();
-            painel.Name = "painel";
-            painel.BackColor = Color.FromArgb(228, 193, 249);
-            painel.ForeColor = Color.White;
-            painel.Size = new Size(180, 50);
-            painel.Location = new Point(12, panelListaDenuncias.Height);
-
-            Label label = new Label();
-            label.Text = usuario.nome;
-            label.AutoSize = true;
-            label.Size = new Size(0, 0);
-            label.Location = new Point(painel.Width / 2, painel.Height / 2);
-            label.ForeColor = Color.Purple;
-            label.Font = new Font("Microsoft Sans Serif", 12);
-
-            WiLBiT.WiLBiTRoundedPictureBox picFotoUsuario = new WiLBiT.WiLBiTRoundedPictureBox();
-            picFotoUsuario.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            picFotoUsuario.BorderColor = Color.FromArgb(64, 15, 87);
-            picFotoUsuario.BorderColor2 = Color.FromArgb(64, 15, 87);
-            picFotoUsuario.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            picFotoUsuario.BorderSize = 2;
-            picFotoUsuario.GradientAngle = 50F;
-            picFotoUsuario.Location = new Point(12, 5);
-            picFotoUsuario.Name = "picFotoUsuario";
-            picFotoUsuario.Size = new Size(42, 42);
-            picFotoUsuario.SizeMode = PictureBoxSizeMode.StretchImage;
-            picFotoUsuario.TabIndex = 1;
-            picFotoUsuario.TabStop = false;
-
-
-            panelListaDenuncias.Controls.Add(painel);
-            painel.Controls.Add(label);
-            painel.Controls.Add(picFotoUsuario);
-            if (panelListaDenuncias.Height < 10)
-            {
-                panelListaDenuncias.Height += painel.Height + 10;
-
-            }
-
-
+      
 
         }
         public TelaDoModerador()
@@ -73,30 +34,12 @@ namespace Pi_Serasa_Starlents
 
         }
 
-        public void expandeTela()
-        {
-            if (WindowState == FormWindowState.Maximized)
-            {
-                picFotoUsuario.Height = 500;
-                picFotoUsuario.Width = 500;
-            }
-
-        }
+     
 
         private void TelaDoModerador_Load(object sender, EventArgs e)
         {
 
-            lblNomeMiniatura = new Label();
-            //picFotoMiniatura = new WiLBiT.WiLBiTRoundedPictureBox();
-
-            //picFotoUsuario = picFotoMiniatura;
-            lblUsuario = lblNomeMiniatura;
-
-            //lblBiografiaUsuario = new Label();
-            //lblBiografiaMix = new Label();
-
-            lblDetalhesDenuncia = new Label();
-            //lblidUsuario = new Label();
+           
 
         }
 
@@ -143,14 +86,98 @@ namespace Pi_Serasa_Starlents
         {
             MessageBox.Show("A denúncia foi suspensa.");
             lblUsuario.Text = "Usuario";
-            //lblidUsuario.Text = "000000000";
-            lbl_idUsuario.Text = "01";
             lblDetalhesDenuncia.Text = "Detalhes da denúncia";
             txtBiografiaMix.Text = "Biografia de Mix";
             txtBiografiaUsuario.Text = "Biografia do usuário";
             txtJustificativaBanimento.Texts = "";
+
+            picFotoUsuario.ImageLocation = "https://imgur.com/6A1TpCB";
         }
 
+        private void panelListaDenuncias_Paint(object sender, PaintEventArgs e)
+        {
 
+        }
+
+        private void TelaDoModerador_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel01_Click(object sender, EventArgs e)
+        {
+            lblUsuario.Text = "Nicolas";
+            txtBiografiaMix.Text = "quem leu eh otariokkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk";
+            txtBiografiaUsuario.Text = "oi! sou um cara legal, gosto de jogar lol e ficar em call com meus amigos no discord. :3";
+            txtDetalhesDenuncia.Text = "Olha a bio desse cara moderador, não preciso nem falar nada né...";
+
+            picFotoUsuario.ImageLocation = "https://imgur.com/CwKUseL";
+        }
+
+        private void panel2_Click(object sender, EventArgs e)
+        {
+            lblUsuario.Text = "Junior";
+            txtBiografiaMix.Text = "@JuniorDoces no Instagram, Juju Doces no YouTube, no meu último reels tem a receita" +
+                "perfeita de chokito caseiro, me segue para aprender isso e muito mais!";
+            txtBiografiaUsuario.Text = "Eu vou te ensinar a fazer os melhores doces da região!";
+            txtDetalhesDenuncia.Text = "Olha só, venho aqui em nome da melhor empresa de Chokitos do Brasil," +
+                "para DENUNCIAR esse homem, pois essa receita que ele citou está prejudicando meus negócios, só pode existir um!!!" +
+                " - Com carinho, da melhor empresa de chokitos.";
+
+            picFotoUsuario.ImageLocation = "https://imgur.com/ragZuSZ";
+        }
+
+        private void panel5_Click(object sender, EventArgs e)
+        {
+            lblUsuario.Text = "Conradito";
+            txtBiografiaMix.Text = "A MELHOR LINHA DE PRODUÇÃO DE CHOKITOS!!!! " +
+                "@ConraditoChokito no YouTube, @melhoreschokitosdomundo no Instagram." +
+                "COMPRE NOSSOS PRODUTOS!!!!!!!!!!";
+            txtBiografiaUsuario.Text = "Olá! ^^ Sou uma pessoa muito gentil, e nada competitiva, amo compartilhar minhas" +
+                " receitas e etc... Vamos dar um mix para trocarmos conhecimentos!";
+            txtDetalhesDenuncia.Text = "OLHA SÓ SEU MODERADOR, ESSE CARA TA PREJUDICANDO MEU INSTAGRAM DE RECEITAS" +
+                " SÓ PORQUE EU FIZ UMA RECEITA DE CHOKITO, NAO SABE COMPETIR!!!!!!!!!!!";
+
+            picFotoUsuario.ImageLocation = "https://imgur.com/UAgNct5";
+        }
+
+        private void panel4_Click(object sender, EventArgs e)
+        {
+            lblUsuario.Text = "Bianca";
+            txtBiografiaMix.Text = "Oii! Gosto de desenhar e dançar, @BiaDance é meu Instagram de dança, eu costumo dançar KPOP, vou te ensinar sobre" +
+                " alongamentos, estilos de dança e etc....";
+            txtBiografiaUsuario.Text = "Oiii, eu danço e desenho!!";
+            txtDetalhesDenuncia.Text = "não gosto de kpoper.";
+
+            picFotoUsuario.ImageLocation = "https://imgur.com/Uqamx5Q";
+        }
+
+        private void panel7_Click(object sender, EventArgs e)
+        {
+            lblUsuario.Text = "Julia";
+            txtBiografiaMix.Text = "Me manda uma mensagem no whats para aprender sobre tecnicas de desenho (16)01100011-00100011 ";
+            txtBiografiaUsuario.Text = "olá! eu trabalho com pintura em óleo profissional, e realismo!!!";
+            txtDetalhesDenuncia.Text = "Fez um post com apologias racistas....";
+
+            
+            picFotoUsuario.ImageLocation = "https://imgur.com/Wg9LbVB";
+        }
+
+        private void panel01_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnBanirUsuario_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Usuario banido com sucesso!");
+            lblUsuario.Text = "Usuario";
+            lblDetalhesDenuncia.Text = "Detalhes da denúncia";
+            txtBiografiaMix.Text = "Biografia de Mix";
+            txtBiografiaUsuario.Text = "Biografia do usuário";
+            txtJustificativaBanimento.Texts = "";
+
+            picFotoUsuario.ImageLocation = "https://imgur.com/6A1TpCB";
+        }
     }
 }
