@@ -123,5 +123,10 @@ namespace Pi_Serasa_Starlents
         {
             System.Diagnostics.Process.Start("explorer.exe", "https://z0l410j1jxi3uj0d.umso.co");
         }
+
+        private void wilBitButton1_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("explorer.exe", "https://z0l410j1jxi3uj0d.umso.co");
+        }
     }
 }
