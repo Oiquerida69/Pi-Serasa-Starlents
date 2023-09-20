@@ -28,31 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
-            SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            panel1 = new System.Windows.Forms.Panel();
+            this.SuspendLayout();
             // 
-            // button1
+            // panel1
             // 
-            button1.Location = new Point(177, 102);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 0;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            panel1.AutoSize = true;
+            panel1.BackColor = System.Drawing.Color.Transparent;
+            panel1.Location = new System.Drawing.Point(2, 1);
+            panel1.Name = "panel1";
+            panel1.Size = new System.Drawing.Size(1370, 789);
+            panel1.TabIndex = 0;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(button1);
-            Name = "Form1";
-            Text = "Form1";
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Black;
+            this.ClientSize = new System.Drawing.Size(883, 471);
+            this.Controls.Add(panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "Form1";
+            this.Text = "StarLents";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
 
-        private Button button1;
+        public static Panel panel1;
     }
 }
