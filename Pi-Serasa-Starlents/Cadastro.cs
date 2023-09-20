@@ -202,9 +202,14 @@ namespace Pi_Serasa_Starlents
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
+        }
+
+        private void pictureBox4_Click_1(object sender, EventArgs e)
+        {
+
             Form1.panel1.Controls.Clear();
-            Form1.panel1.Controls.Add(login);
             login.TopLevel = false;
+            Form1.panel1.Controls.Add(login);
             login.Show();
         }
     }
