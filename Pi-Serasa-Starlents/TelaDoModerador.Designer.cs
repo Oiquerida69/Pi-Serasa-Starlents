@@ -357,6 +357,7 @@
             this.linkLabel2.TabIndex = 0;
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "Enviar relatório";
+            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked_1);
             // 
             // wilBitPanel2
             // 
@@ -385,6 +386,7 @@
             this.linkLabel1.TabIndex = 0;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Acessar código";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked_1);
             // 
             // picFotoUsuario
             // 
@@ -523,10 +525,10 @@
             // 
             // label2
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(11)))), ((int)(((byte)(66)))));
-            this.label2.Location = new System.Drawing.Point(224, 403);
+            this.label2.Location = new System.Drawing.Point(224, 409);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(186, 27);
             this.label2.TabIndex = 19;
@@ -534,10 +536,10 @@
             // 
             // label7
             // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(11)))), ((int)(((byte)(66)))));
-            this.label7.Location = new System.Drawing.Point(231, 281);
+            this.label7.Location = new System.Drawing.Point(224, 275);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(186, 27);
             this.label7.TabIndex = 20;
@@ -548,7 +550,7 @@
             this.txtBiografiaMix.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(208)))), ((int)(((byte)(255)))));
             this.txtBiografiaMix.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtBiografiaMix.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(11)))), ((int)(((byte)(66)))));
-            this.txtBiografiaMix.Location = new System.Drawing.Point(224, 301);
+            this.txtBiografiaMix.Location = new System.Drawing.Point(224, 313);
             this.txtBiografiaMix.Multiline = true;
             this.txtBiografiaMix.Name = "txtBiografiaMix";
             this.txtBiografiaMix.ReadOnly = true;
@@ -561,7 +563,7 @@
             this.txtBiografiaUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(208)))), ((int)(((byte)(255)))));
             this.txtBiografiaUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtBiografiaUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(11)))), ((int)(((byte)(66)))));
-            this.txtBiografiaUsuario.Location = new System.Drawing.Point(224, 429);
+            this.txtBiografiaUsuario.Location = new System.Drawing.Point(224, 448);
             this.txtBiografiaUsuario.Multiline = true;
             this.txtBiografiaUsuario.Name = "txtBiografiaUsuario";
             this.txtBiografiaUsuario.ReadOnly = true;

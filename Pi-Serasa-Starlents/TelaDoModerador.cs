@@ -47,7 +47,7 @@ namespace Pi_Serasa_Starlents
         // Esse botão é o de acessar código. Ele direciona o moderador ao github dos Devs onde existe o código completo.
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start("explorer.exe", "https://github.com/Oiquerida69/Pi-Serasa-Starlents");
+           
         }
 
         // Esse botão é o de enviar relatório. Ele direciona o moderador para um link que envia e-mails direto para os Devs principais.
@@ -193,6 +193,16 @@ namespace Pi_Serasa_Starlents
             txtJustificativaBanimento.Texts = "";
 
             picFotoUsuario.ImageLocation = "https://i.imgur.com/6A1TpCB.png";
+        }
+
+        private void linkLabel1_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("explorer.exe", "https://github.com/Oiquerida69/Pi-Serasa-Starlents");
+        }
+
+        private void linkLabel2_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("explorer.exe", "https://criarmeulink.com.br/u/1693942736");
         }
     }
 }
