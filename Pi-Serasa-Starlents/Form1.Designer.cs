@@ -34,6 +34,7 @@
             // panel1
             // 
             panel1.AutoSize = true;
+            panel1.BackColor = System.Drawing.Color.Transparent;
             panel1.Location = new System.Drawing.Point(2, 1);
             panel1.Name = "panel1";
             panel1.Size = new System.Drawing.Size(1370, 789);
@@ -43,7 +44,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Purple;
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(883, 471);
             this.Controls.Add(panel1);
             this.Name = "Form1";
