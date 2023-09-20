@@ -45,8 +45,8 @@ namespace Pi_Serasa_Starlents
             this.picFotoUsuario = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.wilBitGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCurtida)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDescurtida)).BeginInit();
@@ -57,8 +57,8 @@ namespace Pi_Serasa_Starlents
             ((System.ComponentModel.ISupportInitialize)(this.picFotoUsuario)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // wilBitGradientPanel1
@@ -82,250 +82,250 @@ namespace Pi_Serasa_Starlents
             this.wilBitGradientPanel1.ForeColor = System.Drawing.Color.White;
             this.wilBitGradientPanel1.Location = new System.Drawing.Point(-8, -4);
             this.wilBitGradientPanel1.Name = "wilBitGradientPanel1";
-            this.wilBitGradientPanel1.Size = new System.Drawing.Size(836, 460);
+            this.wilBitGradientPanel1.Size = new System.Drawing.Size(899, 505);
             this.wilBitGradientPanel1.TabIndex = 0;
             // 
             // btnCurtida
             // 
-            btnCurtida.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            btnCurtida.BackColor = Color.Transparent;
-            btnCurtida.Cursor = Cursors.Hand;
-            btnCurtida.Image = (Image)resources.GetObject("btnCurtida.Image");
-            btnCurtida.Location = new Point(463, 311);
-            btnCurtida.Name = "btnCurtida";
-            btnCurtida.Size = new Size(64, 64);
-            btnCurtida.SizeMode = PictureBoxSizeMode.Zoom;
-            btnCurtida.TabIndex = 14;
-            btnCurtida.TabStop = false;
-            btnCurtida.Click += btnCurtida_Click;
+            this.btnCurtida.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCurtida.BackColor = System.Drawing.Color.Transparent;
+            this.btnCurtida.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCurtida.Image = ((System.Drawing.Image)(resources.GetObject("btnCurtida.Image")));
+            this.btnCurtida.Location = new System.Drawing.Point(493, 356);
+            this.btnCurtida.Name = "btnCurtida";
+            this.btnCurtida.Size = new System.Drawing.Size(64, 64);
+            this.btnCurtida.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnCurtida.TabIndex = 14;
+            this.btnCurtida.TabStop = false;
+            this.btnCurtida.Click += new System.EventHandler(this.btnCurtida_Click_1);
             // 
             // btnDescurtida
             // 
-            btnDescurtida.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            btnDescurtida.BackColor = Color.Transparent;
-            btnDescurtida.Cursor = Cursors.Hand;
-            btnDescurtida.Image = (Image)resources.GetObject("btnDescurtida.Image");
-            btnDescurtida.Location = new Point(337, 311);
-            btnDescurtida.Name = "btnDescurtida";
-            btnDescurtida.Size = new Size(64, 64);
-            btnDescurtida.SizeMode = PictureBoxSizeMode.Zoom;
-            btnDescurtida.TabIndex = 13;
-            btnDescurtida.TabStop = false;
-            btnDescurtida.Click += btnDescurtida_Click;
+            this.btnDescurtida.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnDescurtida.BackColor = System.Drawing.Color.Transparent;
+            this.btnDescurtida.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDescurtida.Image = ((System.Drawing.Image)(resources.GetObject("btnDescurtida.Image")));
+            this.btnDescurtida.Location = new System.Drawing.Point(363, 356);
+            this.btnDescurtida.Name = "btnDescurtida";
+            this.btnDescurtida.Size = new System.Drawing.Size(64, 64);
+            this.btnDescurtida.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnDescurtida.TabIndex = 13;
+            this.btnDescurtida.TabStop = false;
+            this.btnDescurtida.Click += new System.EventHandler(this.btnDescurtida_Click_1);
             // 
             // wilBitPanel3
             // 
-            wilBitPanel3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
-            wilBitPanel3.BackColor = Color.FromArgb(150, 49, 229);
-            wilBitPanel3.BorderColor = Color.PaleVioletRed;
-            wilBitPanel3.BorderRadius = 0;
-            wilBitPanel3.BorderSize = 0;
-            wilBitPanel3.BorderStyle = BorderStyle.Fixed3D;
-            wilBitPanel3.Controls.Add(lblTalento03);
-            wilBitPanel3.ForeColor = Color.White;
-            wilBitPanel3.Location = new Point(579, 320);
-            wilBitPanel3.Name = "wilBitPanel3";
-            wilBitPanel3.Size = new Size(187, 40);
-            wilBitPanel3.TabIndex = 12;
+            this.wilBitPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.wilBitPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(49)))), ((int)(((byte)(229)))));
+            this.wilBitPanel3.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.wilBitPanel3.BorderRadius = 0;
+            this.wilBitPanel3.BorderSize = 0;
+            this.wilBitPanel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.wilBitPanel3.Controls.Add(this.lblTalento03);
+            this.wilBitPanel3.ForeColor = System.Drawing.Color.White;
+            this.wilBitPanel3.Location = new System.Drawing.Point(642, 377);
+            this.wilBitPanel3.Name = "wilBitPanel3";
+            this.wilBitPanel3.Size = new System.Drawing.Size(187, 43);
+            this.wilBitPanel3.TabIndex = 12;
             // 
             // lblTalento03
             // 
-            lblTalento03.AutoSize = true;
-            lblTalento03.Font = new Font("Arial Rounded MT Bold", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            lblTalento03.Location = new Point(58, 9);
-            lblTalento03.Name = "lblTalento03";
-            lblTalento03.Size = new Size(56, 15);
-            lblTalento03.TabIndex = 2;
-            lblTalento03.Text = "Talento";
-            lblTalento03.TextAlign = ContentAlignment.MiddleCenter;
+            this.lblTalento03.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTalento03.Location = new System.Drawing.Point(-2, 0);
+            this.lblTalento03.Name = "lblTalento03";
+            this.lblTalento03.Size = new System.Drawing.Size(182, 39);
+            this.lblTalento03.TabIndex = 2;
+            this.lblTalento03.Text = "Talento";
+            this.lblTalento03.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // wilBitPanel2
             // 
-            wilBitPanel2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
-            wilBitPanel2.BackColor = Color.FromArgb(150, 49, 229);
-            wilBitPanel2.BorderColor = Color.PaleVioletRed;
-            wilBitPanel2.BorderRadius = 0;
-            wilBitPanel2.BorderSize = 0;
-            wilBitPanel2.BorderStyle = BorderStyle.Fixed3D;
-            wilBitPanel2.Controls.Add(lblTalento02);
-            wilBitPanel2.ForeColor = Color.White;
-            wilBitPanel2.Location = new Point(579, 260);
-            wilBitPanel2.Name = "wilBitPanel2";
-            wilBitPanel2.Size = new Size(187, 40);
-            wilBitPanel2.TabIndex = 11;
+            this.wilBitPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.wilBitPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(49)))), ((int)(((byte)(229)))));
+            this.wilBitPanel2.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.wilBitPanel2.BorderRadius = 0;
+            this.wilBitPanel2.BorderSize = 0;
+            this.wilBitPanel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.wilBitPanel2.Controls.Add(this.lblTalento02);
+            this.wilBitPanel2.ForeColor = System.Drawing.Color.White;
+            this.wilBitPanel2.Location = new System.Drawing.Point(642, 281);
+            this.wilBitPanel2.Name = "wilBitPanel2";
+            this.wilBitPanel2.Size = new System.Drawing.Size(187, 43);
+            this.wilBitPanel2.TabIndex = 11;
             // 
             // lblTalento02
             // 
-            lblTalento02.AutoSize = true;
-            lblTalento02.Font = new Font("Arial Rounded MT Bold", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            lblTalento02.Location = new Point(58, 9);
-            lblTalento02.Name = "lblTalento02";
-            lblTalento02.Size = new Size(56, 15);
-            lblTalento02.TabIndex = 1;
-            lblTalento02.Text = "Talento";
-            lblTalento02.TextAlign = ContentAlignment.MiddleCenter;
+            this.lblTalento02.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTalento02.Location = new System.Drawing.Point(-2, 0);
+            this.lblTalento02.Name = "lblTalento02";
+            this.lblTalento02.Size = new System.Drawing.Size(182, 39);
+            this.lblTalento02.TabIndex = 1;
+            this.lblTalento02.Text = "Talento";
+            this.lblTalento02.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // wilBitPanel1
             // 
-            wilBitPanel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
-            wilBitPanel1.BackColor = Color.FromArgb(150, 49, 229);
-            wilBitPanel1.BorderColor = Color.PaleVioletRed;
-            wilBitPanel1.BorderRadius = 0;
-            wilBitPanel1.BorderSize = 0;
-            wilBitPanel1.BorderStyle = BorderStyle.Fixed3D;
-            wilBitPanel1.Controls.Add(lblTalento01);
-            wilBitPanel1.ForeColor = Color.White;
-            wilBitPanel1.Location = new Point(579, 196);
-            wilBitPanel1.Name = "wilBitPanel1";
-            wilBitPanel1.Size = new Size(187, 40);
-            wilBitPanel1.TabIndex = 10;
+            this.wilBitPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.wilBitPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(49)))), ((int)(((byte)(229)))));
+            this.wilBitPanel1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.wilBitPanel1.BorderRadius = 0;
+            this.wilBitPanel1.BorderSize = 0;
+            this.wilBitPanel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.wilBitPanel1.Controls.Add(this.lblTalento01);
+            this.wilBitPanel1.ForeColor = System.Drawing.Color.White;
+            this.wilBitPanel1.Location = new System.Drawing.Point(642, 198);
+            this.wilBitPanel1.Name = "wilBitPanel1";
+            this.wilBitPanel1.Size = new System.Drawing.Size(187, 43);
+            this.wilBitPanel1.TabIndex = 10;
             // 
             // lblTalento01
             // 
-            lblTalento01.AutoSize = true;
-            lblTalento01.Font = new Font("Arial Rounded MT Bold", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            lblTalento01.Location = new Point(58, 9);
-            lblTalento01.Name = "lblTalento01";
-            lblTalento01.Size = new Size(56, 15);
-            lblTalento01.TabIndex = 0;
-            lblTalento01.Text = "Talento";
+            this.lblTalento01.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTalento01.Location = new System.Drawing.Point(-2, 0);
+            this.lblTalento01.Name = "lblTalento01";
+            this.lblTalento01.Size = new System.Drawing.Size(182, 39);
+            this.lblTalento01.TabIndex = 0;
+            this.lblTalento01.Text = "Talento";
+            this.lblTalento01.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
-            label2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
-            label2.AutoSize = true;
-            label2.BackColor = Color.Transparent;
-            label2.Font = new Font("Arial Rounded MT Bold", 24F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.ForeColor = Color.FromArgb(74, 5, 112);
-            label2.Location = new Point(595, 156);
-            label2.Name = "label2";
-            label2.Size = new Size(150, 37);
-            label2.TabIndex = 9;
-            label2.Text = "Talentos";
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(5)))), ((int)(((byte)(112)))));
+            this.label2.Location = new System.Drawing.Point(658, 156);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(150, 37);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Talentos";
             // 
             // panel6
             // 
-            panel6.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            panel6.AutoSize = true;
-            panel6.BackColor = Color.White;
-            panel6.Controls.Add(lblDescricao);
-            panel6.Location = new Point(315, 196);
-            panel6.Name = "panel6";
-            panel6.Size = new Size(229, 104);
-            panel6.TabIndex = 5;
+            this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel6.AutoScroll = true;
+            this.panel6.AutoSize = true;
+            this.panel6.BackColor = System.Drawing.Color.White;
+            this.panel6.Controls.Add(this.lblDescricao);
+            this.panel6.Location = new System.Drawing.Point(315, 198);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(292, 155);
+            this.panel6.TabIndex = 5;
             // 
             // lblDescricao
             // 
-            lblDescricao.AutoSize = true;
-            lblDescricao.Font = new Font("Arial Rounded MT Bold", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            lblDescricao.ForeColor = Color.Purple;
-            lblDescricao.Location = new Point(9, 11);
-            lblDescricao.Name = "lblDescricao";
-            lblDescricao.Size = new Size(145, 15);
-            lblDescricao.TabIndex = 1;
-            lblDescricao.Text = "Descrição do usuário";
+            this.lblDescricao.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblDescricao.ForeColor = System.Drawing.Color.Purple;
+            this.lblDescricao.Location = new System.Drawing.Point(2, 2);
+            this.lblDescricao.Name = "lblDescricao";
+            this.lblDescricao.Size = new System.Drawing.Size(280, 153);
+            this.lblDescricao.TabIndex = 1;
+            this.lblDescricao.Text = "Descrição do usuário";
             // 
             // lblNomeUsuario
             // 
-            lblNomeUsuario.Anchor = AnchorStyles.Top;
-            lblNomeUsuario.AutoSize = true;
-            lblNomeUsuario.BackColor = Color.Transparent;
-            lblNomeUsuario.Font = new Font("Arial Rounded MT Bold", 24F, FontStyle.Regular, GraphicsUnit.Point);
-            lblNomeUsuario.Location = new Point(362, 156);
-            lblNomeUsuario.Name = "lblNomeUsuario";
-            lblNomeUsuario.Size = new Size(138, 37);
-            lblNomeUsuario.TabIndex = 8;
-            lblNomeUsuario.Text = "Usuário";
-            lblNomeUsuario.TextAlign = ContentAlignment.TopCenter;
+            this.lblNomeUsuario.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblNomeUsuario.BackColor = System.Drawing.Color.Transparent;
+            this.lblNomeUsuario.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblNomeUsuario.Location = new System.Drawing.Point(320, 156);
+            this.lblNomeUsuario.Name = "lblNomeUsuario";
+            this.lblNomeUsuario.Size = new System.Drawing.Size(282, 37);
+            this.lblNomeUsuario.TabIndex = 8;
+            this.lblNomeUsuario.Text = "Usuário";
+            this.lblNomeUsuario.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // picFotoUsuario
             // 
-            picFotoUsuario.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            picFotoUsuario.BackColor = Color.Transparent;
-            picFotoUsuario.BackgroundImageLayout = ImageLayout.Center;
-            picFotoUsuario.BorderStyle = BorderStyle.Fixed3D;
-            picFotoUsuario.Location = new Point(41, 135);
-            picFotoUsuario.Name = "picFotoUsuario";
-            picFotoUsuario.Size = new Size(240, 240);
-            picFotoUsuario.TabIndex = 7;
-            picFotoUsuario.TabStop = false;
+            this.picFotoUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.picFotoUsuario.BackColor = System.Drawing.Color.Transparent;
+            this.picFotoUsuario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.picFotoUsuario.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.picFotoUsuario.Location = new System.Drawing.Point(41, 156);
+            this.picFotoUsuario.Name = "picFotoUsuario";
+            this.picFotoUsuario.Size = new System.Drawing.Size(240, 264);
+            this.picFotoUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picFotoUsuario.TabIndex = 7;
+            this.picFotoUsuario.TabStop = false;
             // 
             // panel1
             // 
-            panel1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            panel1.BackColor = Color.FromArgb(74, 5, 112);
-            panel1.Controls.Add(pictureBox4);
-            panel1.Controls.Add(pictureBox2);
-            panel1.Controls.Add(pictureBox1);
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(835, 70);
-            panel1.TabIndex = 0;
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(5)))), ((int)(((byte)(112)))));
+            this.panel1.Controls.Add(this.pictureBox4);
+            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(898, 70);
+            this.panel1.TabIndex = 0;
             // 
             // pictureBox4
             // 
-            pictureBox4.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(504, 16);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(40, 40);
-            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox4.TabIndex = 2;
-            pictureBox4.TabStop = false;
-            pictureBox4.Click += pictureBox4_Click;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(414, 16);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(40, 40);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
+            this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(532, 16);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 2;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click_1);
             // 
             // pictureBox2
             // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(315, 16);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(40, 40);
-            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox2.TabIndex = 1;
-            pictureBox2.TabStop = false;
-            pictureBox2.Click += pictureBox2_Click;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(315, 16);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click_1);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(395, 16);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(103, 40);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // TelaDeInicio
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(826, 450);
-            Controls.Add(wilBitGradientPanel1);
-            FormBorderStyle = FormBorderStyle.None;
-            Name = "TelaDeInicio";
-            Text = "\\";
-            Load += TelaDeInicio_Load;
-            wilBitGradientPanel1.ResumeLayout(false);
-            wilBitGradientPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)btnCurtida).EndInit();
-            ((System.ComponentModel.ISupportInitialize)btnDescurtida).EndInit();
-            wilBitPanel3.ResumeLayout(false);
-            wilBitPanel3.PerformLayout();
-            wilBitPanel2.ResumeLayout(false);
-            wilBitPanel2.PerformLayout();
-            wilBitPanel1.ResumeLayout(false);
-            wilBitPanel1.PerformLayout();
-            panel6.ResumeLayout(false);
-            panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)picFotoUsuario).EndInit();
-            panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(879, 500);
+            this.Controls.Add(this.wilBitGradientPanel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "TelaDeInicio";
+            this.Text = "\\";
+            this.Load += new System.EventHandler(this.TelaDeInicio_Load_1);
+            this.wilBitGradientPanel1.ResumeLayout(false);
+            this.wilBitGradientPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCurtida)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnDescurtida)).EndInit();
+            this.wilBitPanel3.ResumeLayout(false);
+            this.wilBitPanel2.ResumeLayout(false);
+            this.wilBitPanel1.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picFotoUsuario)).EndInit();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

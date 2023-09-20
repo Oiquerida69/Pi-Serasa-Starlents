@@ -50,16 +50,7 @@ namespace Pi_Serasa_Starlents
 
         private void Cadastro_Load(object sender, EventArgs e)
         {
-            GradientPanelCadastro.Size = new Size(ClientSize.Width, ClientSize.Height);
-            List<Interesses> All = i.buscaTodos();
-            foreach (Interesses i in All)
-            {
-                comboBox1.Items.Add(i.interesse.ToString());
-                comboBox2.Items.Add(i.interesse.ToString());
-                comboBox3.Items.Add(i.interesse.ToString());
-                comboBox4.Items.Add(i.interesse.ToString());
-                comboBox5.Items.Add(i.interesse.ToString());
-            }
+            
         }
 
 
@@ -123,15 +114,7 @@ namespace Pi_Serasa_Starlents
         private void pictureBox3_Click(object sender, EventArgs e)
         {
 
-            void clique(object sender, EventArgs e)
-            {
-                List<string> avatars = new List<string> { caminho1, caminho2, caminho3, caminho4, caminho5, caminho6, caminho7, caminho8, caminho9, caminho10, caminho11, caminho12, caminho13, caminho14, caminho15, caminho16, caminho17, caminho18 };
-                Random random = new Random();
-
-                pictureBox1.ImageLocation = avatars[random.Next(0, 18)].ToString();
-            }
-            pictureBox3.Click += clique;
-
+            
         }
 
         private void wilBitButton1_Click(object sender, EventArgs e)
@@ -140,6 +123,25 @@ namespace Pi_Serasa_Starlents
         }
 
         private void wilBitButton1_Click_3(object sender, EventArgs e)
+        {
+           
+            
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void pictureBox4_Click_1(object sender, EventArgs e)
+        {
+
+            Form1.panel1.Controls.Clear();
+            login.TopLevel = false;
+            Form1.panel1.Controls.Add(login);
+            login.Show();
+        }
+
+        private void wilBitButton1_Click_4(object sender, EventArgs e)
         {
             if (wilBitTextBox1.Texts == null)
             {
@@ -183,7 +185,7 @@ namespace Pi_Serasa_Starlents
                 string mensagemU = wilBitTextBox6.Texts;
                 string aprender = comboBox4.Text;
                 string aprender2 = comboBox5.Text;
-                Usuario usuariototal = new Usuario(0, interesse, interesse2, interesee3, nome, email, senha, telefone, descricao, avatar, mensagemU, aprender, aprender2,false);
+                Usuario usuariototal = new Usuario(0, interesse, interesse2, interesee3, nome, email, senha, telefone, descricao, avatar, mensagemU, aprender, aprender2, false);
                 Program.usuario.CadastrarUsuario(usuariototal);
                 MessageBox.Show("Cadastro Feito com Sucesso");
                 Form1.panel1.Controls.Clear();
@@ -196,21 +198,34 @@ namespace Pi_Serasa_Starlents
 
                 Program.usuario = u;
 
-
             }
         }
 
-        private void pictureBox4_Click(object sender, EventArgs e)
+        private void pictureBox3_Click_1(object sender, EventArgs e)
         {
+            void clique(object sender, EventArgs e)
+            {
+                List<string> avatars = new List<string> { caminho1, caminho2, caminho3, caminho4, caminho5, caminho6, caminho7, caminho8, caminho9, caminho10, caminho11, caminho12, caminho13, caminho14, caminho15, caminho16, caminho17, caminho18 };
+                Random random = new Random();
+
+                pictureBox1.ImageLocation = avatars[random.Next(0, 18)].ToString();
+            }
+            pictureBox3.Click += clique;
+
         }
 
-        private void pictureBox4_Click_1(object sender, EventArgs e)
+        private void Cadastro_Load_1(object sender, EventArgs e)
         {
-
-            Form1.panel1.Controls.Clear();
-            login.TopLevel = false;
-            Form1.panel1.Controls.Add(login);
-            login.Show();
+            GradientPanelCadastro.Size = new Size(ClientSize.Width, ClientSize.Height);
+            List<Interesses> All = i.buscaTodos();
+            foreach (Interesses i in All)
+            {
+                comboBox1.Items.Add(i.interesse.ToString());
+                comboBox2.Items.Add(i.interesse.ToString());
+                comboBox3.Items.Add(i.interesse.ToString());
+                comboBox4.Items.Add(i.interesse.ToString());
+                comboBox5.Items.Add(i.interesse.ToString());
+            }
         }
     }
 }

@@ -54,20 +54,12 @@ namespace Pi_Serasa_Starlents
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            Perfil perfil = new Perfil();
-            perfil.Show();
-            Form1.panel1.Controls.Clear();
-            perfil.TopLevel = false;
-            Form1.panel1.Controls.Add(perfil);
+            
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            TelaDeMensagens tela = new TelaDeMensagens();
-            Form1.panel1.Controls.Clear();
-            tela.Show();
-            tela.TopLevel = false;
-            Form1.panel1.Controls.Add(tela);
+            
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
@@ -81,10 +73,7 @@ namespace Pi_Serasa_Starlents
 
         private void TelaDeInicio_Load(object sender, EventArgs e)
         {
-            Usuario usuario = new Usuario();
-            usuarios = usuario.buscaPerfil(Program.usuario.id, Program.usuario.interesse01, Program.usuario.interesse02, Program.usuario.interesse03);
-            mostraPerfil();
-
+            
         }
 
 
@@ -95,12 +84,50 @@ namespace Pi_Serasa_Starlents
 
         private void btnCurtida_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void btnDescurtida_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void TelaDeInicio_Load_1(object sender, EventArgs e)
+        {
+            Usuario usuario = new Usuario();
+            usuarios = usuario.buscaPerfil(Program.usuario.id, Program.usuario.interesse01, Program.usuario.interesse02, Program.usuario.interesse03);
+            mostraPerfil();
+
+        }
+
+        private void pictureBox4_Click_1(object sender, EventArgs e)
+        {
+            Perfil perfil = new Perfil();
+            perfil.Location = new Point(0, 0);
+            Form1.panel1.Controls.Clear();
+            perfil.TopLevel = false;
+            Form1.panel1.Controls.Add(perfil);
+            perfil.Show();
+        }
+
+        private void pictureBox2_Click_1(object sender, EventArgs e)
+        {
+            TelaDeMensagens tela = new TelaDeMensagens();
+            tela.TopLevel = false;
+            tela.Location = new Point(0, 0);
+            Form1.panel1.Controls.Clear();
+            tela.Show();
+            Form1.panel1.Controls.Add(tela);
+        }
+
+        private void btnCurtida_Click_1(object sender, EventArgs e)
+        {
             Usuario u = new Usuario();
             u.Curtida(Program.usuario.id, id_mostrando, true);
             mostraPerfil();
         }
 
-        private void btnDescurtida_Click(object sender, EventArgs e)
+        private void btnDescurtida_Click_1(object sender, EventArgs e)
         {
             Usuario u = new Usuario();
             u.Curtida(Program.usuario.id, id_mostrando, false);

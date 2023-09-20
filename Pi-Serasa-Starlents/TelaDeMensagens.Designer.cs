@@ -60,7 +60,7 @@
             this.painel_Lista.AutoScroll = true;
             this.painel_Lista.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(15)))), ((int)(((byte)(87)))));
             this.painel_Lista.Controls.Add(this.panelUsuarioNoChat);
-            this.painel_Lista.Location = new System.Drawing.Point(0, 60);
+            this.painel_Lista.Location = new System.Drawing.Point(50, 88);
             this.painel_Lista.Name = "painel_Lista";
             this.painel_Lista.Size = new System.Drawing.Size(220, 0);
             this.painel_Lista.TabIndex = 0;
@@ -111,7 +111,7 @@
             this.panel2.Controls.Add(this.wilBitPanel2);
             this.panel2.Location = new System.Drawing.Point(220, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(560, 446);
+            this.panel2.Size = new System.Drawing.Size(661, 503);
             this.panel2.TabIndex = 1;
             // 
             // wilBitPanel2
@@ -127,7 +127,7 @@
             this.wilBitPanel2.ForeColor = System.Drawing.Color.White;
             this.wilBitPanel2.Location = new System.Drawing.Point(18, 12);
             this.wilBitPanel2.Name = "wilBitPanel2";
-            this.wilBitPanel2.Size = new System.Drawing.Size(530, 421);
+            this.wilBitPanel2.Size = new System.Drawing.Size(629, 476);
             this.wilBitPanel2.TabIndex = 22;
             this.wilBitPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.wilBitPanel2_Paint);
             // 
@@ -145,7 +145,7 @@
             // btnDenunciaUsuario
             // 
             this.btnDenunciaUsuario.Image = ((System.Drawing.Image)(resources.GetObject("btnDenunciaUsuario.Image")));
-            this.btnDenunciaUsuario.Location = new System.Drawing.Point(495, 3);
+            this.btnDenunciaUsuario.Location = new System.Drawing.Point(578, 12);
             this.btnDenunciaUsuario.Name = "btnDenunciaUsuario";
             this.btnDenunciaUsuario.Size = new System.Drawing.Size(31, 26);
             this.btnDenunciaUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -181,7 +181,6 @@
             // 
             // panel4
             // 
-            this.panel4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(55)))), ((int)(((byte)(148)))));
             this.panel4.Controls.Add(this.label2);
             this.panel4.Controls.Add(this.btnVoltaInicio);
@@ -192,6 +191,7 @@
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(209)))), ((int)(((byte)(232)))));
             this.label2.Location = new System.Drawing.Point(51, 5);
@@ -214,10 +214,12 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(15)))), ((int)(((byte)(87)))));
             this.panel1.Location = new System.Drawing.Point(0, 50);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(220, 399);
+            this.panel1.Size = new System.Drawing.Size(220, 450);
             this.panel1.TabIndex = 3;
             // 
             // TelaDeMensagens
@@ -225,7 +227,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(779, 445);
+            this.ClientSize = new System.Drawing.Size(879, 500);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.painel_Lista);

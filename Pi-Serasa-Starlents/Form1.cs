@@ -9,8 +9,7 @@ namespace Pi_Serasa_Starlents
 
         private void button1_Click(object sender, EventArgs e)
         {
-            TelaDeMensagens tela = new TelaDeMensagens();
-            tela.Show();
+            
         }
 
         

@@ -29,27 +29,27 @@ namespace Pi_Serasa_Starlents
             form.Show();
 
         }
-        void rendeirizaInterface()
-        {
+        //void rendeirizaInterface()
+        //{
             
-            this.WindowState = FormWindowState.Maximized;
+        //    this.WindowState = FormWindowState.Maximized;
 
-            wilBitGradientPanel1.Location = new Point(0, 0);
-            wilBitGradientPanel1.Size = new Size(ClientSize.Width, ClientSize.Height);
-            wilBitPanelTaInt.Location = new Point(1400, 250);
-            wilBitButton1.Location = new Point(1410, 590);
-            panel1.Location = new Point(0, 0);
-            panel1.Size = new Size(ClientSize.Width, 44);
-            pictureBox4.Location = new Point(0, 0);
-            pictureBox4.Size = new Size(ClientSize.Width, 50);
-            label3.Location = new Point(ClientSize.Width/2 - 80 , ClientSize.Height /2 -452 );
-            label3.Size = new Size(452, 100);
-            wilBitPanel1Dese.Location = new Point(850, 450);
-            wilBitPanel3Foto.Location = new Point(400, 250);
-            wilBitTextBox6.Location = new Point(wilBitPanel3Foto.Width +150 , wilBitPanel3Foto.Height + 410);
-            label5.Location = new Point(wilBitPanel3Foto.Width + 230, wilBitPanel3Foto.Height + 385);
+        //    wilBitGradientPanel1.Location = new Point(0, 0);
+        //    wilBitGradientPanel1.Size = new Size(ClientSize.Width, ClientSize.Height);
+        //    wilBitPanelTaInt.Location = new Point(1400, 250);
+        //    wilBitButton1.Location = new Point(1410, 590);
+        //    panel1.Location = new Point(0, 0);
+        //    panel1.Size = new Size(ClientSize.Width, 44);
+        //    pictureBox4.Location = new Point(0, 0);
+        //    pictureBox4.Size = new Size(ClientSize.Width, 50);
+        //    label3.Location = new Point(ClientSize.Width/2 - 80 , ClientSize.Height /2 -452 );
+        //    label3.Size = new Size(452, 100);
+        //    wilBitPanel1Dese.Location = new Point(850, 450);
+        //    wilBitPanel3Foto.Location = new Point(400, 250);
+        //    wilBitTextBox6.Location = new Point(wilBitPanel3Foto.Width +150 , wilBitPanel3Foto.Height + 410);
+        //    label5.Location = new Point(wilBitPanel3Foto.Width + 230, wilBitPanel3Foto.Height + 385);
            
-        }
+        //}
 
         private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -96,8 +96,8 @@ namespace Pi_Serasa_Starlents
 
         private void Perfil_Load_1(object sender, EventArgs e)
         {
-            rendeirizaInterface();
-            WindowState = FormWindowState.Maximized;
+            //rendeirizaInterface();
+            //WindowState = FormWindowState.Maximized;
             pictureBox1.ImageLocation = Program.usuario.avatar;
             lblNome.Text = Program.usuario.nome;
             wilBitTextBox6.Texts = Program.usuario.descricao;

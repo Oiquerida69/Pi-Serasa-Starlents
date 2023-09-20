@@ -108,6 +108,7 @@
             this.wilBitButton1.TabIndex = 11;
             this.wilBitButton1.Text = "Login";
             this.wilBitButton1.UseVisualStyleBackColor = false;
+            this.wilBitButton1.Click += new System.EventHandler(this.wilBitButton1_Click_2);
             // 
             // wilBitButton2
             // 
@@ -126,6 +127,7 @@
             this.wilBitButton2.TabIndex = 12;
             this.wilBitButton2.Text = "Criar conta";
             this.wilBitButton2.UseVisualStyleBackColor = false;
+            this.wilBitButton2.Click += new System.EventHandler(this.wilBitButton2_Click_2);
             // 
             // wilBitGradientPanel1
             // 

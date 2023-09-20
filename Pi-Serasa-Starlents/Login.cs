@@ -75,49 +75,6 @@ namespace Pi_Serasa_Starlents
         {
 
         }
-
-        private void wilBitButton1_Click_1(object sender, EventArgs e)
-        {
-            try
-            {
-                
-            string email = wilBitTextBox1.Texts;
-            string senha = wilBitTextBox2.Texts;
-                if (email == "admin" && senha == "admin")
-                {
-                    TelaDoModerador tela = new TelaDoModerador();
-                    Form1.panel1.Controls.Clear();
-                    Form1.panel1.Controls.Add(tela);
-                    tela.Show();
-                    tela.TopLevel = false;
-                }
-                else
-                {
-                    Usuario u = new Usuario();
-                    u = u.login(email, senha);
-
-                    if (u.id == null)
-                    {
-                        MessageBox.Show("email ou senha incorretos");
-                        return;
-                    }
-
-                    Program.usuario = u;
-
-                    TelaDeInicio telaDeInicio = new TelaDeInicio();
-                    telaDeInicio.TopLevel = false;
-                    Form1.panel1.Controls.Clear();
-                    Form1.panel1.Controls.Add(telaDeInicio);
-                    telaDeInicio.Show();
-                }
-            }
-            catch (Exception erro)
-            {
-
-                MessageBox.Show("O email ou senha ainda não existe no sistema");
-            }
-        }
-
         private void Login_Load_1(object sender, EventArgs e)
         {
 
@@ -125,8 +82,56 @@ namespace Pi_Serasa_Starlents
 
         private void wilBitButton2_Click_1(object sender, EventArgs e)
         {
+            
+        }
+
+        private void wilBitButton1_Click_2(object sender, EventArgs e)
+        {
+                try
+                {
+
+                    string email = wilBitTextBox1.Texts;
+                    string senha = wilBitTextBox2.Texts;
+                    if (email == "admin" && senha == "admin")
+                    {
+                        TelaDoModerador tela = new TelaDoModerador();
+                        this.Close();
+                        tela.Show();
+                        
+                       
+                    }
+                    else
+                    {
+                        Usuario u = new Usuario();
+                        u = u.login(email, senha);
+
+                        if (u == null)
+                        {
+                            MessageBox.Show("email ou senha incorretos");
+                            return;
+                        }
+
+                        Program.usuario = u;
+
+                        TelaDeInicio telaDeInicio = new TelaDeInicio();
+                        telaDeInicio.TopLevel = false;
+                        Form1.panel1.Controls.Clear();
+                        Form1.panel1.Controls.Add(telaDeInicio);
+                        telaDeInicio.Show();
+                    }
+                }
+                catch (Exception erro)
+                {
+
+                    MessageBox.Show("O email ou senha ainda não existe no sistema");
+                }
+            }
+
+        private void wilBitButton2_Click_2(object sender, EventArgs e)
+        {
             carregaForm(new Cadastro());
             pictureBox1.Location = new Point(700, 100);
         }
     }
-}
+    }
+

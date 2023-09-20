@@ -16,7 +16,7 @@ namespace Pi_Serasa_Starlents
     public partial class TelaDeMensagens : Form
     {
         Usuario usuario = new Usuario();
-        //List<string> usuarios = new List<string>{"wendell","Mirela","Mario"};
+        
         List<Usuario> usuarios = new List<Usuario>();
         List<TelaDeMensagens> mensagens = new List<TelaDeMensagens>();
 
@@ -29,13 +29,15 @@ namespace Pi_Serasa_Starlents
         public void geraform(string nome, string avatar, string descricao)
         {
 
-
+            panel4.Location = new Point(0, 0);
+            panel1.Location= new Point(0, 0);
+            painel_Lista.Location= new Point(0, 50);
             Panel painel = new WiLBiT.WiLBiTPanel();
             painel.Name = "painel";
             painel.BackColor = Color.FromArgb(228, 193, 249);
             painel.ForeColor = Color.White;
-            painel.Size = new Size(250, 50);
-            painel.Location = new Point(12, painel_Lista.Height);
+            painel.Size = new Size(150, 50);
+            painel.Location = new Point(20, painel_Lista.Height);
             painel.Click += clique;
 
             void clique(object sender, EventArgs e)
@@ -78,37 +80,14 @@ namespace Pi_Serasa_Starlents
             painel_Lista.Controls.Add(painel);
             painel.Controls.Add(label);
             painel.Controls.Add(picFotoUsuario);
-            if (painel_Lista.Height < 500)
+            if (painel_Lista.Height < panel2.Height - 10)
             {
                 painel_Lista.Height += painel.Height + 10;
 
             }
 
 
-            /*
-            Panel panel = new Panel();
-            panel.Name = "panel";
-            panel.BackColor = Color.FromArgb(228, 193, 249);
-            panel.Size = new Size(174, 50);
-
-            Label label = new Label();
-            label.Name = "label";
-            label.Text = "Wendell";
-            label.AutoSize = true;
-            label.Location = new Point(12, panel.Height);
-
-            panel.Controls.Add(label);
-            panel.Controls.Add(panel);
-
-            panel.Location = new Point(12, panel.Height);
-
-            if (panel.Height < 300)
-            {
-
-                     panel.Height += panel.Height + 10;
-            }
-            panel.Controls.Add(panel);
-            */
+            
             
         }
 
@@ -152,7 +131,7 @@ namespace Pi_Serasa_Starlents
         {
            
           
-            WindowState = FormWindowState.Maximized;
+            
             panel1.Location = new Point(0, 0);
             panel1.Size = new Size(350,ClientSize.Height);
             panel2.Location= new Point(350, 0);
@@ -238,17 +217,18 @@ namespace Pi_Serasa_Starlents
                 geraform(u.nome, u.avatar, u.mensagemUsuario);
             }
 
-            carregaForm();
+            
         }
 
         private void btnVoltaInicio_Click_1(object sender, EventArgs e)
         {
 
-            WindowState = FormWindowState.Maximized;
+          
 
             this.Hide();
 
             TelaDeInicio telaDeInicio = new TelaDeInicio();
+            telaDeInicio.TopLevel = false;
             panel2.Location = new Point(0, 0);
             telaDeInicio.Size = new Size(ClientSize.Width, ClientSize.Height);
             Form1.panel1.Controls.Clear();
