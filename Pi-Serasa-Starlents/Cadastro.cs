@@ -17,15 +17,15 @@ namespace Pi_Serasa_Starlents
 {
     public partial class Cadastro : Form
     {
-        public string caminho1 = "https://i.imgur.com/Uqamx5Q.png";
-        public string caminho2 = "https://i.imgur.com/MJeq7KG.png";
-        public string caminho3 = "https://i.imgur.com/hGZfrfT.png";
-        public string caminho4 = "https://i.imgur.com/6G3KaBG.png";
-        public string caminho5 = "https://i.imgur.com/7QNYR4q.png";
-        public string caminho6 = "https://i.imgur.com/961Yv3F.png";
-        public string caminho7 = "https://i.imgur.com/2aoeof2.png";
-        public string caminho8 = "https://i.imgur.com/CSJ66va.png";
-        public string caminho9 = "https://i.imgur.com/ragZuSZ.png";
+        public string caminho1 = "https://i.imgur.com/Uqamx5Q.png"; // Freddy
+        public string caminho2 = "https://i.imgur.com/MJeq7KG.png"; // Cartman
+        public string caminho3 = "https://i.imgur.com/hGZfrfT.png"; // Yoda
+        public string caminho4 = "https://i.imgur.com/6G3KaBG.png"; // Mario
+        public string caminho5 = "https://i.imgur.com/7QNYR4q.png"; // Bob Esponja
+        public string caminho6 = "https://i.imgur.com/961Yv3F.png"; // Tanjiro
+        public string caminho7 = "https://i.imgur.com/2aoeof2.png"; // Homer
+        public string caminho8 = "https://i.imgur.com/CSJ66va.png"; // Jake
+        public string caminho9 = "https://i.imgur.com/ragZuSZ.png"; // Totoro
         public string caminho10 = "https://i.imgur.com/cpUIqvH.png";
         public string caminho11 = "https://i.imgur.com/CwKUseL.png";
         public string caminho12 = "https://i.imgur.com/UAgNct5.png";

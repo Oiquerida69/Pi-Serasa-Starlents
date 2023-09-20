@@ -86,12 +86,12 @@ namespace Pi_Serasa_Starlents
         {
             MessageBox.Show("A denúncia foi suspensa.");
             lblUsuario.Text = "Usuario";
-            lblDetalhesDenuncia.Text = "Detalhes da denúncia";
+            txtDetalhesDenuncia.Text = "Detalhes da denúncia";
             txtBiografiaMix.Text = "Biografia de Mix";
             txtBiografiaUsuario.Text = "Biografia do usuário";
             txtJustificativaBanimento.Texts = "";
 
-            picFotoUsuario.ImageLocation = "https://imgur.com/6A1TpCB";
+            picFotoUsuario.ImageLocation = "https://i.imgur.com/6A1TpCB.png";
         }
 
         private void panelListaDenuncias_Paint(object sender, PaintEventArgs e)
@@ -111,7 +111,7 @@ namespace Pi_Serasa_Starlents
             txtBiografiaUsuario.Text = "oi! sou um cara legal, gosto de jogar lol e ficar em call com meus amigos no discord. :3";
             txtDetalhesDenuncia.Text = "Olha a bio desse cara moderador, não preciso nem falar nada né...";
 
-            picFotoUsuario.ImageLocation = "https://imgur.com/CwKUseL";
+            picFotoUsuario.ImageLocation = "https://imgur.com/CwKUseL.png";
         }
 
         private void panel2_Click(object sender, EventArgs e)
@@ -124,7 +124,7 @@ namespace Pi_Serasa_Starlents
                 "para DENUNCIAR esse homem, pois essa receita que ele citou está prejudicando meus negócios, só pode existir um!!!" +
                 " - Com carinho, da melhor empresa de chokitos.";
 
-            picFotoUsuario.ImageLocation = "https://imgur.com/ragZuSZ";
+            picFotoUsuario.ImageLocation = "https://i.imgur.com/ragZuSZ.png";
         }
 
         private void panel5_Click(object sender, EventArgs e)
@@ -138,7 +138,7 @@ namespace Pi_Serasa_Starlents
             txtDetalhesDenuncia.Text = "OLHA SÓ SEU MODERADOR, ESSE CARA TA PREJUDICANDO MEU INSTAGRAM DE RECEITAS" +
                 " SÓ PORQUE EU FIZ UMA RECEITA DE CHOKITO, NAO SABE COMPETIR!!!!!!!!!!!";
 
-            picFotoUsuario.ImageLocation = "https://imgur.com/UAgNct5";
+            picFotoUsuario.ImageLocation = "https://i.imgur.com/UAgNct5.png";
         }
 
         private void panel4_Click(object sender, EventArgs e)
@@ -149,7 +149,7 @@ namespace Pi_Serasa_Starlents
             txtBiografiaUsuario.Text = "Oiii, eu danço e desenho!!";
             txtDetalhesDenuncia.Text = "não gosto de kpoper.";
 
-            picFotoUsuario.ImageLocation = "https://imgur.com/Uqamx5Q";
+            picFotoUsuario.ImageLocation = "https://i.imgur.com/Uqamx5Q.png";
         }
 
         private void panel7_Click(object sender, EventArgs e)
@@ -160,7 +160,7 @@ namespace Pi_Serasa_Starlents
             txtDetalhesDenuncia.Text = "Fez um post com apologias racistas....";
 
             
-            picFotoUsuario.ImageLocation = "https://imgur.com/Wg9LbVB";
+            picFotoUsuario.ImageLocation = "https://i.imgur.com/Wg9LbVB.png";
         }
 
         private void panel01_Paint(object sender, PaintEventArgs e)
@@ -170,14 +170,29 @@ namespace Pi_Serasa_Starlents
 
         private void btnBanirUsuario_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Usuario banido com sucesso!");
+
+
+            MessageBox.Show("Usuário banido com sucesso!", "Banimento", (MessageBoxButtons.OK), (MessageBoxIcon.Information));
             lblUsuario.Text = "Usuario";
-            lblDetalhesDenuncia.Text = "Detalhes da denúncia";
+            txtDetalhesDenuncia.Text = "Detalhes da denúncia";
             txtBiografiaMix.Text = "Biografia de Mix";
             txtBiografiaUsuario.Text = "Biografia do usuário";
             txtJustificativaBanimento.Texts = "";
 
-            picFotoUsuario.ImageLocation = "https://imgur.com/6A1TpCB";
+            picFotoUsuario.ImageLocation = "https://i.imgur.com/6A1TpCB.png";
+        }
+
+        private void btnSuspendeDenuncia_Click_2(object sender, EventArgs e)
+        {
+
+            MessageBox.Show("A denúncia foi suspensa.", "Suspenção", (MessageBoxButtons.OK ), (MessageBoxIcon.Information) );
+            lblUsuario.Text = "Usuario";
+            txtDetalhesDenuncia.Text = "Detalhes da denúncia";
+            txtBiografiaMix.Text = "Biografia de Mix";
+            txtBiografiaUsuario.Text = "Biografia do usuário";
+            txtJustificativaBanimento.Texts = "";
+
+            picFotoUsuario.ImageLocation = "https://i.imgur.com/6A1TpCB.png";
         }
     }
 }

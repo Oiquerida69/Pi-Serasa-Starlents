@@ -156,7 +156,7 @@
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(11)))), ((int)(((byte)(66)))));
             this.label11.Location = new System.Drawing.Point(48, 13);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(70, 18);
+            this.label11.Size = new System.Drawing.Size(122, 18);
             this.label11.TabIndex = 19;
             this.label11.Text = "Julia";
             // 
@@ -194,7 +194,7 @@
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(11)))), ((int)(((byte)(66)))));
             this.label8.Location = new System.Drawing.Point(48, 13);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(70, 18);
+            this.label8.Size = new System.Drawing.Size(122, 18);
             this.label8.TabIndex = 19;
             this.label8.Text = "Bianca";
             // 
@@ -232,7 +232,7 @@
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(11)))), ((int)(((byte)(66)))));
             this.label9.Location = new System.Drawing.Point(48, 13);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(80, 18);
+            this.label9.Size = new System.Drawing.Size(122, 18);
             this.label9.TabIndex = 19;
             this.label9.Text = "Conradito";
             // 
@@ -270,7 +270,7 @@
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(11)))), ((int)(((byte)(66)))));
             this.label6.Location = new System.Drawing.Point(48, 13);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(80, 18);
+            this.label6.Size = new System.Drawing.Size(122, 18);
             this.label6.TabIndex = 19;
             this.label6.Text = "Junior";
             // 
@@ -312,7 +312,7 @@
             this.lblNome01.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(11)))), ((int)(((byte)(66)))));
             this.lblNome01.Location = new System.Drawing.Point(48, 13);
             this.lblNome01.Name = "lblNome01";
-            this.lblNome01.Size = new System.Drawing.Size(70, 18);
+            this.lblNome01.Size = new System.Drawing.Size(122, 18);
             this.lblNome01.TabIndex = 19;
             this.lblNome01.Text = "Nicolas";
             // 
@@ -394,6 +394,7 @@
             this.picFotoUsuario.Location = new System.Drawing.Point(224, 64);
             this.picFotoUsuario.Name = "picFotoUsuario";
             this.picFotoUsuario.Size = new System.Drawing.Size(193, 178);
+            this.picFotoUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picFotoUsuario.TabIndex = 0;
             this.picFotoUsuario.TabStop = false;
             // 
@@ -401,11 +402,12 @@
             // 
             this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(11)))), ((int)(((byte)(66)))));
-            this.lblUsuario.Location = new System.Drawing.Point(265, 245);
+            this.lblUsuario.Location = new System.Drawing.Point(224, 245);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(117, 32);
+            this.lblUsuario.Size = new System.Drawing.Size(193, 32);
             this.lblUsuario.TabIndex = 12;
             this.lblUsuario.Text = "Usuário";
+            this.lblUsuario.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
             // 
@@ -445,7 +447,7 @@
             // 
             // btnSuspendeDenuncia
             // 
-            this.btnSuspendeDenuncia.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSuspendeDenuncia.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnSuspendeDenuncia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(84)))), ((int)(((byte)(169)))));
             this.btnSuspendeDenuncia.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(116)))), ((int)(((byte)(245)))));
             this.btnSuspendeDenuncia.BorderRadius = 6;
@@ -461,6 +463,7 @@
             this.btnSuspendeDenuncia.TabIndex = 0;
             this.btnSuspendeDenuncia.Text = "Suspender a denúncia";
             this.btnSuspendeDenuncia.UseVisualStyleBackColor = false;
+            this.btnSuspendeDenuncia.Click += new System.EventHandler(this.btnSuspendeDenuncia_Click_2);
             // 
             // label5
             // 
