@@ -29,32 +29,32 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            panel1 = new System.Windows.Forms.Panel();
-            this.SuspendLayout();
+            panel1 = new Panel();
+            SuspendLayout();
             // 
             // panel1
             // 
             panel1.AutoSize = true;
-            panel1.BackColor = System.Drawing.Color.Transparent;
-            panel1.Location = new System.Drawing.Point(2, 1);
+            panel1.BackColor = Color.Transparent;
+            panel1.Location = new Point(2, 1);
             panel1.Name = "panel1";
-            panel1.Size = new System.Drawing.Size(1370, 789);
+            panel1.Size = new Size(1370, 789);
             panel1.TabIndex = 0;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(883, 471);
-            this.Controls.Add(panel1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
-            this.Text = "StarLents";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Black;
+            ClientSize = new Size(883, 471);
+            Controls.Add(panel1);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Name = "Form1";
+            Text = "StarLents";
+            Load += Form1_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

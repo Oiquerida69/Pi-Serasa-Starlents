@@ -9,16 +9,16 @@ namespace Pi_Serasa_Starlents
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+
         }
 
-        
+
 
         private void Form1_Load_1(object sender, EventArgs e)
         {
-            
-            
-             
+
+
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -33,7 +33,7 @@ namespace Pi_Serasa_Starlents
             panel1.Controls.Add(login);
             login.Location = new Point(0, 0);
             login.Show();
-          
+
 
         }
     }

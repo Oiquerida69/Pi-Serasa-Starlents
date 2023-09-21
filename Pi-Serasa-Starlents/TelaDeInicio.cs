@@ -54,12 +54,12 @@ namespace Pi_Serasa_Starlents
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
@@ -73,7 +73,7 @@ namespace Pi_Serasa_Starlents
 
         private void TelaDeInicio_Load(object sender, EventArgs e)
         {
-            
+
         }
 
 
@@ -84,12 +84,12 @@ namespace Pi_Serasa_Starlents
 
         private void btnCurtida_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btnDescurtida_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void TelaDeInicio_Load_1(object sender, EventArgs e)

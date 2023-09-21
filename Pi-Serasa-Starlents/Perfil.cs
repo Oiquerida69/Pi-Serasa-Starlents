@@ -31,7 +31,7 @@ namespace Pi_Serasa_Starlents
         }
         //void rendeirizaInterface()
         //{
-            
+
         //    this.WindowState = FormWindowState.Maximized;
 
         //    wilBitGradientPanel1.Location = new Point(0, 0);
@@ -48,7 +48,7 @@ namespace Pi_Serasa_Starlents
         //    wilBitPanel3Foto.Location = new Point(400, 250);
         //    wilBitTextBox6.Location = new Point(wilBitPanel3Foto.Width +150 , wilBitPanel3Foto.Height + 410);
         //    label5.Location = new Point(wilBitPanel3Foto.Width + 230, wilBitPanel3Foto.Height + 385);
-           
+
         //}
 
         private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
@@ -102,7 +102,7 @@ namespace Pi_Serasa_Starlents
             lblNome.Text = Program.usuario.nome;
             wilBitTextBox6.Texts = Program.usuario.descricao;
             wilBitTextBox1.Texts = Program.usuario.mensagemUsuario;
-            wilBitTextBox2.Texts = Program.usuario.interesse01; 
+            wilBitTextBox2.Texts = Program.usuario.interesse01;
             wilBitTextBox3.Texts = Program.usuario.interesse02;
             wilBitTextBox4.Texts = Program.usuario.interesse03;
             wilBitTextBox5.Texts = Program.usuario.aprender;
@@ -112,7 +112,7 @@ namespace Pi_Serasa_Starlents
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            TelaDeInicio telaDeInicio= new TelaDeInicio();
+            TelaDeInicio telaDeInicio = new TelaDeInicio();
             telaDeInicio.TopLevel = false;
             Form1.panel1.Controls.Clear();
             Form1.panel1.Controls.Add(telaDeInicio);
@@ -120,6 +120,11 @@ namespace Pi_Serasa_Starlents
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("explorer.exe", "https://z0l410j1jxi3uj0d.umso.co");
+        }
+
+        private void wilBitButton1_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("explorer.exe", "https://z0l410j1jxi3uj0d.umso.co");
         }

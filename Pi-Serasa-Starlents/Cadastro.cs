@@ -50,7 +50,7 @@ namespace Pi_Serasa_Starlents
 
         private void Cadastro_Load(object sender, EventArgs e)
         {
-            
+
         }
 
 
@@ -114,7 +114,7 @@ namespace Pi_Serasa_Starlents
         private void pictureBox3_Click(object sender, EventArgs e)
         {
 
-            
+
         }
 
         private void wilBitButton1_Click(object sender, EventArgs e)
@@ -124,8 +124,8 @@ namespace Pi_Serasa_Starlents
 
         private void wilBitButton1_Click_3(object sender, EventArgs e)
         {
-           
-            
+
+
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)

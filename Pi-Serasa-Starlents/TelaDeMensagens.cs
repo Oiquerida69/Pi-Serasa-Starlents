@@ -16,7 +16,7 @@ namespace Pi_Serasa_Starlents
     public partial class TelaDeMensagens : Form
     {
         Usuario usuario = new Usuario();
-        
+
         List<Usuario> usuarios = new List<Usuario>();
         List<TelaDeMensagens> mensagens = new List<TelaDeMensagens>();
 
@@ -30,8 +30,8 @@ namespace Pi_Serasa_Starlents
         {
 
             panel4.Location = new Point(0, 0);
-            panel1.Location= new Point(0, 0);
-            painel_Lista.Location= new Point(0, 50);
+            panel1.Location = new Point(0, 0);
+            painel_Lista.Location = new Point(0, 50);
             Panel painel = new WiLBiT.WiLBiTPanel();
             painel.Name = "painel";
             painel.BackColor = Color.FromArgb(228, 193, 249);
@@ -58,7 +58,7 @@ namespace Pi_Serasa_Starlents
             label.ForeColor = Color.Purple;
             label.Font = new Font("Microsoft Sans Serif", 12);
             label.Click += clique;
-            
+
 
             WiLBiT.WiLBiTRoundedPictureBox picFotoUsuario = new WiLBiT.WiLBiTRoundedPictureBox();
             picFotoUsuario.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
@@ -87,23 +87,23 @@ namespace Pi_Serasa_Starlents
             }
 
 
-            
-            
+
+
         }
 
         private void panel1_click(object sender, PaintEventArgs e)
         {
             atualizaInterface(usuario.nome, usuario.avatar, usuario.descricao);
-           
+
 
         }
-        public void atualizaInterface (string nome, string avatar, string descricao )
+        public void atualizaInterface(string nome, string avatar, string descricao)
         {
-            WiLBiTPanel panel= new WiLBiTPanel();
+            WiLBiTPanel panel = new WiLBiTPanel();
             panel.Size = new Size(530, 400);
             panel.Location = new Point(18, 12);
             panel.Show();
-            
+
 
             WiLBiTRoundedPictureBox pic = new WiLBiTRoundedPictureBox();
             pic.Size = new Size(83, 83);
@@ -111,17 +111,17 @@ namespace Pi_Serasa_Starlents
             pic.ImageLocation = avatar;
 
             //NOME USUÁRIO
-            Label label= new Label();
-            label.Size = new Size(128,37);
+            Label label = new Label();
+            label.Size = new Size(128, 37);
             label.Location = new Point(108, 38);
             label.Text = nome;
 
             //DESCRIÇÃO
-            Label label1= new Label();
-            label1.Size = new Size(170,15);
+            Label label1 = new Label();
+            label1.Size = new Size(170, 15);
             label1.Location = new Point(29, 112);
             label1.Text = descricao;
-            
+
             panel.Controls.Add(label);
             panel.Controls.Add(label1);
             panel.Controls.Add(pic);
@@ -129,23 +129,23 @@ namespace Pi_Serasa_Starlents
         }
         public void carregaForm()
         {
-           
-          
-            
+
+
+
             panel1.Location = new Point(0, 0);
-            panel1.Size = new Size(350,ClientSize.Height);
-            panel2.Location= new Point(350, 0);
+            panel1.Size = new Size(350, ClientSize.Height);
+            panel2.Location = new Point(350, 0);
             panel2.Size = new Size(ClientSize.Width, ClientSize.Height);
-            wilBitPanel2.Location= new Point(0, 0);
-            wilBitPanel2.Size = new Size(ClientSize.Width,ClientSize.Height);
-            panel4.Location= new Point(0, 0);
-            panel4.Size = new Size(350,60);
+            wilBitPanel2.Location = new Point(0, 0);
+            wilBitPanel2.Size = new Size(ClientSize.Width, ClientSize.Height);
+            panel4.Location = new Point(0, 0);
+            panel4.Size = new Size(350, 60);
             painel_Lista.Location = new Point(60, 0);
             painel_Lista.Size = new Size(ClientSize.Height, 350);
             btnDenunciaUsuario.Location = new Point(1500, 20);
             label2.Location = new Point(120, 5);
-            
-            
+
+
 
 
         }
@@ -167,7 +167,7 @@ namespace Pi_Serasa_Starlents
 
         private void TelaDeMensagens_Load_1(object sender, EventArgs e)
         {
-           
+
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -182,7 +182,7 @@ namespace Pi_Serasa_Starlents
 
         private void btnDenunciaUsuario_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btnVoltaInicio_Click(object sender, EventArgs e)
@@ -192,9 +192,9 @@ namespace Pi_Serasa_Starlents
 
         private void TelaDeMensagens_Load_2(object sender, EventArgs e)
         {
-         
 
-            
+
+
 
         }
 
@@ -212,18 +212,18 @@ namespace Pi_Serasa_Starlents
             foreach (Usuario u in usuarios)
             {
 
-                
+
 
                 geraform(u.nome, u.avatar, u.mensagemUsuario);
             }
 
-            
+
         }
 
         private void btnVoltaInicio_Click_1(object sender, EventArgs e)
         {
 
-          
+
 
             this.Hide();
 
@@ -240,38 +240,36 @@ namespace Pi_Serasa_Starlents
         {
 
 
-            this.Hide();
+            // this.Hide();
 
-           /* if (panel1.Visible)
-            {
-                panel1.Visible = false;
-            }
+            /* if (panel1.Visible)
+             {
+                 panel1.Visible = false;
+             }
 
-            if (panel2.Visible)
-            {
-                panel2.Visible = false;
-            }
+             if (panel2.Visible)
+             {
+                 panel2.Visible = false;
+             }
 
-            if (wilBitPanel2.Visible)
-            {
-                wilBitPanel2.Visible = false;
+             if (wilBitPanel2.Visible)
+             {
+                 wilBitPanel2.Visible = false;
 
-            }
+             }
 
-            if (panel4.Visible)
-            {
-                panel4.Visible = false;
-            }
+             if (panel4.Visible)
+             {
+                 panel4.Visible = false;
+             }
 
-            if (painel_Lista.Visible)
-            {
-                painel_Lista.Visible = false;
-            } */
+             if (painel_Lista.Visible)
+             {
+                 painel_Lista.Visible = false;
+             } */
 
             TelaDeDenuncia telaDeDenuncia = new TelaDeDenuncia();
             panel2.Location = new Point(0, 0);
-            telaDeDenuncia.Size = new Size(ClientSize.Width, ClientSize.Height);
-            telaDeDenuncia.Location = new Point(ClientSize.Width/2, ClientSize.Height/2);
             telaDeDenuncia.Show();
         }
     }

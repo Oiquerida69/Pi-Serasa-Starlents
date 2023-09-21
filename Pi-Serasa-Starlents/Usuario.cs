@@ -80,7 +80,7 @@ namespace Pi_Serasa_Starlents
         {
             List<Usuario> usuarios = new List<Usuario>();
             string query = $"SELECT * FROM usuarios;";
-             string uqery = $"SELECT usuarios.* FROM mix, usuarios WHERE mix.id_usuario_1 = {usuario_id} AND usuarios.id = {usuario_id}";
+            string uqery = $"SELECT usuarios.* FROM mix, usuarios WHERE mix.id_usuario_1 = {usuario_id} AND usuarios.id = {usuario_id}";
             DataTable tabela = Conexao.executaQuery(query);
             foreach( DataRow linha in tabela.Rows)
             {
